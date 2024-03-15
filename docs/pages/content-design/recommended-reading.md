@@ -37,8 +37,6 @@ headericon: bookmark
   * [Cognitive Accessibility Guidance](https://www.w3.org/WAI/WCAG2/supplemental/#-cognitive-accessibility-guidance)
   * [An alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/)
 * [How to: write good Alt Text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text) - Supercool
-* [Write helpful alt text to describe images](https://accessibility.huit.harvard.edu/describe-content-images) - Harvard University
-* [3 questions to help decide if an image doesn’t need alt text](https://www.boia.org/blog/3-questions-to-help-decide-if-an-image-doesnt-need-alt-text) - Bureau of Internet Accessibility, a for-profit company
 
 ### Content design
 
