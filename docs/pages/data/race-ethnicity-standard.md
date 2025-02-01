@@ -182,7 +182,9 @@ State departments and agencies should use the 7 top-level categories defined in 
 
 The top-level category set is sorted by alphabetical order. The detailed category set is sorted by population prevalence to assist respondents in locating their detailed race or ethnicity within the subgroup.
 
+
 **Table 1: Top-level set of race and ethnicity categories**
+<div class="twocolumn-table">
 
 | **Top-level category**                  | **Definition** |
 | --------------------------------------- | -------------- | 
@@ -193,6 +195,7 @@ The top-level category set is sorted by alphabetical order. The detailed categor
 | **Middle Eastern or North African**     | Individuals with origins in any of the original peoples of the Middle East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian, Iraqi, and Israeli. |
 | **Native Hawaiian or Pacific Islander** | Individuals with origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands, including, for example, Native Hawaiian, Samoan, Chamorro, Tongan, Fijian, and Marshallese. |
 | **White**                               | Individuals with origins in any of the original peoples of Europe, including, for example, English, German, Irish, Italian, Polish, and Scottish. |
+</div>
 
 Table 2 below is a recommended set of detailed category groups ordered by population prevalence within each top-level category within the state of California. These population figures are based on the 2020 Decennial Census Detailed Race/Ethnicity population estimates for California contained in the [DHC-A](https://www.census.gov/newsroom/press-releases/2022/2020-census-data-products-schedule-2023.html).
 
@@ -201,6 +204,8 @@ The top six (6) most populous subgroups within each top-level category within Ca
 Note: The Asian top-level category has 8 options due to state code requirements specified in [8310.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=8310.5.).
 
 **Table 2: Detailed set of race and ethnicity categories**
+
+<div class="twocolumn-table">
 
 | **Category**                  | **Detailed categories** |
 | --------------------------------------- | -------------- | 
@@ -212,6 +217,8 @@ Note: The Asian top-level category has 8 options due to state code requirements 
 | **Native Hawaiian or Pacific Islander** | <ul><li>Native Hawaiian</li><li>Samoan</li><li>Chamorro</li><li>Fijian</li><li>Tongan</li><li>Marshallese</li><li>Another group not listed (for example, Palauan, Tahitian, Maori): __</li></ul> |
 | **White**                               | <ul><li>English</li><li>German</li><li>Irish</li><li>Italian</li><li>Scottish</li><li>French</li><li>Another group not listed (for example, Polish, Swedish, Russian): __</li></ul> |
 
+
+</div>
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
