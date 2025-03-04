@@ -59,7 +59,7 @@ Inclusive language uses words that respect all people. ODI doesn’t maintain ou
 
 [Plainlanguage.gov](https://www.plainlanguage.gov/) is a great resource for how to use plain language. It’s maintained by the US federal government. Their site also includes [examples of plain language](https://www.plainlanguage.gov/examples/) in action.
 
-The [ClearMark Awards](https://centerforplainlanguage.org/awards/clearmark/) honors the best plain language communications. They’re a great place to find inspiration for your writing. Winners come from government, nonprofit, and business.
+The [ClearMark Awards](https://centerforplainlanguage.org/awards/clearmark/) honor the best plain language communications. They’re a great place to find inspiration for your writing. Winners come from government, nonprofit, and business.
 
 #### Word substitution lists
 
