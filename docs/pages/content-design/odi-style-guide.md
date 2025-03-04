@@ -238,7 +238,6 @@ ODI's style guide | Innovation Hub
   </div>
 </div>
 
-
 ### Webpage URLs
 
 Use the H1 of the page to create your URL. This helps search engines find the page.
@@ -249,7 +248,7 @@ Replace spaces in the title with hyphens so search engines can read them. Delete
 * Do not make **Prepare for a wildfire** into **/prepare-wildfire**. This has a different meaning.
 * If your URL feels too long, consider shortening the page’s H1. Make sure both give enough detail so people know what the page is about.
 
-Use the site map to build the URL. If the birth certificate page lives under a page called **Services**, the URL would be: **alpha.ca.gov/services/request-birth-certificate**.
+Use the site map to build the URL. If a page called *How to apply* lives under a page called *Applicants*, the URL would be: **cannabis.ca.gov/applicants/how-to-apply/**.
 
 ## Numbers
 
@@ -546,7 +545,7 @@ Use **Black** when referring to people of African descent. Capitalize this where
 
 ### CA.gov
 
-Use CA.gov when writing about the ecosystem of state websites or the [State of California homepage](https://www.ca.gov/). This follows the California Department of Technology style. Use ca.gov when writing a URL, like digital.ca.gov.
+Use CA.gov when writing about the ecosystem of state websites or the [State of California homepage](https://www.ca.gov/). This follows the California Department of Technology style. Use ca.gov when writing a URL, like innovation.ca.gov.
 
 ### county
 
@@ -857,7 +856,7 @@ This guide doesn’t cover everything. If it doesn’t answer your question, her
 ### Inclusive language
 
 * Start with [Atlassian’s inclusive language guide](https://atlassian.design/content/inclusive-writing). It’s good general guidance. Their do’s and don’ts are helpful.
-If you want advice on how to talk about a specific group, try the [CDC’s Preferred Terms for Select Population Groups & Communities](https://www.cdc.gov/healthcommunication/Preferred_Terms.html). It includes many terms that often come up in government work.
+If you want advice on how to talk about a specific group, try the [CDC’s Preferred Terms for Select Population Groups & Communities](https://emoryhercules.com/wp-content/uploads/1b.-Preferred-Terms-for-Select-Population-Groups-Communities-CDC.pdf). It includes many terms that often come up in government work.
 
 ### Other style questions
 
