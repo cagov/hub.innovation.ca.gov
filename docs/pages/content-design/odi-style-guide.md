@@ -856,7 +856,7 @@ This guide doesn’t cover everything. If it doesn’t answer your question, her
 ### Inclusive language
 
 * Start with [Atlassian’s inclusive language guide](https://atlassian.design/content/inclusive-writing). It’s good general guidance. Their do’s and don’ts are helpful.
-If you want advice on how to talk about a specific group, try the [CDC’s Preferred Terms for Select Population Groups & Communities](https://emoryhercules.com/wp-content/uploads/1b.-Preferred-Terms-for-Select-Population-Groups-Communities-CDC.pdf). It includes many terms that often come up in government work.
+* If you want advice on how to talk about a specific group, try the [CDC’s Preferred Terms for Select Population Groups & Communities](https://emoryhercules.com/wp-content/uploads/1b.-Preferred-Terms-for-Select-Population-Groups-Communities-CDC.pdf). It includes many terms that often come up in government work.
 
 ### Other style questions
 
