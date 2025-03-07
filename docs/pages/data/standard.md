@@ -58,7 +58,7 @@ State departments and agencies should use the 7 top-level categories defined in 
 | **White**                               | Individuals with origins in any of the original peoples of Europe, including, for example, English, German, Irish, Italian, Polish, and Scottish. |
 </div>
 
-Table 2 below is a recommended set of detailed category groups ordered by population prevalence within each top-level category within the state of California. These population figures are based on the 2020 Decennial Census Detailed Race/Ethnicity population estimates for California contained in the [DHC-A](https://www.census.gov/newsroom/press-releases/2022/2020-census-data-products-schedule-2023.html).
+Table 2 below is a recommended set of detailed category groups ordered by population prevalence within each top-level category within the state of California. These population figures are based on the 2020 Decennial Census Detailed Race/Ethnicity population estimates for California contained in the [DHC-A](https://www.census.gov/data/tables/2023/dec/2020-census-detailed-dhc-a.html).
 
 The top six (6) most populous subgroups within each top-level category within California are listed as checkbox options, with the next three (3) most populous groups listed as examples preceding the write-in option.
 
@@ -90,7 +90,7 @@ Note: The Asian top-level category has 8 options due to state code requirements 
 
 ## Data standard governance
 
-For the purposes of this standard, we adopt the Office of Management and Budget (OMB) SPD-15 standard [definition of race and ethnicity](https://spd15revision.gov/content/spd15revision/en/faqs.html) in that these terms “represent a sociopolitical construct designed to be used in the self-reported or observed collection of data on the race and ethnicity of major broad population groups in this country and are not biologically or genetically based.”
+For the purposes of this standard, we adopt the Office of Management and Budget (OMB) SPD-15 standard [definition of race and ethnicity](https://spd15revision.gov/content/spd15revision/en/faqs.html) in that these terms “are understood to be socio-political constructs and are not an attempt to define race and ethnicity biologically or genetically. They are not to be used as determinants of eligibility for participation in any State program.”
 
 **These categories should not be used to discriminate between population groups or to determine their eligibility for participation in State programs.**
 
@@ -98,7 +98,7 @@ For the purposes of this standard, we adopt the Office of Management and Budget 
 
 Building on the foundation of existing research and best practices, this California race and ethnicity data standard offers guidance on demographic data collection best practices to help state departments effectively serve Californians by reflecting the diversity of California’s communities. This guidance also incorporates race and ethnicity data collection requirements specified in state code for California state departments and agencies.
 
-In particular, the race and ethnicity categories described in this standard draw from extensive statistical testing and stakeholder engagement conducted by the Census Bureau in the [2015 National Content Test](https://www.test.census.gov/library/video/2017/nct-race-ethnicity.html#:~:text=The%202015%20National%20Content%20Test%20is%20part%20of%20the%20research,data%20on%20race%20and%20ethnicity.) (NCT) and the [OMB’s SPD-15 revision in 2024](https://www.federalregister.gov/documents/2024/03/29/2024-06469/revisions-to-ombs-statistical-policy-directive-no-15-standards-for-maintaining-collecting-and). The California race and ethnicity data standard adopts the same structure as the OMB 2024 SPD-15 race and ethnicity data collection and supports tabulation and reporting of data collections to meet anticipated federal reporting requirements. Adopting the California race and ethnicity data standard also demonstrates compliance with the federal SPD-15 race and ethnicity data standard.
+In particular, the race and ethnicity categories described in this standard draw from extensive statistical testing and stakeholder engagement conducted by the Census Bureau in the [2015 National Content Test](https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/final-analysis/2015nct-race-ethnicity-analysis.html) (NCT) and the [OMB’s SPD-15 revision in 2024](https://www.federalregister.gov/documents/2024/03/29/2024-06469/revisions-to-ombs-statistical-policy-directive-no-15-standards-for-maintaining-collecting-and). The California race and ethnicity data standard adopts the same structure as the OMB 2024 SPD-15 race and ethnicity data collection and supports tabulation and reporting of data collections to meet anticipated federal reporting requirements. Adopting the California race and ethnicity data standard also demonstrates compliance with the federal SPD-15 race and ethnicity data standard.
 
 As best practices and statutory requirements shift, this data standard will be updated over time to reflect new changes.
 
