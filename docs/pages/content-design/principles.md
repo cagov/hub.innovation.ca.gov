@@ -25,7 +25,7 @@ These 7 principles contain strategies and tips to help you write excellent conte
 
 We were inspired by the work of teams that came before us, including:
 
-* [18F](https://18f.gsa.gov/)
+* 18F at the federal General Services Administration
 * [Government Digital Service](https://www.gov.uk/government/organisations/government-digital-service) in the United Kingdom
 * The [Plain Language Action and Information Network](https://www.plainlanguage.gov/) at the US federal government
 * [Public Digital](https://public.digital/)
