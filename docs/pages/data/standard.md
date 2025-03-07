@@ -90,7 +90,7 @@ Note: The Asian top-level category has 8 options due to state code requirements 
 
 ## Data standard governance
 
-For the purposes of this standard, we adopt the Office of Management and Budget (OMB) SPD-15 standard [definition of race and ethnicity](https://spd15revision.gov/content/spd15revision/en/faqs.html) in that these terms “are understood to be socio-political constructs and are not an attempt to define race and ethnicity biologically or genetically. They are not to be used as determinants of eligibility for participation in any State program.”
+For the purposes of this standard, we adopt the Office of Management and Budget (OMB) SPD-15 standard [definition of race and ethnicity](https://spd15revision.gov/content/spd15revision/en/faqs.html) in that these terms “are understood to be socio-political constructs and are not an attempt to define race and ethnicity biologically or genetically.”
 
 **These categories should not be used to discriminate between population groups or to determine their eligibility for participation in State programs.**
 
