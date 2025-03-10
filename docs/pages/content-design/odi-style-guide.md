@@ -430,6 +430,17 @@ You can call the Office of the Governor at <a href="tel:9164452841">916-445-2841
   </div>
 </div>
 
+If the number is a TTY number, include TTY in the link text.
+
+<div class="blockquote-container">
+  <div class="blockquote-body">
+    <div class="blockquote-header"><strong>Example:</strong></div>
+    <div class="blockquote-content">
+People with impaired hearing can call <a href="tel:711">TTY:711</a>.
+    </div>
+  </div>
+</div>
+
 ### Times
 
 Use **AM** and **PM** with times. Put a space between the time and AM or PM. Convert times to the Pacific time zone. Unless your target audience is out of state, do not state the time zone since California is only in one time zone.
