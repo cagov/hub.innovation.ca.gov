@@ -441,6 +441,8 @@ People with impaired hearing can call <a href="tel:711">TTY:711</a>.
   </div>
 </div>
 
+You no longer need to use aria labels on phone or TTY numbers.
+
 ### Times
 
 Use **AM** and **PM** with times. Put a space between the time and AM or PM. Convert times to the Pacific time zone. Unless your target audience is out of state, do not state the time zone since California is only in one time zone.
