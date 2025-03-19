@@ -1,0 +1,70 @@
+// Styles for the chart at data/race-ethnicity-standard/
+
+odi-workflow {
+
+  .odi-workflow-group {
+    margin-bottom: 1rem;
+    width: 100%;
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-gap: 1.5rem;
+    }
+  }
+
+  .odi-workflow-step {
+    align-items: center;
+    background-color: var(--alt-yellow);
+    border-radius: var(--radius-2);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 1rem;
+    text-align: center;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  .odi-workflow-step-inner {
+    div:first-child {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: .5rem;
+    }
+  }
+
+  .odi-workflow-body {
+    color: white;
+  }
+
+  .odi-workflow-question {
+    background-color: var(--alt-blue);
+    border-radius: var(--radius-2);
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding: 1rem;
+  }
+
+  .odi-workflow-answers {
+    @include tablet {
+      display: grid;
+      grid-auto-columns: minmax(0, 1fr);
+      grid-auto-flow: column;
+      grid-gap: 2px;
+    }
+
+    div {
+      background-color: var(--primary-color);
+      border-radius: var(--radius-2);
+      margin-bottom: 2px;
+      padding: 1rem;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
