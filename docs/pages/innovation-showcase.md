@@ -1,5 +1,5 @@
 ---
-title: Innovation showcase
+title: Innovation Showcase
 description: Description
 ---
 
