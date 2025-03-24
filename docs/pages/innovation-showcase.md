@@ -27,6 +27,7 @@ Complete the online application by 8:00 AM March 31, 2025. You will share:
 * A brief description of your innovative idea
 * A 1-2 page attachment with more detail about your idea. Include in your response how your idea solves a particular problem and the intended outcome.
 * A 1-page attachment with details about your organization
+* Do not include pricing/costs/estimates of any kind for goods and/or services. Doing so may exclude you from evaluation(s)
 
 You can also include a short demo video of your idea.
 
