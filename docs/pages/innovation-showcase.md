@@ -17,3 +17,30 @@ We want to hear your proposal for how to immediately support survivors and/or th
 
 ## Upcoming Innovation Showcase
 
+We will invite selected innovators whose solutions best address the April challenge to present to state leaders and teams. The Innovation Showcase is not open to the public and will not be recorded. Innovators will be allowed to watch other innovators’ presentations. The Showcase will be held via Zoom, from 1:00 - 3:00 PM on Wednesday, April 30, 2025. 
+
+## How to apply
+
+Complete the online application by 8:00 AM March 31, 2025. You will share:
+
+* Your contact info
+* A brief description of your innovative idea
+* A 1-2 page attachment with more detail about your idea. Include in your response how your idea solves a particular problem and the intended outcome.
+* A 1-page attachment with details about your organization
+
+You can also include a short demo video of your idea.
+
+**You cannot change your application after you submit it.** Make sure you submit your best and final draft.
+<div id="isa-cta">
+ <a class="btn-primary featured-btn external-link" href="https://airtable.com/appcy9MspSTfFx0xl/pagaEbNCkJbrQKMD1/form" target="_blank"><span>Apply now</span></a>
+
+ ## What happens after I apply?
+
+We will:
+
+1. Screen applications for relevance and viability
+2. Invite applicants who best address the challenge to present at the Innovator Showcase. Your presentation must be 10 minutes or less.
+
+## Questions
+
+Email showcase@innovation.ca.gov.
