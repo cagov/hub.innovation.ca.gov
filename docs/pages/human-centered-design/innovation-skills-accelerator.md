@@ -21,5 +21,5 @@ After logging in, you may need to scroll down to find the Innovation Skills Acce
 <div id="isa-cta">
  <a class="btn-primary featured-btn external-link" href="https://innovate-us.org/partner/calacademy?utm_source=odihub&utm_medium=web&utm_campaign=jan25launch" target="_blank"><span>Sign up for the Accelerator</span></a>
 
- <div class="note-div">Note: Clicking this link will take you from the Innovation Hub to innovate-us.org. This is not a state website. Be mindful of the information you provide while using that website. Their terms of use apply to any information you share with them.</div>
+<div class="note-div">Note: Clicking this link will take you from the Innovation Hub to innovate-us.org. This is not a state website. Be mindful of the information you provide while using that website. Their terms of use apply to any information you share with them.</div>
 </div>
