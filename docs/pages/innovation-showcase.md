@@ -17,7 +17,20 @@ We want to hear your proposal for how to immediately support survivors and/or th
 
 ## Upcoming Innovation Showcase
 
-We will invite selected innovators whose solutions best address the April challenge to present to state leaders and teams. The Innovation Showcase is not open to the public and will not be recorded. Innovators will be allowed to watch other innovators’ presentations. The Showcase will be held via Zoom, from 1:00 - 3:00 PM on Wednesday, April 30, 2025. 
+We will invite selected innovators whose solutions best address the April challenge to present to state leaders and teams. The Innovation Showcase is not open to the public and will not be recorded. Innovators will be allowed to watch other innovators’ presentations. The Showcase will be held via Zoom, from 1:00 - 3:00 PM on Wednesday, April 30, 2025.
+
+## Types of solutions
+
+We welcome all kinds of solutions. You may apply with an IT or technical solution. We’re especially interested in non-IT solutions that are community-, process-, or accessibility-based. We encourage both private and non-profit organizations to apply.
+
+## What happens after presenting at the Showcase
+
+The Innovation Showcase program is strictly for market research. **It is not the beginning of, nor a promise of, a procurement.** State teams across entities and departments will join to learn about innovation opportunities.
+
+## California Department of Technology February LA Wildfires Response and Recovery Technology Showcase applicants
+
+If you applied to CDT’s February Showcase ([Event : 0000034343](https://caleprocure.ca.gov/pages/Events-BS3/event-details.aspx?Page=AUC_RESP_INQ_DTL&Action=U&AUC_ID=0000034343&AUC_ROUND=1&BIDDER_ID=BID0000001&BIDDER_LOC=1&BIDDER_SETID=STATE&BIDDER_TYPE=B&BUSINESS_UNIT=77601)), do not apply to ODI’s Innovation Showcase with the same solution. But if you have a different solution, you may apply to ODI’s Innovation Showcase.
+
 
 ## How to apply
 
@@ -35,7 +48,7 @@ You can also include a short demo video of your idea.
 <div id="isa-cta">
  <a class="btn-primary featured-btn external-link" href="https://airtable.com/appcy9MspSTfFx0xl/pagaEbNCkJbrQKMD1/form" target="_blank"><span>Apply now</span></a>
 
- ## What happens after I apply?
+ ## What happens after you apply
 
 We will:
 
