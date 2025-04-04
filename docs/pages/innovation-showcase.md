@@ -17,7 +17,7 @@ The Showcase accepts any innovator pitch on a rolling basis. If you have an inno
 
 There will also be opportunities to respond to specific challenge statements. Challenge statements will be posted on this page when we are accepting applications. Applications will have a due date for specific challenge statements. We will invite selected innovators whose solutions best address the challenge to present to state leaders and teams. The Innovation Showcase is not open to the public and will not be recorded. Innovators will be allowed to watch other innovators’ presentations. 
 
-To get on our mailing list so you hear when specific challenge statements are posted, .
+[Get on our mailing list](https://mailchi.mp/f26824ae1ec5/innovation-showcase-interest-form) to hear when specific challenge statements are posted.
 
 ## Types of solutions
 
