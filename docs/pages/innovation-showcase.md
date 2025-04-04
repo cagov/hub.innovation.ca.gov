@@ -7,34 +7,29 @@ description: An opportunity for California state teams to hear from innovators a
 
 Whether you’re a vendor or an innovator, we want to hear from you!
 
-## April opportunity
+## Program format
 
-**Streamlining and improving survivors’ rebuilding experience**
+### Rolling submissions
 
-*Los Angeles experienced devastating wildfires in January, 2025. Rebuilding is a complex and evolving process. The state wants to make it easier for survivors to rebuild and recover.*
+The Showcase accepts any innovator pitch on a rolling basis. If you have an innovative idea or solution, we want to hear from you! GovOps and ODI will review submissions regularly. We will schedule ad hoc Showcase days to allow selected innovators to share their ideas with state teams. You only need to submit a solution one time for it to be considered for the rolling submission and ad hoc Showcases.
 
-We want to hear your proposal for how to immediately support survivors and/or the state’s rebuilding efforts.
+### Specific challenge statement opportunities
 
-## Upcoming Innovation Showcase
+There will also be opportunities to respond to specific challenge statements. Challenge statements will be posted on this page when we are accepting applications. Applications will have a due date for specific challenge statements. We will invite selected innovators whose solutions best address the challenge to present to state leaders and teams. The Innovation Showcase is not open to the public and will not be recorded. Innovators will be allowed to watch other innovators’ presentations. 
 
-We will invite selected innovators whose solutions best address the April challenge to present to state leaders and teams. The Innovation Showcase is not open to the public and will not be recorded. Innovators will be allowed to watch other innovators’ presentations. The Showcase will be held via Zoom, from 1:00 - 3:00 PM on Wednesday, April 30, 2025.
+<a href="https://mailchi.mp/f26824ae1ec5/innovation-showcase-interest-form" target="_blank">Get on our mailing list</a> to hear when specific challenge statements are posted.
 
 ## Types of solutions
 
 We welcome all kinds of solutions. You may apply with an IT or technical solution. We’re especially interested in non-IT solutions that are community-, process-, or accessibility-based. We encourage both private and non-profit organizations to apply.
 
-## What happens after presenting at the Showcase
+## What happens after presenting at a Showcase
 
 The Innovation Showcase program is strictly for market research. **It is not the beginning of, nor a promise of, a procurement.** State teams across entities and departments will join to learn about innovation opportunities.
 
-## California Department of Technology February LA Wildfires Response and Recovery Technology Showcase applicants
-
-If you applied to CDT’s February Showcase ([Event : 0000034343](https://caleprocure.ca.gov/pages/Events-BS3/event-details.aspx?Page=AUC_RESP_INQ_DTL&Action=U&AUC_ID=0000034343&AUC_ROUND=1&BIDDER_ID=BID0000001&BIDDER_LOC=1&BIDDER_SETID=STATE&BIDDER_TYPE=B&BUSINESS_UNIT=77601)), do not apply to ODI’s Innovation Showcase with the same solution. But if you have a different solution, you may apply to ODI’s Innovation Showcase.
-
-
 ## How to apply
 
-Complete the online application by 8:00 AM March 31, 2025. You will share:
+Complete the online application. You will share:
 
 * Your contact info
 * A brief description of your innovative idea
