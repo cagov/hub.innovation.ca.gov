@@ -35,7 +35,7 @@ The Office of Data and Innovation (ODI) helped CDSS identify theft patterns by o
 
 For this work, we focused on the problem of detecting illegal cash withdrawals. We used 2 datasets that spanned the time period between December 1, 2023, and March 31, 2024. First, we used transaction data that describe each transaction per cardholder. During this 4-month period (December 2023 through March 2024), about 562,000 households withdrew roughly $1.38 billion in cash at 33,000 locations. Second, we used reimbursement data that detail cash reimbursements to victims of unauthorized activity. During the same period, CDSS reimbursed 42,849 households for $47 million in unauthorized transactions.
 
-<img src="/papers/madani-housing-1/bhi-fig-1.png" alt="539 jurisdictions are responsible for reporting on local building permitting and development milestones. Each office has its own reporting standards and practices. Median income levels and housing costs are initially measured on the county level. There are 58 counties in California. Data from local offices is ultimately analyzed by a single statewide housing department, the California Department of Housing and Community Development." />
+<img src="/papers/bobra-ebt-1/dda-fig-1.png" alt="539 jurisdictions are responsible for reporting on local building permitting and development milestones. Each office has its own reporting standards and practices. Median income levels and housing costs are initially measured on the county level. There are 58 counties in California. Data from local offices is ultimately analyzed by a single statewide housing department, the California Department of Housing and Community Development." />
 <b>Figure 1.</b> The graph shows the total monthly dollars reimbursed for reported cash theft. There was a total of $236 million lost to theft in the last 2.5 years. Between December 1, 2023, and March 31, 2024, CDSS reimbursed 42,849 households for $47,437,760 in stolen CalWORKs benefits.
 
 To obtain these data, CDSS worked with the Office of Technology and Solutions Integration, within the California Health and Human Services Agency, to develop a work plan with the vendor to provide automated daily batches of raw EBT transaction data to secure cloud storage managed by the CDSS Information Systems Division (ISD). We then created an automated data pipeline that loads the raw data into the RADD team’s data warehouse, where it undergoes a series of cleaning and transformation steps to turn it into a nicely structured, machine-learning-ready dataset. We run these steps daily alongside a series of automatic tests that validate the process.
@@ -69,7 +69,7 @@ Our data include two groups of transactions: legitimate, authorized transactions
 </style>
 <div class="figure-1">
   <div class="illustration">
-    <img src="/papers/bobra-water-1/fcw-fig-1.png" alt="Map of California, showing suspicious transactions clustered around the Bay Area, Sacramento, Los Angeles, and San Diego." />
+    <img src="/papers/bobra-ebt-1/dda-fig-2.png" alt="Map of California, showing suspicious transactions clustered around the Bay Area, Sacramento, Los Angeles, and San Diego." />
   </div>
   <div class="caption">
     <b>Figure 2.</b> The map shows the output of the machine learning algorithm. The red dots indicate retail locations with suspicious transactions, while the blue dots indicate retail locations with legitimate transactions. The main panel shows the entire State of California and the smaller panel zooms into the LA Basin.
