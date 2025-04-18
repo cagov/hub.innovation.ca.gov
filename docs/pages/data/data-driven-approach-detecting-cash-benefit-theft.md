@@ -205,6 +205,78 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
             <a href="mailto:kimberly.hicks@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />kimberly.hicks@innovation.ca.gov</a>
         </p>
     </div>
+    <div class="author">
+        <p class="author-name">Daniel Rodda</p>
+        <p class="author-title">Research Data Supervisor I</p>
+        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <div class="author-role">
+            <p class="author-role-label">Roles</p>
+            <p>Conceptualization, methodology, investigation, validation, project administration, supervision, writing – review & editing</p>
+        </div>
+    </div>
+    <div class="author">
+        <p class="author-name">Konrad Franco</p>
+        <p class="author-title">Research Data Specialist III</p>
+        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <div class="author-role">
+            <p class="author-role-label">Roles</p>
+            <p>Software, data curation, validation</p>
+        </div>
+        <p class="author-id">
+            <a href="https://orcid.org/0000-0002-5774-1956"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0002-5774-1956</a>
+        </p>
+    </div>
+    <div class="author">
+        <p class="author-name">Joaquin Carbonell</p>
+        <p class="author-title">Research Data Supervisor II</p>
+        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <div class="author-role">
+            <p class="author-role-label">Roles</p>
+            <p>Conceptualization, resources, funding acquisition, project administration, supervision, writing – review & editing</p>
+        </div>
+        <p class="author-id">
+            <a href="https://orcid.org/0009-0001-2422-6210"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0009-0001-2422-6210</a>
+        </p>
+    </div>
+    <div class="author">
+        <p class="author-name">Batool Hasanzadeh</p>
+        <p class="author-title">Research Data Specialist II</p>
+        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <div class="author-role">
+            <p class="author-role-label">Roles</p>
+            <p>Conceptualization, methodology, investigation, validation</p>
+        </div>
+    </div>
+    <div class="author">
+        <p class="author-name">J. Steven Raquel</p>
+        <p class="author-title">Research Data Specialist I</p>
+        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <div class="author-role">
+            <p class="author-role-label">Roles</p>
+            <p>Conceptualization, methodology, investigation, validation</p>
+        </div>
+        <p class="author-id">
+            <a href="https://orcid.org/0000-0001-8775-4996"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0001-8775-4996</a>
+        </p>
+    </div>
+    <div class="author">
+        <p class="author-name">Neelam Joshi</p>
+        <p class="author-title">Information Technology Specialist III</p>
+        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <div class="author-role">
+            <p class="author-role-label">Roles</p>
+            <p>Software, data curation, validation</p>
+        </div>
+    </div>
+    <div class="author">
+        <p class="author-name">Brenda Moran</p>
+        <p class="author-title">Research Analyst I</p>
+        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <div class="author-role">
+            <p class="author-role-label">Roles</p>
+            <p>Validation, writing – review & editing</p>
+        </div>
+    </div>
 </div>
 
 Roles use the [CRediT taxonomy](https://credit.niso.org).
