@@ -3,6 +3,8 @@ title: Innovation Showcase
 description: An opportunity for California state teams to hear from innovators about challenges facing delivery of services to residents.
 ---
 
+<img src="/img/innovation-showcase.png" alt="Innovation Showcase, presented by the California Government Operations Agency and the Office of Data and Innovation" />
+
 <p class="text-lead">The Government Operations Agency (GovOps) and the California Office of Data and Innovation (ODI) are launching the Innovation Showcase program. Government teams will get to hear from innovators about challenges facing delivery of services to residents. The Showcase will bridge the gap between the public and private sectors. It will start conversations about what’s possible through regular market research.</p>
 
 Whether you’re a vendor or an innovator, we want to hear from you!
