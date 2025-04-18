@@ -12,12 +12,7 @@ Monica G. Bobra <a href="https://orcid.org/0000-0002-5662-9604"><img class="orci
 
 <p class="text-lead">We built a predictive model to detect illegal debit card transactions.</p>
 
-<!-- 
 <div class="interaction-block">
-<div class="interaction"><a href=""><img class="icon" src="/img/paper-share-icon.svg" />Share</a></div>
-<div class="interaction"><a href=""><img class="icon" src="/img/paoer-cite-icon.svg" />Cite</a></div>
-</div>
--->
 
 <div class="interaction"><a href="/papers/bobra-et-al-forecasting-community-water-outages.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" /> Download PDF</a></div>
 <div class="interaction"><a href="https://zenodo.org/records/10951573"><img class="icon" src="/img/paper-link-icon.svg" />https://zenodo.org/records/10951573</a></div>
