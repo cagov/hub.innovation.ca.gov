@@ -32,7 +32,8 @@ For this work, we focused on the problem of detecting illegal cash withdrawals. 
 
 <img src="/papers/bobra-ebt-1/dda-fig-1.png" alt="Graph showing cash and food theft increasing from July 2021 through March 2024" />
 <b>Figure 1.</b> The graph shows the total monthly dollars reimbursed for reported cash theft. There was a total of $236 million lost to theft in the last 2.5 years. Between December 1, 2023, and March 31, 2024, CDSS reimbursed 42,849 households for $47,437,760 in stolen CalWORKs benefits.
-
+<br/>
+<br/>
 To obtain these data, CDSS worked with the Office of Technology and Solutions Integration, within the California Health and Human Services Agency, to develop a work plan with the vendor to provide automated daily batches of raw EBT transaction data to secure cloud storage managed by the CDSS Information Systems Division (ISD). We then created an automated data pipeline that loads the raw data into the RADD team’s data warehouse, where it undergoes a series of cleaning and transformation steps to turn it into a nicely structured, machine-learning-ready dataset. We run these steps daily alongside a series of automatic tests that validate the process.
 
 We found that the account activity data included a complete address for only 66% of cash withdrawal locations (ATMs and POS terminals). To fix this issue, we used a [service](https://developers.arcgis.com/rest/geocode/api-reference/overview-world-geocoding-service.htm) from Environmental Systems Research Institute, Inc. (Esri), that matches partially complete addresses to complete ones and provides geographic coordinates for each address. Using this tool, we obtained a complete address, along with geographic coordinates, for 95% of the retailers in the account activity data. We integrated this API directly into the CDSS Enterprise Data Pipeline so it runs automatically.
