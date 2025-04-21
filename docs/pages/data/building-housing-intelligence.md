@@ -41,7 +41,7 @@ Housing production data is reported to HCD by 539 jurisdictions (cities and coun
 <br/>
 <br/>
 Additionally, under AB 2653, HCD has 90 days to request corrections to reports from jurisdictions.
-
+<br/>
 Building a tool to process this data and guide HCD’s analysis requires an array of functionality to: process data, detect anomalies, analyze geospatial data, and automate rote analyses. This requires a Python script that outputs new datasets derived from raw housing data and a dashboard that’s accessible department-wide.
 
 ### Anomaly detection
