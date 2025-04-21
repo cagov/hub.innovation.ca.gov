@@ -24,7 +24,6 @@ headericon: bookmark
 These are the style guides we look at when we have a new content question. We’ve organized them in order of preference.
 
 * [Associated Press (AP) Style](https://store.stylebooks.com/) is ODI’s default for style questions not covered by [our style guide](/content-design/odi-style-guide/).
-* [18F content guide](https://guides.18f.gov/content-guide/) (federal government)
 * [How to write for SF.gov](https://sfdigitalservices.gitbook.io/style-guide/city-standards) (City of San Francisco)
 * [Federal plain language guidelines](https://www.plainlanguage.gov/guidelines/) at plainlanguage.gov (federal government)
 * Federal [style guides by government agencies](https://digital.gov/resources/style-guides-by-government-agencies/)
