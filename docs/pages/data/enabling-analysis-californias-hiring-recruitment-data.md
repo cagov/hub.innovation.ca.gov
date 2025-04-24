@@ -116,7 +116,7 @@ ODI’s MDSA project with CalHR serves as a proof of concept for how the state c
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
             <p class="author-role-label">Roles</p>
-            <p>Roles : Investigation, formal analysis, software, methodology</p>
+            <p>Investigation, formal analysis, software, methodology</p>
         </div>
     </div>
     <div class="author">
