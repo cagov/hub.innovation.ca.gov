@@ -110,7 +110,7 @@ Planning and Zoning Law: housing elements, AB 2653, California Legislature, Asse
         <p class="author-title">Senior Data Scientist</p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Role</p>
+            <p class="author-role-label">Roles</p>
             <p>Conceptualization, data curation, formal analysis, investigation, methodology, software, supervision, validation, visualization, writing – original draft, writing – review & editing</p>
         </div>
         <p class="author-id">
