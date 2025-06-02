@@ -2,6 +2,7 @@
 title: Introduction to product approach for the public sector
 description: 
 parentid: Product management
+layout: single-column
 headerlabel: Training
 headericon: ribbon
 ---
