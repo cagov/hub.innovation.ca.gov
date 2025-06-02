@@ -1,19 +1,18 @@
 ---
 title: Introduction to product approach for the public sector
-description: An online, self-paced course introducing the product approach for State of California staff
+description: An online, self-paced course introducing product principles for State of California staff
 parentid: Product management
 layout: single-column
 headerlabel: Training
 headericon: ribbon
 ---
-<p class="text-lead">This online, self-paced course introduces you to the product approach.</p>
+<p class="text-lead">This online self-paced course gives you an introduction to using product principles in government.</p>
 
-You’ll learn:
+You’ll learn how to:
 
-* The principles of plain language
-* The benefits and equity of plain language
-* How to create products and services that align with California’s plain language standard
+* Prioritize people's needs
+* Accurately define the problem
+* Deliver early and often
+* Measure success and optimize for outcomes 
 
-The course includes opportunities to practice writing in plain language. You will be able to start using the skills you learn immediately.
-
-Sign up for the course on CalLearns. You need a CalLearns account to register for the training.
+[Sign up for the course on CalLearns](https://calhr.geniussis.com/Registration1.aspx?AID=4823). You need a CalLearns account to register for the training.
