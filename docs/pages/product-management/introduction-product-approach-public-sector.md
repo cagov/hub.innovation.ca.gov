@@ -1,12 +1,12 @@
 ---
 title: Introduction to product approach for the public sector
-description: 
+description: An online, self-paced course introducing the product approach for State of California staff
 parentid: Product management
 layout: single-column
 headerlabel: Training
 headericon: ribbon
 ---
-<p class="text-lead">This online, self-paced course gives you an introduction to using a product approach.</p>
+<p class="text-lead">This online, self-paced course introduces you to the product approach.</p>
 
 You’ll learn:
 
