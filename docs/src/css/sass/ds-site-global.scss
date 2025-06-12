@@ -810,19 +810,7 @@ div.author-section {
       line-height: 2.33594rem; /* 162.5% */
     }
     .author-title {
-
-    }
-    .author-org {
-
-    }
-    .author-role {
-      margin: 0.5rem 0;
-      .author-role-label {
-        color: var(--CA-Base-Grays-gray-700, #5E5E6A);
-        /* Small text/Desktop */
-        font-size: 0.875rem;
-        font-weight: 400;
-        line-height: 1.625rem;      }
+      font-style: italic;
     }
     .author-id {
       vertical-align: middle;
