@@ -101,128 +101,117 @@ ODI’s MDSA project with CalHR serves as a proof of concept for how the state c
     <div class="author">
         <p class="author-name">Ian Rose</p>
         <p class="author-title">Principal Data Engineer</p>
+        <p class="author-email">
+            <a href="mailto:ian.rose@innovation.ca.gov">ian.rose@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Software, formal analysis, investigation, methodology, project administration, writing - original draft</p>
+            <p>Roles: Software, formal analysis, investigation, methodology, project administration, writing - original draft</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:ian.rose@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />ian.rose@innovation.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Aeri Shan</p>
         <p class="author-title">Principal Analytics Engineer</p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Investigation, formal analysis, software, methodology</p>
+            <p>Roles: Investigation, formal analysis, software, methodology</p>
         </div>
     </div>
     <div class="author">
         <p class="author-name">John Harding</p>
         <p class="author-title">Database Architect, Developer, Admin</p>
+        <p class="author-email">
+            <a href="mailto:John.Harding@calhr.ca.gov">John.Harding@calhr.ca.gov</a>
+        </p>
         <p class="author-org">California Department of Human Resources, 1515 S Street, North Bldg., Suite 400, Sacramento, CA 95811</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, data curation, formal analysis, software, supervision, validation</p>
+            <p>Roles: Conceptualization, data curation, formal analysis, software, supervision, validation</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:John.Harding@calhr.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />John.Harding@calhr.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Brian Pardo</p>
         <p class="author-title">Information Technology Specialist</p>
+        <p class="author-email">
+            <a href="mailto:Brian.Pardo@calhr.ca.gov">Brian.Pardo@calhr.ca.gov</a>
+        </p>
         <p class="author-org">California Department of Human Resources, 1515 S Street, North Bldg., Suite 400, Sacramento, CA 95811</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Software, formal analysis, investigation, validation</p>
+            <p>Roles: Software, formal analysis, investigation, validation</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:Brian.Pardo@calhr.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />Brian.Pardo@calhr.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Preeni Varghese</p>
         <p class="author-title">Information Technology Specialist</p>
+        <p class="author-email">
+            <a href="mailto:Preeni.Varghese@calhr.ca.gov">Preeni.Varghese@calhr.ca.gov</a>
+        </p>
         <p class="author-org">California Department of Human Resources, 1515 S Street, North Bldg., Suite 400, Sacramento, CA 95811</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Software, formal analysis, investigation, validation</p>
+            <p>Roles: Software, formal analysis, investigation, validation</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:Preeni.Varghese@calhr.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />Preeni.Varghese@calhr.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Britt Allen</p>
         <p class="author-title">Senior Analytics Engineer</p>
+        <p class="author-email">
+            <a href="mailto:britt.allen@innovation.ca.gov">britt.allen@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Software, investigation</p>
+            <p>Roles: Software, investigation</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:britt.allen@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />britt.allen@innovation.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">DiJon Walker</p>
         <p class="author-title">Data Analytics Supervisor</p>
+        <p class="author-email">
+            <a href="mailto:DiJon.Walker@calhr.ca.gov">DiJon.Walker@calhr.ca.gov</a>
+        </p>
         <p class="author-org">California Department of Human Resources, 1515 S Street, North Bldg., Suite 400, Sacramento, CA 95811</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Data curation, visualization</p>
+            <p>Roles: Data curation, visualization</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:DiJon.Walker@calhr.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />DiJon.Walker@calhr.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Annette McFarland</p>
         <p class="author-title">Lead Data Analytics Specialist</p>
+        <p class="author-email">
+            <a href="mailto:Annette.McFarland@calhr.ca.gov">Annette.McFarland@calhr.ca.gov</a>
+        </p>
         <p class="author-org">California Department of Human Resources, 1515 S Street, North Bldg., Suite 400, Sacramento, CA 95811</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Data curation, visualization</p>
+            <p>Roles: Data curation, visualization</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:Annette.McFarland@calhr.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />Annette.McFarland@calhr.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Jason Lally</p>
         <p class="author-title">Deputy Director, Data Engineering &amp; Services</p>
+        <p class="author-email">
+            <a href="mailto:jason.lally@innovation.ca.gov">jason.lally@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, resources, supervision, funding acquisition, methodology, project administration</p>
+            <p>Roles: Conceptualization, resources, supervision, funding acquisition, methodology, project administration</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:jason.lally@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />jason.lally@innovation.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Bo Ching</p>
         <p class="author-title">Data Manager</p>
         <p class="author-org">California Department of Human Resources, 1515 S Street, North Bldg., Suite 400, Sacramento, CA 95811</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Project administration, resources, supervision</p>
+            <p>Roles: Project administration, resources, supervision</p>
         </div>
     </div>
     <div class="author">
         <p class="author-name">Enrique Parker</p>
         <p class="author-title">Chief Information Officer</p>
+        <p class="author-email">
+            <a href="mailto:enrique.parker@calhr.ca.gov">Enrique.Parker@calhr.ca.gov</a>
+        </p>
         <p class="author-org">California Department of Human Resources, 1515 S Street, North Bldg., Suite 400, Sacramento, CA 95811</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, resources, supervision</p>
+            <p>Roles: Conceptualization, resources, supervision</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:enrique.parker@calhr.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />Enrique.Parker@calhr.ca.gov</a>
-        </p>
     </div>
 </div>
 

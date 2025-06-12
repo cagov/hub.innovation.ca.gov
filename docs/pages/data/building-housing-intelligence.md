@@ -108,41 +108,38 @@ Planning and Zoning Law: housing elements, AB 2653, California Legislature, Asse
     <div class="author">
         <p class="author-name">Arman Madani</p>
         <p class="author-title">Senior Data Scientist</p>
+        <p class="author-email">
+            <a href="mailto:arman.madani@innovation.ca.gov">arman.madani@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, data curation, formal analysis, investigation, methodology, software, supervision, validation, visualization, writing – original draft, writing – review & editing</p>
+            <p>Roles: Conceptualization, data curation, formal analysis, investigation, methodology, software, supervision, validation, visualization, writing – original draft, writing – review & editing</p>
         </div>
         <p class="author-id">
             <a href="https://orcid.org/0009-0002-4237-0213"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0009-0002-4237-0213</a>
-        </p>
-        <p class="author-email">
-            <a href="mailto:arman.madani@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />arman.madani@innovation.ca.gov</a>
         </p>
     </div>
     <div class="author">
         <p class="author-name">Kimberly Hicks</p>
         <p class="author-title">Deputy Director, Advanced Analytics &amp; Evaluation</p>
+        <p class="author-email">
+            <a href="mailto:kimberly.hicks@innovation.ca.gov">kimberly.hicks@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Funding acquisition, project administration, resources, supervision</p>
+            <p>Roles: Funding acquisition, project administration, resources, supervision</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:kimberly.hicks@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />kimberly.hicks@innovation.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Esa Eslami</p>
         <p class="author-title">Analytics Manager</p>
+        <p class="author-email">
+            <a href="mailto:esa.eslami@innovation.ca.gov">esa.eslami@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, project administration, supervision</p>
+            <p>Roles: Conceptualization, project administration, supervision</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:esa.eslami@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />esa.eslami@innovation.ca.gov</a>
-        </p>
     </div>
 </div>
 

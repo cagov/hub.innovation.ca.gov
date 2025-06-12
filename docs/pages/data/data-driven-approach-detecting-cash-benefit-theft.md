@@ -119,70 +119,64 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
     <div class="author">
         <p class="author-name">Monica Bobra</p>
         <p class="author-title">Principal Data Scientist</p>
+        <p class="author-email">
+            <a href="mailto:monica.bobra@innovation.ca.gov">monica.bobra@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Methodology, formal analysis, investigation, writing – original draft</p>
+            <p>Roles: Methodology, formal analysis, investigation, writing – original draft</p>
         </div>
         <p class="author-id">
             <a href="https://orcid.org/0000-0002-5662-9604"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0002-5662-9604</a>
-        </p>
-        <p class="author-email">
-            <a href="mailto:monica.bobra@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />monica.bobra@innovation.ca.gov</a>
         </p>
     </div>
     <div class="author">
         <p class="author-name">Esa Eslami</p>
         <p class="author-title">Analytics Manager</p>
+        <p class="author-email">
+            <a href="mailto:esa.eslami@innovation.ca.gov">esa.eslami@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Roles : Project administration</p>
+            <p>Roles: Roles: Project administration</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:esa.eslami@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />esa.eslami@innovation.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Aeri Shan</p>
         <p class="author-title">Principal Analytics Engineer</p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Roles : Investigation, formal analysis, software, methodology</p>
+            <p>Roles: Roles: Investigation, formal analysis, software, methodology</p>
         </div>
     </div>
     <div class="author">
         <p class="author-name">Ian Rose</p>
         <p class="author-title">Principal Data Engineer</p>
+        <p class="author-email">
+            <a href="mailto:ian.rose@innovation.ca.gov">ian.rose@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Roles : Software, data curation, resources</p>
+            <p>Roles: Roles: Software, data curation, resources</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:ian.rose@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />ian.rose@innovation.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Jason Lally</p>
         <p class="author-title">Chief Data Officer</p>
+        <p class="author-email">
+            <a href="mailto:jason.lally@innovation.ca.gov">jason.lally@innovation.ca.gov</a>
+        </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Roles : Project administration, resources, funding acquisition</p>
+            <p>Roles: Roles: Project administration, resources, funding acquisition</p>
         </div>
-        <p class="author-email">
-            <a href="mailto:jason.lally@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />jason.lally@innovation.ca.gov</a>
-        </p>
     </div>
     <div class="author">
         <p class="author-name">Peter Amerkhanian</p>
         <p class="author-title">Research Data Specialist I</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, methodology, investigation, validation</p>
+            <p>Roles: Conceptualization, methodology, investigation, validation</p>
         </div>
         <p class="author-id">
             <a href="https://orcid.org/0009-0001-7070-3620"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0009-0001-7070-3620</a>
@@ -193,11 +187,10 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Deputy Director, Advanced Analytics & Evaluation</p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Roles : Project administration, resources, funding acquisition</p>
+            <p>Roles: Roles: Project administration, resources, funding acquisition</p>
         </div>
         <p class="author-email">
-            <a href="mailto:kimberly.hicks@innovation.ca.gov"><img class="email-cite" src="/img/email-icon.svg" alt="" />kimberly.hicks@innovation.ca.gov</a>
+            <a href="mailto:kimberly.hicks@innovation.ca.gov">kimberly.hicks@innovation.ca.gov</a>
         </p>
     </div>
     <div class="author">
@@ -205,8 +198,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Research Data Supervisor I</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, methodology, investigation, validation, project administration, supervision, writing – review & editing</p>
+            <p>Roles: Conceptualization, methodology, investigation, validation, project administration, supervision, writing – review & editing</p>
         </div>
     </div>
     <div class="author">
@@ -214,8 +206,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Research Data Specialist III</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Software, data curation, validation</p>
+            <p>Roles: Software, data curation, validation</p>
         </div>
         <p class="author-id">
             <a href="https://orcid.org/0000-0002-5774-1956"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0002-5774-1956</a>
@@ -226,8 +217,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Research Data Supervisor II</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, resources, funding acquisition, project administration, supervision, writing – review & editing</p>
+            <p>Roles: Conceptualization, resources, funding acquisition, project administration, supervision, writing – review & editing</p>
         </div>
         <p class="author-id">
             <a href="https://orcid.org/0009-0001-2422-6210"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0009-0001-2422-6210</a>
@@ -238,8 +228,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Research Data Specialist II</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, methodology, investigation, validation</p>
+            <p>Roles: Conceptualization, methodology, investigation, validation</p>
         </div>
     </div>
     <div class="author">
@@ -247,8 +236,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Research Data Specialist I</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Conceptualization, methodology, investigation, validation</p>
+            <p>Roles: Conceptualization, methodology, investigation, validation</p>
         </div>
         <p class="author-id">
             <a href="https://orcid.org/0000-0001-8775-4996"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0001-8775-4996</a>
@@ -259,8 +247,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Information Technology Specialist III</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Software, data curation, validation</p>
+            <p>Roles: Software, data curation, validation</p>
         </div>
     </div>
     <div class="author">
@@ -268,8 +255,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Research Analyst I</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p class="author-role-label">Roles</p>
-            <p>Validation, writing – review & editing</p>
+            <p>Roles: Validation, writing – review & editing</p>
         </div>
     </div>
 </div>
