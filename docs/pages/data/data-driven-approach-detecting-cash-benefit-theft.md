@@ -138,7 +138,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Roles: Project administration</p>
+            <p>Roles: Project administration</p>
         </div>
     </div>
     <div class="author">
@@ -146,7 +146,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Principal Analytics Engineer</p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Roles: Investigation, formal analysis, software, methodology</p>
+            <p>Roles: Investigation, formal analysis, software, methodology</p>
         </div>
     </div>
     <div class="author">
@@ -157,7 +157,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Roles: Software, data curation, resources</p>
+            <p>Roles: Software, data curation, resources</p>
         </div>
     </div>
     <div class="author">
@@ -168,7 +168,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Roles: Project administration, resources, funding acquisition</p>
+            <p>Roles: Project administration, resources, funding acquisition</p>
         </div>
     </div>
     <div class="author">
@@ -187,7 +187,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Deputy Director, Advanced Analytics & Evaluation</p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Roles: Project administration, resources, funding acquisition</p>
+            <p>Roles: Project administration, resources, funding acquisition</p>
         </div>
         <p class="author-email">
             <a href="mailto:kimberly.hicks@innovation.ca.gov">kimberly.hicks@innovation.ca.gov</a>
