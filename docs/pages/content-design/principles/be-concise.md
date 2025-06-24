@@ -12,7 +12,7 @@ headericon: star
 
 ## Standards
 
-Keep sentences short and simple.
+Keep sentences short and simple
 
 ## Why this is important
 
