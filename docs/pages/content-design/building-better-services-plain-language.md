@@ -19,4 +19,4 @@ The course includes time to practice writing in plain language. You will be able
 
 Before taking this course, take [Introduction to plain language for the public sector](/content-design/introduction-plain-language-public-sector/). This can have been with an instructor or the self-paced online course. The ODI-hosted webinar alone is not enough.
 
-[Sign up for the course on CalLearns.](https://calhr.geniussis.com/Registration.aspx?AID=4702) You need a CalLearns account to register for the training.
+[Sign up for the course on CalLearns.](https://calhr.geniussis.com/Registration.aspx?AID=5281) You need a CalLearns account to register for the training.
