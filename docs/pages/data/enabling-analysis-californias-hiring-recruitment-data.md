@@ -53,7 +53,7 @@ We used Fivetran as a low-code tool for copying primary data from the ECOS syste
 
 Once the raw data tables are in Snowflake, we use the dbt framework for transforming the data into analysis-ready datasets. This involves combining, filtering, and aggregating data from over 700 tables. This is a complex process, but the framework allows us to manage the complexity by tracking data lineage and enabling collaborative, version controlled queries.
 
-<img src="/papers/rose-hr-1/eac-fig-1.png" alt="Diagram of toolchains that make up the data pipeline" />
+![Diagram of toolchains that make up the data pipeline](/papers/rose-hr-1/eac-fig-1.png)
 
 The data pipeline built using the above toolchain runs daily (at least), ensuring that everyone using the data is acting on the latest version.
 
@@ -70,7 +70,7 @@ We worked with CalHR staff to host code in GitHub for the ECOS analysis project,
 5. A history of how the project has evolved, allowing for easy rollbacks and auditing
 6. Issue tracking to allow for questions, bug reports, and strategic discussions about the code
 
-<img src="/papers/rose-hr-1/eac-fig-2.png" alt="GitHub issue for FMD Questions on ECOS data. It includes a problem summary, record of work, and follow-up comments." />
+![GitHub issue for FMD Questions on ECOS data. It includes a problem summary, record of work, and follow-up comments.](/papers/rose-hr-1/eac-fig-2.png)
 
 ### Reporting: enabling advanced analytics and discovery
 
@@ -78,7 +78,7 @@ The ultimate users of ECOS data analysis are not CalHR IT, but instead staff who
 
 We’ve made the analysis-ready data tables produced by this project available to CalHR staff, who connect to them and have built dashboards using PowerBI. These dashboards provide self-service analytics to CalHR staff, allowing them to answer questions using the latest data that would have been slow and difficult to answer before. In the future, we hope to also allow state departments to access the same data to be able to better understand their own hiring processes.
 
-<img src="/papers/rose-hr-1/eac-fig-3.png" alt="Jobs and applications dashboard. It shows statistics like total jobs active, total applications received, and average applications received, including charts showing change over time." />
+![Jobs and applications dashboard. It shows statistics like total jobs active, total applications received, and average applications received, including charts showing change over time.](/papers/rose-hr-1/eac-fig-3.png)
 
 ## Impact
 
