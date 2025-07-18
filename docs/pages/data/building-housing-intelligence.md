@@ -36,9 +36,8 @@ These questions must be answered to build rapidly and responsibly.
 
 Housing production data is reported to HCD by 539 jurisdictions (cities and counties) across the state. ODI partnered with HCD to build a tool called *Homestead* to mine, analyze, and visualize that data so HCD staff can have in-depth, granular knowledge on the state of housing production. The housing development process itself can be mired in review and with each jurisdiction comes a different set of project identifiers, local procedures, and reporting practices.
 
-<img src="/papers/madani-housing-1/bhi-fig-1.png" alt="539 jurisdictions are responsible for reporting on local building permitting and development milestones. Each office has its own reporting standards and practices. Median income levels and housing costs are initially measured on the county level. There are 58 counties in California. Data from local offices is ultimately analyzed by a single statewide housing department, the California Department of Housing and Community Development." />
+![539 jurisdictions are responsible for reporting on local building permitting and development milestones. Each office has its own reporting standards and practices. Median income levels and housing costs are initially measured on the county level. There are 58 counties in California. Data from local offices is ultimately analyzed by a single statewide housing department, the California Department of Housing and Community Development.](/papers/madani-housing-1/bhi-fig-1.png)
 <b>Figure 1.</b> Both jurisdictions and counties generate data related to housing development and cost of housing. All of which is funneled to one statewide agency: the Department of Housing & Community Development.
-
 
 Additionally, under AB 2653, HCD has 90 days to request corrections to reports from jurisdictions.
 
