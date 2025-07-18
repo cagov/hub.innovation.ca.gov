@@ -52,8 +52,7 @@ One of the primary goals of ODI’s work was to help HCD detect outliers and idi
 3. **Local outlier factor:** Calculates a local anomaly score for data points based on the density of “neighbors” nearby on a graph, revealing anomalies within their local context.
 
 We coupled the Z-Scoring approach with text processing to flag anomalous values consistently. An anomalous value might include multi-unit buildings that were reportedly built in less than a week or multiple parcels bundled together as one record. The final dashboard will have an interface for HCD staff to filter for and export projects with anomalous values.
-
-<img src="/papers/madani-housing-1/bhi-fig-2.png" alt="An illustration of how Homestead identifies anomalies. It shows two stre ets of housing. One took 45 days-to-permit. Another took 48 days-to-permit. The next took 50-days-to-permit. Highlighted is a property that took 200 days-to-permit." />
+![An illustration of how Homestead identifies anomalies. It shows two stre ets of housing. One took 45 days-to-permit. Another took 48 days-to-permit. The next took 50-days-to-permit. Highlighted is a property that took 200 days-to-permit.](/papers/madani-housing-1/bhi-fig-2.png)
 <b>Figure 2.</b> Using development milestones like permit issuance and certificate of occupancy dates, we can flag developments with inordinately long timelines relative to comparable constructions.
 
 ### Geospatial analysis
@@ -63,8 +62,7 @@ One of the greatest challenges to making sense of housing data is the inconsiste
 1. **Geolocation functionality:** Map every project’s physical street address reported by jurisdictions (for example, 123 Main St. Los Angeles, CA 90720) to a latitude and longitude
 2. **Shape processing:** Ingest and simplify shape files that represent California’s protected zones
 3. **Spatial joining:** Map projects and protected zones to see which projects intersect with protected zones. Those that do not and meet SB 423 criteria are eligible for streamlining
-
-<img src="/papers/madani-housing-1/bhi-fig-3.png" alt="This example shows the same two streets with coordinates for some homes. Some homes are in a fire hazard zone." />
+![This example shows the same two streets with coordinates for some homes. Some homes are in a fire hazard zone.](/papers/madani-housing-1/bhi-fig-3.png)
 <b>Figure 3.</b> By mapping shape files representing sensitive geographic areas and project addresses, we can determine geographic eligibility for streamlining.
 
 ### Automation
@@ -72,8 +70,7 @@ One of the greatest challenges to making sense of housing data is the inconsiste
 Lastly, we wanted *Homestead* to automate tasks that would otherwise take up large swaths of time, chipping away at the 90-day deadline HCD has to request corrections to reports. Repeatedly analyzing affordability using spreadsheets is one such task. Previously, inputs would need to be fed to a macro-enabled Excel file that would calculate affordability on a one-off basis for each individual unit size and county. 
 
 ODI and HCD worked together to convert logic from the Excel file to code. Using the logic and inputs from various government datasets, we are able to calculate affordable rent for every county, unit type/size, and year. The result is a dataset that we can build upon to have reliable, up-to-date, and visible affordability metrics.
-
-<img src="/papers/madani-housing-1/bhi-fig-4.png" alt="An affordability dashboard. It shows a map of the state with Alameda, Humboldt, Kern, and Los Angeles counties highlights. Line graphs showing YOY rent growth and statewode YOY rent growth percentages. Details for 2013-2022 are beneath the graphs." />
+![An affordability dashboard. It shows a map of the state with Alameda, Humboldt, Kern, and Los Angeles counties highlights. Line graphs showing YOY rent growth and statewode YOY rent growth percentages. Details for 2013-2022 are beneath the graphs.](/papers/madani-housing-1/bhi-fig-4.png)
 <b>Figure 4.</b> A screenshot of the affordability dashboard with filter controls, county-level housing cost changes, year-over-year trends, and table of housing affordability calculations.
 
 ## Impact

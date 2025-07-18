@@ -29,7 +29,7 @@ Demographic and geographic data collection and analysis can be powerful tools fo
 
 ## Example
 
-<img src="/img/what-is-your-race-and-or-ethnicity.png" alt="An example of how to ask people about their race and ethnicity. It lists major categories with the opportunity to identify more specifically." />
+![An example of how to ask people about their race and ethnicity. It lists major categories with the opportunity to identify more specifically.](/img/what-is-your-race-and-or-ethnicity.png)
 
 ## Scope of responsibilities for State users
 
