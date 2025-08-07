@@ -39,8 +39,8 @@ A conversational tone and an official one can seem like they’re opposites of e
 | **Write** | **Don't write** |
 | ----- | ----- | 
 | If you need benefits, apply by May 23, 2021. | The benefits application deadline is May 23, 2021. |
-| We will review your request in 5 business days or less. | The application must have all of my data. |
-| The application must have all of your data. | Every request the department receives will be reviewed within no more than 5 business days. |
+| We will review your request in 5 business days or less. | Every request the department receives will be reviewed within no more than 5 business days. |
+| The application must have all of your data. | The application must have all of my data. |
 
 </div>
 
