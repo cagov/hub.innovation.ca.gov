@@ -65,7 +65,7 @@ The [ClearMark Awards](https://centerforplainlanguage.org/awards/clearmark/) hon
 Swapping complex words for simple ones is a big part of plain language. These word substitution lists can help with that.
 
 * Start with [Plainlanguage.gov’s Use simple words and phrases](https://www.plainlanguage.gov/guidelines/words/use-simple-words-phrases/). It covers the most common words.
-* [Health Research for Action’s Plain Language Word List](https://multco-web7-psh-files-usw2.s3-us-west-2.amazonaws.com/s3fs-public/PlainLanguageWordList.pdf) has lots of healthcare-specific words.
+* [Health Research for Action at UC Berkeley's Plain Language Word List](https://multco-web7-psh-files-usw2.s3-us-west-2.amazonaws.com/s3fs-public/PlainLanguageWordList.pdf) has lots of healthcare-specific words.
 * The most complete list is the [Plain English Lexicon](https://clearest.co.uk/wp-content/uploads/2021/09/Plain_English_LEXICON_June_2011.pdf). It has 2,700 words. However, some are specific to British English.
 
 ### Human-centered design
