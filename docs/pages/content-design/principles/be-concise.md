@@ -52,7 +52,7 @@ Here’s an example of how to make content more concise:
   </div>
 </div>
 
-Plainlanguage.gov has more tips for [writing concise content](https://www.plainlanguage.gov/guidelines/concise/). You can also see examples of how to improve government writing.
+The federal government has more [tips for making writing short and simple](https://digital.gov/guides/plain-language/principles/short-simple). You can also see examples of how to improve government writing.
 
 <div class="leftright-nav-container">
     <div class="left-nav"><a class="internal-link" href="/content-design/principles/build-accessibility-from-start/">Build in accessibility from the start</a></div>
