@@ -25,7 +25,7 @@ These are the style guides we look at when we have a new content question. We’
 
 * [Associated Press (AP) Style](https://store.stylebooks.com/) is ODI’s default for style questions not covered by [our style guide](/content-design/odi-style-guide/).
 * [How to write for SF.gov](https://sfdigitalservices.gitbook.io/style-guide/city-standards) (City of San Francisco)
-* [Federal plain language guidelines](https://www.plainlanguage.gov/guidelines/) at plainlanguage.gov (federal government)
+* [Plain Language Guide Series](https://digital.gov/guides/plain-language) (federal government)
 * Federal [style guides by government agencies](https://digital.gov/resources/style-guides-by-government-agencies/)
 * [Australian Government Style Manual](https://www.stylemanual.gov.au/)
 
@@ -56,7 +56,7 @@ Inclusive language uses words that respect all people. ODI doesn’t maintain ou
 
 ### Plain language
 
-[Plainlanguage.gov](https://www.plainlanguage.gov/) is a great resource for how to use plain language. It’s maintained by the US federal government. Their site also includes [examples of plain language](https://www.plainlanguage.gov/examples/) in action.
+The federal [Plain Language Guide Series](https://digital.gov/guides/plain-language) is a great resource for how to use plain language. It’s maintained by the US federal government.
 
 The [ClearMark Awards](https://centerforplainlanguage.org/awards/clearmark/) honor the best plain language communications. They’re a great place to find inspiration for your writing. Winners come from government, nonprofit, and business.
 
@@ -64,7 +64,7 @@ The [ClearMark Awards](https://centerforplainlanguage.org/awards/clearmark/) hon
 
 Swapping complex words for simple ones is a big part of plain language. These word substitution lists can help with that.
 
-* Start with [Plainlanguage.gov’s Use simple words and phrases](https://www.plainlanguage.gov/guidelines/words/use-simple-words-phrases/). It covers the most common words.
+* Start with [Plainlanguage.gov’s Use simple words and phrases](https://web.archive.org/web/20250919222219/https://www.plainlanguage.gov/guidelines/words/use-simple-words-phrases/) on the Internet Archive. It covers the most common words.
 * [Health Research for Action at UC Berkeley's Plain Language Word List](https://multco-web7-psh-files-usw2.s3-us-west-2.amazonaws.com/s3fs-public/PlainLanguageWordList.pdf) has lots of healthcare-specific words.
 * The most complete list is the [Plain English Lexicon](https://clearest.co.uk/wp-content/uploads/2021/09/Plain_English_LEXICON_June_2011.pdf). It has 2,700 words. However, some are specific to British English.
 
