@@ -27,7 +27,7 @@ We were inspired by the work of teams that came before us, including:
 
 * 18F at the federal General Services Administration
 * [Government Digital Service](https://www.gov.uk/government/organisations/government-digital-service) in the United Kingdom
-* The [Plain Language Action and Information Network](https://www.plainlanguage.gov/) at the US federal government
+* The Plain Language Action and Information Network at the US federal government
 * [Public Digital](https://public.digital/)
 * [San Francisco Digital Services](https://www.sf.gov/departments/city-administrator/digital-services)
 * [U.S. Digital Service](https://www.usds.gov/)
