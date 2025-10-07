@@ -103,7 +103,7 @@ Adapted from the US Department of Labor’s [Use plain language for claimant not
         <div class="checklist-left-icon">&nbsp;</div>
         <div class="checklist-right-side">
             <div class="checklist-tile-header">
-                Omits excessive words<
+                Omits excessive words
             </div>
             <div class="checklist-tile-copy">Have one main idea per sentence.
             </div>
