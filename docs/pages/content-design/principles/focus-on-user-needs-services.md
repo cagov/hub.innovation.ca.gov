@@ -38,7 +38,7 @@ Encourage your stakeholders to focus their content on requirements instead of re
 * Use **must** when telling people what they need to do.
 * Use **should** as little as possible and only for recommendations.
 * When stakeholders want to use **should**, ask them if people have to do something or if it’s a suggestion.
-* Learn more about [how to write about requirements at plainlanguage.gov](https://www.plainlanguage.gov/guidelines/conversational/use-must-to-indicate-requirements/).
+* Learn more about [how to write about requirements](https://digital.gov/guides/writing-understanding/familiar-terms#avoid-shall).
 
 <div class="leftright-nav-container">
     <div class="unused"></div>
