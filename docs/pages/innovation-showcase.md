@@ -13,7 +13,7 @@ Whether you’re a vendor or an innovator, we want to hear from you!
 
 ### Rolling submissions
 
-The Showcase accepts any innovator pitch on a rolling basis. If you have an innovative idea or solution, we want to hear from you! GovOps and ODI will review submissions regularly. We will schedule ad hoc Showcase days to allow selected innovators to share their ideas with state teams. You only need to submit a solution one time for it to be considered for the rolling submission and ad hoc Showcases.
+The Showcase accepts any innovator pitch on a rolling basis. If you have an innovative idea or solution, [we want to hear from you](https://airtable.com/appcy9MspSTfFx0xl/pagaEbNCkJbrQKMD1/form)! GovOps and ODI will review submissions regularly. We will schedule ad hoc Showcase days to allow selected innovators to share their ideas with state teams. You only need to submit a solution one time for it to be considered for the rolling submission and ad hoc Showcases.
 
 ### Specific challenge statement opportunities
 
