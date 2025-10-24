@@ -42,8 +42,8 @@ Submit an intent to showcase (max 2 pages) that includes:
 * A description of your proposed solution
 
 Email submissions to: showcase@innovation.ca.gov
-Deadline: 5:00 PM Pacific Time on October 27, 2025
-Notification of selection: By 5:00 PM Pacific Time on October 29, 2025
+Deadline: 5:00 PM Pacific Time on October 29, 2025
+Notification of selection: By 5:00 PM Pacific Time on October 31, 2025
 
 ### Showcase details
 
