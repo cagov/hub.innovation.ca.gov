@@ -1,13 +1,24 @@
 {
-  "/how-to-use/": {
+  "/error.html": {
     "readability": {
-      "letterCount": 1624,
-      "syllableCount": 526,
-      "wordCount": 330,
-      "sentenceCount": 38,
-      "polysyllabicWordCount": 49,
-      "ari": 6.09,
-      "timestamp": 1708641552749
+      "letterCount": 128,
+      "syllableCount": 40,
+      "wordCount": 22,
+      "sentenceCount": 3,
+      "polysyllabicWordCount": 3,
+      "ari": 9.64,
+      "timestamp": 1761773765233
+    }
+  },
+  "/search/": {
+    "readability": {
+      "letterCount": 280,
+      "syllableCount": 79,
+      "wordCount": 36,
+      "sentenceCount": 4,
+      "polysyllabicWordCount": 9,
+      "ari": 19.7,
+      "timestamp": 1761773765233
     }
   },
   "/": {
@@ -18,95 +29,18 @@
       "sentenceCount": 13,
       "polysyllabicWordCount": 19,
       "ari": 8.23,
-      "timestamp": 1708641552749
+      "timestamp": 1761773765233
     }
   },
-  "/par-statistics/": {
+  "/innovation-showcase/": {
     "readability": {
-      "letterCount": 97,
-      "syllableCount": 33,
-      "wordCount": 11,
-      "sentenceCount": 3,
-      "polysyllabicWordCount": 7,
-      "ari": 21.94,
-      "timestamp": 1708641552749
-    }
-  },
-  "/error.html": {
-    "readability": {
-      "letterCount": 128,
-      "syllableCount": 40,
-      "wordCount": 22,
-      "sentenceCount": 3,
-      "polysyllabicWordCount": 3,
-      "ari": 9.64,
-      "timestamp": 1708641552749
-    }
-  },
-  "/docs/src/js/airtable-form/CHANGELOG/": {
-    "readability": {
-      "letterCount": 0,
-      "syllableCount": 0,
-      "wordCount": 0,
-      "sentenceCount": 0,
-      "polysyllabicWordCount": 0,
-      "ari": 1,
-      "timestamp": 1708641552749
-    }
-  },
-  "/docs/src/js/airtable-form/README/": {
-    "readability": {
-      "letterCount": 0,
-      "syllableCount": 0,
-      "wordCount": 0,
-      "sentenceCount": 0,
-      "polysyllabicWordCount": 0,
-      "ari": 1,
-      "timestamp": 1708641552749
-    }
-  },
-  "/docs/src/js/airtable-form/preview/": {
-    "readability": {
-      "letterCount": 0,
-      "syllableCount": 0,
-      "wordCount": 0,
-      "sentenceCount": 0,
-      "polysyllabicWordCount": 0,
-      "ari": 1,
-      "timestamp": 1708641552749
-    }
-  },
-  "/docs/src/js/airtable-form/template/": {
-    "readability": {
-      "letterCount": 68,
-      "syllableCount": 22,
-      "wordCount": 17,
-      "sentenceCount": 5,
-      "polysyllabicWordCount": 0,
-      "ari": -0.89,
-      "timestamp": 1708641552749
-    }
-  },
-  "/CHANGELOG/": {
-    "readability": {
-      "letterCount": 88,
-      "syllableCount": 28,
-      "wordCount": 14,
-      "sentenceCount": 5,
-      "polysyllabicWordCount": 4,
-      "ari": 9.58,
-      "timestamp": 1708641552749
-    }
-  },
-  "/sandbox/": {
-    "readability": {
-      "letterCount": 60,
-      "syllableCount": 19,
-      "wordCount": 11,
-      "sentenceCount": 4,
-      "polysyllabicWordCount": 0,
-      "ari": 5.64,
-      "timestamp": 1708641552749
+      "letterCount": 2856,
+      "syllableCount": 943,
+      "wordCount": 514,
+      "sentenceCount": 57,
+      "polysyllabicWordCount": 122,
+      "ari": 9.25,
+      "timestamp": 1761773765233
     }
   },
   "/front-matter/": {
@@ -117,29 +51,7 @@
       "sentenceCount": 8,
       "polysyllabicWordCount": 20,
       "ari": 11.74,
-      "timestamp": 1708641552749
-    }
-  },
-  "/data/forecasting-community-water-system-outages/": {
-    "readability": {
-      "letterCount": 8887,
-      "syllableCount": 2974,
-      "wordCount": 1630,
-      "sentenceCount": 145,
-      "polysyllabicWordCount": 355,
-      "ari": 9.87,
-      "timestamp": 1708641552749
-    }
-  },
-  "/markdown/": {
-    "readability": {
-      "letterCount": 1967,
-      "syllableCount": 616,
-      "wordCount": 394,
-      "sentenceCount": 57,
-      "polysyllabicWordCount": 52,
-      "ari": 5.54,
-      "timestamp": 1708641552749
+      "timestamp": 1761773765233
     }
   },
   "/page-score-info/": {
@@ -150,7 +62,18 @@
       "sentenceCount": 102,
       "polysyllabicWordCount": 139,
       "ari": 6.56,
-      "timestamp": 1708641552749
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/odi-style-guide/": {
+    "readability": {
+      "letterCount": 17721,
+      "syllableCount": 5855,
+      "wordCount": 3668,
+      "sentenceCount": 487,
+      "polysyllabicWordCount": 577,
+      "ari": 5.09,
+      "timestamp": 1761773765233
     }
   },
   "/content-design/plain-language-equity-standard/": {
@@ -161,18 +84,84 @@
       "sentenceCount": 27,
       "polysyllabicWordCount": 48,
       "ari": 8.72,
-      "timestamp": 1708641552749
+      "timestamp": 1761773765233
     }
   },
-  "/content-design/odi-style-guide/": {
+  "/markdown/": {
     "readability": {
-      "letterCount": 16612,
-      "syllableCount": 5492,
-      "wordCount": 3450,
-      "sentenceCount": 461,
-      "polysyllabicWordCount": 542,
-      "ari": 4.99,
-      "timestamp": 1708641552749
+      "letterCount": 1967,
+      "syllableCount": 616,
+      "wordCount": 394,
+      "sentenceCount": 57,
+      "polysyllabicWordCount": 52,
+      "ari": 5.54,
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/recommended-reading/": {
+    "readability": {
+      "letterCount": 3821,
+      "syllableCount": 1210,
+      "wordCount": 739,
+      "sentenceCount": 98,
+      "polysyllabicWordCount": 109,
+      "ari": 6.69,
+      "timestamp": 1761773765233
+    }
+  },
+  "/data/building-housing-intelligence/": {
+    "readability": {
+      "letterCount": 7981,
+      "syllableCount": 2672,
+      "wordCount": 1386,
+      "sentenceCount": 92,
+      "polysyllabicWordCount": 348,
+      "ari": 13.22,
+      "timestamp": 1761773765233
+    }
+  },
+  "/data/enabling-analysis-californias-hiring-recruitment-data/": {
+    "readability": {
+      "letterCount": 8920,
+      "syllableCount": 2984,
+      "wordCount": 1639,
+      "sentenceCount": 122,
+      "polysyllabicWordCount": 346,
+      "ari": 10.92,
+      "timestamp": 1761773765233
+    }
+  },
+  "/data/forecasting-community-water-system-outages/": {
+    "readability": {
+      "letterCount": 8887,
+      "syllableCount": 2974,
+      "wordCount": 1630,
+      "sentenceCount": 138,
+      "polysyllabicWordCount": 355,
+      "ari": 10.16,
+      "timestamp": 1761773765233
+    }
+  },
+  "/data/standard/": {
+    "readability": {
+      "letterCount": 8790,
+      "syllableCount": 3134,
+      "wordCount": 1480,
+      "sentenceCount": 111,
+      "polysyllabicWordCount": 509,
+      "ari": 13.21,
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/principles/be-concise/": {
+    "readability": {
+      "letterCount": 1810,
+      "syllableCount": 578,
+      "wordCount": 348,
+      "sentenceCount": 40,
+      "polysyllabicWordCount": 65,
+      "ari": 7.42,
+      "timestamp": 1761773765233
     }
   },
   "/product-management/product-craft-accessibility/": {
@@ -183,139 +172,183 @@
       "sentenceCount": 28,
       "polysyllabicWordCount": 44,
       "ari": 7.4,
-      "timestamp": 1708641552749
-    }
-  },
-  "/content-design/principles/be-concise/": {
-    "readability": {
-      "letterCount": 1741,
-      "syllableCount": 554,
-      "wordCount": 341,
-      "sentenceCount": 40,
-      "polysyllabicWordCount": 59,
-      "ari": 6.88,
-      "timestamp": 1708641552749
-    }
-  },
-  "/content-design/recommended-reading/": {
-    "readability": {
-      "letterCount": 1240,
-      "syllableCount": 409,
-      "wordCount": 213,
-      "sentenceCount": 55,
-      "polysyllabicWordCount": 46,
-      "ari": 7.93,
-      "timestamp": 1708641552749
-    }
-  },
-  "/content-design/principles/meet-your-audience-where-they-are/": {
-    "readability": {
-      "letterCount": 1731,
-      "syllableCount": 542,
-      "wordCount": 361,
-      "sentenceCount": 32,
-      "polysyllabicWordCount": 43,
-      "ari": 6.8,
-      "timestamp": 1708641552749
+      "timestamp": 1761773765233
     }
   },
   "/content-design/principles/focus-on-user-needs-services/": {
     "readability": {
-      "letterCount": 1392,
-      "syllableCount": 448,
-      "wordCount": 288,
+      "letterCount": 1465,
+      "syllableCount": 471,
+      "wordCount": 295,
       "sentenceCount": 29,
-      "polysyllabicWordCount": 38,
-      "ari": 6.3,
-      "timestamp": 1708641552749
+      "polysyllabicWordCount": 43,
+      "ari": 7.05,
+      "timestamp": 1761773765233
     }
   },
   "/content-design/principles/organize-content-strategically/": {
     "readability": {
-      "letterCount": 2774,
-      "syllableCount": 889,
-      "wordCount": 576,
+      "letterCount": 2843,
+      "syllableCount": 911,
+      "wordCount": 583,
       "sentenceCount": 58,
-      "polysyllabicWordCount": 69,
-      "ari": 6.22,
-      "timestamp": 1708641552749
-    }
-  },
-  "/content-design/principles/build-accessibility-from-start/": {
-    "readability": {
-      "letterCount": 3524,
-      "syllableCount": 1159,
-      "wordCount": 669,
-      "sentenceCount": 79,
-      "polysyllabicWordCount": 135,
-      "ari": 7.61,
-      "timestamp": 1708641552749
+      "polysyllabicWordCount": 74,
+      "ari": 6.56,
+      "timestamp": 1761773765233
     }
   },
   "/content-design/principles/write-in-plain-language/": {
     "readability": {
-      "letterCount": 2648,
-      "syllableCount": 856,
-      "wordCount": 553,
+      "letterCount": 2721,
+      "syllableCount": 879,
+      "wordCount": 560,
       "sentenceCount": 69,
-      "polysyllabicWordCount": 79,
-      "ari": 5.13,
-      "timestamp": 1708641552749
+      "polysyllabicWordCount": 84,
+      "ari": 5.51,
+      "timestamp": 1761773765233
+    }
+  },
+  "/product-management/product-approach-principles/": {
+    "readability": {
+      "letterCount": 3386,
+      "syllableCount": 1105,
+      "wordCount": 611,
+      "sentenceCount": 70,
+      "polysyllabicWordCount": 129,
+      "ari": 9.04,
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/principles/meet-your-audience-where-they-are/": {
+    "readability": {
+      "letterCount": 1804,
+      "syllableCount": 565,
+      "wordCount": 368,
+      "sentenceCount": 32,
+      "polysyllabicWordCount": 48,
+      "ari": 7.41,
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/principles/build-accessibility-from-start/": {
+    "readability": {
+      "letterCount": 3581,
+      "syllableCount": 1175,
+      "wordCount": 672,
+      "sentenceCount": 79,
+      "polysyllabicWordCount": 139,
+      "ari": 7.92,
+      "timestamp": 1761773765233
     }
   },
   "/content-design/principles/write-with-conversational-official-voice/": {
     "readability": {
-      "letterCount": 3921,
-      "syllableCount": 1263,
-      "wordCount": 791,
+      "letterCount": 3994,
+      "syllableCount": 1286,
+      "wordCount": 798,
       "sentenceCount": 75,
-      "polysyllabicWordCount": 134,
-      "ari": 7.19,
-      "timestamp": 1708641552749
+      "polysyllabicWordCount": 139,
+      "ari": 7.46,
+      "timestamp": 1761773765233
     }
   },
-  "/content-design/introduction-plain-language-public-sector/": {
+  "/how-to-use/": {
     "readability": {
-      "letterCount": 759,
-      "syllableCount": 236,
-      "wordCount": 146,
-      "sentenceCount": 26,
-      "polysyllabicWordCount": 21,
-      "ari": 5.86,
-      "timestamp": 1708641552749
-    }
-  },
-  "/content-design/principles/": {
-    "readability": {
-      "letterCount": 421,
-      "syllableCount": 133,
-      "wordCount": 79,
-      "sentenceCount": 14,
-      "polysyllabicWordCount": 18,
-      "ari": 6.49,
-      "timestamp": 1708641552749
+      "letterCount": 1624,
+      "syllableCount": 526,
+      "wordCount": 330,
+      "sentenceCount": 38,
+      "polysyllabicWordCount": 49,
+      "ari": 6.09,
+      "timestamp": 1761773765233
     }
   },
   "/content-design/plain-language-checklist/": {
     "readability": {
-      "letterCount": 1705,
-      "syllableCount": 539,
-      "wordCount": 336,
-      "sentenceCount": 32,
-      "polysyllabicWordCount": 57,
-      "ari": 7.72,
-      "timestamp": 1708641552749
+      "letterCount": 2031,
+      "syllableCount": 644,
+      "wordCount": 398,
+      "sentenceCount": 43,
+      "polysyllabicWordCount": 64,
+      "ari": 7.23,
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/principles/": {
+    "readability": {
+      "letterCount": 505,
+      "syllableCount": 162,
+      "wordCount": 92,
+      "sentenceCount": 14,
+      "polysyllabicWordCount": 23,
+      "ari": 7.71,
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/building-better-services-plain-language/": {
+    "readability": {
+      "letterCount": 656,
+      "syllableCount": 196,
+      "wordCount": 122,
+      "sentenceCount": 14,
+      "polysyllabicWordCount": 14,
+      "ari": 8.25,
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/plain-language-in-a-crisis/": {
+    "readability": {
+      "letterCount": 2532,
+      "syllableCount": 815,
+      "wordCount": 493,
+      "sentenceCount": 89,
+      "polysyllabicWordCount": 94,
+      "ari": 5.53,
+      "timestamp": 1761773765233
+    }
+  },
+  "/content-design/introduction-plain-language-public-sector/": {
+    "readability": {
+      "letterCount": 574,
+      "syllableCount": 179,
+      "wordCount": 100,
+      "sentenceCount": 12,
+      "polysyllabicWordCount": 17,
+      "ari": 9.77,
+      "timestamp": 1761773765233
     }
   },
   "/human-centered-design/innovation-skills-accelerator/": {
     "readability": {
-      "letterCount": 578,
-      "syllableCount": 189,
-      "wordCount": 99,
-      "sentenceCount": 14,
-      "polysyllabicWordCount": 21,
-      "ari": 9.6,
-      "timestamp": 1708641552749
+      "letterCount": 651,
+      "syllableCount": 213,
+      "wordCount": 113,
+      "sentenceCount": 15,
+      "polysyllabicWordCount": 24,
+      "ari": 9.47,
+      "timestamp": 1761773765233
+    }
+  },
+  "/product-management/introduction-product-approach-public-sector/": {
+    "readability": {
+      "letterCount": 472,
+      "syllableCount": 149,
+      "wordCount": 76,
+      "sentenceCount": 11,
+      "polysyllabicWordCount": 18,
+      "ari": 11.28,
+      "timestamp": 1761773765233
+    }
+  },
+  "/human-centered-design/course/": {
+    "readability": {
+      "letterCount": 701,
+      "syllableCount": 217,
+      "wordCount": 125,
+      "sentenceCount": 15,
+      "polysyllabicWordCount": 20,
+      "ari": 9.15,
+      "timestamp": 1761773765233
     }
   },
   "/product-management/run-of-show/": {
@@ -326,7 +359,84 @@
       "sentenceCount": 33,
       "polysyllabicWordCount": 43,
       "ari": 6.4,
-      "timestamp": 1708641552749
+      "timestamp": 1761773765233
+    }
+  },
+  "/par-statistics/": {
+    "readability": {
+      "letterCount": 97,
+      "syllableCount": 33,
+      "wordCount": 11,
+      "sentenceCount": 3,
+      "polysyllabicWordCount": 7,
+      "ari": 21.94,
+      "timestamp": 1761773765233
+    }
+  },
+  "/CHANGELOG/": {
+    "readability": {
+      "letterCount": 89,
+      "syllableCount": 28,
+      "wordCount": 14,
+      "sentenceCount": 5,
+      "polysyllabicWordCount": 4,
+      "ari": 9.91,
+      "timestamp": 1761773765233
+    }
+  },
+  "/docs/src/js/airtable-form/CHANGELOG/": {
+    "readability": {
+      "letterCount": 0,
+      "syllableCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 0,
+      "polysyllabicWordCount": 0,
+      "ari": 1,
+      "timestamp": 1761773765233
+    }
+  },
+  "/docs/src/js/airtable-form/README/": {
+    "readability": {
+      "letterCount": 0,
+      "syllableCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 0,
+      "polysyllabicWordCount": 0,
+      "ari": 1,
+      "timestamp": 1761773765233
+    }
+  },
+  "/docs/src/js/airtable-form/preview/": {
+    "readability": {
+      "letterCount": 0,
+      "syllableCount": 0,
+      "wordCount": 0,
+      "sentenceCount": 0,
+      "polysyllabicWordCount": 0,
+      "ari": 1,
+      "timestamp": 1761773765233
+    }
+  },
+  "/docs/src/js/airtable-form/template/": {
+    "readability": {
+      "letterCount": 68,
+      "syllableCount": 22,
+      "wordCount": 17,
+      "sentenceCount": 5,
+      "polysyllabicWordCount": 0,
+      "ari": -0.89,
+      "timestamp": 1761773765233
+    }
+  },
+  "/sandbox/": {
+    "readability": {
+      "letterCount": 60,
+      "syllableCount": 19,
+      "wordCount": 11,
+      "sentenceCount": 4,
+      "polysyllabicWordCount": 0,
+      "ari": 5.64,
+      "timestamp": 1761773765233
     }
   }
 }
