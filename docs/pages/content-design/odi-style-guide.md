@@ -548,6 +548,10 @@ Use **alright** as a synonym for **OK**. Spell it this way and not **all right**
 
 In charts only, use **American Indian** instead of **Native American** when referring to people descended from the native peoples of the continental U.S. This follows federal demographic language (abbreviated to **AI/AN**). In all other cases, use **Native American**.
 
+### and/or
+
+Choose one or the other. It’s cleaner and easier to read.
+
 ### Asian American
 
 Use **Asian American** when referring to people of Asian descent. Capitalize this wherever it appears in a sentence.
