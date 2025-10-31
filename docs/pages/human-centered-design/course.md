@@ -1,6 +1,7 @@
 ---
 title: Human-centered design course
 parentid: Human-centered design
+parentidlink: /human-centered-design/
 description: A self-paced course focused on building human-centered design skills
 layout: single-column
 keywords: 
