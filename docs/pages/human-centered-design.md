@@ -5,7 +5,6 @@ layout: single-column-wide
 ---
 <div class="cagov-hero-body-content">
 <p>Create services that are more likely to meet people’s needs</p>
-
 <div class="content-grid-wrapper">
     <a class="tile-link" href="/human-centered-design/course/">
     <div class="content-tile">
