@@ -7,7 +7,11 @@
     <a class="crumb" href="/" title="Innovation Hub">Innovation Hub</a>
     {% if parentid %}
       <span class="crumb separator">/</span>
-      <span class="crumb">{{ parentid | safe }}</span>
+      {% if parentidlink %}
+        <a class="crumb" href="{{ parentidlink }}" title="{{ parentid | safe }}">{{ parentid | safe }}</a>
+      {% else %}
+        <span class="crumb">{{ parentid | safe }}</span>
+      {% endif %}
     {% endif %}
     {% if subparentid %}
       {% if subparentidlink %}

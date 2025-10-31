@@ -1,6 +1,7 @@
 ---
 title: Use plain language to help people during a crisis
 parentid: Content design
+parentidlink: /content-design/
 description: Nine tips you can start using now
 layout: single-column
 headerlabel: Guides and playbooks

@@ -2,6 +2,7 @@
 layout: page
 title: Plain Language Equity Standard
 parentid: Content design
+parentidlink: /content-design/
 description: ODI’s recommendations for how to help everyone understand content
 headerlabel: Standards and principles
 headericon: star
