@@ -57,14 +57,14 @@ div.wp-block-button {
 div.topic-listing-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem 2rem;
+  gap: 1rem;
   margin-top: 32px;
   background-color: white;
 }
 
 div.topic-item {
-  margin: 2rem 1rem;
-  padding: 2rem 0;
+  margin: 0rem 1rem;
+  padding: 2rem 0 2rem 0;
   border-bottom: 1px solid #C7D6E4;
 }
 
