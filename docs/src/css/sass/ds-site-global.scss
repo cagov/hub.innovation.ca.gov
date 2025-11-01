@@ -65,12 +65,17 @@ div.topic-listing-grid {
 div.topic-item {
   margin: 2rem 1rem;
   padding: 2rem 0;
-  border-bottom: 1px solid #D4D4D7;
+  border-bottom: 1px solid #C7D6E4;
 }
 
 div.topic-item:last-child,
 div.topic-item:nth-last-child(2) {
   border-bottom: none;
+}
+@media screen and (max-width: 768px) {
+  div.topic-item:nth-last-child(2) {
+    border-bottom: 1px solid #C7D6E4;
+  }
 }
 
 div.topic-item h2 {
