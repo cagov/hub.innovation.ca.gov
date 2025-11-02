@@ -64,7 +64,7 @@ div.topic-listing-grid {
 
 div.topic-item {
   margin: 0rem 1rem;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 0;  /* Simplified */
   border-bottom: 1px solid #C7D6E4;
 }
 
@@ -72,10 +72,20 @@ div.topic-item:last-child,
 div.topic-item:nth-last-child(2) {
   border-bottom: none;
 }
+
+/* Combined media query */
 @media screen and (max-width: 768px) {
+  div.topic-listing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Only keep border rule if needed for mobile layout */
   div.topic-item:nth-last-child(2) {
     border-bottom: 1px solid #C7D6E4;
   }
+
+  /* Remove padding rules if not needed (check if they actually do anything) */
+  /* If base .topic-item doesn't have padding-left/right, these do nothing */
 }
 
 div.topic-item h2 {
@@ -95,24 +105,6 @@ div.topic-item p {
 div.topic-item a.btn-primary {
   display: inline-block;
   margin-top: 0;
-}
-
-@media screen and (max-width: 768px) {
-  div.topic-listing-grid {
-    grid-template-columns: 1fr;
-  }
-
-  div.topic-item:not(:nth-child(2n)) {
-    padding-right: 0;
-  }
-
-  div.topic-item:nth-child(2n) {
-    padding-left: 0;
-  }
-
-  div.topic-item:last-child {
-    border-bottom: none;
-  }
 }
 
 /* HOME PAGE tiles */
