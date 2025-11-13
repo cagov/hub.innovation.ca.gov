@@ -250,6 +250,22 @@ Replace spaces in the title with hyphens so search engines can read them. Delete
 
 Use the site map to build the URL. If a page called *How to apply* lives under a page called *Applicants*, the URL would be: **cannabis.ca.gov/applicants/how-to-apply/**.
 
+## Grammar
+
+### Commas
+
+In a list of 3 or more items, use a comma after the second-to-last item.
+
+<div class="blockquote-container">
+  <div class="blockquote-body">
+    <div class="blockquote-header"><strong>Example:</strong></div>
+    <div class="blockquote-content">
+      <p>The counties with the smallest population are Alpine, Sierra, and Modoc.</p>
+      <p>You can choose to pay with cash, credit card, or gift card.</p>
+    </div>
+  </div>
+</div>
+
 ## Numbers
 
 ### Abbreviations
