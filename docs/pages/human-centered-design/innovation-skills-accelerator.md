@@ -1,6 +1,7 @@
 ---
 title: Innovation Skills Accelerator
 parentid: Human-centered design
+parentidlink: /human-centered-design/
 description: A self-paced course that provides a general introduction to innovation
 layout: single-column
 keywords: 

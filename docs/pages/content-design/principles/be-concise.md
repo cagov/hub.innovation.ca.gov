@@ -1,6 +1,7 @@
 ---
 title: Be concise
 parentid: Content design
+parentidlink: /content-design/
 subparentid: Content design principles
 subparentidlink: /content-design/principles/
 description: Simple writing supports equal outcomes.

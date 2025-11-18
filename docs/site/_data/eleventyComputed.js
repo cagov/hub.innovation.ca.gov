@@ -25,6 +25,16 @@ module.exports = {
       }
       return defaults.site.name;
     },
+    page_class: (article) => {
+      if (
+        'page_class' in article &&
+        article.page_class !== '' &&
+        article.page_class !== defaults.site.page_class
+      ) {
+        return `${article.page_class}`;
+      }
+      return defaults.site.page_class;
+    },
     page_description: (article) =>
       article.metadata?.page_description ||
       article?.description ||

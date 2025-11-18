@@ -1,6 +1,7 @@
 ---
 title: Plain language checklist
 parentid: Content design
+parentidlink: /content-design/
 description: ODI's detailed guide for making sure content is in plain language
 layout: single-column
 headerlabel: Guides and playbooks

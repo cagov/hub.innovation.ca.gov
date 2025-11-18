@@ -1,6 +1,7 @@
 ---
 title: Building housing intelligence for California
 parentid: Data
+parentidlink: /data/
 description: ODI used data to forecast the impact of drought on community water systems.
 headerlabel: Papers
 headericon: paper

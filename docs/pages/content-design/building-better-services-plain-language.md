@@ -1,6 +1,7 @@
 ---
 title: Building better services with plain language
 parentid: Content design
+parentidlink: /content-design/
 description: An intermediate course on plain language for State of California staff
 layout: single-column
 keywords: 
