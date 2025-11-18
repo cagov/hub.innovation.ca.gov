@@ -2,6 +2,7 @@
 title: Human-centered design
 description: Create services that are more likely to meet people’s needs
 layout: single-column-wide
+page_class: content-directory
 ---
 <div class="cagov-hero-body-content">
 <p>Create services that are more likely to meet people’s needs</p>

@@ -2,6 +2,7 @@
 title: Data
 description: Use information to deliver better decisions, services, and outcomes
 layout: single-column-wide
+page_class: content-directory
 ---
 <div class="cagov-hero-body-content">
 <p>Use information to deliver better decisions, services, and outcomes</p>

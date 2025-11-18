@@ -2,6 +2,7 @@
 title: Customer experience
 description: Amazing content goes here
 layout: single-column-wide
+page_class: content-directory
 ---
 
 <div class="cagov-hero-body-content">

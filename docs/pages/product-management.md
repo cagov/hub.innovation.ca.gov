@@ -2,6 +2,7 @@
 title: Product management
 description: Focus on outcomes, iterate, and adapt to new evidence to solve people's needs
 layout: single-column-wide
+page_class: content-directory
 ---
 <div class="cagov-hero-body-content">
 <p>Focus on outcomes, iterate, and adapt to new evidence to solve people's needs</p>

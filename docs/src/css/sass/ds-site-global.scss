@@ -455,6 +455,7 @@ div.post-featured-page-container {
   h2 {
     margin-bottom: 0.5rem;
   }
+  background-color: #ECF1F6;
 }
 div.featured-resources-header {
   font-size: 23px;
@@ -567,6 +568,9 @@ h2 {
 }
 
 cagov-site-navigation {
+  background-color: inherit;
+  border-bottom: 1px solid #C7D6E4;
+  border-top: 1px solid #C7D6E4;
   .container {
     padding-top: var(--s-1, 0.5rem);
     padding-bottom: var(--s-1, 0.5rem);
@@ -583,6 +587,33 @@ div.par-scores-container {
   padding: 1rem;
   margin: 1rem 0;
 }
+div.homepage-content-container {
+  background-color: #ECF1F6;
+}
+body.home-page article#post-homepage {
+  margin-bottom: 0;
+  padding-bottom: 32px;
+}
+
+body.home-page div.page-feedback-container {
+  background-color: #ECF1F6;
+  display: flow-root;
+}
+
+body.home-page div.footer-container {
+  padding: 0 0;
+}
+
+body.home-page div.post-featured-page-container {
+  display: flow-root;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-footer {
+  background-color: inherit !important;
+}
 
 cagov-page-feedback {
 
@@ -593,7 +624,6 @@ cagov-page-feedback {
       background: #00315f!important; // var(--primary-dark-color, #003484)!important
   }
 }
-
 
 main.cagov-main {
   div.blockquote-container {

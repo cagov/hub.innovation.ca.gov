@@ -2,6 +2,7 @@
 title: Content design
 description: Write so people can easily understand and take action
 layout: single-column-wide
+page_class: content-directory
 ---
 
 <div class="cagov-hero-body-content">
