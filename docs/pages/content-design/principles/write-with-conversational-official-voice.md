@@ -1,6 +1,7 @@
 ---
 title: Write with a conversational and official voice
 parentid: Content design
+parentidlink: /content-design/
 subparentid: Content design principles
 subparentidlink: /content-design/principles/
 description: Give reliable information with confidence.

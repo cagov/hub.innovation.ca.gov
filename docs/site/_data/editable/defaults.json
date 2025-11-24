@@ -1,7 +1,8 @@
 {
   "site": {
     "name": "Innovation Hub",
-    "keywords": "California, government, design system"
+    "keywords": "California, government, design system",
+    "page_class": "default-page"
   },
   "page": {
     "description": "Innovation Hub",

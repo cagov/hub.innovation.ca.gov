@@ -1,6 +1,7 @@
 ---
 title: "Product craft: accessibility"
 parentid: Product management
+parentidlink: /product-management/
 description: Videos, guides, and presentations about how to help everyone access information
 headerlabel: Recommended reading
 headericon: bookmark

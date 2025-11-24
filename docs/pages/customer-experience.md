@@ -1,0 +1,19 @@
+---
+title: Customer experience
+description: Amazing content goes here
+layout: single-column-wide
+page_class: content-directory
+---
+
+<div class="cagov-hero-body-content">
+<p>Amazing tagline goess here</p>
+<div class="content-grid-wrapper">
+    <a class="tile-link" href="/customer-experience/customer-experience-principles/">
+    <div class="content-tile">
+        <div class="content-tile-header header-star"><span class="title-card-header-label">Standards and principles</span></div>
+        <div class="content-tile-title">Customer experience principles</div>
+        <p>Tagline for the customer experience principles
+        </p>
+    </div></a>
+</div>
+</div>

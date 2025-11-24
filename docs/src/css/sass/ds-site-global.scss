@@ -53,6 +53,61 @@ div.wp-block-button {
   margin-top: 32px;
 }
 
+/* HOME PAGE topic listing grid */
+div.topic-listing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 32px;
+  background-color: white;
+}
+
+div.topic-item {
+  margin: 0rem 1rem;
+  padding: 2rem 0;  /* Simplified */
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #C7D6E4;
+}
+
+div.topic-item:last-child,
+div.topic-item:nth-last-child(2) {
+  border-bottom: none;
+}
+
+/* Combined media query */
+@media screen and (max-width: 768px) {
+  div.topic-listing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Only keep border rule if needed for mobile layout */
+  div.topic-item:nth-last-child(2) {
+    border-bottom: 1px solid #C7D6E4;
+  }
+
+  /* Remove padding rules if not needed (check if they actually do anything) */
+  /* If base .topic-item doesn't have padding-left/right, these do nothing */
+}
+
+div.topic-item h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color, #003d9d);
+}
+
+div.topic-item p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75rem;
+  color: #333;
+}
+
+div.topic-item a.btn-primary {
+  display: inline-block;
+  margin-top: 0;
+}
+
 /* HOME PAGE tiles */
 div.ds-content-layout { padding: 0 16px; } 
 
@@ -401,6 +456,7 @@ div.post-featured-page-container {
   h2 {
     margin-bottom: 0.5rem;
   }
+  background-color: #ECF1F6;
 }
 div.featured-resources-header {
   font-size: 23px;
@@ -513,6 +569,9 @@ h2 {
 }
 
 cagov-site-navigation {
+  background-color: inherit;
+  border-bottom: 1px solid #C7D6E4;
+  border-top: 1px solid #C7D6E4;
   .container {
     padding-top: var(--s-1, 0.5rem);
     padding-bottom: var(--s-1, 0.5rem);
@@ -529,6 +588,42 @@ div.par-scores-container {
   padding: 1rem;
   margin: 1rem 0;
 }
+div.homepage-content-container {
+  background-color: #ECF1F6;
+  padding-bottom: 1.5rem;
+}
+body.home-page article#post-homepage {
+  margin-bottom: 0;
+  padding-bottom: 32px;
+}
+
+body.home-page div.page-feedback-container {
+  // background-color: #ECF1F6;
+  display: flow-root;
+}
+
+body.home-page div.footer-container {
+  padding: 0 0;
+}
+
+body.home-page div.post-featured-page-container {
+  display: flow-root;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.homepage-top-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-footer {
+  background-color: inherit !important;
+}
+
 
 cagov-page-feedback {
 
@@ -539,7 +634,6 @@ cagov-page-feedback {
       background: #00315f!important; // var(--primary-dark-color, #003484)!important
   }
 }
-
 
 main.cagov-main {
   div.blockquote-container {
