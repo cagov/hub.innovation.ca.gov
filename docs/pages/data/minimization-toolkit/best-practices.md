@@ -45,7 +45,7 @@ These best practices make sure you protect data throughout its lifecycle.
 
 There are 2 big things you can do to minimize the data you collect:
 
-* Use checkboxes and dropdowns over free-text entry when you can. This collects the simplest data. For example, instead of asking for exact household income, ask people to choose from a set of ranges. Massive Data Institute has a list of [quick improvements for data privacy](https://georgetown.app.box.com/s/xkksxjvoqclgjwqi8il195w6qvk28z3t) like this.
+* Use checkboxes and dropdowns over free-text entry when you can. This collects the simplest data. For example, instead of asking for exact household income, ask people to choose from a set of ranges. Massive Data Institute has a list of [strategies to proect your data](https://georgetown.app.box.com/s/xkksxjvoqclgjwqi8il195w6qvk28z3t) like this.
 * Ask as few questions that can directly identify people as possible. Two ways you can do this are anonymization and pseudonymization.
 
 Consider testing your questions before you start. You can partner with community organizations and pilot with small groups to get feedback. Use your research questions to decide when to involve the community. It’s a good idea if you need a deep understanding of:
