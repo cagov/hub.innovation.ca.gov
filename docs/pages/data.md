@@ -14,6 +14,13 @@ page_class: content-directory
     <p>How California consistently collects, analyzes, and reports data on race and ethnicity
     </p>
     </div></a>
+    <a class="tile-link" href="/data/minimization-toolkit/">
+    <div class="content-tile">
+    <div class="content-tile-header header-book"><span class="title-card-header-label">Guides and playbooks</span></div>
+    <div class="content-tile-title">Data minimization and privacy toolkit</div>
+    <p>Collect, store, and share information safely and responsibly
+    </p>
+    </div></a>
     <a class="tile-link" href="/data/building-housing-intelligence/">
     <div class="content-tile">
     <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
