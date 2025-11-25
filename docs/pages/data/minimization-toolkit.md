@@ -18,4 +18,4 @@ Choose what best describes your need to start your journey.
 
 (PLACEHOLDER FOR BREAKOUT PAGES)
 
-Go deeper with best practices and relevant laws and regulations from across the state and beyond.
+Go deeper with [best practices and relevant laws and regulations](data/minimization-toolkit/best-practices-laws-regulations) from across the state and beyond.
