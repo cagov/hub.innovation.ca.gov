@@ -3,7 +3,7 @@ layout: page
 title: Best practices and relevant laws and regulations
 parentid: Data minimization toolkit
 parentidlink: /data/minimization-toolkit/
-description: Links for people who want to go deeper on data minimization
+description: Go deeper on data minimization
 headerlabel: Guides and playbooks
 headericon: book
 ---
