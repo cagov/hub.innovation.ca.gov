@@ -79,5 +79,5 @@ Some people and groups are concerned about the federal government’s access to 
 
 <div class="leftright-nav-container">
     <div class="left-nav"><a class="internal-link" href="/data/minimization-toolkit/101/">Data minimization 101</a></div>
-    <div class="right-nav"><a class="internal-link" href="/data/conducting-risk-necessity-assessments/">Conducting risk and necessity assessments</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/minimization-toolkit/conducting-risk-necessity-assessments">Conducting risk and necessity assessments</a></div>
 </div>
