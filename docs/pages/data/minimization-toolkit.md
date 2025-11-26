@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Data minimization and privacy toolkit
+layout: single-column
 parentid: Data
 parentidlink: /data/
 description: How to collect, store, and share information safely and responsibly
@@ -22,25 +23,25 @@ Choose what best describes your need to start your journey.
 
 Get you started and build your knowledge. 
 
-* [Data minimization 101](/data/minimization-toolkit/100/)<span class="angle-bracket"> </span>
+* [Data minimization 101](/data/minimization-toolkit/101/)
 
 ## My team wants to use best practices
 
 Learn foundational concepts, best practices, and recommendations.
 
-* [How to implement data minimization best practices](/data/minimization-toolkit/best-practices/)<span class="angle-bracket"> </span>
+* [How to implement data minimization best practices](/data/minimization-toolkit/best-practices/)
 
 ## My team wants to find and get rid of data we don’t need
 
 Find out how to assess potential risks and prevent future breaches.
 
-* [How to conduct a risk and necessity assessment](/data/minimization-toolkit/conducting-risk-necessity-assessments/)<span class="angle-bracket"> </span>
+* [How to conduct a risk and necessity assessment](/data/minimization-toolkit/conducting-risk-necessity-assessments/)
 
 ## My team needs to respond to an external request to share our data
 
 Get clear instructions on how and when to share data.
 
-* [How to safely share data and handle external data requests](/data/minimization-toolkit/external-sharing/)<span class="angle-bracket"> </span>
+* [How to safely share data and handle external data requests](/data/minimization-toolkit/external-sharing/)
 
 ## My team needs to make sure our vendors are meeting data privacy expectations
 
