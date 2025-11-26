@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Data minimization and privacy toolkit
 layout: single-column
 parentid: Data
