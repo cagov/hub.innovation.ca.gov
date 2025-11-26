@@ -127,5 +127,5 @@ Consider the **volume, sensitivity, and retention period**. A large volume of hi
 
 <div class="leftright-nav-container">
     <div class="left-nav"><a class="internal-link" href="/data/minimization-toolkit/best-practices/">Best practices for data minimization</a></div>
-    <div class="right-nav"><a class="internal-link" href="data/minimization-toolkit/external-sharing/">External data sharing</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/minimization-toolkit/external-sharing/">External data sharing</a></div>
 </div>
