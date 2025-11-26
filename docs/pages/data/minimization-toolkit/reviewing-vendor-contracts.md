@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Reviewing vendor contracts
+layout: single-column
 parentid: Data minimization toolkit
 parentidlink: /data/minimization-toolkit/
 description: Understand what your contracts with outside vendors say about data sharing
