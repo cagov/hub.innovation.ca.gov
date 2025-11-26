@@ -124,6 +124,6 @@ There are times when you should not share data. For example:
 In these cases, work with your legal counsel to prepare a written reply citing applicable laws or contract provisions. You should have language in your MOUs or DUAs that allows you to limit or refuse data sharing under these conditions.
 
 <div class="leftright-nav-container">
-    <div class="left-nav"><a class="internal-link" href="/data/minimization-toolkit/101/">Data minimization 101</a></div>
-    <div class="right-nav"><a class="internal-link" href="/data/reviewing-vendor-contracts/">Reviewing vendor contracts</a></div>
+    <div class="left-nav"><a class="internal-link" href="/data/minimization-toolkit/conducting-risk-necessity-assessments">Conducting risk and necessity assessments</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/minimization-toolkit/reviewing-vendor-contracts/">Reviewing vendor contracts</a></div>
 </div>
