@@ -21,7 +21,8 @@ Choose what best describes your need to start your journey.
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .card {
   border: 1px solid #ededef;
@@ -52,6 +53,7 @@ Choose what best describes your need to start your journey.
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 1.3rem;
+  color: black;
 }
 .description {
   font-size: 1rem;
