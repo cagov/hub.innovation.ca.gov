@@ -47,7 +47,8 @@ Choose what best describes your need to start your journey.
   flex: 1;
 }
 .title h2 {
-  font-size: 1.5rem;
+  font-family: "Public Sans";
+  font-size: 23px;
   font-weight: 700;
   margin-top: 0;
 }
