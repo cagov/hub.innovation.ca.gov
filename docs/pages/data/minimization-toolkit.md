@@ -56,12 +56,12 @@ Choose what best describes your need to start your journey.
   color: black;
 }
 .description {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 .link {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 400;
   color: #0d4f8c;
 }
