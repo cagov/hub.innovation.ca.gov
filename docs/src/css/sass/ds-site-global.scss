@@ -482,6 +482,7 @@ div.featured-resources-inner {
 div.leftright-nav-container {
   display: grid;
   grid-template-columns: 50% 50%;
+  align-items: stretch;
   margin-top: 4.5rem;
   margin-bottom:3rem;
   &.long-right {
@@ -491,6 +492,8 @@ div.leftright-nav-container {
     grid-template-columns: 70% 30%;
   }
   .left-nav {
+    display: flex;
+    align-items: center;
     text-align: left;
     padding-left: 24px;
     background-image: url(/img/left-angle-bracket-icon.png);
@@ -499,6 +502,9 @@ div.leftright-nav-container {
     background-position: left -4px center;
   }
   .right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     padding-right: 24px;
     text-align: right;
     background-image: url(/img/right-angle-bracket-icon.png);
