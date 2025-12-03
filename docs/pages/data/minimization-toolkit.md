@@ -51,6 +51,7 @@ Choose what best describes your need to start your journey.
   font-size: 23px;
   font-weight: 700;
   margin-top: 0;
+  margin-bottom: 1.3rem;
 }
 .description {
   font-size: 1rem;
