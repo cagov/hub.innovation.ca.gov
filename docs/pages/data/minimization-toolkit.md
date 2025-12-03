@@ -137,4 +137,4 @@ span.angle-bracket {
     </div>
 </div>
 
-Go deeper with [best practices and relevant laws and regulations](data/minimization-toolkit/best-practices-laws-regulations) from across the state and beyond.
+Go deeper with [best practices and relevant laws and regulations](/data/minimization-toolkit/best-practices-laws-regulations) from across the state and beyond.
