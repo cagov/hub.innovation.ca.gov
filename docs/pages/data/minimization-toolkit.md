@@ -65,10 +65,12 @@ Choose what best describes your need to start your journey.
   font-weight: 400;
   color: #0d4f8c;
 }
-.angle-bracket {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #0d4f8c;
+span.angle-bracket {
+    padding-right: 24px;
+    background-image: url(/img/right-angle-bracket-icon.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right -4px center;
 }
 </style>
 
@@ -81,7 +83,7 @@ Choose what best describes your need to start your journey.
             <div class="title"><h2>I want to understand the basics</h2></div>
             <div class="description">Get you started and build your knowledge.</div>
             <div class="link">
-            <a href="/data/minimization-toolkit/101/">Data minimization 101</a> <span class="angle-bracket">&gt;</span>
+            <a href="/data/minimization-toolkit/101/">Data minimization 101</a> <span class="angle-bracket"></span>
             </div>
         </div>
     </div>
@@ -93,7 +95,7 @@ Choose what best describes your need to start your journey.
             <div class="title"><h2>My team wants to use best practices</h2></div>
             <div class="description">Learn foundational concepts, best practices, and recommendations.</div>
             <div class="link">
-            <a href="/data/minimization-toolkit/best-practices/">How to implement data minimization best practices</a> <span class="angle-bracket">&gt;</span>
+            <a href="/data/minimization-toolkit/best-practices/">How to implement data minimization best practices</a> <span class="angle-bracket"></span>
             </div>
         </div>
     </div>
@@ -105,7 +107,7 @@ Choose what best describes your need to start your journey.
             <div class="title"><h2>My team wants to find and get rid of data we don't need</h2></div>
             <div class="description">Find out how to assess potential risks and prevent future breaches.</div>
             <div class="link">
-            <a href="/data/minimization-toolkit/conducting-risk-necessity-assessments/">How to conduct a risk and necessity assessment</a> <span class="angle-bracket">&gt;</span>
+            <a href="/data/minimization-toolkit/conducting-risk-necessity-assessments/">How to conduct a risk and necessity assessment</a> <span class="angle-bracket"></span>
             </div>
         </div>
     </div>
@@ -117,7 +119,7 @@ Choose what best describes your need to start your journey.
             <div class="title"><h2>My team needs to respond to an external request to share our data</h2></div>
             <div class="description">Get clear instructions on how and when to share data.</div>
             <div class="link">
-            <a href="/data/minimization-toolkit/external-sharing/">How to safely share data and handle external data requests</a> <span class="angle-bracket">&gt;</span>
+            <a href="/data/minimization-toolkit/external-sharing/">How to safely share data and handle external data requests</a> <span class="angle-bracket"></span>
             </div>
         </div>
     </div>
@@ -129,7 +131,7 @@ Choose what best describes your need to start your journey.
             <div class="title"><h2>My team needs to make sure our vendors are meeting data privacy expectations</h2></div>
             <div class="description">Embed data minimization principles in contracts.</div>
             <div class="link">
-            <a href="/data/minimization-toolkit/reviewing-vendor-contracts/">How to review your vendor contracts</a> <span class="angle-bracket">&gt;</span>
+            <a href="/data/minimization-toolkit/reviewing-vendor-contracts/">How to review your vendor contracts</a> <span class="angle-bracket"></span>
             </div>
         </div>
     </div>
