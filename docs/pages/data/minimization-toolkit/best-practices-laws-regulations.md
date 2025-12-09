@@ -43,3 +43,7 @@ headericon: book
 * **§ 1798**: The overarching section that establishes the Information Practices Act of 1977. It lays out the fundamental right to privacy in personal information.
 * **§ 1798.14**: This section is central to the data minimization principle. Departments must only keep personal information "relevant and necessary" to accomplish a purpose required or authorized by law.
 * **§ 1798.24**: This section outlines when a department can disclose personal information. They include disclosures for legal proceedings, to law enforcement, and with the individual's consent.
+
+<div class="leftright-nav-container">
+    <div class="left-nav"><a class="internal-link" href="/data/minimization-toolkit/reviewing-vendor-contracts/">Reviewing vendor contracts</a></div>
+</div>
