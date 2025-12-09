@@ -20,4 +20,5 @@ A key resource for enforcing the vendor contract protections described above is 
 
 <div class="leftright-nav-container">
     <div class="left-nav"><a class="internal-link" href="/data/minimization-toolkit/external-sharing/">External data sharing</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/minimization-toolkit/best-practices-laws-regulations">Best practices and relevant laws and regulations</a></div>
 </div>
