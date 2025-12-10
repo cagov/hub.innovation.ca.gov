@@ -84,3 +84,7 @@ In order for ODI’s product approach to work best, any team we partner with has
 * Open to bringing their ideas and experience as subject matter experts to the problem or project
 
 We bring team members into prioritization and decision making. We foster shared ownership and accountability for outcomes. We collaborate across teams to leverage the expertise of different disciplines.
+
+## Improve your skills
+
+Learn how to apply these principles in [Product approach for the public sector](/human-centered-design/course/).
