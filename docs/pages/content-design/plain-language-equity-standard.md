@@ -38,3 +38,6 @@ Cite laws, code, or regulations as written. Summarize this information whenever 
   * Applications
   * Appeals
 * When addressing language access issues, start by writing in plain language in English.
+* Take CalAcademy courses on CalLearns.
+  * Start with [Introduction to plain language for the public sector](/content-design/introduction-plain-language-public-sector/).
+  * Grow your skills in [Building better services with plain language](/content-design/building-better-services-plain-language/).

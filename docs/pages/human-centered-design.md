@@ -14,12 +14,5 @@ page_class: content-directory
         <p>A self-paced course focused on building human-centered design skills
         </p>
     </div></a>
-    <a class="tile-link" href="/human-centered-design/innovation-skills-accelerator/">
-    <div class="content-tile">
-        <div class="content-tile-header header-ribbon"><span class="title-card-header-label">Training</span></div>
-        <div class="content-tile-title">Innovation Skills Accelerator</div>
-        <p>A self-paced course that provides a general introduction to innovation
-        </p>
-    </div></a>
 </div>
 </div>
