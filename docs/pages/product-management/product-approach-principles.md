@@ -87,4 +87,4 @@ We bring team members into prioritization and decision making. We foster shared 
 
 ## Improve your skills
 
-Learn how to apply these principles in [Product approach for the public sector](/human-centered-design/course/).
+Learn how to apply these principles in [Introduction to product approach for the public sector](/product-management/introduction-product-approach-public-sector/).
