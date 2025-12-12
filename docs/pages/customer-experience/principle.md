@@ -25,7 +25,7 @@ Start by finding out what people need. When we design by putting people's needs 
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      Learn the basics in the Office of Data and Innovation’s (ODI) <a href="human-centered-design/course/">human-centered design course</a>.
+      Learn the basics in the Office of Data and Innovation’s (ODI) <a href="/human-centered-design/course/">human-centered design course</a>.
     </div>
   </div>
 </div>
