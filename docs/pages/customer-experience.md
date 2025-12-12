@@ -1,12 +1,12 @@
 ---
 title: Customer experience
-description: Amazing content goes here
+description: Resources for California state staff 
 layout: single-column-wide
 page_class: content-directory
 ---
 
 <div class="cagov-hero-body-content">
-<p>Amazing tagline goess here</p>
+<p>Make products and services that meet the needs of Californians.</p>
 <div class="content-grid-wrapper">
     <a class="tile-link" href="/customer-experience/principle/">
     <div class="content-tile">
