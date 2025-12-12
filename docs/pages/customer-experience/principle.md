@@ -25,7 +25,7 @@ Start by finding out what people need. When we design by putting people's needs 
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      Learn the basics in the Office of Data and Innovation’s (ODI) [human-centered design course](human-centered-design/course/).
+      Learn the basics in the Office of Data and Innovation’s (ODI) <a href="human-centered-design/course/">human-centered design course</a>.
     </div>
   </div>
 </div>
@@ -37,7 +37,7 @@ Set a vision for what you want your service to achieve. Deliver early and often 
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      Start your journey with ODI’s 6 [product approach principles](/product-management/product-approach-principles/).
+      Start your journey with ODI’s 6 <a href="/product-management/product-approach-principles/">product approach principles</a>.
     </div>
   </div>
 </div>
@@ -52,7 +52,7 @@ Research is the best way to find out what people need. You start with a question
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      Maze has a guide on [building a research strategy that aligns with business goals]([/product-management/product-approach-principles/](https://maze.co/guides/ux-research/ux-research-strategy/)).
+      Maze has a guide on <a href="https://maze.co/guides/ux-research/ux-research-strategy/">building a research strategy that aligns with business goals</a>.
     </div>
   </div>
 </div>
@@ -67,7 +67,7 @@ Demographic data is information about groups of people. Some examples are their 
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      The [California Data Standard](/data/standard/) lays out best practices for collecting demographic data.
+      The <a href="/data/standard/">California Data Standard</a> lays out best practices for collecting demographic data.
     </div>
   </div>
 </div>
@@ -79,7 +79,7 @@ It’s important to handle data with care. Use data privacy best practices to pr
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      ODI’s [data minimization toolkit](/data/minimization-toolkit/) helps you apply best practices for managing data.
+      ODI’s <a href="/data/minimization-toolkit/">data minimization toolkit</a> helps you apply best practices for managing data.
     </div>
   </div>
 </div>
@@ -94,7 +94,7 @@ Services that are easy to understand are easy to use. Content design helps peopl
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      Get an introduction with ODI’s [content design principles](/content-design/principles/).
+      Get an introduction with ODI’s <a href="/content-design/principles/">content design principles</a>.
     </div>
   </div>
 </div>
@@ -102,7 +102,7 @@ Services that are easy to understand are easy to use. Content design helps peopl
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      Use the [California Plain Language Equity Standard](/content-design/plain-language-equity-standard/) to find out if you’re writing in plain language.
+      Use the <a href="/content-design/plain-language-equity-standard">California Plain Language Equity Standard</a> to find out if you’re writing in plain language.
     </div>
   </div>
 </div>
@@ -114,7 +114,7 @@ Service design shapes the end-to-end service experience, looking at the people, 
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      The New York City’s Mayor’s Office for Economic Opportunity has a good overview of [civic service design](https://civicservicedesign.com/what-is-civic-service-design-9fd9deebef99).
+      The New York City’s Mayor’s Office for Economic Opportunity has a good overview of <a href="https://civicservicedesign.com/what-is-civic-service-design-9fd9deebef99">civic service design</a>.
     </div>
   </div>
 </div>
