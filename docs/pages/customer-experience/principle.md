@@ -1,6 +1,6 @@
 ---
 title: California Customer Experience Principle
-description: Description goes here
+description: ODI's recommendation for how to deliver products and services that meet the needs of Californians 
 parentid: Customer experience
 parentidlink: /customer-experience/
 headerlabel: Standards and principles
