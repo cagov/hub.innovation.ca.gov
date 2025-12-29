@@ -155,7 +155,7 @@ ODI’s MDSA project with CalHR serves as a proof of concept for how the state c
         <p class="author-name">Brittany Allen</p>
         <p class="author-title">Senior Analytics Engineer</p>
         <p class="author-email">
-            <a href="mailto:britt.allen@innovation.ca.gov">britt.allen@innovation.ca.gov</a>
+            <a href="mailto:brittany.allen@innovation.ca.gov">britt.allen@innovation.ca.gov</a>
         </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
