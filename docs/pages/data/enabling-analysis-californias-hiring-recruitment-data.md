@@ -8,7 +8,7 @@ headericon: paper
 ---
 
 <div class="author-header-block">
-Ian Rose, Aeri Shan, John Harding, Brian Pardo, Preeni Varghese, Britt Allen, DiJon Walker, Annette McFarland, Jason Lally, Bo Ching, Enrique Parker</a>
+Ian Rose, Aeri Shan, John Harding, Brian Pardo, Preeni Varghese, Brittany Allen, DiJon Walker, Annette McFarland, Jason Lally, Bo Ching, Enrique Parker</a>
 </div>
 
 <p class="text-lead">How the California Department of Human Resources (CalHR) worked with the Office of Data and Innovation (ODI) to increase analysis capabilities for the Examination & Certification Online System (ECOS).</p>
@@ -152,7 +152,7 @@ ODI’s MDSA project with CalHR serves as a proof of concept for how the state c
         </div>
     </div>
     <div class="author">
-        <p class="author-name">Britt Allen</p>
+        <p class="author-name">Brittany Allen</p>
         <p class="author-title">Senior Analytics Engineer</p>
         <p class="author-email">
             <a href="mailto:britt.allen@innovation.ca.gov">britt.allen@innovation.ca.gov</a>
