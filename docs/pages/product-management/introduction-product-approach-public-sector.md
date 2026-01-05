@@ -16,4 +16,4 @@ You’ll learn how to:
 * Deliver early and often
 * Measure success and optimize for outcomes 
 
-[Sign up for the course on CalLearns](https://calhr.geniussis.com/Registration1.aspx?AID=4823). You need a CalLearns account to register for the training.
+[Sign up for the course on CalLearns](https://calhr.geniussis.com/Registration.aspx?AID=5288). You need a CalLearns account to register for the training.
