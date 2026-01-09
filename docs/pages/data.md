@@ -21,6 +21,13 @@ page_class: content-directory
     <p>Collect, store, and share information safely and responsibly
     </p>
     </div></a>
+    <a class="tile-link" href="/data/data-driven-approach-detecting-cash-benefit-theft/">
+    <div class="content-tile">
+    <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
+    <div class="content-tile-title">A data-driven approach to detecting cash benefit theft</div>
+    <p>ODI built a predictive model to detect illegal debit card transactions
+    </p>
+    </div></a>
     <a class="tile-link" href="/data/building-housing-intelligence/">
     <div class="content-tile">
     <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
