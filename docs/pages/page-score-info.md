@@ -97,6 +97,7 @@ We turn Automated Readability Index grade levels into 0-100 scores.
 <div class="twocolumn-table">
 
 | **Reading level** | **Score** |
+| ------------------ | --------- |
 | 0-6 | 100 |
 | 7 | 95 |
 | 8 | 90 |
