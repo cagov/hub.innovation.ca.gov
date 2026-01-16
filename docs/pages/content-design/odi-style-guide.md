@@ -120,6 +120,36 @@ Do not use only numbers, which can lead to confusion. Some cultures interpret 9/
 
 ## Formatting
 
+### Blockquote attribution
+
+Always give the source of a quote that is an entire paragraph. This is called a blockquote. We use it in blog posts.
+
+Start with an em dash. Follow it with the source’s name, title, and organization. Put commas between each one.
+
+<div class="blockquote-container">
+  <div class="blockquote-body">
+    <div class="blockquote-header"><strong>Example:</strong></div>
+    <div class="blockquote-content">
+      “This IT Leadership Award in Cybersecurity reflects our collective effort. The recognition is as much yours as it is mine. Together, we make ODI and the state safer.”
+      —Thea Man, Chief Information Security Officer, ODI
+    </div>
+  </div>
+</div>
+
+If someone has more than one title, separate each item with a semicolon.
+
+<div class="blockquote-container">
+  <div class="blockquote-body">
+    <div class="blockquote-header"><strong>Example:</strong></div>
+    <div class="blockquote-content">
+      “Engaged California demonstrates what's possible when communities are
+given real voice, genuine choice, and a meaningful stake in shaping recovery efforts. These principles ensure that policy actions reflect the lived experiences and aspirations of those most affected, setting a global model for participatory governance and resilient rebuilding.”
+      —Audrey Tang; Digital Minister, Taiwan; Senior Fellow, Project Liberty Institute
+
+    </div>
+  </div>
+</div>
+
 ### Bulleted list
 
 Use bulleted lists for a list of items that are related. They break up long blocks of text into shorter, easier-to-read lists. Do this wherever you have 2 or more nouns or verbs in a series.
