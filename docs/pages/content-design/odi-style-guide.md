@@ -130,7 +130,7 @@ Start with an em dash. Follow it with the source’s name, title, and organizati
   <div class="blockquote-body">
     <div class="blockquote-header"><strong>Example:</strong></div>
     <div class="blockquote-content">
-      “This IT Leadership Award in Cybersecurity reflects our collective effort. The recognition is as much yours as it is mine. Together, we make ODI and the state safer.”
+      “This IT Leadership Award in Cybersecurity reflects our collective effort. The recognition is as much yours as it is mine. Together, we make ODI and the state safer.”</br>
       —Thea Man, Chief Information Security Officer, ODI
     </div>
   </div>
@@ -143,7 +143,7 @@ If someone has more than one title, separate each item with a semicolon.
     <div class="blockquote-header"><strong>Example:</strong></div>
     <div class="blockquote-content">
       “Engaged California demonstrates what's possible when communities are
-given real voice, genuine choice, and a meaningful stake in shaping recovery efforts. These principles ensure that policy actions reflect the lived experiences and aspirations of those most affected, setting a global model for participatory governance and resilient rebuilding.”
+given real voice, genuine choice, and a meaningful stake in shaping recovery efforts. These principles ensure that policy actions reflect the lived experiences and aspirations of those most affected, setting a global model for participatory governance and resilient rebuilding.”</br>
       —Audrey Tang; Digital Minister, Taiwan; Senior Fellow, Project Liberty Institute
 
     </div>
