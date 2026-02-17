@@ -29,8 +29,31 @@ The Office of Data and Innovation (ODI) helped CDSS identify theft patterns by o
 
 For this work, we focused on the problem of detecting illegal cash withdrawals. We used 2 datasets that spanned the time period between December 1, 2023, and March 31, 2024. First, we used transaction data that describe each transaction per cardholder. During this 4-month period (December 2023 through March 2024), about 562,000 households withdrew roughly $1.38 billion in cash at 33,000 locations. Second, we used reimbursement data that detail cash reimbursements to victims of unauthorized activity. During the same period, CDSS reimbursed 42,849 households for $47 million in unauthorized transactions.
 
+<style>
+    div.figure-2 {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+    }
+    div.figure-2 div.illustration img {
+        width:100%;
+    }
+    div.figure-2 div.caption {
+        padding: 0 1rem;
+    }
+    div.caption {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    div.caption.figure-1 {
+        margin-bottom: 1rem;
+    }
+</style>
+
 <img src="/papers/bobra-ebt-1/dda-fig-1.png" alt="Graph showing cash and food theft increasing from July 2021 through March 2024" />
+<div class="caption figure-1">
 <b>Figure 1.</b> The graph shows the total monthly dollars reimbursed for reported cash theft. There was a total of $236 million lost to theft in the last 2.5 years. Between December 1, 2023, and March 31, 2024, CDSS reimbursed 42,849 households for $47,437,760 in stolen CalWORKs benefits.
+</div>
 
 To obtain these data, CDSS worked with the Office of Technology and Solutions Integration, within the California Health and Human Services Agency, to develop a work plan with the vendor to provide automated daily batches of raw EBT transaction data to secure cloud storage managed by the CDSS Information Systems Division (ISD). We then created an automated data pipeline that loads the raw data into the RADD team’s data warehouse, where it undergoes a series of cleaning and transformation steps to turn it into a nicely structured, machine-learning-ready dataset. We run these steps daily alongside a series of automatic tests that validate the process.
 
@@ -46,22 +69,8 @@ To find a relationship between these features and suspicious activity, we used a
 
 Our data include two groups of transactions: legitimate, authorized transactions, which comprise 99% of the dataset, and theft, or unauthorized transactions. Only 1% of our dataset describes theft. Machine-learning models trained on severely imbalanced datasets like this tend to ignore the minority group in favor of the majority one (see, for example, Chapter 6 of [Le Borgne et al., 2002](https://fraud-detection-handbook.github.io/fraud-detection-handbook/Foreword.html)). To address this problem, we subsampled the majority group to reduce the imbalance from roughly 1% to 5% while ensuring that the distribution of the subsampled majority-group examples is nearly identical to the full distribution via a Kolmogorov-Smirnov test. The random forest model also penalizes misclassifications of the minority group five times more than misclassifications of the majority one.
 
-<style>
-    div.figure-1 {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-    }
-    div.figure-1 div.illustration img {
-        width:100%;
-    }
-    div.figure-1 div.caption {
-        padding: 0 1rem;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-    }
-</style>
-<div class="figure-1">
+
+<div class="figure-2">
   <div class="illustration">
     <img src="/papers/bobra-ebt-1/dda-fig-2.png" alt="Map of California, showing suspicious transactions clustered around the Bay Area, Sacramento, Los Angeles, and San Diego" />
   </div>
