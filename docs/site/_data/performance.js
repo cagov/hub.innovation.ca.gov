@@ -1,3 +1,35 @@
+function getPacificDateInfo(dateInput) {
+  if (dateInput === undefined || dateInput === null) return {};
+
+  const dateObj = new Date(dateInput);
+  if (Number.isNaN(dateObj.getTime())) return {};
+
+  const formatter = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  });
+
+  const parts = formatter.formatToParts(dateObj).reduce((acc, part) => {
+    acc[part.type] = part.value;
+    return acc;
+  }, {});
+
+  const displayDate = `${parts.year}-${parts.month}-${parts.day}`;
+  const displayTime = `${parts.hour}:${parts.minute}:${parts.second} PT`;
+
+  return {
+    timestamp: dateObj.getTime(),
+    displayDate,
+    tooltip: `${displayDate} ${displayTime}`,
+  };
+}
+
 module.exports = function () {
   return new Promise(async (resolve, reject) => {
     // console.log("FETCHING performance data");
@@ -11,7 +43,9 @@ module.exports = function () {
         pagePerformanceData[item.pageURL.replace('https://hub.innovation.ca.gov/','/')] = {
           lighthouse: {
             performance: item.performance,
-            accessibility: 1
+            accessibility: 1,
+            lastmod: getPacificDateInfo(item.lastmod),
+            lastreviewed: getPacificDateInfo(item.lastreviewed),
           }
         }
       }
@@ -24,5 +58,4 @@ module.exports = function () {
     resolve(pagePerformanceData);
   });
 };
-
 

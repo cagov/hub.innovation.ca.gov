@@ -6,13 +6,18 @@
   grid-template-columns: 1fr;
   row-gap: 2px;
 }
+.par-stats-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 div.par-stats-entry.dark-stripe {
   background-color: #EEE;
 }
 .par-stats-entry {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr; /* 1fr 1fr 1fr 2fr */
+  grid-template-columns: minmax(280px, 3fr) repeat(5, minmax(110px, 1fr));
   height: 2.2rem;
+  min-width: 860px;
 }
 .par-stats-entry.header {
     font-weight: bold;
@@ -39,6 +44,10 @@ div.par-stats-entry.dark-stripe {
     padding-top: 6px;
     font-size: 0.9rem;
     overflow: hidden;
+}
+.par-stats-entry .table-cell.date-cell {
+    font-size: 0.85rem;
+    padding-top: 6px;
 }
 .sort-tab:not(:last-child) {
   border-right: 2px solid rgba(0,0,0,0.2);
@@ -69,22 +78,38 @@ div.par-stats-entry.dark-stripe {
       
       {# loop thru keys in the performance array (into var key) #}
         {# display key, performance[key].lighthouse.performance, performance[key].lighthouse.accessibility * 100, readability[key].readability.ari #}
-      <div class="par-stats-entry header">
-        <div class="sort-tab selected" data-sort-col="0" >Page ↑</div>
-        <div class="sort-tab" data-sort-col="1" >Performance</div>
-        <div class="sort-tab" data-sort-col="2"  >Accessibility</div>
-        <div class="sort-tab" data-sort-col="3"  >Readability (ari)</div>
-      </div>
-      <div class="par-stats-table">
-      {% for key, prec in performance %}
-        <div class="par-stats-entry">
-          <div class="table-cell page-name" data-col-idx="0" data-sort-val="{{key}}"><a href="{{key}}?par=1">{{key}}</a></div>
-          <div class="table-cell" data-col-idx="1" data-sort-val="{{prec.lighthouse.performance}}"><span class="speedlify-score {{(prec.lighthouse.performance * 100) | getScoreColor }}">{{ (prec.lighthouse.performance * 100) | roundNumber }}</span></div>
-          <div class="table-cell" data-col-idx="2" data-sort-val="{{prec.lighthouse.accessibility}}"><span class="speedlify-score {{ (prec.lighthouse.accessibility  * 100) | getScoreColor }}">{{ (prec.lighthouse.accessibility * 100) | roundNumber }}</span></div>
-          <div class="table-cell" data-col-idx="3" data-sort-val="{{readability[key].readability.ari | calculateReadabilityGrade}}"><span data-ari-score="{{readability[key].readability.ari}}" class="speedlify-score {{ readability[key].readability.ari | calculateReadabilityGrade | getScoreColor }}">{{ readability[key].readability.ari | calculateReadabilityGrade }}</span></div>
+      <div class="par-stats-scroll">
+        <div class="par-stats-entry header">
+          <div class="sort-tab selected" data-sort-col="0" >Page ↑</div>
+          <div class="sort-tab" data-sort-col="1" >Performance</div>
+          <div class="sort-tab" data-sort-col="2"  >Accessibility</div>
+          <div class="sort-tab" data-sort-col="3"  >Readability (ari)</div>
+          <div class="sort-tab" data-sort-col="4"  >Last Modified</div>
+          <div class="sort-tab" data-sort-col="5"  >Last Reviewed</div>
         </div>
+        <div class="par-stats-table">
+        {% for key, prec in performance %}
+          <div class="par-stats-entry">
+            <div class="table-cell page-name" data-col-idx="0" data-sort-val="{{key}}"><a href="{{key}}?par=1">{{key}}</a></div>
+            <div class="table-cell" data-col-idx="1" data-sort-val="{{prec.lighthouse.performance}}">
+              <span class="speedlify-score {{(prec.lighthouse.performance * 100) | getScoreColor }}"{% if prec.lighthouse.lastmod.tooltip %} title="Last modified: {{prec.lighthouse.lastmod.tooltip}}"{% endif %}>{{ (prec.lighthouse.performance * 100) | roundNumber }}</span>
+            </div>
+            <div class="table-cell" data-col-idx="2" data-sort-val="{{prec.lighthouse.accessibility}}">
+              <span class="speedlify-score {{ (prec.lighthouse.accessibility  * 100) | getScoreColor }}"{% if prec.lighthouse.lastmod.tooltip %} title="Last modified: {{prec.lighthouse.lastmod.tooltip}}"{% endif %}>{{ (prec.lighthouse.accessibility * 100) | roundNumber }}</span>
+            </div>
+            <div class="table-cell" data-col-idx="3" data-sort-val="{{readability[key].readability.ari | calculateReadabilityGrade}}">
+              <span data-ari-score="{{readability[key].readability.ari}}" class="speedlify-score {{ readability[key].readability.ari | calculateReadabilityGrade | getScoreColor }}"{% if prec.lighthouse.lastmod.tooltip %} title="Last modified: {{prec.lighthouse.lastmod.tooltip}}"{% endif %}>{{ readability[key].readability.ari | calculateReadabilityGrade }}</span>
+            </div>
+            <div class="table-cell date-cell" data-col-idx="4" data-sort-val="{{prec.lighthouse.lastmod.timestamp}}">
+              <span{% if prec.lighthouse.lastmod.tooltip %} title="{{prec.lighthouse.lastmod.tooltip}}"{% endif %}>{{prec.lighthouse.lastmod.displayDate or "—"}}</span>
+            </div>
+            <div class="table-cell date-cell" data-col-idx="5" data-sort-val="{{prec.lighthouse.lastreviewed.timestamp}}">
+              <span{% if prec.lighthouse.lastreviewed.tooltip %} title="{{prec.lighthouse.lastreviewed.tooltip}}"{% endif %}>{{prec.lighthouse.lastreviewed.displayDate or "—"}}</span>
+            </div>
+          </div>
 
-      {% endfor %}
+        {% endfor %}
+        </div>
       </div>
 
 
@@ -92,9 +117,9 @@ div.par-stats-entry.dark-stripe {
   </main>
 </div>
 <script>
-  var default_sorts = [0,0,0,0]; // ascending/descending
-  var sort_states = [ 0,0,0,0 ];
-  var header_labels = ['Page','Performance','Accessibility','Readability (ari)'];
+  var default_sorts = [0,0,0,0,0,0]; // ascending/descending
+  var sort_states = [ 0,0,0,0,0,0 ];
+  var header_labels = ['Page','Performance','Accessibility','Readability (ari)','Last Modified','Last Reviewed'];
   var active_sort_col = 0;
   var active_sort_dir = 0;
   var string_sort = false;
@@ -134,10 +159,17 @@ div.par-stats-entry.dark-stripe {
           return b[1].localeCompare(a[1]);
         }
       } else {
+        var aVal = Number(a[1]);
+        var bVal = Number(b[1]);
+        var aMissing = Number.isNaN(aVal);
+        var bMissing = Number.isNaN(bVal);
+        if (aMissing && bMissing) return 0;
+        if (aMissing) return 1;
+        if (bMissing) return -1;
         if (cur_sort_dir == 0) {
-          return a[1] - b[1]; // ascending
+          return aVal - bVal; // ascending
         } else {
-          return b[1] - a[1]; // descending
+          return bVal - aVal; // descending
         }
       }
     });
