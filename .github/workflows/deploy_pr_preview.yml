@@ -44,7 +44,8 @@ jobs:
         run: |
           mkdir _site
           mkdir _site_dist
-          npm install --legacy-peer-deps
+          # using npm ci instead of npm install to reduce threat of installing newer packages than intended
+          npm ci
           DOMAIN=${URLSAFE_BRANCH_NAME}.pr.hub.innovation.ca.gov npm run build
           npm run readability
           DOMAIN=${URLSAFE_BRANCH_NAME}.pr.hub.innovation.ca.gov npm run build
