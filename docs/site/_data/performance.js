@@ -54,7 +54,7 @@ module.exports = function () {
       }
     })
   
-    console.log(pagePerformanceData);
+    // console.log(pagePerformanceData);
     resolve(pagePerformanceData);
   });
 };
