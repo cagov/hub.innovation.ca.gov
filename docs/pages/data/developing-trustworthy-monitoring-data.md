@@ -126,55 +126,51 @@ Our data include two groups of transactions: legitimate, authorized transactions
 
 <div class="figure-2">
   <div class="illustration">
-    <img src="/papers/bobra-ebt-1/dda-fig-2.png" alt="Map of California, showing suspicious transactions clustered around the Bay Area, Sacramento, Los Angeles, and San Diego" />
+    <img src="/papers/bobra-water-2/dtmd-fig-1.png" alt="The figure shows outliers in the green shaded area and inliers in the purple area." />
   </div>
   <div class="caption">
-    <b>Figure 2.</b> The map shows the output of the machine learning algorithm. The red dots indicate retail locations with suspicious transactions, while the blue dots indicate retail locations with legitimate transactions. The main panel shows the entire State of California and the smaller panel zooms into the LA Basin.
+    <b>Figure 1.</b> The plot shows a 2-dimensional cut through the feature space; the x-axis shows the pH, while the y-axis shows the autocorrelation. Purple points represent inliers, while green ones represent outliers.
   </div>
 </div>
 
-Calculating the accuracy of the predictions – that is, how often a model was right – on an imbalanced dataset can be deceptively positive. For example, simply predicting that every transaction is legitimate would lead to an accuracy of 99%, but this model would have no skill in predicting theft. Instead, we calculated how often the model correctly identified an unauthorized transaction. In our case, this value, also known as the True Positive Rate, is 82%. For a model trained on an imbalanced dataset like this one, where 1% of the data describe theft, a True Positive Rate of 82% indicates a fairly high predictive capacity. In our recommendations section, we outline future ways to improve the model.
+CHere are our recommendations for transforming this prototype into a robust machine learning model, used in production, to automatically identify outliers in water quality data:
 
-Finally, we implemented a method called counterfactual examples to understand how each individual feature of the model contributes to the overall probability of theft.
+* **Update the historical data in CDEC with labels that identify the quality of each data point.** A more sophisticated approach includes informative labels that describe poor quality data (e.g. a power outage or an unphysical reading). A self-consistent labelled dataset is necessary for training a machine learning model.
+* **Research methods to create a sufficiently large training dataset.** Here, we used data from one station to train the model. Extending the training dataset to all stations may introduce too much variation in the data and produce noisy predictions. Instead, we recommend grouping stations with similar behavior. One approach is to create geographic groups of stations. Another is to group stations by climate classification.
+* **Develop infrastructure needed to conduct machine learning experiments.** Store the data in a cloud computing environment and co-locate the code and compute. Performing the analysis in the same place as the data improves speed and eliminates the costly and time-consuming practice of moving data back and forth between an external database and a local machine. Ideally, use a tool to track experiments (e.g. [MLflow](https://mlflow.org)).
 
-Counterfactual examples perturb the input example until the model produces a different outcome (for example, [Mothilal et al. 2020](https://dl.acm.org/doi/10.1145/3351095.3372850)). We quantify the change in probability per change in value for any given feature by looking at the difference in the original and perturbed example. Perturbations of the most predictive feature resulted in the largest change in probability. The most predictive features are omitted in this article for operational security reasons.
+### Developing an analysis-ready dataset
 
-## Impact
+Rich, complex, analysis-ready datasets serve as a benchmark for machine learning models. Researchers can develop multiple predictive models, test it on the same dataset, and compare performance metrics. This accelerates model development. Readily-available datasets also attract modelers to the field.
 
-Here we describe the impact of this collaborative effort.
+Here are our recommendations for creating and openly publishing an analysis-ready dataset with DWR environmental monitoring data:
 
-1. **Built capacity.** CDSS now has increased capability to use large datasets, cloud computing, and machine learning algorithms to fight benefit theft.
-2. **Reduced the lag time in measuring EBT theft by 95%, from 2 months to 72 hours.** This means CDSS can deliver more timely information on the scale and trend of EBT theft to all stakeholders.
-3. **Reduced the time staff spent collecting and preparing data for analysis by 100%.** This saves 2,160 staff hours annually. Now CDSS staff can conduct more research and run more experiments.
-4. **Improved ability to correctly identify specific unauthorized transactions.** The machine learning model correctly identifies 82% of unauthorized transactions. Crucially, CDSS can also explain why a transaction is flagged.
-5. **Improved awareness about where EBT theft occurs.** CDSS can now identify geographic theft hotspots because they know the geographic coordinates for each transaction.
-
-## What’s next
-
-This work is far from over. CDSS will build off this project in several ways to better fight EBT theft with well-designed and -timed interventions.
-
-* Use the data pipeline and modeling to identify where and when EBT theft occurs, which cards are compromised, and where skimmers might be located. Use these insights to target interventions to protect benefits. At least 1 theft prevention intervention has been implemented based on this work, and more are in development.
-
-* Monitor the impact of upgrades to EBT card technology. California is the first state in the nation to roll out [chip and tap cards for EBT benefits](https://www.cdss.ca.gov/inforesources/cdss-programs/ebt/ebt-electronic-theft-resources).
-* Explore how time-series forecasting may improve our labeling of theft transactions by better capturing temporal dependence and trends. Right now, our model mostly considers each data point as temporally independent.
-* Extend this modeling work to also identify which food purchase transactions are theft events. This work was focused on labeling which cash withdrawal transactions were theft, but future efforts will attempt to use this data pipeline to model food theft transactions.
-* Continue to improve this data pipeline over time by refining our methodology to obtain complete addresses and carrying out additional data engineering.
+* **Identify the data provenance.** Ensure the metadata keywords include information about the data provenance (e.g. the instrument and sensor type, the last the time the instrument was physically calibrated). See [Gebru et al. 2018](http://dx.doi.org/10.1145/3458723).
+* **Use a standardized and universal format for metadata keywords.** This enables interoperability between state and federal datasets. See, for example, the harmonize-wq Python package ([Bosquin and Mullin, 2024](https://doi.org/10.21105/joss.07305)).
 
 ## References
 
-Chawla, Nitesh V., et al. "SMOTE: synthetic minority over-sampling technique." Journal of artificial intelligence research 16 (2002): 321-357. https://doi.org/10.1613/jair.953
+Bousquin, J., & Mullin, C. A. (2024). harmonize-wq: Standardize, clean and wrangle Water Quality Portal data into more analytic-ready formats. *Journal of Open Source Software*, 9(102), 7305. https://doi.org/10.21105/joss.07305.
 
-Fabian, Pedregosa. (2011). Scikit-learn: Machine learning in Python. Journal of machine learning research 12, 2825. https://jmlr.org/papers/volume12/pedregosa11a/pedregosa11a.pdf
+Christ, M., Braun, N., Neuffer, J., & Kempa-Liehr, A. W. (2018). Time series feature extraction on basis of scalable hypothesis tests (tsfresh–a python package). Neurocomputing, 307, 72-77. https://doi.org/10.1016/j.neucom.2018.03.067.
 
-Grisel, Oliver et al. (2024). scikit-learn/scikit-learn: Scikit-learn 1.4.1.post1 (1.4.1.post1). Zenodo. https://doi.org/10.5281/zenodo.10666857
+Department of Water Resources (2023). DWR Strategic Plan.  https://water.ca.gov/-/media/DWR-Website/Web-Pages/About/Files/Publications/DWR-Strategic-Plan.pdf.
 
-Grover, Prince, et al. "Fraud Dataset Benchmark and Applications." arXiv preprint arXiv:2208.14417 (2022). https://arxiv.org/abs/2208.14417
+Department of Water Resources (2026). Outlier Detection Test Best Practices (DWR Document Control Number: DWR-1-BST-005). https://water.ca.gov/-/media/DWR-Website/Web-Pages/Library/Files/Public-Forms/DWR1BST005v12Outlier-Detection-Best-Practicesfk.pdf.
 
-Le Borgne et al. "Reproducible Machine Learning for Credit Card Fraud Detection", 2002. https://fraud-detection-handbook.github.io/fraud-detection-handbook/
+Gebru, T., Morgenstern, J., Vecchione, B., Vaughan, J. W., Wallach, H., Iii, H. D., & Crawford, K. (2021). Datasheets for datasets. *Communications of the ACM*, 64(12), 86-92. http://dx.doi.org/10.1145/3458723.
 
-Mothilal, R. K., Sharma, A., & Tan, C. (2020, January). Explaining machine learning classifiers through diverse counterfactual explanations. In Proceedings of the 2020 conference on fairness, accountability, and transparency (pp. 607-617). https://doi.org/10.1145/3351095.3372850
+Moran, K. “Usability (User) Testing 101.” nngroup.com, 11 September 2025, https://www.nngroup.com/articles/usability-testing-101/.
 
-Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov, 11 September 2024, https://innovation.ca.gov/data-and-innovation-fund.
+State Water Resources Control Board (2002). State Water Board Decision 1641 (2000). https://www.waterboards.ca.gov/waterrights/board_decisions/adopted_orders/decisions/d1600_d1649/wrd1641_1999dec29.pdf.
+
+Talagala, P. D., Hyndman, R. J., Leigh, C., Mengersen, K., & Smith‐Miles, K. (2019). A feature‐based procedure for detecting technical outliers in water‐quality data from in situ sensors. Water Resources Research, 55(11), 8547-8568. http://dx.doi.org/10.1029/2019WR024906.
+
+The Shiny development team. (2025). Shiny for Python (Version 1.4.0) [Computer software]. https://shiny.posit.co/py/.
+
+## Code
+
+[Github repository](https://github.com/DWR-QA-Program/caldata-dsa-outlier-tool)
 
 ## Authors
 
@@ -187,11 +183,33 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         </p>
         <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Methodology, formal analysis, investigation, writing – original draft</p>
+            <p>Roles: Methodology, formal analysis, supervision, writing – original draft</p>
         </div>
         <p class="author-id">
             <a href="https://orcid.org/0000-0002-5662-9604"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0002-5662-9604</a>
         </p>
+    </div>
+    <div class="author">
+        <p class="author-name">Sarah Letson</p>
+        <p class="author-title">Senior User Experience Researcher</p>
+        <p class="author-email">
+            <a href="mailto:sarah.letson@innovation.ca.gov">sarah.letson@innovation.ca.gov</a>
+        </p>
+        <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
+        <div class="author-role">
+            <p>Roles: Methodology, investigation</p>
+        </div>
+    </div>
+    <div class="author">
+        <p class="author-name">Kimberly Hicks</p>
+        <p class="author-title">Deputy Director, Advanced Analytics and Evaluation</p>
+        <p class="author-email">
+            <a href="mailto:kimberly.hicks@innovation.ca.gov">kimberly.hicks@innovation.ca.gov </a>
+        </p>
+        <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
+        <div class="author-role">
+            <p>Roles: Resources, supervision</p>
+        </div>
     </div>
     <div class="author">
         <p class="author-name">Esa Eslami</p>
@@ -203,122 +221,70 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <div class="author-role">
             <p>Roles: Project administration</p>
         </div>
-    </div>
     <div class="author">
-        <p class="author-name">Aeri Shan</p>
-        <p class="author-title">Principal Analytics Engineer</p>
-        <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
-        <div class="author-role">
-            <p>Roles: Investigation, formal analysis, software, methodology</p>
-        </div>
-    </div>
-    <div class="author">
-        <p class="author-name">Ian Rose</p>
-        <p class="author-title">Principal Data Engineer</p>
+        <p class="author-name">Ted Swift</p>
+        <p class="author-title">Senior Environmental Scientist</p>
         <p class="author-email">
-            <a href="mailto:ian.rose@innovation.ca.gov">ian.rose@innovation.ca.gov</a>
+            <a href="mailto:ted.swift@water.ca.gov ">ted.swift@water.ca.gov </a>
         </p>
-        <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
+        <p class="author-org">California Department of Water Resources, 715 P Street, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Software, data curation, resources</p>
+            <p>Roles: Methodology, writing – original draft</p>
         </div>
     </div>
     <div class="author">
-        <p class="author-name">Jason Lally</p>
-        <p class="author-title">Chief Data Officer</p>
+        <p class="author-name">John Franco Saraceno</p>
+        <p class="author-title">Manager, Quality Management Section</p>
         <p class="author-email">
-            <a href="mailto:jason.lally@innovation.ca.gov">jason.lally@innovation.ca.gov</a>
+            <a href="mailto:johnfranco.saraceno@water.ca.gov  ">johnfranco.saraceno@water.ca.gov </a>
         </p>
-        <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
+        <p class="author-org">California Department of Water Resources, 715 P Street, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Project administration, resources, funding acquisition</p>
+            <p>Roles: Resources, methodology</p>
         </div>
     </div>
     <div class="author">
-        <p class="author-name">Peter Amerkhanian</p>
-        <p class="author-title">Research Data Specialist I</p>
-        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
-        <div class="author-role">
-            <p>Roles: Conceptualization, methodology, investigation, validation</p>
-        </div>
-        <p class="author-id">
-            <a href="https://orcid.org/0009-0001-7070-3620"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0009-0001-7070-3620</a>
-        </p>
-    </div>
-    <div class="author">
-        <p class="author-name">Kimberly Hicks</p>
-        <p class="author-title">Deputy Director, Advanced Analytics & Evaluation</p>
-        <p class="author-org">California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento, CA 95814</p>
-        <div class="author-role">
-            <p>Roles: Project administration, resources, funding acquisition</p>
-        </div>
+        <p class="author-name">Louise Conrad</p>
+        <p class="author-title">DWR Lead Scientist</p>
         <p class="author-email">
-            <a href="mailto:kimberly.hicks@innovation.ca.gov">kimberly.hicks@innovation.ca.gov</a>
+            <a href="mailto:louise.conrad@water.ca.gov">louise.conrad@water.ca.gov</a>
         </p>
-    </div>
-    <div class="author">
-        <p class="author-name">Daniel Rodda</p>
-        <p class="author-title">Research Data Supervisor I</p>
-        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <p class="author-org">California Department of Water Resources, 715 P Street, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Conceptualization, methodology, investigation, validation, project administration, supervision, writing – review & editing</p>
+            <p>Roles: Resources, sponsor</p>
         </div>
     </div>
     <div class="author">
-        <p class="author-name">Konrad Franco</p>
-        <p class="author-title">Research Data Specialist III</p>
-        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
-        <div class="author-role">
-            <p>Roles: Software, data curation, validation</p>
-        </div>
-        <p class="author-id">
-            <a href="https://orcid.org/0000-0002-5774-1956"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0002-5774-1956</a>
+        <p class="author-name">David Bosworth</p>
+        <p class="author-title">Senior Environmental Scientist</p>
+        <p class="author-email">
+            <a href="mailto:David.Bosworth@water.ca.gov">David.Bosworth@water.ca.gov</a>
         </p>
+        <p class="author-org">California Department of Water Resources, 715 P Street, Sacramento, CA 95814</p>
+        <div class="author-role">
+            <p>Roles: Methodology, evaluation</p>
+        </div>
     </div>
     <div class="author">
-        <p class="author-name">Joaquin Carbonell</p>
-        <p class="author-title">Research Data Supervisor II</p>
-        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
-        <div class="author-role">
-            <p>Roles: Conceptualization, resources, funding acquisition, project administration, supervision, writing – review & editing</p>
-        </div>
-        <p class="author-id">
-            <a href="https://orcid.org/0009-0001-2422-6210"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0009-0001-2422-6210</a>
+        <p class="author-name">Daniel Wisheropp</p>
+        <p class="author-title">Manager, DOM Water Quality Section</p>
+        <p class="author-email">
+            <a href="mailto:daniel.wisheropp@water.ca.gov">daniel.wisheropp@water.ca.gov</a>
         </p>
-    </div>
-    <div class="author">
-        <p class="author-name">Batool Hasanzadeh</p>
-        <p class="author-title">Research Data Specialist II</p>
-        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <p class="author-org">California Department of Water Resources, 715 P Street, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Conceptualization, methodology, investigation, validation</p>
+            <p>Roles: Methodology, evaluation</p>
         </div>
     </div>
     <div class="author">
-        <p class="author-name">J. Steven Raquel</p>
-        <p class="author-title">Research Data Specialist I</p>
-        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
-        <div class="author-role">
-            <p>Roles: Conceptualization, methodology, investigation, validation</p>
-        </div>
-        <p class="author-id">
-            <a href="https://orcid.org/0000-0001-8775-4996"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0001-8775-4996</a>
+        <p class="author-name">Prabhjot (Nicky) Sandhu</p>
+        <p class="author-title">Section Manager Delta Modeling</p>
+        <p class="author-email">
+            <a href="mailto:Prabhjot.Sandhu@water.ca.gov">Prabhjot.Sandhu@water.ca.gov</a>
         </p>
-    </div>
-    <div class="author">
-        <p class="author-name">Neelam Joshi</p>
-        <p class="author-title">Information Technology Specialist III</p>
-        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
+        <p class="author-org">California Department of Water Resources, 715 P Street, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Software, data curation, validation</p>
-        </div>
-    </div>
-    <div class="author">
-        <p class="author-name">Brenda Moran</p>
-        <p class="author-title">Research Analyst I</p>
-        <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
-        <div class="author-role">
-            <p>Roles: Validation, writing – review & editing</p>
+            <p>Roles: Methodology</p>
         </div>
     </div>
 </div>
