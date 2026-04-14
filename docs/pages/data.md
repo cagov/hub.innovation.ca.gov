@@ -21,7 +21,7 @@ page_class: content-directory
     <p>Collect, store, and share information safely and responsibly
     </p>
     </div></a>
-    <a class="tile-link" href="/data/developing-trustrothy-monitoring-data/">
+    <a class="tile-link" href="/data/developing-trustworthy-monitoring-data/">
     <div class="content-tile">
     <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
     <div class="content-tile-title">Developing trustworthy monitoring data</div>
