@@ -92,7 +92,7 @@ We followed their approach by deriving 6 simple features from the BKS time serie
   </div>
 </div>
 
-CHere are our recommendations for transforming this prototype into a robust machine learning model, used in production, to automatically identify outliers in water quality data:
+Here are our recommendations for transforming this prototype into a robust machine learning model, used in production, to automatically identify outliers in water quality data:
 
 * **Update the historical data in CDEC with labels that identify the quality of each data point.** A more sophisticated approach includes informative labels that describe poor quality data (e.g. a power outage or an unphysical reading). A self-consistent labelled dataset is necessary for training a machine learning model.
 * **Research methods to create a sufficiently large training dataset.** Here, we used data from one station to train the model. Extending the training dataset to all stations may introduce too much variation in the data and produce noisy predictions. Instead, we recommend grouping stations with similar behavior. One approach is to create geographic groups of stations. Another is to group stations by climate classification.
