@@ -83,48 +83,7 @@ Other groups successfully have used machine learning models to automatically ide
 
 We followed their approach by deriving 6 simple features from the BKS time series data — such as the autocorrelation of the pH during a one-week rolling window with the week prior — using the Python package `tsfresh` (v0.21.0; [Christ et al. 2018](https://doi.org/10.1016/j.neucom.2018.03.067)). Next, we split the 35-year data set into a training set, consisting of the first 24.5 years of data, and a testing set, consisting of the rest. Finally, we used a k-nearest neighbors model, with k=3, to identify outliers. The model identifies outliers by first plotting the features derived from the training data, together with their labels, in a 6-dimensional feature space. To identify outliers in real-time data, for which we do not know the label, the model plots a data point in the hyperspace, identifies three proximate data points, determines the majority label, and ascribes this label to the real-time data. See Figure 1.
 
-<style>
-    div.figure-2 {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-    }
-    div.figure-2 div.illustration img {
-        width:100%;
-    }
-    div.figure-2 div.caption {
-        padding: 0 1rem;
-    }
-    div.caption {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-    }
-    div.caption.figure-1 {
-        margin-bottom: 1rem;
-    }
-</style>
-
-<img src="/papers/bobra-ebt-1/dda-fig-1.png" alt="Graph showing cash and food theft increasing from July 2021 through March 2024" />
-<div class="caption figure-1">
-<b>Figure 1.</b> The graph shows the total monthly dollars reimbursed for reported cash theft. There was a total of $236 million lost to theft in the last 2.5 years. Between December 1, 2023, and March 31, 2024, CDSS reimbursed 42,849 households for $47,437,760 in stolen CalWORKs benefits.
-</div>
-
-To obtain these data, CDSS worked with the Office of Technology and Solutions Integration, within the California Health and Human Services Agency, to develop a work plan with the vendor to provide automated daily batches of raw EBT transaction data to secure cloud storage managed by the CDSS Information Systems Division (ISD). We then created an automated data pipeline that loads the raw data into the RADD team’s data warehouse, where it undergoes a series of cleaning and transformation steps to turn it into a nicely structured, machine-learning-ready dataset. We run these steps daily alongside a series of automatic tests that validate the process.
-
-We found that the account activity data included a complete address for only 66% of cash withdrawal locations (ATMs and POS terminals). To fix this issue, we used a [service](https://developers.arcgis.com/rest/geocode/api-reference/overview-world-geocoding-service.htm) from Environmental Systems Research Institute, Inc. (Esri), that matches partially complete addresses to complete ones and provides geographic coordinates for each address. Using this tool, we obtained a complete address, along with geographic coordinates, for 95% of the retailers in the account activity data. We integrated this API directly into the CDSS Enterprise Data Pipeline so it runs automatically.
-
-We also learned that the reimbursement data included lump-sum reimbursements for multiple transactions, i.e., the number and value of reimbursement transactions do not map 1:1 to the number and value of theft transactions. This makes it difficult to pinpoint the individual unauthorized transactions for which the customer was reimbursed. Identifying these transactions is central to both understanding where theft occurs and training a model to predict which transactions are theft. To address this issue, we developed a 3-step methodology to infer these individual unauthorized transactions. First, we identify the reimbursement date and cardholder from the list of reimbursements. Next, we select all the cardholder's transactions, from the transaction data, in the month before the reimbursement. Finally, we assign a label. If there are up to four transactions within a 24-hour period that, together, add up to the reimbursement amount, we label those transactions as unauthorized. Otherwise, we label the transactions as legitimate.
-
-### Model
-
-We constructed 20 characteristics, or features, that describe each transaction. Some features describe location characteristics – such as distance between the customer and the retailer, or ATM, where the transaction took place. Others describe the retailer – such as the number of withdrawals at an ATM prior to the transaction of interest. Others describe temporal characteristics – such as whether the transaction took place in the morning or on the weekend.
-
-To find a relationship between these features and suspicious activity, we used a machine learning algorithm called a random forest from version 1.4.1.post1 (Grisel et al. 2024) of the open-source scientific software package scikit-learn (Pedregosa et al. 2011). Our random forest model consisted of 1,000 decision trees. Each tree consists of a series of if-else decision points that terminate in a final outcome. For example, one decision point could ask the question: Did the transaction happen over the weekend? An answer of yes will lead to another question, while an answer of no will lead to a different question. Eventually, the series of questions and answers will terminate in one of 2 outcomes: that a transaction is allegedly illegal or legitimate. We trained the ensemble of decision trees, or random forest, on 64%, or roughly 2.5 months, of data, and tested it on the rest. The random forest outputs the average prediction of the ensemble members as a probability of theft. To convert this to a binary value, we applied a threshold of 35% – that is, we predict transactions with a probability greater than or equal to 35% are theft and those with a lower probability are legitimate – to minimize the number of false positives.
-
-Our data include two groups of transactions: legitimate, authorized transactions, which comprise 99% of the dataset, and theft, or unauthorized transactions. Only 1% of our dataset describes theft. Machine-learning models trained on severely imbalanced datasets like this tend to ignore the minority group in favor of the majority one (see, for example, Chapter 6 of [Le Borgne et al., 2002](https://fraud-detection-handbook.github.io/fraud-detection-handbook/Foreword.html)). To address this problem, we subsampled the majority group to reduce the imbalance from roughly 1% to 5% while ensuring that the distribution of the subsampled majority-group examples is nearly identical to the full distribution via a Kolmogorov-Smirnov test. The random forest model also penalizes misclassifications of the minority group five times more than misclassifications of the majority one.
-
-
-<div class="figure-2">
+<div class="figure-1">
   <div class="illustration">
     <img src="/papers/bobra-water-2/dtmd-fig-1.png" alt="The figure shows outliers in the green shaded area and inliers in the purple area." />
   </div>
