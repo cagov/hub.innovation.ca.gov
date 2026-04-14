@@ -17,13 +17,13 @@ Monica G. Bobra <a href="https://orcid.org/0000-0002-5662-9604"><img class="orci
 <div class="interaction"><a href="https://zenodo.org/records/15644620"><img class="icon" src="/img/paper-link-icon.svg" />https://zenodo.org/records/15644620</a></div>
 </div>
 
-## Problem statement
+## The opportunity
 
-The California Department of Social Services (CDSS) disburses cash benefits, through a welfare program called CalWORKs, to about 860,000 people every month. The disbursement mechanism, called Electronic Benefits Transfer (EBT), loads cash aid onto a debit card. Recipients can then withdraw cash at Automated Teller Machines (ATMs) or Point of Sale (POS) terminals.
+The Department of Water Resources (DWR), housed within the California Natural Resources Agency, provides water for 27 million people and 750,000 farmland acres throughout the State of California. DWR relies on environmental monitoring data to produce accurate flood and water quality forecast models, manage floods, and comply with environmental laws.
 
-Criminal organizations steal CalWORKs participants’ EBT account information and use that information to complete unauthorized transactions, henceforth called theft. Between June 1, 2021, and March 31, 2024, CalWORKs lost $194 million to theft. The program was losing approximately $13 million dollars a month. CDSS has been working on several strategies to combat theft, which is a national problem. Most EBT theft mitigation strategies require good data and research. To understand this problem, the CDSS Research Automation and Data Division (RADD) wanted to scrutinize transaction data to identify patterns of suspicious transactions but encountered 2 main challenges. First, they had limited access to the transaction data, and the data they could get took significant time to access and process. Second, they didn’t have any insight into which transactions were theft.
+Raw environmental monitoring data may contain errors and missing values for many reasons — such as environmental disruptions, instrument malfunction, power or transmission issues, and physical obstructions. However, unusual conditions can produce anomalous, but valid, data. Many state water contractors, flood-fighters, and members of the public use raw environmental data to make timely critical decisions. The challenge is to distinguish data outliers, or invalid data, from those that are valid but unusual. DWR staﬀ invest significant time and resources reviewing raw data using combinations of ad-hoc automated and laborious, manual review methods that vary from group to group before using the data for decision-making.
 
-The Office of Data and Innovation (ODI) helped CDSS identify theft patterns by obtaining multiple datasets, transforming these data, and developing a machine learning model to detect benefit theft.
+Neither approach is viable. Using data of uncertain quality leads to poor decisions; manually and inconsistently reviewing data quality of raw data delays further analysis and time-critical decisions. We seek to solve these problems by developing and implementing a tool that easily, quickly, consistently, and transparently identifies spurious environmental data to improve confident decision making. Trustworthy environmental data leads to efficient workflows, better predictive modeling, provides analysis-ready data for research, and enables use of machine learning techniques with greater confidence in the validity of results.
 
 ## Data
 
