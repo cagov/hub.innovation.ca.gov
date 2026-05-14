@@ -585,7 +585,7 @@ Do not <u>underline</u> text. On websites or documents shared online, it makes t
 
 ### Alaska Native
 
-Use **Alaska Native** instead of **Inuit** or other Tribe names when referring to people descended from the native peoples of Alaska. This follows federal [Bureau of Indian Affairs language guidelines](https://www.bia.gov/guide/editorial-guide#cultural-terms). This may be abbreviated to **AI/AN** in charts as part of the American Indian/Alaska Native federal demographic group.
+Use **Alaska Native** instead of **Inuit** or other Tribe names when referring to people descended from the native peoples of Alaska. This follows federal [Bureau of Indian Affairs language guidelines](https://www.bia.gov/guide/editorial-guide#cultural-terms). This may be abbreviated to **AI/AN** in data as part of the American Indian/Alaska Native federal demographic group.
 
 ### alright
 
@@ -593,7 +593,7 @@ Use **alright** as a synonym for **OK**. Spell it this way and not **all right**
 
 ### American Indian
 
-In charts only, use **American Indian** instead of **Native American** when referring to people descended from the native peoples of the continental U.S. This follows federal demographic language (abbreviated to **AI/AN**). In all other cases, use **Native American**.
+In data only, use **American Indian** instead of **Native American** when referring to people descended from the native peoples of the continental U.S. This follows federal demographic language (abbreviated to **AI/AN**). In all other cases, use **Native American**.
 
 ### and/or
 
@@ -601,11 +601,11 @@ Choose one or the other. It’s cleaner and easier to read.
 
 ### Asian American
 
-Use **Asian American** when referring to people of Asian descent. Capitalize this wherever it appears in a sentence.
+Use **Asian American** when referring to people of Asian descent. Capitalize this wherever it appears in a sentence. This can be shortened to **Asian** in data as part of the Asian federal demographic group.
 
 ### Black
 
-Use **Black** when referring to people of African descent. Capitalize this wherever it appears in a sentence.
+Use **Black** when referring to people of African descent. Capitalize this wherever it appears in a sentence. You can use **Black or African American** when referring to data to follow federal demographic language.
 
 ### CA.gov
 
@@ -732,7 +732,7 @@ Do not use Latin abbreviations like **i.e.** (which stands for *id est*, or “t
 
 ### Latino
 
-Use **Latino** instead of **Latinx** or **Hispanic** when referring to people of Latin American or Spanish descent.
+Use **Latino** instead of **Latinx** or **Hispanic** when referring to people of Latin American or Spanish descent. You can use **Latino or Hispanic** when referring to data to follow federal demographic language.
 
 ### LGBTQ+
 
@@ -748,7 +748,7 @@ Use **Native American** instead of **American Indian** when referring to people 
 
 ### Native Hawaiian
 
-Use **Native Hawaiian** when referring to people of Hawaiian descent. This follows the federal [Department of the Interior’s](https://www.doi.gov/hawaiian) style. It can be abbreviated as **NHPI** in charts as part of the Native Hawaiian/Pacific Islander category.
+Use **Native Hawaiian** when referring to people of Hawaiian descent. This follows the federal [Department of the Interior’s](https://www.doi.gov/hawaiian) style. It can be abbreviated as **NHPI** in data as part of the Native Hawaiian/Pacific Islander category.
 
 ### Office of Data and Innovation
 
@@ -760,7 +760,7 @@ Use **OK** instead of **okay**.
 
 ### Pacific Islander
 
-Use **Pacific Islander** when referring to those descended from the peoples of Oceania. This follows federal demographic language. It can be abbreviated as **NHPI** in charts as part of the Native Hawaiian/Pacific Islander category.
+Use **Pacific Islander** when referring to those descended from the peoples of Oceania. This follows federal demographic language. It can be abbreviated as **NHPI** in data as part of the Native Hawaiian/Pacific Islander category.
 
 ### senior leadership team
 The collective term for ODI’s:
