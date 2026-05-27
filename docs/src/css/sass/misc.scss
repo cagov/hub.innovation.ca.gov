@@ -13,3 +13,33 @@
     }
   }
 }
+
+.callout-info, .callout-content, .callout-default, .callout {
+  border-radius: 4px;
+  padding: 8px;
+  background-color: rgb(237,237,239);
+  background-repeat: no-repeat;
+  background-position: 1rem 8px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.callout-info p, .callout-content p, .callout-default p, .callout p {
+  margin-bottom: 0;
+}
+
+.callout-default {
+  padding-left: 2rem;
+}
+
+.callout-info {
+  padding-left: 3rem;
+  background-color: rgb(237,237,239);
+  background-image: url(/img/icon-info.svg);
+}
+
+.callout-content {
+  padding-left: 3rem;
+  background-color: rgb(231,238,249);
+  background-image: url(/img/icon-content.svg);
+}

@@ -115,3 +115,19 @@ Next, we'll display and insert the relevant HTML via the `preview` instruction. 
 
 <button id="add-one">Add one</button>
 ```
+
+<div class="callout-info">
+  <p>This is an info callout.</p>
+</div>
+
+<div class="callout-content">
+  <p>This is a content callout.</p>
+</div>
+
+<div class="callout-default">
+  <p>This is a default callout.</p>
+</div>
+
+<div class="callout">
+  <p>This is a callout.</p>
+</div>
