@@ -1,41 +1,74 @@
 ---
 permalink: /
-title: ODI Innovation Hub
-description: Find resources from the Office of Data and Innovation to help you deliver great services.
-layout: homepage-layout
-page_class: home-page
+title: Innovation Hub
+description: Principles, guides, and training to help California state staff work better.
+layout: index
+page_class: home-page-2
+hide_site_navigation: true
 ---
-      {# <div class="m-y-4"><img class="cagov-featured-image vector-bear" src="/img/hero-bear-nature.svg" alt="California bear with abstract shapes" width="1024" height="683"></div> #}
-      <div class="topic-listing-grid">
-        <div class="topic-item">
-          <h2 class="no-top-margin">Customer experience</h2>
-          <p>Understand the experiences of all Californians to make better products and services</p>
-          <a class="btn-primary" href="/customer-experience/">Customer experience resources</a>
-        </div>
-
-        <div class="topic-item">
-          <h2>Human-centered design</h2>
-          <p>Create services more likely to meet people's needs</p>
-          <a class="btn-primary" href="/human-centered-design/">Human-centered design resources</a>
-        </div>
-
-        <div class="topic-item">
-          <h2>Content design</h2>
-          <p>Write so people can easily understand and take action</p>
-          <a class="btn-primary" href="/content-design/">Content design resources</a>
-        </div>
-
-        <div class="topic-item">
-          <h2>Data</h2>
-          <p>Use information to deliver better decisions, services, and outcomes</p>
-          <a class="btn-primary" href="/data/">Data resources</a>
-        </div>
-
-        <div class="topic-item">
-          <h2>Product management</h2>
-          <p>Focus on outcomes, iterate, and adapt to new evidence to solve people's needs</p>
-          <a class="btn-primary" href="/product-management/">Product management resources</a>
-        </div>
+<div id="page-container" class="page-container-ds homepage2-page-container">
+  <main id="body-content" class="cagov-main">
+    <article id="post-homepage2" class="cagov-article with-single-column-wide">
+      <div class="homepage2-top-block">
+        <h1 class="page-title">Tools for improving service delivery</h1>
+        <p class="text-lead">Principles, guides, and training to help California state staff work better.</p>
       </div>
 
+      <div class="homepage2-grid">
+        <aside class="filter-tools" aria-label="Filter tools">
+          <h2 class="filter-tools-heading">Filter tools</h2>
 
+          <div class="filter-section filter-search">
+            <label for="hp2-search">Search</label>
+            <input type="search" id="hp2-search" autocomplete="off" placeholder="Search resources">
+          </div>
+
+          <details class="filter-section filter-topic" open>
+            <summary><span class="filter-section-title">Topic</span></summary>
+            <fieldset class="filter-options">
+              <legend class="sr-only">Topic</legend>
+              <label><input type="checkbox" name="hp2-topic" value="customer-experience"> Customer experience</label>
+              <label><input type="checkbox" name="hp2-topic" value="content-design"> Content design</label>
+              <label><input type="checkbox" name="hp2-topic" value="data"> Data</label>
+              <label><input type="checkbox" name="hp2-topic" value="human-centered-design"> Human-centered design</label>
+              <label><input type="checkbox" name="hp2-topic" value="product-management"> Product management</label>
+            </fieldset>
+          </details>
+
+          <details class="filter-section filter-type" open>
+            <summary><span class="filter-section-title">Type</span></summary>
+            <fieldset class="filter-options">
+              <legend class="sr-only">Type</legend>
+              <label><input type="checkbox" name="hp2-type" value="standards-and-principles"> Standards and principles</label>
+              <label><input type="checkbox" name="hp2-type" value="guides-and-playbooks"> Guides and playbooks</label>
+              <label><input type="checkbox" name="hp2-type" value="training"> Training</label>
+              <label><input type="checkbox" name="hp2-type" value="papers"> Papers</label>
+              <label><input type="checkbox" name="hp2-type" value="recommended-reading"> Recommended reading</label>
+              <label><input type="checkbox" name="hp2-type" value="templates"> Templates</label>
+            </fieldset>
+          </details>
+
+          <button type="button" id="hp2-clear-all" class="clear-all-btn">Clear all filters</button>
+        </aside>
+
+        <section class="tile-results" aria-label="Resources">
+          <div class="tile-results-header">
+            <div id="hp2-count" class="tile-results-count" aria-live="polite"></div>
+            <div class="tile-results-sort">
+              <label for="hp2-sort">Sort by</label>
+              <select id="hp2-sort">
+                <option value="recommended">Recommended</option>
+                <option value="title">Title (A-Z)</option>
+                <option value="topic">Topic</option>
+                <option value="type">Type</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="hp2-tile-grid" class="hp2-tile-grid"></div>
+          <p id="hp2-no-results" class="hp2-no-results" hidden>No resources match your filters.</p>
+        </section>
+      </div>
+    </article>
+  </main>
+</div>
