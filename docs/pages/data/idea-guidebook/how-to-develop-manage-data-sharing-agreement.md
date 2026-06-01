@@ -22,3 +22,31 @@ The IDEA <strong>does not</strong> apply to public, non-confidential data. In ad
 
 All state agencies under the Governor’s authority and their reporting departments have signed IDEA, in addition to several other entities. Confirm that the Data Recipient(s) and the Data Provider(s) are signatories on the agreement. If one or the other is not a signatory, you are welcome to use the IDEA agreement and BUCP templates as a starting point but are not required to do so. We encourage the entity that has not yet signed onto IDEA to do so and are happy to review it with them. For more information and help getting onboarded to IDEA, reach out to caldata@innovation.ca.gov.
 
+<div class="callout-info">
+  <p>See the <a href="/data/idea-guidebook/list-signatories/">list of signatories</a> to confirm</p>
+</div>
+
+## Step 3. Draft initial Business Use Case Proposal (BUCP)
+
+The <a href="/data/idea-guidebook/bucp-template/">BUCP template</a> is the document you will use to finalize your data sharing agreement. The Data Recipient’s program staff who will use the data should draft the initial BUCP. At this time, work with the program team to develop this draft. Later in the process, you can engage your Executive Sponsor and additional review teams. The template is broken down into the following sections:
+
+
+| **Section** | **Description** | **How to use at this stage** |
+| Instructions and Checklist | This checklist will help guide you through the required set of reviews and approvals of the BUCP. | Leave blank for now. This is part of the discussion process. |
+| Business Case Fields | Fields that provide an overview of the program and business needs for this data along with basic contact information. | Complete initial draft. The Data Recipient is primarily responsible for completing these fields. |
+| Technical Fields | Fields that describe the data in detail as well as the means of transfer and management, including destruction and/or return. | Complete initial draft. The Data Recipient and Data Provider will need to iterate on this during discussions. |
+| Administrative Fields | Fields that address risks, legal authority, transfer of funds, and additional protections or approvals. | Draft fields as possible. The Data Provider will need to help complete these fields based on discussion with the Data Recipient. |
+| Signatures and Approvals | This is the set of final program approvals. | This is the final step of the process. Once the BUCP is signed, data sharing can begin. |
+
+## Step 4. Submit the draft BUCP to the Data Provider
+
+Once the Data Recipient has a working draft BUCP, they should identify the appropriate contact at the Data Provider. A good initial starting point is the program contacts for the data, who are in the best position to help you develop the BUCP. They can bring in additional groups as necessary including legal, privacy, technology, and security.
+
+<div class="callout-content">
+  <p>At this time, we do not have a list of data coordinator contacts by state entity for initiating the BUCP process.</p>
+</div>
+
+<div class="callout-info">
+  <p>You can start with the <a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Email to initiate a data exchange under IDEA">email template to initiate a request</a></p>
+</div>
+
