@@ -3,7 +3,7 @@ layout: page
 title: Resources and references
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
-description: Use these steps to develop a BUCP under the IDEA
+description: Use these steps to develop a BUCP under the IDEA.
 headerlabel: Guides and playbooks
 headericon: book
 ---
