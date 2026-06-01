@@ -31,16 +31,13 @@ The concept is like the procurement model provided by the California Multiple Aw
 
 ## Version notes
 
-<div class="twocolumn-table">
-
 | Version | Date | Name | Notes |
+| --- | --- | --- | --- |
 | 1.0 | 2021.06.24 | Joy Bonaguro | Initial release of guidebook |
 | 1.1 | 2021.08.05 | Joy Bonaguro | Added new FAQ on fund transfers |
 | 1.2 | 2022.08.24 | Joy Bonaguro | Gitbook version release, adding and organizing FAQs, adding resources |
 | 1.3 | 2023.09.06 | Blake Valenta, Matthew Zhou | Updating flowchart and BUCP development process, adding FAQ questions |
 | 2.0 | 2026.05.01 | Alex Nottbohm, Matthew Zhou | Updating BUCP templates, adding FAQ questions, adding resources |
-
-</div>
 
 <div class="leftright-nav-container">
     <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/">How to develop and manage a data sharing agreement</a></div>
