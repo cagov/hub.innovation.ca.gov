@@ -30,6 +30,7 @@ All state agencies under the Governor’s authority and their reporting departme
 
 The <a href="/data/idea-guidebook/bucp-template/">BUCP template</a> is the document you will use to finalize your data sharing agreement. The Data Recipient’s program staff who will use the data should draft the initial BUCP. At this time, work with the program team to develop this draft. Later in the process, you can engage your Executive Sponsor and additional review teams. The template is broken down into the following sections:
 
+<div class="twocolumn-table">
 
 | **Section** | **Description** | **How to use at this stage** |
 | Instructions and Checklist | This checklist will help guide you through the required set of reviews and approvals of the BUCP. | Leave blank for now. This is part of the discussion process. |
@@ -37,6 +38,8 @@ The <a href="/data/idea-guidebook/bucp-template/">BUCP template</a> is the docum
 | Technical Fields | Fields that describe the data in detail as well as the means of transfer and management, including destruction and/or return. | Complete initial draft. The Data Recipient and Data Provider will need to iterate on this during discussions. |
 | Administrative Fields | Fields that address risks, legal authority, transfer of funds, and additional protections or approvals. | Draft fields as possible. The Data Provider will need to help complete these fields based on discussion with the Data Recipient. |
 | Signatures and Approvals | This is the set of final program approvals. | This is the final step of the process. Once the BUCP is signed, data sharing can begin. |
+
+</div>
 
 ## Step 4. Submit the draft BUCP to the Data Provider
 
