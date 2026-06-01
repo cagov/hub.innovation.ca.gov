@@ -17,8 +17,6 @@ This section includes:
 * [BUCP template](/data/idea-guidebook/resources-references/bucp-template/)
 * [Notice, email, and disclosure templates](/data/idea-guidebook/resources-references/notice-email-disclosure-templates/)
 
-file the BUCP via the Inventory Form.](/img/idea-flowchart-managing-data-sharing-agreements.png)
-
 <div class="leftright-nav-container">
     <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/dispute-resolution-process/">Dispute resolution process</a></div>
     <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/resources-references/agreement/">IDEA agreement</a></div>
