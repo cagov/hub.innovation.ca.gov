@@ -17,4 +17,4 @@ You’ll learn:
 
 The course includes opportunities to practice writing in plain language. You will be able to start using the skills you learn immediately.
 
-[Sign up for the course on CalLearns](https://calhr.geniussis.com/Registration.aspx?AID=5289). The course is free. You need a CalLearns account to register for the training.
+[Sign up for the course on CalLearns.](https://calhr.geniussis.com/Registration.aspx?AID=5289) The course is free. You need a CalLearns account to register for the training.
