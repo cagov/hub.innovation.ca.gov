@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single-column
 title: IDEA agreement
 parentid: Resources and references
 parentidlink: /data/idea-guidebook/resources-references/
