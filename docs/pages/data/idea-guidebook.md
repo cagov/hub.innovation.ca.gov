@@ -40,5 +40,6 @@ The concept is like the procurement model provided by the California Multiple Aw
 | 2.0 | 2026.05.01 | Alex Nottbohm, Matthew Zhou | Updating BUCP templates, adding FAQ questions, adding resources |
 
 <div class="leftright-nav-container">
+    <div class="unused"></div>
     <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/">How to develop and manage a data sharing agreement</a></div>
 </div>
