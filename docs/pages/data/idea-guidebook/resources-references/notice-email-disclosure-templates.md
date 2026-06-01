@@ -1,9 +1,9 @@
 ---
 layout: page
-title: IDEA agreement
+title: Notice, email, and disclosure templates
 parentid: Resources and references
 parentidlink: /data/idea-guidebook/resources-references/
-description: The final agreement between agency secretaries.
+description: Templates to use as part of the IDEA agreement.
 headerlabel: Guides and playbooks
 headericon: book
 ---
