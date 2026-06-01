@@ -3,7 +3,7 @@ layout: page
 title: Interagency Data Exchange (IDEA) Guidebook
 parentid: Data
 parentidlink: /data/
-description: A guideb to help you use the IDEA, an umbrella Memorandum of Understanding that facilitates data exchange between state entities in California.
+description: A guidebook to help you use the IDEA, an umbrella Memorandum of Understanding that facilitates data exchange between state entities in California.
 headerlabel: Guides and playbooks
 headericon: book
 ---
