@@ -30,7 +30,7 @@ All state agencies under the Governor’s authority and their reporting departme
 
 The [BUCP template](/data/idea-guidebook/bucp-template/) is the document you will use to finalize your data sharing agreement. The Data Recipient’s program staff who will use the data should draft the initial BUCP. At this time, work with the program team to develop this draft. Later in the process, you can engage your Executive Sponsor and additional review teams. The template is broken down into the following sections:
 
-<div class="twocolumn-table">
+<div class="shadedheader-table">
 
 | **Section** | **Description** | **How to use at this stage** |
 | Instructions and Checklist | This checklist will help guide you through the required set of reviews and approvals of the BUCP. | Leave blank for now. This is part of the discussion process. |
