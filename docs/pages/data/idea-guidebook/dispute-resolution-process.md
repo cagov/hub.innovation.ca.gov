@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single-column
 title: Dispute resolution process
 parentid: IDEA Guiebook
 parentidlink: /data/idea-guidebook/
