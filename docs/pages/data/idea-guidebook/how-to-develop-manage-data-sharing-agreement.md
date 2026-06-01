@@ -3,7 +3,7 @@ layout: page
 title: How to develop and manage a data sharing agreement
 parentid: Data
 parentidlink: /data/
-description: 
+description: Use these steps to develop a BUCP under the IDEA.
 headerlabel: Guides and playbooks
 headericon: book
 ---
