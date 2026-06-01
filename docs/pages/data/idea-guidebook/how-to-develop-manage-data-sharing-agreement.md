@@ -10,7 +10,7 @@ headericon: book
 
 <p class="text-lead">Follow the steps below to develop a BUCP under the IDEA. Typically, a BUCP will be initiated by a <strong>Data Recipient</strong> to request data from a <strong>Data Provider</strong>. However, all parties may work together to develop a BUCP. These two roles are referred to throughout this guidebook and in the IDEA and BUCP template.</p>
 
-<strong>Flowchart:</strong> We’ve created a <a href="/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement#Flowchart for Managing Data Sharing Agreements">flowchart</a> that supports the steps below.
+<strong>Flowchart:</strong> We’ve created a <a href="/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement#flowchart-for-managing-data-sharing-agreements">flowchart</a> that supports the steps below.
 
 ## Step 1. Determine if you need to use the IDEA
 
@@ -23,12 +23,12 @@ The IDEA <strong>does not</strong> apply to public, non-confidential data. In ad
 All state agencies under the Governor’s authority and their reporting departments have signed IDEA, in addition to several other entities. Confirm that the Data Recipient(s) and the Data Provider(s) are signatories on the agreement. If one or the other is not a signatory, you are welcome to use the IDEA agreement and BUCP templates as a starting point but are not required to do so. We encourage the entity that has not yet signed onto IDEA to do so and are happy to review it with them. For more information and help getting onboarded to IDEA, reach out to caldata@innovation.ca.gov.
 
 <div class="callout-info">
-  <p>See the <a href="/data/idea-guidebook/list-signatories/">list of signatories</a> to confirm</p>
+  <p>See the <a href="/data/idea-guidebook/resources-references/list-signatories/">list of signatories</a> to confirm</p>
 </div>
 
 ## Step 3. Draft initial Business Use Case Proposal (BUCP)
 
-The [BUCP template](/data/idea-guidebook/bucp-template/) is the document you will use to finalize your data sharing agreement. The Data Recipient’s program staff who will use the data should draft the initial BUCP. At this time, work with the program team to develop this draft. Later in the process, you can engage your Executive Sponsor and additional review teams. The template is broken down into the following sections:
+The [BUCP template](/data/idea-guidebook/resources-references/bucp-template/) is the document you will use to finalize your data sharing agreement. The Data Recipient’s program staff who will use the data should draft the initial BUCP. At this time, work with the program team to develop this draft. Later in the process, you can engage your Executive Sponsor and additional review teams. The template is broken down into the following sections:
 
 | **Section** | **Description** | **How to use at this stage** |
 | --- | --- | --- |
@@ -47,7 +47,7 @@ Once the Data Recipient has a working draft BUCP, they should identify the appro
 </div>
 
 <div class="callout-info">
-  <p>You can start with the <a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Email to initiate a data exchange under IDEA">email template to initiate a request</a></p>
+  <p>You can start with the <a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-email-to-initiate-a-data-exchange-under-idea">email template to initiate a request</a></p>
 </div>
 
 ## Step 5. Work together to complete the BUCP
@@ -61,7 +61,7 @@ If there is a dispute while developing the BUCP, please follow the [dispute reso
 3. Disagreement on costs
 
 <div class="callout-info">
-  <p>See related templates for <a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Planning for a BUCP Kickoff Meeting">Planning for a BUCP kickoff meeting</a></p>
+  <p>See related templates for <a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-planning-for-a-bucp-kickoff-meeting">Planning for a BUCP kickoff meeting</a></p>
 </div>
 
 ## Step 6. Submit the final BUCP to the Statewide Chief Data Officer
@@ -75,10 +75,10 @@ Follow the terms of the agreement to exchange and manage the data. Below we incl
 <div class="callout-info">
   <p>Useful templates:</p>
   <ul>
-    <li><a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Notice of unauthorized access (provision 8.5)">Notice of unauthorized access (provision 8.5)</a></li>
-    <li><a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Notice of security incident (provision 8.6)">Notice of security incident (provision 8.6)</a></li>
-    <li><a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Email to initiate a data exchange under IDEA">Data disclosure language (provision 5.11)</a></li>
-    <li><a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Email to initiate a data exchange under IDEA">Data Field Definitions Template</a></li>
+    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#Ttemplate3a-notice-of-unauthorized-access-provision-85">Notice of unauthorized access (provision 8.5)</a></li>
+    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-notice-of-security-incident-provision-86">Notice of security incident (provision 8.6)</a></li>
+    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-data-disclosure-language-provision-511">Data disclosure language (provision 5.11)</a></li>
+    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates">Data Field Definitions Template</a></li>
   </ul>
 </div>
 
@@ -100,9 +100,9 @@ There are two times when you might need to end a BUCP:
 <div class="callout-info">
   <p>Useful templates:</p>
   <ul>
-    <li><a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Notice to terminate data exchange under IDEA (provision 5.14 - rule change)">Notice to terminate data exchange under IDEA (provision 5.14 - rule change)</a></li>
-    <li><a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Notice to terminate data exchange under IDEA (provision 5.14 - Data Recipient’s Acts)">Notice to terminate data exchange under IDEA (provision 5.14 - Data Recipient’s Acts)</a></li>
-    <li><a href="/data/idea-guidebook/notice-email-disclosure-templates#Template: Notice to terminate data exchange under IDEA (provision 7.4)">Notice to terminate data exchange under IDEA (provision 7.4)</a></li>
+    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-notice-to-terminate-data-exchange-under-idea-provision-514---rule-change">Notice to terminate data exchange under IDEA (provision 5.14 - rule change)</a></li>
+    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-notice-to-terminate-data-exchange-under-idea-provision-514---data-recipiente28099s-acts">Notice to terminate data exchange under IDEA (provision 5.14 - Data Recipient’s Acts)</a></li>
+    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-notice-to-terminate-data-exchange-under-idea-provision-74">Notice to terminate data exchange under IDEA (provision 7.4)</a></li>
   </ul>
 </div>
 
