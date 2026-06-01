@@ -20,6 +20,6 @@ This section includes:
 file the BUCP via the Inventory Form.](/img/idea-flowchart-managing-data-sharing-agreements.png)
 
 <div class="leftright-nav-container">
-    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/dispute-resolution/process/">Dispute resolution process</a></div>
+    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/dispute-resolution-process/">Dispute resolution process</a></div>
     <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/resources-references/agreement/">IDEA agreement</a></div>
 </div>
