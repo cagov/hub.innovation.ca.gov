@@ -3,7 +3,7 @@ layout: page
 title: How to develop and manage a data sharing agreement
 parentid: Data
 parentidlink: /data/
-description: 
+description: Use these steps to develop a BUCP under the IDEA.
 headerlabel: Guides and playbooks
 headericon: book
 ---
@@ -111,7 +111,7 @@ There are two times when you might need to end a BUCP:
 
 ## Flowchart for managing data sharing agreements
 
-![Is this data subject to a public records request? If yes, exchange data; You do not need IDEA. If no, can this data be shared with other state entities for internal use even if not intended for the public? (internal use data). If yes, exchange data; You do not need IDEA. If no, are both the Data Recipient and the Data Provider Signatory Entities under IDEA? Resource alert: list of signatory entities. If no, you are welcome to use these resources if they are helpful. If yes, draft initial BUCP. Resource alert: BUCP template. Submit draft of BUCP to Data Provider. Resource alert: Email template to initiate request. Work together to complete BUCP. Resource alert: Planning template for kickoff meeting. Is there a dispute? If yes, follow the Dispute Resolution Process. Resource alert: Diagram of dispute process. If no, submit completed BUCP via Inventory Form. Form alert: Use the BUCP Inventory Form. Exchange and manage the data per the agreement. Resource alert: Multiple templates. Has there been an statutory, regulatory, or contract change that may require an amendment to the data sharing agreement terms? If no, continue sharing data per the agreement. If yes, is the data sharing agreement still permissible under the changed rule? If no, file a termination notice. Resource alert: multiple templates. If yes, amend the BUCP to comply with the rule and re-file the BUCP via the Inventory Form.](/img/idea-flowchart-managing-data-sharing-agreements.png)
+![Last updated June 3, 2025. Is this data subject to a public records request? If yes, exchange data; You do not need IDEA. If no, can this data be shared with other state entities for internal use even if not intended for the public? (internal use data). If yes, exchange data; You do not need IDEA. If no, are both the Data Recipient and the Data Provider Signatory Entities under IDEA? Resource alert: list of signatory entities. If no, you are welcome to use these resources if they are helpful. If yes, draft initial BUCP. Resource alert: BUCP template. Submit draft of BUCP to Data Provider. Resource alert: Email template to initiate request. Work together to complete BUCP. Resource alert: Planning template for kickoff meeting. Is there a dispute? If yes, follow the Dispute Resolution Process. Resource alert: Diagram of dispute process. If no, submit completed BUCP via Inventory Form. Form alert: Use the BUCP Inventory Form. Exchange and manage the data per the agreement. Resource alert: Multiple templates. Has there been an statutory, regulatory, or contract change that may require an amendment to the data sharing agreement terms? If no, continue sharing data per the agreement. If yes, is the data sharing agreement still permissible under the changed rule? If no, file a termination notice. Resource alert: multiple templates. If yes, amend the BUCP to comply with the rule and re-file the BUCP via the Inventory Form.](/img/idea-flowchart-managing-data-sharing-agreements.png)
 
 <div class="leftright-nav-container">
     <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/">Interagency Data Exchange Agreement (IDEA) Guidebook</a></div>
