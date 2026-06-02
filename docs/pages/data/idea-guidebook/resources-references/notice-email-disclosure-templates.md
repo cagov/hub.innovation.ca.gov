@@ -233,6 +233,6 @@ Best,
 <insert Data Provider name>
 
 <div class="leftright-nav-container">
-    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/bucp-template/">BUCP template</a></div>
+    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/resources-references/bucp-template/">BUCP template</a></div>
     <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/faq/">Frequently asked questions</a></div>
 </div>
