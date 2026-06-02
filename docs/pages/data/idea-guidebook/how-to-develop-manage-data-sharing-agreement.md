@@ -54,7 +54,7 @@ Once the Data Recipient has a working draft BUCP, they should identify the appro
 
 All entities’ programs should work together to complete a draft BUCP for approval. Typically, a completed draft will require input from your legal, privacy, security, and technology teams.
 
-If there is a dispute while developing the BUCP, please follow the [dispute resolution process](data/idea-guidebook/dispute-resolution-process/). Disputes fall into three categories:
+If there is a dispute while developing the BUCP, please follow the [dispute resolution process](/data/idea-guidebook/dispute-resolution-process/). Disputes fall into three categories:
 
 1. Data Provider objects to the data exchange
 2. Disagreement on the method for de-identification
@@ -70,12 +70,12 @@ The Data Recipient must file the final BUCP via the [BUCP Inventory Form](https:
 
 ## Step 7. Exchange and manage the data per the agreement
 
-Follow the terms of the agreement to exchange and manage the data. Below we included a [series of templates](/data/idea-guidebook/notice-email-disclosure-templates) that may be useful under several of IDEA’s clauses.
+Follow the terms of the agreement to exchange and manage the data. Below we included a [series of templates](/data/idea-guidebook/resources-references/notice-email-disclosure-templates) that may be useful under several of IDEA’s clauses.
 
 <div class="callout-info">
   <p>Useful templates:</p>
   <ul>
-    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#Ttemplate3a-notice-of-unauthorized-access-provision-85">Notice of unauthorized access (provision 8.5)</a></li>
+    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates/#template3a-notice-of-unauthorized-access-provision-85">Notice of unauthorized access (provision 8.5)</a></li>
     <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-notice-of-security-incident-provision-86">Notice of security incident (provision 8.6)</a></li>
     <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-data-disclosure-language-provision-511">Data disclosure language (provision 5.11)</a></li>
     <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates">Data Field Definitions Template</a></li>
