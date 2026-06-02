@@ -74,6 +74,17 @@ const HOMEPAGE2_TILES = [
     typeIcon: 'star',
   },
   {
+    title: 'Interagency Data Exchange Agreement guidebook',
+    description:
+      'Help for implementing an agreement that makes it easier to share data between state entities',
+    url: '/data/idea-guidebook/',
+    topic: 'data',
+    topicLabel: 'Data',
+    type: 'guides-and-playbooks',
+    typeLabel: 'Guides and playbooks',
+    typeIcon: 'book',
+  },
+  {
     title: 'Use plain language to help people during a crisis',
     description: 'Tips you can use during crisis communications',
     url: '/content-design/plain-language-in-a-crisis/',
@@ -115,17 +126,6 @@ const HOMEPAGE2_TILES = [
     type: 'training',
     typeLabel: 'Training',
     typeIcon: 'ribbon',
-  },
-  {
-    title: 'Interagency Data Exchange Agreement guidebook',
-    description:
-      'Help for implementing an agreement that makes it easier to share data between state entities',
-    url: '/data/idea-guidebook/',
-    topic: 'data',
-    topicLabel: 'Data',
-    type: 'guides-and-playbooks',
-    typeLabel: 'Guides and playbooks',
-    typeIcon: 'book',
   },
   {
     title: 'Introduction to product approach for the public sector',
