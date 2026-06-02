@@ -105,7 +105,7 @@ Subject: Request for Review: [BUCP Name]
 
 Dear [insert security department representative name],
 
-I am writing to request a legal review of the proposed data sharing project, <insert BUCP Name>. This project aims to <insert briefly stated project purpose, e.g., "improve service delivery by integrating data from partner agencies">. 
+I am writing to request a legal review of the proposed data sharing project, [insert BUCP Name]. This project aims to [insert briefly stated project purpose, e.g., "improve service delivery by integrating data from partner agencies"]. 
 
 Our department is a Signatory Entity under the State of California’s Interagency Data Exchange Agreement (IDEA), the umbrella memorandum of understanding that is intended to facilitate data exchange between state entities. If you are  unfamiliar with IDEA, you can learn more here. 
 
@@ -128,7 +128,7 @@ Dear [insert Data Provider contact name],
 
 We are both Signatory Entities under the State of California’s Interagency Data Exchange Agreement (IDEA), the umbrella memorandum of understanding that is intended to facilitate data exchange between state entities.
 
-Under IDEA, we negotiated a Business Use Case Proposal (BUCP), attached, in which you provided us with the following data: <insert brief description of data>.
+Under IDEA, we negotiated a Business Use Case Proposal (BUCP), attached, in which you provided us with the following data: [insert brief description of data].
 
 Under provision 8.5 of IDEA, we are required to notify you that we experienced an instance of unauthorized access as follows:
 
@@ -180,7 +180,7 @@ Under IDEA, we negotiated a Business Use Case Proposal (BUCP), attached, in whic
 
 Under provision 5.14 of IDEA, we are terminating this agreement due to the following statutory, regulatory, or contractual change which now prohibits our ability to share the data under our BUCP:
 
-<insert brief description of change and why this requires a termination and any time constraints or requirements for deletion/removal; consider attaching a more detailed report>.
+[insert brief description of change and why this requires a termination and any time constraints or requirements for deletion/removal; consider attaching a more detailed report].
 
 We request to meet and discuss the steps involved in this termination.
 
