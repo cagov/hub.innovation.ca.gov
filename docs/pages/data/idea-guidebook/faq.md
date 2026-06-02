@@ -1,5 +1,5 @@
 ---
-layout: single-column
+layout: page
 title: Frequently asked questions
 parentid: IDEA Guiebook
 parentidlink: /data/idea-guidebook/
