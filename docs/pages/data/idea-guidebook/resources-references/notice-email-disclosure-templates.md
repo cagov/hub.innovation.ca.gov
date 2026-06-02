@@ -12,7 +12,7 @@ headericon: book
 
 Subject: Request to exchange data under IDEA
 
-Dear <insert Data Provider contact name>,
+Dear [insert Data Provider contact name],
 
 We are both Signatory Entities under the State of California’s Interagency Data Exchange Agreement (IDEA), the umbrella memorandum of understanding that is intended to facilitate data exchange between state entities. If you are unfamiliar with IDEA, you can learn more in the attached FAQ.
 
