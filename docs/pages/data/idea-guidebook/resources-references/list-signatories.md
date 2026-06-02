@@ -10,8 +10,6 @@ headericon: book
 
 <p class="text-lead">This is a list of all state entities that have signed the agreement. This list is updated whenever a new signatory is added.</p>
 
-Please [contact us](https://cagov.surveymonkey.com/r/CAIDEAFeedback) if you note any errors.
-
 | Name | Agency/Funding source |
 | --- | --- |
 | California Volunteers | |
@@ -56,27 +54,27 @@ Please [contact us](https://cagov.surveymonkey.com/r/CAIDEAFeedback) if you note
 | State Teachers' Retirement System | Government Operations Agency |
 | Technology, Department of | Government Operations Agency |
 | Victim Compensation Board, California | Government Operations Agency |
-| Aging, Department of | Health and Human Services |
-| California Health and Human Services Agency, Secretary for | Health and Human Services |
-| Child Support Services, Department of | Health and Human Services |
-| Community Services and Development, Department of | Health and Human Services |
-| Developmental Services, Department of | Health and Human Services |
-| Emergency Medical Services Authority | Health and Human Services |
-| Health Care Services, State Department of | Health and Human Services |
-| Managed Health Care, Department of | Health and Human Services |
-| Mental Health Services Oversight and Accountability Commission | Health and Human Services |
-| Office of Youth & Community Restoration | Health and Human Services |
-| Public Health, Department of | Health and Human Services |
-| Rehabilitation, Department of | Health and Human Services |
-| Social Services, Department of | Health and Human Services |
-| State Hospitals, Department of | Health and Human Services |
-| Statewide Health Planning and Development, Office of | Health and Human Services |
+| Aging, Department of | Health and Human Services Agency |
+| California Health and Human Services Agency, Secretary for | Health and Human Services Agency |
 | Center for Data Insights and Innovation at CHHS | Health and Human Services Agency |
+| Child Support Services, Department of | Health and Human Services Agency |
+| Community Services and Development, Department of | Health and Human Services Agency |
+| Developmental Services, Department of | Health and Human Services Agency |
+| Emergency Medical Services Authority | Health and Human Services Agency |
+| Health Care Services, State Department of | Health and Human Services Agency |
+| Managed Health Care, Department of | Health and Human Services Agency |
+| Mental Health Services Oversight and Accountability Commission | Health and Human Services Agency |
 | Office of Health Information Integrity | Health and Human Services Agency |
 | Office of Law Enforcement Support | Health and Human Services Agency |
 | Office of Systems Integration | Health and Human Services Agency |
 | Office of the Patient Advocate | Health and Human Services Agency |
 | Office of the Surgeon General | Health and Human Services Agency |
+| Office of Youth & Community Restoration | Health and Human Services Agency |
+| Public Health, Department of | Health and Human Services Agency |
+| Rehabilitation, Department of | Health and Human Services Agency |
+| Social Services, Department of | Health and Human Services Agency |
+| State Hospitals, Department of | Health and Human Services Agency |
+| Statewide Health Planning and Development, Office of | Health and Human Services Agency |
 | Agricultural Labor Relations Board | Public Employment Relations Board |
 | California Employment Training Panel | Public Employment Relations Board |
 | California Unemployment Insurance Appeals Board | Public Employment Relations Board |
