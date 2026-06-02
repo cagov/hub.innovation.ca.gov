@@ -22,7 +22,7 @@ Yes, if your department or entity is a signatory to IDEA. The goal of IDEA is to
 
 ### Are the UCs, CSUs and Community Colleges included in this effort? 
 
-Any state entity is encouraged to and can sign onto the IDEA. As of August 2025, the UCs, CSUs, and Community Colleges have not yet done so. Please refer to the [list of signature entities](/data/idea-guidebook/list-signatories) for current status.
+Any state entity is encouraged to and can sign onto the IDEA. As of August 2025, the UCs, CSUs, and Community Colleges have not yet done so. Please refer to the [list of signature entities](/data/idea-guidebook/resources-references/list-signatories) for current status.
 
 ### Does IDEA require us to give our data to any other state entity? 
 
