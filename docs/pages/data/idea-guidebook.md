@@ -14,6 +14,10 @@ Version 2.0 | Last Updated May 1, 2026.
   <p>The Interagency Data Exchange Agreement is managed by the Statewide Chief Data Officer who sits within the <a href="https://innovation.ca.gov/">Office of Data and Innovation.</p>
 </div>
 
+## Introduction
+
+This guidebook is designed to help you use the Interagency Data Exchange Agreement (IDEA).
+
 <div class="arrow-list">
 
 * [How to develop and manage a data sharing agreement](/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/)<span class="angle-bracket"> </span>
@@ -27,9 +31,7 @@ Version 2.0 | Last Updated May 1, 2026.
 
 </div>
 
-## Introduction
-
-This guidebook is designed to help you use the Interagency Data Exchange Agreement (IDEA). IDEA is an umbrella Memorandum of Understanding (MOU) that facilitates data exchange between state entities in California.
+IDEA is an umbrella Memorandum of Understanding (MOU) that facilitates data exchange between state entities in California.
 
 The IDEA consists of two parts: 
 
