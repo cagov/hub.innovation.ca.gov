@@ -78,7 +78,6 @@ Follow the terms of the agreement to exchange and manage the data. Below we incl
     <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates/#template3a-notice-of-unauthorized-access-provision-85">Notice of unauthorized access (provision 8.5)</a></li>
     <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-notice-of-security-incident-provision-86">Notice of security incident (provision 8.6)</a></li>
     <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates#template3a-data-disclosure-language-provision-511">Data disclosure language (provision 5.11)</a></li>
-    <li><a href="/data/idea-guidebook/resources-references/notice-email-disclosure-templates">Data Field Definitions Template</a></li>
   </ul>
 </div>
 
