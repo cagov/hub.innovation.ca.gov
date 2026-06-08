@@ -1,9 +1,7 @@
 ---
 title: Be concise
-parentid: Content design
-parentidlink: /content-design/
-subparentid: Content design principles
-subparentidlink: /content-design/principles/
+parentid: Content design principles
+parentidlink: /content-design/principles/
 description: Simple writing supports equal outcomes.
 headerlabel: Standards and principles
 headericon: star

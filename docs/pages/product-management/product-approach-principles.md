@@ -1,8 +1,6 @@
 ---
 title: Product approach principles
 description: ODI’s 6 keys for designing and delivering services that solve business problems and meet user needs
-parentid: Product management
-parentidlink: /product-management/
 headerlabel: Standards and principles
 headericon: star
 ---

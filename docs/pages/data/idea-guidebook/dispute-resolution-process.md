@@ -1,7 +1,7 @@
 ---
 layout: single-column
 title: Dispute resolution process
-parentid: IDEA Guiebook
+parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
 description: Use the Dispute Resolution Process when the Data Provider objects to the data exchange or there are disagreements on de-identification or costs
 headerlabel: Guides and playbooks
