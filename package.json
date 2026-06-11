@@ -2,7 +2,6 @@
   "name": "innovation-hub",
   "version": "0.9.1",
   "description": "ODI Innovation Hub – A work in progress!",
-  "main": "index.js",
   "scripts": {
     "build": "eleventy",
     "dev": "npm run site:watch:dev",
@@ -26,11 +25,7 @@
   "homepage": "https://github.com/cagov/innovation-hub#readme",
   "devDependencies": {
     "@open-wc/eslint-config": "^11.0.0",
-    "@open-wc/testing": "^3.0.0-next.2",
     "@playwright/test": "^1.25.1",
-    "@web/dev-server": "^0.1.17",
-    "@web/test-runner": "^0.13.16",
-    "@web/test-runner-puppeteer": "^0.10.5",
     "axe-playwright": "^1.1.12",
     "chalk": "^5.3.0",
     "esbuild": "^0.25.1",
@@ -38,7 +33,6 @@
     "eslint-config-prettier": "^8.3.0",
     "lightningcss": "^1.28.2",
     "prettier": "^2.4.1",
-    "rollup-plugin-import-css": "^2.0.1",
     "sass": "^1.77.0"
   },
   "prettier": {
@@ -47,7 +41,6 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@cagov/ds-back-to-top": "^2.0.0",
     "@cagov/ds-base-css": "^2.0.0-beta.1",
     "@cagov/ds-feature-card": "^1.0.6",
     "@cagov/ds-link-grid": "^2.1.0",
@@ -60,11 +53,8 @@
     "@cagov/ds-skip-to-content": "^1.0.2",
     "@cagov/ds-statewide-footer": "^1.0.8",
     "@cagov/ds-statewide-header": "^1.0.16",
-    "@cagov/ds-step-list": "^3.0.0",
     "@cagov/ds-table": "^1.0.1",
-    "cheerio": "^1.0.0-rc.12",
     "cross-env": "^7.0.3",
-    "glob": "^7.2.0",
     "highlight.js": "^11.3.1",
     "html-to-text": "^9.0.5",
     "markdown-it": "^14.1.0",

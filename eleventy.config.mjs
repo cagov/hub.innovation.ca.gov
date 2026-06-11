@@ -4,8 +4,6 @@ import * as sass from 'sass';
 import chalk from 'chalk';
 import fs from 'node:fs';
 import markdown from './docs/src/11ty/markdown.js';
-import htmlTransform from './docs/src/11ty/html-transform.js';
-import forUnsetComponents from './docs/src/11ty/for-unset-components.js';
 
 /**
  * Log an output from a build process in the 11ty style.
@@ -97,8 +95,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget('docs/src/css/');
   eleventyConfig.addWatchTarget('docs/src/js/');
 
-  forUnsetComponents((folder) => eleventyConfig.ignores.add(folder));
-
   eleventyConfig.addFilter('calculateReadabilityGrade', (value) => {
     // This readability score grading scale was created with these thresholds intentionally by the ODI content team. These score display values represent the desired values corresponding to the ARI analysis. Using these round numbers is preferable to an equation that returns any integer because it matches hemingwayapp's scoring where grade levels are only returned as whole numbers.
     let readabilityScore = 100;
@@ -131,8 +127,6 @@ export default function (eleventyConfig) {
     return 'speedlify-score-bad'
   })
 
-  eleventyConfig.addTransform('htmlTransform', htmlTransform);
-
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPassthroughCopy({
@@ -143,7 +137,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/papers': 'papers' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/css/fonts': 'fonts' });
   eleventyConfig.addPassthroughCopy({ '_site_dist/*': '/' });
-  eleventyConfig.addPassthroughCopy({ '_build_dist/*': 'builds' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/papers/bobra-water-1': 'papers/bobra-water-1' });
 
 
