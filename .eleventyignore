@@ -2,12 +2,9 @@
 .husky
 .history
 test
-components
 package.json
 package-lock.json
 README.md
-unit-tests.md
 node_modules/**
 **/node_modules/**
 _site_dist
-_build_dist
