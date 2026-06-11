@@ -1,36 +1,101 @@
-const cagovBuildSystem = require('@cagov/11ty-build-system');
-const markdown = require('./docs/src/11ty/markdown.js');
-const htmlTransform = require('./docs/src/11ty/html-transform.js');
-const forUnsetComponents = require('./docs/src/11ty/for-unset-components.js');
-const fs = require('fs');
+import esbuild from 'esbuild';
+import { transform as lcssTransform } from 'lightningcss';
+import * as sass from 'sass';
+import chalk from 'chalk';
+import fs from 'node:fs';
+import markdown from './docs/src/11ty/markdown.js';
+import htmlTransform from './docs/src/11ty/html-transform.js';
+import forUnsetComponents from './docs/src/11ty/for-unset-components.js';
 
-module.exports = function (eleventyConfig) {
+/**
+ * Log an output from a build process in the 11ty style.
+ * @param {string} srcPath The source of the build process.
+ * @param {string} distPath The output of the build process.
+ * @param {string} assetType The type of build: CSS, JS, etc.
+ * @returns {void}
+ */
+const buildLog = (srcPath, distPath, assetType) => {
+  const projectLabel = chalk.blue('[innovation-hub]');
+  const distLabel = `Writing ./${distPath}`;
+  const srcLabel = chalk.gray(`from ./${srcPath} (${assetType})`);
+
+  console.log(`${projectLabel} ${distLabel} ${srcLabel}`);
+};
+
+/**
+ * Compile Sass, then minify with lightningcss.
+ * @returns {Promise<void>}
+ */
+const buildCSS = async () => {
+  const srcPath = 'docs/src/css/sass/index.scss';
+  const distPath = '_site_dist/index.css';
+
+  const compiled = sass.compile(srcPath, {
+    loadPaths: ['docs/src/css/sass'],
+    quietDeps: true,
+    silenceDeprecations: ['import', 'global-builtin'],
+  });
+
+  // @cagov/ds-feature-card ships an invalid declaration, `min-width: calc(30% - var(0px))`,
+  // which browsers ignore but lightningcss rejects. Drop it to match browser behavior.
+  const css = compiled.css.replace(/^\s*min-width: calc\(30% - var\(0px\)\);$/m, '');
+
+  const { code } = lcssTransform({
+    filename: distPath,
+    code: Buffer.from(css),
+    minify: true,
+  });
+
+  buildLog(srcPath, distPath, 'CSS');
+
+  await fs.promises.mkdir('_site_dist', { recursive: true });
+  await fs.promises.writeFile(distPath, code);
+};
+
+/**
+ * Build and bundle JavaScript.
+ * @returns {Promise<void>}
+ */
+const buildJS = async () => {
+  const srcPath = 'docs/src/js/index.js';
+  const distPath = '_site_dist/built.js';
+
+  buildLog(srcPath, distPath, 'JavaScript');
+
+  await esbuild.build({
+    entryPoints: [srcPath],
+    bundle: true,
+    minify: true,
+    outfile: distPath,
+  });
+};
+
+let firstBuild = true;
+
+export default function (eleventyConfig) {
   eleventyConfig.setLibrary('md', markdown);
 
-  eleventyConfig.addPlugin(cagovBuildSystem, {
-    processors: {
-      sass: {
-        watch: ['docs/src/css/**/*'],
-        output: '_site_dist/index.css',
-        minify: true,
-        options: {
-          file: 'docs/src/css/sass/index.scss',
-          includePaths: ['./src/css/sass'],
-        },
-      },
-      esbuild: [
-        {
-          watch: ['docs/src/js/**/*'],
-          options: {
-            entryPoints: ['docs/src/js/index.js'],
-            bundle: true,
-            minify: true,
-            outfile: '_site_dist/built.js',
-          },
-        },
-      ],
-    },
+  eleventyConfig.on('eleventy.before', async ({ runMode }) => {
+    // Only build all of the bundle files during first run, not on every change.
+    if (firstBuild || runMode !== 'serve') {
+      await buildCSS();
+      await buildJS();
+      firstBuild = false;
+    }
   });
+
+  eleventyConfig.on('eleventy.beforeWatch', async (changedFiles) => {
+    // During development changes, only reload the bundles that need reloading.
+    if (changedFiles.some((file) => file.includes('docs/src/css/'))) {
+      await buildCSS();
+    }
+    if (changedFiles.some((file) => file.includes('docs/src/js/'))) {
+      await buildJS();
+    }
+  });
+
+  eleventyConfig.addWatchTarget('docs/src/css/');
+  eleventyConfig.addWatchTarget('docs/src/js/');
 
   forUnsetComponents((folder) => eleventyConfig.ignores.add(folder));
 
@@ -95,7 +160,7 @@ module.exports = function (eleventyConfig) {
 
     fs.writeFileSync("./_site_dist/allFiles.json", htmlFileJson, "utf8");
   });
-  
+
   return {
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
