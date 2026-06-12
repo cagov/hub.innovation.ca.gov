@@ -1,7 +1,5 @@
 ---
 title: Enabling analysis of California’s hiring and recruitment data 
-parentid: Data
-parentidlink: /data/
 description: How CalHR worked with ODI to increase analysis capabilities for ECOS.
 headerlabel: Papers
 headericon: paper

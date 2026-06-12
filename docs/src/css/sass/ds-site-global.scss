@@ -537,7 +537,7 @@ div.official-header {
   color:white;
 }
 div.site-header {
-  background-color: var(--odi-brand, #f5f8fb);
+  // background-color: var(--odi-brand, #f5f8fb);
 }
 
 .breadcrumb {
@@ -701,6 +701,26 @@ div.twocolumn-table {
       }
   }
 }
+
+div.shadedheader-table {
+  table {
+      thead {
+          background-color: #FAFAFA;
+          th {
+              border: 1px solid #C7D6E4;
+              font-size: 18px;
+          }
+      }
+      tbody {
+          background-color: white;
+          td {
+              font-size: 14px;
+              border: 1px solid #C7D6E4;
+          }
+      }
+  }
+}
+
 
 div.runofshow-table {
   margin-top: 2rem;

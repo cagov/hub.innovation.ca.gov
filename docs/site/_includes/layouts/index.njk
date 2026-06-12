@@ -83,7 +83,9 @@
     {% endblock %}
 
     {% block siteNavigation %}
-      {% include "site-navigation.njk" %}
+      {% if not hide_site_navigation %}
+        {# {% include "site-navigation.njk" %} #}
+      {% endif %}
     {% endblock %}
   </header>
 

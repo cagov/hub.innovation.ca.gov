@@ -4,10 +4,11 @@
 }
 
 body {
-  background-color: var(--odi-brand, #F5F8FB);
+  // background-color: var(--odi-brand, #F5F8FB);
+  background: linear-gradient(#fbefe0, #fff 600px);
 }
 .site-footer {
-  background-color: white;
+  // background-color: white;
 }
 
 .cagov-article {

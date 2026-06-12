@@ -1,7 +1,5 @@
 ---
 title: Introduction to plain language for the public sector
-parentid: Content design
-parentidlink: /content-design/
 description: An introduction to plain language for State of California staff
 layout: single-column
 keywords: 

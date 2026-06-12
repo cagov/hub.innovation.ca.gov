@@ -1,8 +1,6 @@
 ---
 layout: page
 title: California Data Standard
-parentid: Data
-parentidlink: /data/
 description: Standards that support the consistent collection, analysis, and reporting of data on race and ethnicity across state departments and agencies
 headerlabel: Standards and principles
 headericon: star
@@ -46,18 +44,16 @@ Respondents should be offered a single combined race and ethnicity question that
 State departments and agencies should use the 7 top-level categories defined in Table 1 in their race and ethnicity data collection. 
 
 **Table 1: Top-level set of race and ethnicity categories**
-<div class="twocolumn-table">
 
-| **Top-level category**                  | **Definition** |
-| --------------------------------------- | -------------- | 
-| **American Indian or Alaska Native**    | Individuals with origins in any of the original peoples of North, Central, and South America, including, for example, Navajo Nation, Blackfeet Tribe of the Blackfeet Indian Reservation of Montana, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, Aztec, and Maya. |
-| **Asian**                               | Individuals with origins in any of the original peoples of Central or East Asia, Southeast Asia, or South Asia, including, for example, Chinese, Asian Indian, Filipino, Vietnamese, Korean, and Japanese. |
-| **Black or African American**           | Individuals with origins in any of the Black racial groups of Africa, including, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, and Somali. |
-| **Hispanic or Latino**                  | Includes individuals of Mexican, Puerto Rican, Salvadoran, Cuban, Dominican, Guatemalan, and other Central or South American or Spanish culture or origin. |
-| **Middle Eastern or North African**     | Individuals with origins in any of the original peoples of the Middle East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian, Iraqi, and Israeli. |
+| **Top-level category** | **Definition** |
+| --- | --- | 
+| **American Indian or Alaska Native** | Individuals with origins in any of the original peoples of North, Central, and South America, including, for example, Navajo Nation, Blackfeet Tribe of the Blackfeet Indian Reservation of Montana, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, Aztec, and Maya. |
+| **Asian** | Individuals with origins in any of the original peoples of Central or East Asia, Southeast Asia, or South Asia, including, for example, Chinese, Asian Indian, Filipino, Vietnamese, Korean, and Japanese. |
+| **Black or African American** | Individuals with origins in any of the Black racial groups of Africa, including, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, and Somali. |
+| **Hispanic or Latino** | Includes individuals of Mexican, Puerto Rican, Salvadoran, Cuban, Dominican, Guatemalan, and other Central or South American or Spanish culture or origin. |
+| **Middle Eastern or North African** | Individuals with origins in any of the original peoples of the Middle East or North Africa, including, for example, Lebanese, Iranian, Egyptian, Syrian, Iraqi, and Israeli. |
 | **Native Hawaiian or Pacific Islander** | Individuals with origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands, including, for example, Native Hawaiian, Samoan, Chamorro, Tongan, Fijian, and Marshallese. |
-| **White**                               | Individuals with origins in any of the original peoples of Europe, including, for example, English, German, Irish, Italian, Polish, and Scottish. |
-</div>
+| **White** | Individuals with origins in any of the original peoples of Europe, including, for example, English, German, Irish, Italian, Polish, and Scottish. |
 
 Table 2 below is a recommended set of detailed category groups ordered by population prevalence within each top-level category within the state of California. These population figures are based on the 2020 Decennial Census Detailed Race/Ethnicity population estimates for California contained in the [DHC-A](https://www.census.gov/data/tables/2023/dec/2020-census-detailed-dhc-a.html).
 
@@ -67,20 +63,16 @@ Note: The Asian top-level category has 8 options due to state code requirements 
 
 **Table 2: Detailed set of race and ethnicity categories**
 
-<div class="twocolumn-table">
-
-| **Category**                  | **Detailed categories** |
-| --------------------------------------- | -------------- | 
-| **American Indian or Alaska Native**    | Write-in option |
-| **Asian**                               | <ul><li>Chinese</li><li>Filipino</li><li>Asian Indian</li><li>Vietnamese</li><li>Korean</li><li>Japanese</li><li>Cambodian</li><li>Laotian</li><li>Another group not listed (for example, Taiwanese, Hmong, Pakistani): __</li></ul> |
-| **Black or African American**           | <ul><li>African American</li><li>Nigerian</li><li>Jamaican</li><li>Ethiopian</li><li>Haitian</li><li>South African</li><li>Another group not listed (for example, Eritrean, Ghanaian, Kenyan): __</li></ul> |
-| **Hispanic or Latino**                  | <ul><li>Mexican</li><li>Salvadoran</li><li>Guatemalan</li><li>Puerto Rican</li><li>Spaniard/Spanish</li><li>Peruvian</li><li>Another group not listed (for example, Nicaraguan, Honduran, Cuban): __</li></ul> |
-| **Middle Eastern or North African**     | <ul><li>Iranian</li><li>Lebanese</li><li>Egyptian</li><li>Israeli</li><li>Iraqi</li><li>Syrian</li><li>Another group not listed (for example, Palestinian, Jordanian, Moroccan): __</li></ul> |
+| **Category** | **Detailed categories** |
+| --- | --- | 
+| **American Indian or Alaska Native** | Write-in option |
+| **Asian** | <ul><li>Chinese</li><li>Filipino</li><li>Asian Indian</li><li>Vietnamese</li><li>Korean</li><li>Japanese</li><li>Cambodian</li><li>Laotian</li><li>Another group not listed (for example, Taiwanese, Hmong, Pakistani): __</li></ul> |
+| **Black or African American** | <ul><li>African American</li><li>Nigerian</li><li>Jamaican</li><li>Ethiopian</li><li>Haitian</li><li>South African</li><li>Another group not listed (for example, Eritrean, Ghanaian, Kenyan): __</li></ul> |
+| **Hispanic or Latino** | <ul><li>Mexican</li><li>Salvadoran</li><li>Guatemalan</li><li>Puerto Rican</li><li>Spaniard/Spanish</li><li>Peruvian</li><li>Another group not listed (for example, Nicaraguan, Honduran, Cuban): __</li></ul> |
+| **Middle Eastern or North African** | <ul><li>Iranian</li><li>Lebanese</li><li>Egyptian</li><li>Israeli</li><li>Iraqi</li><li>Syrian</li><li>Another group not listed (for example, Palestinian, Jordanian, Moroccan): __</li></ul> |
 | **Native Hawaiian or Pacific Islander** | <ul><li>Native Hawaiian</li><li>Samoan</li><li>Chamorro</li><li>Fijian</li><li>Tongan</li><li>Marshallese</li><li>Another group not listed (for example, Palauan, Tahitian, Maori): __</li></ul> |
-| **White**                               | <ul><li>English</li><li>German</li><li>Irish</li><li>Italian</li><li>Scottish</li><li>French</li><li>Another group not listed (for example, Polish, Swedish, Russian): __</li></ul> |
+| **White** | <ul><li>English</li><li>German</li><li>Irish</li><li>Italian</li><li>Scottish</li><li>French</li><li>Another group not listed (for example, Polish, Swedish, Russian): __</li></ul> |
 
-
-</div>
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">

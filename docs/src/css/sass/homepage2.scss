@@ -1,0 +1,216 @@
+/* /homepage2/ — filtered resource browser */
+
+div.homepage2-page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+div.homepage2-top-block {
+  margin: 24px 0 32px;
+}
+
+div.homepage2-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  align-items: start;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+aside.filter-tools {
+  background-color: white;
+  border: 1px solid #d4d4d7;
+  border-radius: 8px;
+  padding: 20px 16px;
+
+  h2.filter-tools-heading {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d4f8c;
+    margin: 0 0 16px;
+  }
+
+  .filter-section {
+    margin-bottom: 20px;
+
+    &.filter-search label {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    input[type='search'] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 10px;
+      border: 1px solid #c7d6e4;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 16px;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      .filter-section-title {
+        flex: 1;
+      }
+    }
+
+    @media screen and (min-width: 901px) {
+      &[open] > summary,
+      & > summary {
+        cursor: default;
+      }
+      & > summary::after {
+        content: '';
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      border: 1px solid #d4d4d7;
+      border-radius: 4px;
+      padding: 4px 12px;
+
+      & > summary {
+        padding: 10px 0;
+
+        &::after {
+          content: '\25BE';
+          font-size: 14px;
+          color: #0d4f8c;
+          transition: transform 0.2s;
+        }
+      }
+
+      &[open] > summary::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    fieldset.filter-options {
+      border: 0;
+      margin: 0;
+      padding: 0 0 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      label {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+
+        input[type='checkbox'] {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  button.clear-all-btn {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: #0d4f8c;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+    &:focus {
+      outline: 2px solid #3f73a4;
+      outline-offset: 2px;
+    }
+  }
+}
+
+section.tile-results {
+  min-width: 0;
+
+  .tile-results-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .tile-results-count {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .tile-results-sort {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+
+    select {
+      padding: 6px 8px;
+      border: 1px solid #c7d6e4;
+      border-radius: 4px;
+      font-size: 14px;
+      background-color: white;
+    }
+  }
+
+  .hp2-tile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    @media screen and (max-width: 1100px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
+    a.tile-link[hidden] {
+      display: none;
+    }
+  }
+
+  p.hp2-no-results {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #555;
+  }
+}
+
+/* Screen-reader-only utility for legend hiding */
+body.home-page-2 .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

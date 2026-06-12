@@ -133,6 +133,7 @@ export default function (eleventyConfig) {
     'docs/src/assets/illustrations': 'illustrations',
   });
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/img': 'img' });
+  eleventyConfig.addPassthroughCopy({ 'docs/src/assets/docs': 'docs' });
  //  eleventyConfig.addPassthroughCopy({ 'docs/src/assets/article-content': 'content/img' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/papers': 'papers' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/css/fonts': 'fonts' });
