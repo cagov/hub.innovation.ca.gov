@@ -12,11 +12,6 @@
 @import 'step-list-patch';
 @import "../../../../node_modules/@cagov/ds-skip-to-content/src/index.scss";
 @import "../../../../node_modules/@cagov/ds-table/src/index.scss";
-@import '../../../../node_modules/@cagov/ds-page-alert/src/index.scss';
-
-/* ICON LIBRARY */
-// @import '../../../../node_modules/@cagov/ds-icons/src/icon-library.scss';
-// @import '../../../../components/icons/src/icon-library.scss';
 
 /* NAVIGATION ELEMENTS */
 @import "../../../../node_modules/@cagov/ds-statewide-header/src/index.scss";
@@ -29,23 +24,11 @@
 /* sitewide styles */
 @import './ds-site-global';
 
-/* proposed new components */
-// @import '../../../../components/highlight-section/src/index.scss';
-
 /* proposed variations for existing design system components */
 @import './feature-card-variations';
 
 /* these are additions to base-css grids */
 @import './grids';
-
-/* Used on the components page to display component cards */
-// @import './component-page';
-
-/* Used on the principles page to display each principle */
-// @import './principles-page';
-
-/* Used on the visual design style guide page to for table and font demo styles */
-// @import './design-guide-page';
 
 @import './par-scores';
 
