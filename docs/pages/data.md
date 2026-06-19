@@ -24,6 +24,13 @@ page_class: content-directory
     <a class="tile-link" href="/data/developing-trustworthy-monitoring-data/">
     <div class="content-tile">
     <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
+    <div class="content-tile-title">Making local population estimates more efficient to support resource allocation</div>
+    <p>ODI helped the Department of Finance make small-area population estimates faster and more reliable
+    </p>
+    </div></a>
+    <a class="tile-link" href="/data/making-local-population-estimates-more-efficient-support-resource-allocation/">
+    <div class="content-tile">
+    <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
     <div class="content-tile-title">Developing trustworthy monitoring data</div>
     <p>ODI built an outlier detection tool to interactively assess environmental monitoring data quality
     </p>
