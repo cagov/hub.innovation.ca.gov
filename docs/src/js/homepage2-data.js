@@ -138,6 +138,17 @@ const HOMEPAGE2_TILES = [
     typeIcon: 'ribbon',
   },
   {
+    title: 'Making local population estimates more efficient to support resource allocation',
+    description:
+      'ODI helped the Department of Finance make small-area population estimates faster and more reliable ',
+    url: 'data/making-local-population-estimates-more-efficient-support-resource-allocation/',
+    topic: 'data',
+    topicLabel: 'Data',
+    type: 'papers',
+    typeLabel: 'Papers',
+    typeIcon: 'paper',
+  },
+  {
     title: 'Developing trustworthy monitoring data',
     description:
       'ODI built an outlier detection tool to interactively assess environmental monitoring data quality',
