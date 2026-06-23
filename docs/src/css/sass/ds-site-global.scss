@@ -145,6 +145,27 @@ a.tile-link {
     border-radius:8px;
     border: 1px solid #D4D4D7;
 
+    div.content-tile-labels {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    span.title-card-topic-label {
+      vertical-align: top;
+      font-size: 14px;
+      font-weight: 400;
+      height: 26px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: #EDEDEF;
+      border: 0.5px solid #D4D4D7;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 12px;
+    }
+
     div.content-tile-header {
       vertical-align: top;
       font-size: 14px;
@@ -160,7 +181,7 @@ a.tile-link {
       background-size: 24px;
       background-position: left 4px center;
       padding-left: 32px;
-      span.title-card-header-label {
+      span.title-card-format-label {
         vertical-align: middle;
       }
     }

@@ -33,8 +33,11 @@ function renderTiles(grid, tiles) {
         `data-topic-label="${escapeHtml(t.topicLabel)}" ` +
         `data-type-label="${escapeHtml(t.typeLabel)}">` +
         `<div class="content-tile">` +
+        `<div class="content-tile-labels">` +
+        `<span class="title-card-topic-label">${escapeHtml(t.topicLabel)}</span>` +
         `<div class="content-tile-header header-${escapeHtml(t.typeIcon)}">` +
-        `<span class="title-card-header-label">${escapeHtml(t.typeLabel)}</span>` +
+        `<span class="title-card-format-label">${escapeHtml(t.typeLabel)}</span>` +
+        `</div>` +
         `</div>` +
         `<div class="content-tile-title">${escapeHtml(t.title)}</div>` +
         `<p>${escapeHtml(t.description)}</p>` +
