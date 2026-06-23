@@ -12,7 +12,7 @@ div.homepage2-top-block {
 
 div.homepage2-grid {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 298px 1fr;
   gap: 32px;
   align-items: start;
 
@@ -111,17 +111,48 @@ aside.filter-tools {
       padding: 0 0 6px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 14px;
 
       label {
-        font-size: 14px;
+        font-size: 18px;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 14px;
         cursor: pointer;
 
         input[type='checkbox'] {
+          appearance: none;
+          -webkit-appearance: none;
+          flex-shrink: 0;
           margin: 0;
+          width: 28px;
+          height: 28px;
+          border: 2px solid #00315F;
+          border-radius: 6px;
+          background: #fff;
+          cursor: pointer;
+          position: relative;
+
+          &:checked {
+            background: #0b3d68;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 4px;
+              left: 9px;
+              width: 6px;
+              height: 12px;
+              border: solid #fff;
+              border-width: 0 2px 2px 0;
+              transform: rotate(45deg);
+            }
+          }
+
+          &:focus-visible {
+            outline: 2px solid #3f73a4;
+            outline-offset: 2px;
+          }
         }
       }
     }
