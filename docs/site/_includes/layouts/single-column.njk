@@ -31,8 +31,8 @@
     <article id="post-{{ page.fileSlug }}" class="cagov-article with-single-column">
       {% if headerlabel or topiclabel %}
       <div class="content-page-labels">
-        {% if topiclabel %}<span class="content-page-topic-label">{{ topiclabel }}</span>{% endif %}
-        {% if headerlabel %}<div class="content-page-header header-{{headericon}}"><span class="content-page-header-label">{{ headerlabel }}</span></div>{% endif %}
+        {% if topiclabel %}<a class="content-page-topic-label" href="/?topic={{ topicslug }}">{{ topiclabel }}</a>{% endif %}
+        {% if headerlabel %}<a class="content-page-header header-{{headericon}}" href="/?type={{ formatslug }}"><span class="content-page-header-label">{{ headerlabel }}</span></a>{% endif %}
       </div>
       {% endif %}
       <h1 class="page-title">
