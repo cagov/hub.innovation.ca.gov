@@ -167,20 +167,14 @@ a.tile-link {
     }
 
     div.content-tile-header {
-      vertical-align: top;
       font-size: 14px;
-      border: 1px solid ;
       font-weight: 400;
       height: 26px;
-      padding-right:12px;
-      border-radius:8px;
-      display: inline-block;
-      position: relative;
-      background-image: url(/img/tile-icon-star.png);
-      background-repeat: no-repeat;
-      background-size: 24px;
-      background-position: left 4px center;
-      padding-left: 32px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 12px;
       span.title-card-format-label {
         vertical-align: middle;
       }
@@ -225,29 +219,40 @@ a.tile-link {
   }
 }
 
-div.content-page-header {
+div.content-page-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+span.content-page-topic-label {
   font-size: 14px;
-  border: 1px solid ;
   font-weight: 400;
   height: 28px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right:12px;
-  border-radius:8px;
-  display: inline-block;
-  position: relative;
-  background-image: url(/img/tile-icon-star.png);
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: left 4px center;
-  padding-left: 32px;
-  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #EDEDEF;
+  border: 0.5px solid #D4D4D7;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+div.content-page-header {
+  font-size: 14px;
+  font-weight: 400;
+  height: 28px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
 }
 
 span.content-page-header-label {
   vertical-align: middle;
-  position: relative;
-  top: -0.07rem;
 }
 /* ODI BLOCK */
 div.odiblock-grid-wrapper {
@@ -427,27 +432,24 @@ div.header-icon {
   border-radius:8px;
   margin-right: 16px;
 }
-  div.header-ribbon {     background-color: #EFECF8!important;  
-                          border: 0.5px solid #D7D1ED!important; 
-                          background-image: url(/img/tile-icon-ribbon.png)!important; 
+  div.header-ribbon {     background-color: #EFECF8!important;
+                          border: 0.5px solid #D7D1ED!important;
   }
-  div.header-star {       background-color: #FAECDA!important;  
-                          background-image: url(/img/tile-icon-star.png)!important; 
+  div.header-star {       background-color: #FAECDA!important;
                           border: 0.5px solid #D7D1ED!important;
                     }
-  div.header-book {       background-color: #FDEAE5!important;  
-                          border: 0.5px solid #F7CBBE!important; 
-                          background-image: url(/img/tile-icon-book.png)!important; }
-  div.header-bookmark {   background-color: #E1F1EE!important;  
-                          border: 0.5px solid #8BC7BD!important; 
-                          background-image: url(/img/tile-icon-bookmark.png)!important; }
-  div.header-templates {  background-color: #EDEDEF!important;  
+  div.header-book {       background-color: #FDEAE5!important;
+                          border: 0.5px solid #F7CBBE!important;
+  }
+  div.header-bookmark {   background-color: #E1F1EE!important;
+                          border: 0.5px solid #8BC7BD!important;
+  }
+  div.header-templates {  background-color: #EDEDEF!important;
                           border: 0.5px solid #D4D4D7!important;
-                          background-image: url(/img/tile-icon-template.png)!important; 
                         }
-  div.header-paper {     background-color: #FFECC4!important;  
-                          border: 0.5px solid #FFCD64!important; 
-                            background-image: url(/img/tile-icon-paper.png)!important; }
+  div.header-paper {     background-color: #FFECC4!important;
+                          border: 0.5px solid #FFCD64!important;
+  }
 
 span.orcid-cite {
   // padding-right: 32px;

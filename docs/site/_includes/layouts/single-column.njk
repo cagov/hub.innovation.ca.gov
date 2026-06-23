@@ -29,8 +29,11 @@
   </div>
   <main id="body-content" class="cagov-main">
     <article id="post-{{ page.fileSlug }}" class="cagov-article with-single-column">
-      {% if headerlabel %}
-      <div class="content-page-header header-{{headericon}}"><span class="content-page-header-label">{{ headerlabel }}</span></div>
+      {% if headerlabel or topiclabel %}
+      <div class="content-page-labels">
+        {% if topiclabel %}<span class="content-page-topic-label">{{ topiclabel }}</span>{% endif %}
+        {% if headerlabel %}<div class="content-page-header header-{{headericon}}"><span class="content-page-header-label">{{ headerlabel }}</span></div>{% endif %}
+      </div>
       {% endif %}
       <h1 class="page-title">
         {{ title | safe }}
