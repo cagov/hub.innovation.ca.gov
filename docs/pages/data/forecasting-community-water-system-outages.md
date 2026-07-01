@@ -1,7 +1,5 @@
 ---
 title: Forecasting community water system outages
-parentid: Data
-parentidlink: /data/
 description: ODI used data to forecast the impact of drought on community water systems.
 headerlabel: Papers
 headericon: paper

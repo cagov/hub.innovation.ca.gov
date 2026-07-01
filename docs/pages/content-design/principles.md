@@ -2,8 +2,6 @@
 title: Content design principles
 description: ODI’s 7 keys for writing great content, including ways to implement them
 layout: single-column
-parentid: Content design
-parentidlink: /content-design/
 headerlabel: Standards and principles
 headericon: star
 ---

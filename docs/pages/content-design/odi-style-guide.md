@@ -1,7 +1,5 @@
 ---
 title: ODI’s style guide
-parentid: Content design
-parentidlink: /content-design/
 description: How ODI keeps our writing consistent, including the reasons for our choices
 headerlabel: Guides and playbooks
 headericon: book
