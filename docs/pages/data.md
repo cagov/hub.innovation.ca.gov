@@ -25,7 +25,7 @@ page_class: content-directory
     <div class="content-tile">
     <div class="content-tile-header header-book"><span class="title-card-header-label">Guides and playbooks</span></div>
     <div class="content-tile-title">Interagency Data Exchange (IDEA) Guidebook</div>
-    <p>How to use the IDEA, an umbrella MOU that facilitates data exchange between state entities in California
+    <p>Help for implementing an agreement that makes it easier to share data between state entities
     </p>
     </div></a>
     <a class="tile-link" href="/data/making-local-population-estimates-more-efficient-support-resource-allocation/">
