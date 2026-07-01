@@ -13,7 +13,7 @@ Monica G. Bobra <a href="https://orcid.org/0000-0002-5662-9604"><img class="orci
 
 <div class="interaction-block">
 <div class="interaction"><a href="/papers/bobra-et-al-developing-trustworthy-monitoring-data.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" /> Download PDF</a></div>
-<div class="interaction"><a href="https://zenodo.org/records/19579175"><img class="icon" src="/img/paper-link-icon.svg" />https://zenodo.org/records/19579175</a></div>
+<div class="interaction"><a href="https://doi.org/10.5281/zenodo.19579174"><img class="icon" src="/img/paper-ink-icon.svg" />https://doi.org/10.5281/zenodo.19579174</a></div>
 </div>
 
 ## The opportunity

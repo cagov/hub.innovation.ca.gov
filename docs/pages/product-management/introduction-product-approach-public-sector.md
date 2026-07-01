@@ -1,5 +1,5 @@
 ---
-title: Introduction to product approach for the public sector
+title: Introduction to a product approach for the public sector
 description: An online, self-paced course introducing product principles for State of California staff
 layout: single-column
 headerlabel: Training
@@ -14,4 +14,4 @@ You’ll learn how to:
 * Deliver early and often
 * Measure success and optimize for outcomes 
 
-[Sign up for the course on CalLearns](https://calhr.geniussis.com/Registration.aspx?AID=5288). You need a CalLearns account to register for the training.
+[Sign up for the course on CalLearns](https://calhr.geniussis.com/Registration.aspx?AID=6296). You need a CalLearns account to register for the training.

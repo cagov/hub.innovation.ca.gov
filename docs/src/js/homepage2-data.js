@@ -128,7 +128,7 @@ const HOMEPAGE2_TILES = [
     typeIcon: 'ribbon',
   },
   {
-    title: 'Introduction to product approach for the public sector',
+    title: 'Introduction to a product approach for the public sector',
     description: 'An online, self-paced course introducing product principles',
     url: '/product-management/introduction-product-approach-public-sector/',
     topic: 'product-management',

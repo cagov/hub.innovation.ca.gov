@@ -14,7 +14,7 @@ Arman Madani <a href="https://orcid.org/0009-0002-4237-0213"><img class="orcid-c
 <div class="interaction-block">
 
 <div class="interaction"><a href="/papers/madani-et-al-building-housing-intelligence-california.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" /> Download PDF</a></div>
-<div class="interaction"><a href="https://zenodo.org/records/14037440"><img class="icon" src="/img/paper-link-icon.svg" />https://zenodo.org/records/14037440</a></div>
+<div class="interaction"><a href="https://doi.org/10.5281/zenodo.14037439"><img class="icon" src="/img/paper-link-icon.svg" />https://doi.org/10.5281/zenodo.14037439</a></div>
 </div>
 
 ## Problem statement
