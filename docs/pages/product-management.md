@@ -17,7 +17,7 @@ page_class: content-directory
     <a class="tile-link" href="/product-management/introduction-product-approach-public-sector/">
     <div class="content-tile">
     <div class="content-tile-header header-ribbon"><span class="title-card-header-label">Training</span></div>
-    <div class="content-tile-title">Introduction to product approach for the public sector</div>
+    <div class="content-tile-title">Introduction to a product approach for the public sector</div>
     <p>An online, self-paced course introducing product principles
     </p>
     </div></a>
