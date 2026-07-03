@@ -22,20 +22,26 @@
       <div class="expanded-menu-grid">
         <div class="expanded-menu-section mobile-only">
           <strong class="expanded-menu-section-header">
-            <a class="expanded-menu-section-header-link js-event-hm-menu" href="/">Home</a>
+            <a class="expanded-menu-section-header-link js-event-hm-menu" href="https://innovation.ca.gov/">Home</a>
           </strong>
         </div>
 
         <div class="expanded-menu-col js-cagov-navoverlay-expandable">
           <div class="expanded-menu-section">
+            <strong class="expanded-menu-section-header"><a class="expanded-menu-section-header-link js-event-hm-menu" href="https://innovation.ca.gov/work-with-us/">Work with us</a></strong>
+          </div>
+        </div>
+
+        <div class="expanded-menu-col js-cagov-navoverlay-expandable">
+          <div class="expanded-menu-section">
             <strong class="expanded-menu-section-header">
-              <button class="expanded-menu-section-header-link js-event-hm-menu" aria-controls="menu1-links">
+              <button class="expanded-menu-section-header-link js-event-hm-menu" aria-controls="who-we-are">
                 <span>
-                  Browse by topic
+                  Who we are
                 </span>
                 <span class="expanded-menu-section-header-arrow">
-                  <svg aria-hidden="true" width="11" height="7"
-                    class="expanded-menu-section-header-arrow-svg" viewBox="0 0 11 7" fill="#0d4f8c"
+                  <svg aria-hidden=true width="11" height="7"
+                    class="expanded-menu-section-header-arrow-svg" viewBox="0 0 11 7" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.15596 0.204797L5.49336 5.06317L9.8545 0.204797C10.4293 -0.452129 11.4124 0.625368 10.813 1.28143L5.90083 6.82273C5.68519 7.05909 5.32606 7.05909 5.1342 6.82273L0.174341 1.28143C-0.400433 0.6245 0.581838 -0.452151 1.15661 0.204797H1.15596Z"
@@ -44,43 +50,61 @@
                 </span>
               </button>
             </strong>
-            <div class="expanded-menu-dropdown" id="menu1-links">
-              <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/customer-experience/" tabindex="-1">Customer experience</a>
-              <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/human-centered-design/" tabindex="-1">Human-centered design</a> 
-              <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/content-design/" tabindex="-1">Content design</a> 
-              <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/data/" tabindex="-1">Data</a>
-              <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/product-management/" tabindex="-1">Product management</a>
+            <div class="expanded-menu-dropdown" id="who-we-are">
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/who-we-are/our-vision/" tabindex="-1">Our vision</a>
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/who-we-are/calacademy/" tabindex="-1">CalAcademy</a>
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/who-we-are/caldata/" tabindex="-1">CalData</a>
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/who-we-are/how-we-work/" tabindex="-1">CalInnovate</a>
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/who-we-are/meet-the-team/" tabindex="-1">Meet the team</a>
             </div>
           </div>
         </div>
 
-        {% if env.dev %}
-          <div class="expanded-menu-col js-cagov-navoverlay-expandable">
-            <div class="expanded-menu-section">
-              <strong class="expanded-menu-section-header">
-                <button class="expanded-menu-section-header-link js-event-hm-menu" aria-controls="menu3-links">
-                  <span>
-                    Dev
-                  </span>
-                  <span class="expanded-menu-section-header-arrow">
-                    <svg aria-hidden="true" width="11" height="7"
-                      class="expanded-menu-section-header-arrow-svg" viewBox="0 0 11 7" fill="#0d4f8c"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M1.15596 0.204797L5.49336 5.06317L9.8545 0.204797C10.4293 -0.452129 11.4124 0.625368 10.813 1.28143L5.90083 6.82273C5.68519 7.05909 5.32606 7.05909 5.1342 6.82273L0.174341 1.28143C-0.400433 0.6245 0.581838 -0.452151 1.15661 0.204797H1.15596Z"
-                          />
-                    </svg>
-                  </span>
-                </button>
-              </strong>
-              <div class="expanded-menu-dropdown" id="menu3-links">
-                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/par-statistics/" tabindex="-1">PAR Statistics</a>
-                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/markdown/" tabindex="-1">Markdown</a>
-                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/front-matter/" tabindex="-1">Front Matter</a>
-              </div>
+        <div class="expanded-menu-col js-cagov-navoverlay-expandable">
+          <div class="expanded-menu-section">
+            <strong class="expanded-menu-section-header">
+              <button class="expanded-menu-section-header-link js-event-hm-menu" aria-controls="our-work">
+                <span>
+                  Our work
+                </span>
+                <span class="expanded-menu-section-header-arrow">
+                  <svg aria-hidden=true width="11" height="7"
+                    class="expanded-menu-section-header-arrow-svg" viewBox="0 0 11 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.15596 0.204797L5.49336 5.06317L9.8545 0.204797C10.4293 -0.452129 11.4124 0.625368 10.813 1.28143L5.90083 6.82273C5.68519 7.05909 5.32606 7.05909 5.1342 6.82273L0.174341 1.28143C-0.400433 0.6245 0.581838 -0.452151 1.15661 0.204797H1.15596Z"
+                        />
+                  </svg>
+                </span>
+              </button>
+            </strong>
+            <div class="expanded-menu-dropdown" id="our-work">
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/our-work/projects/" tabindex="-1">Projects</a>
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/our-work/governors-innovation-fellows-program/" tabindex="-1">Governor's Innovation Fellows</a>
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/our-work/innovation-showcase/" tabindex="-1">Innovation Showcase</a>
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="https://innovation.ca.gov/our-work/innovation-community-of-practice/" tabindex="-1">Innovation Community of Practice</a>
+                <a class="expanded-menu-dropdown-link js-event-hm-menu" href="/" tabindex="-1">Innovation Hub</a>
             </div>
           </div>
-        {% endif %}
+        </div>
+
+        <div class="expanded-menu-col js-cagov-navoverlay-expandable">
+          <div class="expanded-menu-section">
+            <strong class="expanded-menu-section-header"><a class="expanded-menu-section-header-link js-event-hm-menu" href="https://innovation.ca.gov/blog/">Blog</a></strong>
+          </div>
+        </div>
+
+        <div class="expanded-menu-col js-cagov-navoverlay-expandable">
+          <div class="expanded-menu-section">
+            <strong class="expanded-menu-section-header"><a class="expanded-menu-section-header-link js-event-hm-menu" href="https://innovation.ca.gov/join-us/">Join us</a></strong>
+          </div>
+        </div>
+
+        <div class="expanded-menu-col js-cagov-navoverlay-expandable">
+          <div class="expanded-menu-section">
+            <strong class="expanded-menu-section-header"><a class="expanded-menu-section-header-link js-event-hm-menu" href="https://innovation.ca.gov/contact-us/">Contact us</a></strong>
+          </div>
+        </div>
 
       </div>
     </nav>

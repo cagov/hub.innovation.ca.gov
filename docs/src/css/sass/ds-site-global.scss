@@ -616,20 +616,14 @@ h2 {
   margin-bottom: 2rem;
 }
 
-cagov-site-navigation {
-  background-color: inherit;
-  border-bottom: 1px solid #C7D6E4;
-  border-top: 1px solid #C7D6E4;
-  .container {
-    padding-top: var(--s-1, 0.5rem);
-    padding-bottom: var(--s-1, 0.5rem);
-  }
-  .expanded-menu-section-header-link {
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2rem;
-  }
+/* matches the site-navigation styling on innovation.ca.gov */
+cagov-site-navigation, .site-header {
+  background: transparent;
+  border-bottom: solid 1px var(--primary-color, #0D4F8C);
+}
+/* bug in site header: the dropdown chevron needs an explicit fill (same patch as innovation.ca.gov) */
+cagov-site-navigation .expanded-menu-section-header-arrow-svg {
+  fill: var(--primary-color, #064e66);
 }
 
 div.par-scores-container {
