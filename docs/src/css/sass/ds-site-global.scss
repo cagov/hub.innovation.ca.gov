@@ -621,6 +621,11 @@ cagov-site-navigation, .site-header {
   background: transparent;
   border-bottom: solid 1px var(--primary-color, #0D4F8C);
 }
+/* innovation.ca.gov sets body line-height 1.75, which its nav inherits; scope
+   the same value to the nav so its height matches across the two sites */
+cagov-site-navigation {
+  line-height: 1.75;
+}
 /* bug in site header: the dropdown chevron needs an explicit fill (same patch as innovation.ca.gov) */
 cagov-site-navigation .expanded-menu-section-header-arrow-svg {
   fill: var(--primary-color, #064e66);
