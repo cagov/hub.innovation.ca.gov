@@ -25,8 +25,8 @@ page_class: content-directory
     <a class="tile-link" href="/content-design/top-plain-language-tips/">
     <div class="content-tile">
     <div class="content-tile-header header-book"><span class="title-card-header-label">Guides and playbooks</span></div>
-    <div class="content-tile-title">Use plain language to help people during a crisis</div>
-    <p>Tips you can use during crisis communications
+    <div class="content-tile-title">Top plain language tips</div>
+    <p>Nine tips you can use to make your writing simpler
     </p>
     </div></a>
     <a class="tile-link" href="/content-design/introduction-plain-language-public-sector/">
