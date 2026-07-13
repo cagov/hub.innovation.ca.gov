@@ -22,7 +22,7 @@ page_class: content-directory
     <p>Our recommendations for how to help everyone understand content
     </p>
     </div></a>
-    <a class="tile-link" href="/content-design/plain-language-in-a-crisis/">
+    <a class="tile-link" href="/content-design/top-plain-language-tips/">
     <div class="content-tile">
     <div class="content-tile-header header-book"><span class="title-card-header-label">Guides and playbooks</span></div>
     <div class="content-tile-title">Use plain language to help people during a crisis</div>
