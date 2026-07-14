@@ -90,7 +90,9 @@ pageList.forEach(page => {
   readabilityResults.timestamp = evaluationTime;
   // console.log(readabilityResults);
 
-  let outputUrl = page.outputPath.replace('_site/','/').replace('/index.html','/');
+  // Eleventy 3 prefixes outputPath with "./" (e.g. "./_site/data/standard/index.html");
+  // strip it so keys match page.url ("/data/standard/") in the templates
+  let outputUrl = page.outputPath.replace(/^\.\//,'').replace('_site/','/').replace('/index.html','/');
 
   if(!parScores[outputUrl]) {
     parScores[outputUrl] = {};

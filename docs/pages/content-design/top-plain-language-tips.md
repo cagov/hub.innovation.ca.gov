@@ -1,24 +1,14 @@
 ---
-title: Use plain language to help people during a crisis
+title: Top plain language tips
 description: Nine tips you can start using now
 layout: single-column
 headerlabel: Guides and playbooks
 headericon: book
 ---
 
-Plain language is text your audience can understand the first time they read it.
+Plain language is text your audience can understand the first time they read it. These tips will help you meet [California’s Plain Language Equity Standard](https://hub.innovation.ca.gov/content-design/plain-language-equity-standard/).
 
-People in a crisis can be overwhelmed. Using plain language helps them get what they need. When people are stressed or grieving, it's important to make the information they need easy to understand. Plain language is also easier to translate.
-
-California's plain language standard suggests providing information to the public at an 8th grade reading level or lower. The standard also suggests:
-
-* Using smaller, more common words
-* Avoiding technical jargon
-* Keeping sentences short and simple
-
-## 9 plain language tips you can use right now
-
-### Use small, common words
+## Use small, common words
 
 Help people understand by using words they know.
 
@@ -34,7 +24,7 @@ Help people understand by using words they know.
   </div>
 </div>
 
-### Use “you” and “we” with active voice
+## Use “you” and “we” with active voice
 
 Make it clear who does what.
 
@@ -50,7 +40,7 @@ Make it clear who does what.
   </div>
 </div>
 
-### Use bullet points for a series
+## Use bullet points for a series
 
 Readers can absorb each item separately. Use numbered lists for things that are in order, like steps in a process.
 
@@ -73,7 +63,7 @@ Readers can absorb each item separately. Use numbered lists for things that are 
   </div>
 </div>
 
-### Transition words
+## Transition words
 
 They link sentences together. They can help you find places to break up long sentences.
 
@@ -91,7 +81,7 @@ They link sentences together. They can help you find places to break up long sen
   </div>
 </div>
 
-### Write good headings
+## Write good headings
 
 Make them useful and short so readers can scan them effectively.
 
@@ -107,7 +97,7 @@ Make them useful and short so readers can scan them effectively.
   </div>
 </div>
 
-### Use sentence case
+## Use sentence case
 
 If all of the words are capitalized, people don’t know where to focus their attention.
 
@@ -123,7 +113,7 @@ If all of the words are capitalized, people don’t know where to focus their at
   </div>
 </div>
 
-### Cut all the extra words
+## Cut all the extra words
 
 Respect people’s time. Give them only what they need.
 
@@ -139,7 +129,7 @@ Respect people’s time. Give them only what they need.
   </div>
 </div>
 
-### Swap in acronyms
+## Swap in acronyms
 
 Once explained, they are a good short name.
 
@@ -157,7 +147,7 @@ Once explained, they are a good short name.
   </div>
 </div>
 
-### Have one idea per sentence
+## Have one idea per sentence
 
 People can process each sentence and move to the next easily.
 
@@ -172,5 +162,3 @@ People can process each sentence and move to the next easily.
     </div>
   </div>
 </div>
-
-[Get all these tips in a PDF.](/papers/help-people-in-a-crisis-with-plain-language.pdf)

@@ -85,9 +85,9 @@ const HOMEPAGE2_TILES = [
     typeIcon: 'book',
   },
   {
-    title: 'Use plain language to help people during a crisis',
-    description: 'Tips you can use during crisis communications',
-    url: '/content-design/plain-language-in-a-crisis/',
+    title: 'Top plain language tips',
+    description: 'Nine tips you can use to make your writing simpler',
+    url: '/content-design/top-plain-language-tips/',
     topic: 'content-design',
     topicLabel: 'Content design',
     type: 'guides-and-playbooks',
