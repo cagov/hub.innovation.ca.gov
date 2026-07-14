@@ -7,7 +7,7 @@
       "sentenceCount": 3,
       "polysyllabicWordCount": 3,
       "ari": 9.64,
-      "timestamp": 1761773765233
+      "timestamp": 1784057231186
     }
   },
   "/search/": {
@@ -18,370 +18,29 @@
       "sentenceCount": 4,
       "polysyllabicWordCount": 9,
       "ari": 19.7,
-      "timestamp": 1761773765233
+      "timestamp": 1784057231186
     }
   },
   "/": {
     "readability": {
-      "letterCount": 406,
-      "syllableCount": 136,
-      "wordCount": 71,
-      "sentenceCount": 13,
-      "polysyllabicWordCount": 19,
-      "ari": 8.23,
-      "timestamp": 1761773765233
-    }
-  },
-  "/innovation-showcase/": {
-    "readability": {
-      "letterCount": 2856,
-      "syllableCount": 943,
-      "wordCount": 514,
-      "sentenceCount": 57,
-      "polysyllabicWordCount": 122,
-      "ari": 9.25,
-      "timestamp": 1761773765233
-    }
-  },
-  "/front-matter/": {
-    "readability": {
-      "letterCount": 407,
-      "syllableCount": 132,
-      "wordCount": 66,
-      "sentenceCount": 8,
-      "polysyllabicWordCount": 20,
-      "ari": 11.74,
-      "timestamp": 1761773765233
-    }
-  },
-  "/page-score-info/": {
-    "readability": {
-      "letterCount": 4599,
-      "syllableCount": 1477,
-      "wordCount": 923,
-      "sentenceCount": 102,
-      "polysyllabicWordCount": 139,
-      "ari": 6.56,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/odi-style-guide/": {
-    "readability": {
-      "letterCount": 17721,
-      "syllableCount": 5855,
-      "wordCount": 3668,
-      "sentenceCount": 487,
-      "polysyllabicWordCount": 577,
-      "ari": 5.09,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/plain-language-equity-standard/": {
-    "readability": {
-      "letterCount": 1147,
-      "syllableCount": 371,
-      "wordCount": 205,
-      "sentenceCount": 27,
-      "polysyllabicWordCount": 48,
-      "ari": 8.72,
-      "timestamp": 1761773765233
-    }
-  },
-  "/markdown/": {
-    "readability": {
-      "letterCount": 1967,
-      "syllableCount": 616,
-      "wordCount": 394,
-      "sentenceCount": 57,
-      "polysyllabicWordCount": 52,
-      "ari": 5.54,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/recommended-reading/": {
-    "readability": {
-      "letterCount": 3821,
-      "syllableCount": 1210,
-      "wordCount": 739,
-      "sentenceCount": 98,
-      "polysyllabicWordCount": 109,
-      "ari": 6.69,
-      "timestamp": 1761773765233
-    }
-  },
-  "/data/building-housing-intelligence/": {
-    "readability": {
-      "letterCount": 7981,
-      "syllableCount": 2672,
-      "wordCount": 1386,
-      "sentenceCount": 92,
-      "polysyllabicWordCount": 348,
-      "ari": 13.22,
-      "timestamp": 1761773765233
-    }
-  },
-  "/data/enabling-analysis-californias-hiring-recruitment-data/": {
-    "readability": {
-      "letterCount": 8920,
-      "syllableCount": 2984,
-      "wordCount": 1639,
-      "sentenceCount": 122,
-      "polysyllabicWordCount": 346,
-      "ari": 10.92,
-      "timestamp": 1761773765233
-    }
-  },
-  "/data/forecasting-community-water-system-outages/": {
-    "readability": {
-      "letterCount": 8887,
-      "syllableCount": 2974,
-      "wordCount": 1630,
-      "sentenceCount": 138,
-      "polysyllabicWordCount": 355,
-      "ari": 10.16,
-      "timestamp": 1761773765233
-    }
-  },
-  "/data/standard/": {
-    "readability": {
-      "letterCount": 8790,
-      "syllableCount": 3134,
-      "wordCount": 1480,
-      "sentenceCount": 111,
-      "polysyllabicWordCount": 509,
-      "ari": 13.21,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/principles/be-concise/": {
-    "readability": {
-      "letterCount": 1810,
-      "syllableCount": 578,
-      "wordCount": 348,
-      "sentenceCount": 40,
-      "polysyllabicWordCount": 65,
-      "ari": 7.42,
-      "timestamp": 1761773765233
-    }
-  },
-  "/product-management/product-craft-accessibility/": {
-    "readability": {
-      "letterCount": 926,
-      "syllableCount": 309,
-      "wordCount": 169,
-      "sentenceCount": 28,
-      "polysyllabicWordCount": 44,
-      "ari": 7.4,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/principles/focus-on-user-needs-services/": {
-    "readability": {
-      "letterCount": 1465,
-      "syllableCount": 471,
-      "wordCount": 295,
-      "sentenceCount": 29,
-      "polysyllabicWordCount": 43,
-      "ari": 7.05,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/principles/organize-content-strategically/": {
-    "readability": {
-      "letterCount": 2843,
-      "syllableCount": 911,
-      "wordCount": 583,
-      "sentenceCount": 58,
-      "polysyllabicWordCount": 74,
-      "ari": 6.56,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/principles/write-in-plain-language/": {
-    "readability": {
-      "letterCount": 2721,
-      "syllableCount": 879,
-      "wordCount": 560,
-      "sentenceCount": 69,
-      "polysyllabicWordCount": 84,
-      "ari": 5.51,
-      "timestamp": 1761773765233
-    }
-  },
-  "/product-management/product-approach-principles/": {
-    "readability": {
-      "letterCount": 3386,
-      "syllableCount": 1105,
-      "wordCount": 611,
-      "sentenceCount": 70,
-      "polysyllabicWordCount": 129,
-      "ari": 9.04,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/principles/meet-your-audience-where-they-are/": {
-    "readability": {
-      "letterCount": 1804,
-      "syllableCount": 565,
-      "wordCount": 368,
-      "sentenceCount": 32,
-      "polysyllabicWordCount": 48,
-      "ari": 7.41,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/principles/build-accessibility-from-start/": {
-    "readability": {
-      "letterCount": 3581,
-      "syllableCount": 1175,
-      "wordCount": 672,
-      "sentenceCount": 79,
-      "polysyllabicWordCount": 139,
-      "ari": 7.92,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/principles/write-with-conversational-official-voice/": {
-    "readability": {
-      "letterCount": 3994,
-      "syllableCount": 1286,
-      "wordCount": 798,
-      "sentenceCount": 75,
-      "polysyllabicWordCount": 139,
-      "ari": 7.46,
-      "timestamp": 1761773765233
-    }
-  },
-  "/how-to-use/": {
-    "readability": {
-      "letterCount": 1624,
-      "syllableCount": 526,
-      "wordCount": 330,
-      "sentenceCount": 38,
-      "polysyllabicWordCount": 49,
-      "ari": 6.09,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/plain-language-checklist/": {
-    "readability": {
-      "letterCount": 2031,
-      "syllableCount": 644,
-      "wordCount": 398,
-      "sentenceCount": 43,
-      "polysyllabicWordCount": 64,
-      "ari": 7.23,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/principles/": {
-    "readability": {
-      "letterCount": 505,
-      "syllableCount": 162,
-      "wordCount": 92,
-      "sentenceCount": 14,
-      "polysyllabicWordCount": 23,
-      "ari": 7.71,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/building-better-services-plain-language/": {
-    "readability": {
-      "letterCount": 656,
-      "syllableCount": 196,
-      "wordCount": 122,
-      "sentenceCount": 14,
-      "polysyllabicWordCount": 14,
-      "ari": 8.25,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/plain-language-in-a-crisis/": {
-    "readability": {
-      "letterCount": 2532,
-      "syllableCount": 815,
-      "wordCount": 493,
-      "sentenceCount": 89,
-      "polysyllabicWordCount": 94,
-      "ari": 5.53,
-      "timestamp": 1761773765233
-    }
-  },
-  "/content-design/introduction-plain-language-public-sector/": {
-    "readability": {
-      "letterCount": 574,
-      "syllableCount": 179,
-      "wordCount": 100,
+      "letterCount": 508,
+      "syllableCount": 170,
+      "wordCount": 85,
       "sentenceCount": 12,
-      "polysyllabicWordCount": 17,
-      "ari": 9.77,
-      "timestamp": 1761773765233
+      "polysyllabicWordCount": 26,
+      "ari": 10.26,
+      "timestamp": 1784057231186
     }
   },
-  "/human-centered-design/innovation-skills-accelerator/": {
+  "/NEW_HOMEPAGE/": {
     "readability": {
-      "letterCount": 651,
-      "syllableCount": 213,
-      "wordCount": 113,
-      "sentenceCount": 15,
-      "polysyllabicWordCount": 24,
-      "ari": 9.47,
-      "timestamp": 1761773765233
-    }
-  },
-  "/product-management/introduction-product-approach-public-sector/": {
-    "readability": {
-      "letterCount": 472,
-      "syllableCount": 149,
-      "wordCount": 76,
-      "sentenceCount": 11,
-      "polysyllabicWordCount": 18,
-      "ari": 11.28,
-      "timestamp": 1761773765233
-    }
-  },
-  "/human-centered-design/course/": {
-    "readability": {
-      "letterCount": 701,
-      "syllableCount": 217,
-      "wordCount": 125,
-      "sentenceCount": 15,
-      "polysyllabicWordCount": 20,
-      "ari": 9.15,
-      "timestamp": 1761773765233
-    }
-  },
-  "/product-management/run-of-show/": {
-    "readability": {
-      "letterCount": 1394,
-      "syllableCount": 433,
-      "wordCount": 278,
-      "sentenceCount": 33,
-      "polysyllabicWordCount": 43,
-      "ari": 6.4,
-      "timestamp": 1761773765233
-    }
-  },
-  "/par-statistics/": {
-    "readability": {
-      "letterCount": 97,
-      "syllableCount": 33,
-      "wordCount": 11,
-      "sentenceCount": 3,
-      "polysyllabicWordCount": 7,
-      "ari": 21.94,
-      "timestamp": 1761773765233
-    }
-  },
-  "/CHANGELOG/": {
-    "readability": {
-      "letterCount": 89,
-      "syllableCount": 28,
-      "wordCount": 14,
-      "sentenceCount": 5,
-      "polysyllabicWordCount": 4,
-      "ari": 9.91,
-      "timestamp": 1761773765233
+      "letterCount": 2536,
+      "syllableCount": 807,
+      "wordCount": 507,
+      "sentenceCount": 27,
+      "polysyllabicWordCount": 82,
+      "ari": 11.52,
+      "timestamp": 1784057231186
     }
   },
   "/docs/src/js/airtable-form/CHANGELOG/": {
@@ -392,7 +51,7 @@
       "sentenceCount": 0,
       "polysyllabicWordCount": 0,
       "ari": 1,
-      "timestamp": 1761773765233
+      "timestamp": 1784057231186
     }
   },
   "/docs/src/js/airtable-form/README/": {
@@ -403,40 +62,590 @@
       "sentenceCount": 0,
       "polysyllabicWordCount": 0,
       "ari": 1,
-      "timestamp": 1761773765233
+      "timestamp": 1784057231186
     }
   },
-  "/docs/src/js/airtable-form/preview/": {
+  "/front-matter/": {
     "readability": {
-      "letterCount": 0,
-      "syllableCount": 0,
-      "wordCount": 0,
-      "sentenceCount": 0,
-      "polysyllabicWordCount": 0,
-      "ari": 1,
-      "timestamp": 1761773765233
+      "letterCount": 407,
+      "syllableCount": 132,
+      "wordCount": 66,
+      "sentenceCount": 8,
+      "polysyllabicWordCount": 20,
+      "ari": 11.74,
+      "timestamp": 1784057231186
     }
   },
-  "/docs/src/js/airtable-form/template/": {
+  "/markdown/": {
     "readability": {
-      "letterCount": 68,
-      "syllableCount": 22,
-      "wordCount": 17,
-      "sentenceCount": 5,
-      "polysyllabicWordCount": 0,
-      "ari": -0.89,
-      "timestamp": 1761773765233
+      "letterCount": 2042,
+      "syllableCount": 642,
+      "wordCount": 413,
+      "sentenceCount": 61,
+      "polysyllabicWordCount": 52,
+      "ari": 5.24,
+      "timestamp": 1784057231186
     }
   },
-  "/sandbox/": {
+  "/page-score-info/": {
     "readability": {
-      "letterCount": 60,
-      "syllableCount": 19,
+      "letterCount": 4599,
+      "syllableCount": 1477,
+      "wordCount": 923,
+      "sentenceCount": 102,
+      "polysyllabicWordCount": 139,
+      "ari": 6.56,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/odi-style-guide/": {
+    "readability": {
+      "letterCount": 18957,
+      "syllableCount": 6286,
+      "wordCount": 3909,
+      "sentenceCount": 513,
+      "polysyllabicWordCount": 629,
+      "ari": 5.22,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/plain-language-equity-standard/": {
+    "readability": {
+      "letterCount": 1230,
+      "syllableCount": 395,
+      "wordCount": 218,
+      "sentenceCount": 30,
+      "polysyllabicWordCount": 51,
+      "ari": 8.78,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/recommended-reading/": {
+    "readability": {
+      "letterCount": 3847,
+      "syllableCount": 1218,
+      "wordCount": 741,
+      "sentenceCount": 98,
+      "polysyllabicWordCount": 111,
+      "ari": 6.8,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/building-housing-intelligence/": {
+    "readability": {
+      "letterCount": 7997,
+      "syllableCount": 2678,
+      "wordCount": 1388,
+      "sentenceCount": 92,
+      "polysyllabicWordCount": 349,
+      "ari": 13.25,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/data-driven-approach-detecting-cash-benefit-theft/": {
+    "readability": {
+      "letterCount": 12655,
+      "syllableCount": 4156,
+      "wordCount": 2234,
+      "sentenceCount": 179,
+      "polysyllabicWordCount": 581,
+      "ari": 11.49,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/developing-trustworthy-monitoring-data/": {
+    "readability": {
+      "letterCount": 16856,
+      "syllableCount": 5702,
+      "wordCount": 2952,
+      "sentenceCount": 213,
+      "polysyllabicWordCount": 788,
+      "ari": 12.39,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/enabling-analysis-californias-hiring-recruitment-data/": {
+    "readability": {
+      "letterCount": 8942,
+      "syllableCount": 2994,
+      "wordCount": 1641,
+      "sentenceCount": 122,
+      "polysyllabicWordCount": 349,
+      "ari": 10.96,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/forecasting-community-water-system-outages/": {
+    "readability": {
+      "letterCount": 8903,
+      "syllableCount": 2980,
+      "wordCount": 1632,
+      "sentenceCount": 138,
+      "polysyllabicWordCount": 356,
+      "ari": 10.18,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/": {
+    "readability": {
+      "letterCount": 1540,
+      "syllableCount": 492,
+      "wordCount": 265,
+      "sentenceCount": 17,
+      "polysyllabicWordCount": 70,
+      "ari": 13.74,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/making-local-population-estimates-more-efficient-support-resource-allocation/": {
+    "readability": {
+      "letterCount": 5704,
+      "syllableCount": 1944,
+      "wordCount": 971,
+      "sentenceCount": 80,
+      "polysyllabicWordCount": 258,
+      "ari": 12.31,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/standard/": {
+    "readability": {
+      "letterCount": 8806,
+      "syllableCount": 3140,
+      "wordCount": 1482,
+      "sentenceCount": 111,
+      "polysyllabicWordCount": 510,
+      "ari": 13.23,
+      "timestamp": 1784057231186
+    }
+  },
+  "/customer-experience/principle/": {
+    "readability": {
+      "letterCount": 2239,
+      "syllableCount": 726,
+      "wordCount": 422,
+      "sentenceCount": 52,
+      "polysyllabicWordCount": 84,
+      "ari": 7.62,
+      "timestamp": 1784057231186
+    }
+  },
+  "/product-management/product-approach-principles/": {
+    "readability": {
+      "letterCount": 3465,
+      "syllableCount": 1128,
+      "wordCount": 623,
+      "sentenceCount": 72,
+      "polysyllabicWordCount": 132,
+      "ari": 9.09,
+      "timestamp": 1784057231186
+    }
+  },
+  "/product-management/product-craft-accessibility/": {
+    "readability": {
+      "letterCount": 956,
+      "syllableCount": 318,
+      "wordCount": 171,
+      "sentenceCount": 28,
+      "polysyllabicWordCount": 46,
+      "ari": 7.96,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/principles/be-concise/": {
+    "readability": {
+      "letterCount": 1836,
+      "syllableCount": 586,
+      "wordCount": 350,
+      "sentenceCount": 40,
+      "polysyllabicWordCount": 67,
+      "ari": 7.65,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/principles/build-accessibility-from-start/": {
+    "readability": {
+      "letterCount": 3607,
+      "syllableCount": 1183,
+      "wordCount": 674,
+      "sentenceCount": 79,
+      "polysyllabicWordCount": 141,
+      "ari": 8.04,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/principles/focus-on-user-needs-services/": {
+    "readability": {
+      "letterCount": 1491,
+      "syllableCount": 479,
+      "wordCount": 297,
+      "sentenceCount": 29,
+      "polysyllabicWordCount": 45,
+      "ari": 7.34,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/principles/meet-your-audience-where-they-are/": {
+    "readability": {
+      "letterCount": 1830,
+      "syllableCount": 573,
+      "wordCount": 370,
+      "sentenceCount": 32,
+      "polysyllabicWordCount": 50,
+      "ari": 7.65,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/principles/organize-content-strategically/": {
+    "readability": {
+      "letterCount": 2869,
+      "syllableCount": 919,
+      "wordCount": 585,
+      "sentenceCount": 58,
+      "polysyllabicWordCount": 76,
+      "ari": 6.71,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/principles/write-in-plain-language/": {
+    "readability": {
+      "letterCount": 2747,
+      "syllableCount": 887,
+      "wordCount": 562,
+      "sentenceCount": 69,
+      "polysyllabicWordCount": 86,
+      "ari": 5.66,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/principles/write-with-conversational-official-voice/": {
+    "readability": {
+      "letterCount": 4020,
+      "syllableCount": 1294,
+      "wordCount": 800,
+      "sentenceCount": 75,
+      "polysyllabicWordCount": 141,
+      "ari": 7.57,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/minimization-toolkit/best-practices-laws-regulations/": {
+    "readability": {
+      "letterCount": 1840,
+      "syllableCount": 610,
+      "wordCount": 309,
+      "sentenceCount": 38,
+      "polysyllabicWordCount": 97,
+      "ari": 10.68,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/minimization-toolkit/best-practices/": {
+    "readability": {
+      "letterCount": 3313,
+      "syllableCount": 1134,
+      "wordCount": 625,
+      "sentenceCount": 69,
+      "polysyllabicWordCount": 141,
+      "ari": 8.07,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/minimization-toolkit/conducting-risk-necessity-assessments/": {
+    "readability": {
+      "letterCount": 5390,
+      "syllableCount": 1797,
+      "wordCount": 1068,
+      "sentenceCount": 119,
+      "polysyllabicWordCount": 191,
+      "ari": 6.83,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/minimization-toolkit/external-sharing/": {
+    "readability": {
+      "letterCount": 5514,
+      "syllableCount": 1819,
+      "wordCount": 1043,
+      "sentenceCount": 98,
+      "polysyllabicWordCount": 202,
+      "ari": 8.79,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/faq/": {
+    "readability": {
+      "letterCount": 10842,
+      "syllableCount": 3737,
+      "wordCount": 2136,
+      "sentenceCount": 135,
+      "polysyllabicWordCount": 460,
+      "ari": 10.39,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/": {
+    "readability": {
+      "letterCount": 5117,
+      "syllableCount": 1730,
+      "wordCount": 1058,
+      "sentenceCount": 87,
+      "polysyllabicWordCount": 201,
+      "ari": 7.43,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/resources-references/bucp-template/": {
+    "readability": {
+      "letterCount": 1625,
+      "syllableCount": 545,
+      "wordCount": 328,
+      "sentenceCount": 34,
+      "polysyllabicWordCount": 53,
+      "ari": 6.73,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/resources-references/notice-email-disclosure-templates/": {
+    "readability": {
+      "letterCount": 10666,
+      "syllableCount": 3700,
+      "wordCount": 1983,
+      "sentenceCount": 153,
+      "polysyllabicWordCount": 495,
+      "ari": 10.38,
+      "timestamp": 1784057231186
+    }
+  },
+  "/par-statistics/": {
+    "readability": {
+      "letterCount": 97,
+      "syllableCount": 33,
       "wordCount": 11,
+      "sentenceCount": 3,
+      "polysyllabicWordCount": 7,
+      "ari": 21.94,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/building-better-services-plain-language/": {
+    "readability": {
+      "letterCount": 697,
+      "syllableCount": 208,
+      "wordCount": 128,
+      "sentenceCount": 15,
+      "polysyllabicWordCount": 16,
+      "ari": 8.48,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/introduction-plain-language-public-sector/": {
+    "readability": {
+      "letterCount": 615,
+      "syllableCount": 191,
+      "wordCount": 106,
+      "sentenceCount": 12,
+      "polysyllabicWordCount": 19,
+      "ari": 10.31,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/plain-language-checklist/": {
+    "readability": {
+      "letterCount": 2057,
+      "syllableCount": 652,
+      "wordCount": 400,
+      "sentenceCount": 43,
+      "polysyllabicWordCount": 66,
+      "ari": 7.44,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/principles/": {
+    "readability": {
+      "letterCount": 531,
+      "syllableCount": 170,
+      "wordCount": 94,
+      "sentenceCount": 14,
+      "polysyllabicWordCount": 25,
+      "ari": 8.53,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/top-plain-language-tips/": {
+    "readability": {
+      "letterCount": 2123,
+      "syllableCount": 684,
+      "wordCount": 412,
+      "sentenceCount": 80,
+      "polysyllabicWordCount": 85,
+      "ari": 5.42,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/minimization-toolkit/": {
+    "readability": {
+      "letterCount": 1041,
+      "syllableCount": 331,
+      "wordCount": 195,
+      "sentenceCount": 20,
+      "polysyllabicWordCount": 33,
+      "ari": 8.59,
+      "timestamp": 1784057231186
+    }
+  },
+  "/product-management/introduction-product-approach-public-sector/": {
+    "readability": {
+      "letterCount": 503,
+      "syllableCount": 159,
+      "wordCount": 79,
+      "sentenceCount": 11,
+      "polysyllabicWordCount": 20,
+      "ari": 12.15,
+      "timestamp": 1784057231186
+    }
+  },
+  "/product-management/run-of-show/": {
+    "readability": {
+      "letterCount": 1424,
+      "syllableCount": 442,
+      "wordCount": 280,
+      "sentenceCount": 33,
+      "polysyllabicWordCount": 45,
+      "ari": 6.77,
+      "timestamp": 1784057231186
+    }
+  },
+  "/human-centered-design/course/": {
+    "readability": {
+      "letterCount": 734,
+      "syllableCount": 227,
+      "wordCount": 127,
+      "sentenceCount": 15,
+      "polysyllabicWordCount": 22,
+      "ari": 10.02,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/minimization-toolkit/101/": {
+    "readability": {
+      "letterCount": 3219,
+      "syllableCount": 1077,
+      "wordCount": 622,
+      "sentenceCount": 60,
+      "polysyllabicWordCount": 123,
+      "ari": 8.13,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/minimization-toolkit/reviewing-vendor-contracts/": {
+    "readability": {
+      "letterCount": 1009,
+      "syllableCount": 323,
+      "wordCount": 167,
+      "sentenceCount": 14,
+      "polysyllabicWordCount": 42,
+      "ari": 12.99,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/dispute-resolution-process/": {
+    "readability": {
+      "letterCount": 1642,
+      "syllableCount": 564,
+      "wordCount": 318,
+      "sentenceCount": 25,
+      "polysyllabicWordCount": 73,
+      "ari": 9.25,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/resources-references/": {
+    "readability": {
+      "letterCount": 376,
+      "syllableCount": 128,
+      "wordCount": 61,
+      "sentenceCount": 10,
+      "polysyllabicWordCount": 20,
+      "ari": 10.65,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/resources-references/agreement/": {
+    "readability": {
+      "letterCount": 412,
+      "syllableCount": 148,
+      "wordCount": 55,
+      "sentenceCount": 6,
+      "polysyllabicWordCount": 28,
+      "ari": 18.44,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/idea-guidebook/resources-references/list-signatories/": {
+    "readability": {
+      "letterCount": 6568,
+      "syllableCount": 2341,
+      "wordCount": 942,
+      "sentenceCount": 6,
+      "polysyllabicWordCount": 516,
+      "ari": 89.91,
+      "timestamp": 1784057231186
+    }
+  },
+  "/content-design/": {
+    "readability": {
+      "letterCount": 170,
+      "syllableCount": 55,
+      "wordCount": 26,
       "sentenceCount": 4,
-      "polysyllabicWordCount": 0,
-      "ari": 5.64,
-      "timestamp": 1761773765233
+      "polysyllabicWordCount": 8,
+      "ari": 12.62,
+      "timestamp": 1784057231186
+    }
+  },
+  "/customer-experience/": {
+    "readability": {
+      "letterCount": 170,
+      "syllableCount": 55,
+      "wordCount": 23,
+      "sentenceCount": 4,
+      "polysyllabicWordCount": 10,
+      "ari": 16.26,
+      "timestamp": 1784057231186
+    }
+  },
+  "/data/": {
+    "readability": {
+      "letterCount": 185,
+      "syllableCount": 63,
+      "wordCount": 25,
+      "sentenceCount": 4,
+      "polysyllabicWordCount": 12,
+      "ari": 16.55,
+      "timestamp": 1784057231186
+    }
+  },
+  "/human-centered-design/": {
+    "readability": {
+      "letterCount": 187,
+      "syllableCount": 57,
+      "wordCount": 28,
+      "sentenceCount": 4,
+      "polysyllabicWordCount": 7,
+      "ari": 13.53,
+      "timestamp": 1784057231186
+    }
+  },
+  "/product-management/": {
+    "readability": {
+      "letterCount": 210,
+      "syllableCount": 68,
+      "wordCount": 34,
+      "sentenceCount": 4,
+      "polysyllabicWordCount": 9,
+      "ari": 11.91,
+      "timestamp": 1784057231186
     }
   }
 }
