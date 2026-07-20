@@ -17,7 +17,7 @@ headericon: book
 Use this Word document to draft your BUCPs. There are two versions: use the first if there is only one Data Provider and Data Recipient. Use the second if there are multiple Data Providers or Data Recipients. If needed, we will periodically update this based on feedback and include version notes.
 
 * [BUCP template V2 for single department](/docs/bucp-template-v2-single-dept.docx) 
-* [BUCP template V2 for single department](/docs/bucp-template-v2-multiple-dept.docx)
+* [BUCP template V2 for multiple departments](/docs/bucp-template-v2-multiple-dept.docx)
 
 <div class="callout-info">
   <p>Remember when you complete your BUCP to <a href="https://airtable.com/shrUMjZghIK1aAQqR">submit to the Statewide Chief Data Officer</a>.</p>
