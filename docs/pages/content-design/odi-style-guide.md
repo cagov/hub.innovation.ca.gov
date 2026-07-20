@@ -250,7 +250,7 @@ To get your $50 card, just:
   </div>
 </div>
 
-If you’re walking people through an important step-by-step process on a website, use a [step list component](https://designsystem.webstandards.ca.gov/components/step-list/readme/). It lets you add detail to each step and makes them more readable.
+If you’re walking people through an important step-by-step process on a website, use a [step list component](https://template.webstandards.ca.gov/components/lists.html). It lets you add detail to each step and makes them more readable.
 
 ### Webpage titles
 

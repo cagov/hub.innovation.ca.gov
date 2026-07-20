@@ -42,7 +42,7 @@ Arrange what your readers are looking for so they’re likely to see it.
 
 ### Accordions
 
-[Accordions](https://designsystem.webstandards.ca.gov/components/accordion/readme/) are expandable sections. They hide information unless someone opens them. This requires an extra click or tap, which means readers have to do extra work to get this information. People cannot scan for information that’s in an accordion.
+[Accordions](https://template.webstandards.ca.gov/components/accordion.html) are expandable sections. They hide information unless someone opens them. This requires an extra click or tap, which means readers have to do extra work to get this information. People cannot scan for information that’s in an accordion.
 
 Only use accordions when:
 

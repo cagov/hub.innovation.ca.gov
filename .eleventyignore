@@ -8,3 +8,4 @@ README.md
 node_modules/**
 **/node_modules/**
 _site_dist
+docs/src/js

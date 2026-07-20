@@ -19,7 +19,7 @@ Low performance results in a poor experience for visitors. Slower websites have:
 
 * [Higher bounce rates](https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/)
 * [Lower conversion rates](https://www.cloudflare.com/en-gb/learning/performance/more/website-performance-conversion-rates/)
-* [Physical stress for visitors](https://www.neuronsinc.com/cases/ericsson)
+* [Physical stress for visitors](https://www.neuronsinc.com/insights/how-the-brain-sees-friction)
 
 MDN Web Docs talks about [why performance matters](https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance).
 
@@ -51,7 +51,7 @@ Delivering too much JavaScript is a common cause of performance problems. Forcin
 
 Performance analysis tools like [WebPageTest](https://www.webpagetest.org/) and Lighthouse can recommend changes to improve performance. They’ll highlight the changes that will have the most impact on site speed. Following their guidelines will get you into the top tier of state website speed rankings.
 
-Free courses like [Lightning-Fast Web Performance](https://www.webpagetest.org/learn/lightning-fast-web-performance/) offer deep dives into performance optimization.
+Free courses like [Lightning-Fast Web Performance](https://www.catchpoint.com/webpagetest/lightning-fast-web-performance) offer deep dives into performance optimization.
 
 ## Accessibility
 
