@@ -135,6 +135,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/img': 'img' });
  //  eleventyConfig.addPassthroughCopy({ 'docs/src/assets/article-content': 'content/img' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/papers': 'papers' });
+  eleventyConfig.addPassthroughCopy({ 'docs/src/assets/docs': 'docs' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/css/fonts': 'fonts' });
   eleventyConfig.addPassthroughCopy({ '_site_dist/*': '/' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/papers/bobra-water-1': 'papers/bobra-water-1' });
