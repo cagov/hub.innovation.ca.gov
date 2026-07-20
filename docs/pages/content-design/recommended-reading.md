@@ -12,7 +12,7 @@ headericon: bookmark
 ## Principles
 
 * [ODI's content design principles](/content-design/principles/) are broad guidance for writing good content. Each principle contains tips you can use right now in your writing.
-* [California Design System principles](https://designsystem.webstandards.ca.gov/principles/) are about designing good services. They can inform team or department values.
+* [California Design System principles](https://webstandards.ca.gov/web-policies/design-and-ux/design-principles/) are about designing good services. They can inform team or department values.
 * [Government Code 6219](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6219.&lawCode=GOV) is California’s plain language law. Share it with stakeholders so they know the importance of writing in plain language.
 * [US Web Design System principles](https://designsystem.digital.gov/design-principles/) are service design standards from the federal government. They can be a good supplement to the California Design System principles.
 
