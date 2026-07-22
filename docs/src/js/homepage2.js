@@ -6,9 +6,7 @@ const SEARCH_MIN_LENGTH = 2;
 const SEARCH_DEBOUNCE_MS = 150;
 
 const escapeHtml = (s) =>
-  String(s).replace(/[&<>"']/g, (c) => {
-    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
-  });
+  String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 const debounce = (fn, wait) => {
   let t;
