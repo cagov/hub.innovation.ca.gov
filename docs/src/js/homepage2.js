@@ -23,6 +23,7 @@ function renderTiles(grid, tiles) {
     .map((t, i) => {
       const titleLc = t.title.toLowerCase();
       const descLc = t.description.toLowerCase();
+      const keywordsLc = (t.keywords || []).join(' ').toLowerCase();
       return (
         `<a class="tile-link" href="${escapeHtml(t.url)}" ` +
         `data-index="${i}" ` +
@@ -30,6 +31,7 @@ function renderTiles(grid, tiles) {
         `data-type="${escapeHtml(t.type)}" ` +
         `data-title="${escapeHtml(titleLc)}" ` +
         `data-description="${escapeHtml(descLc)}" ` +
+        `data-keywords="${escapeHtml(keywordsLc)}" ` +
         `data-topic-label="${escapeHtml(t.topicLabel)}" ` +
         `data-type-label="${escapeHtml(t.typeLabel)}">` +
         `<div class="content-tile">` +
@@ -116,22 +118,33 @@ function sortTiles(els, sortKey) {
 
 function applyFiltersAndSort(refs, state) {
   const searchQuery = state.search.length >= SEARCH_MIN_LENGTH ? state.search.toLowerCase() : '';
+  const searchTokens = searchQuery.split(/\s+/).filter(Boolean);
   const tileEls = [...refs.grid.querySelectorAll('.tile-link')];
   const visible = [];
 
   tileEls.forEach((el) => {
     const topicMatch = state.topics.size === 0 || state.topics.has(el.dataset.topic);
     const typeMatch = state.types.size === 0 || state.types.has(el.dataset.type);
-    const searchMatch =
-      !searchQuery ||
-      el.dataset.title.indexOf(searchQuery) !== -1 ||
-      el.dataset.description.indexOf(searchQuery) !== -1;
+    let searchMatch = true;
+    let primaryMatch = true;
+    if (searchTokens.length > 0) {
+      const primaryText = `${el.dataset.title} ${el.dataset.description}`;
+      const fullText = `${primaryText} ${el.dataset.keywords}`;
+      searchMatch = searchTokens.every((tok) => fullText.indexOf(tok) !== -1);
+      primaryMatch = searchTokens.every((tok) => primaryText.indexOf(tok) !== -1);
+    }
+    el.dataset.searchTier = primaryMatch ? '0' : '1';
     const show = topicMatch && typeMatch && searchMatch;
     el.hidden = !show;
     if (show) visible.push(el);
   });
 
   sortTiles(visible, state.sort);
+  if (searchTokens.length > 0) {
+    // Stable sort: title/description matches rank above keyword-only matches,
+    // preserving the selected sort order within each tier.
+    visible.sort((a, b) => Number(a.dataset.searchTier) - Number(b.dataset.searchTier));
+  }
   visible.forEach((el) => refs.grid.appendChild(el));
 
   if (visible.length === 0) {
