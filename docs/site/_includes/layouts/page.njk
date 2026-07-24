@@ -4,6 +4,8 @@
   <div class="breadcrumb" aria-label="Breadcrumb" role="region">
     <a class="crumb" href="https://ca.gov" title="CA.gov">CA.gov</a>
     <span class="crumb separator">/</span>
+    <a class="crumb" href="https://innovation.ca.gov" title="Office of Data and Innovation">Office of Data and Innovation</a>
+    <span class="crumb separator">/</span>
     <a class="crumb" href="/" title="Innovation Hub">Innovation Hub</a>
     {% if parentid %}
       <span class="crumb separator">/</span>
@@ -28,8 +30,11 @@
   <main id="body-content" class="cagov-main">
     <article id="post-{{ page.fileSlug }}" class="cagov-article with-sidebar with-page-nav">
       <div>
-      {% if headerlabel %}
-      <div class="content-page-header header-{{headericon}}"><span class="content-page-header-label">{{ headerlabel }}</span></div>
+      {% if headerlabel or topiclabel %}
+      <div class="content-page-labels">
+        {% if topiclabel %}<a class="content-page-topic-label" href="/?topic={{ topicslug }}">{{ topiclabel }}</a>{% endif %}
+        {% if headerlabel %}<a class="content-page-header header-{{headericon}}" href="/?type={{ formatslug }}"><span class="content-page-header-label">{{ headerlabel }}</span></a>{% endif %}
+      </div>
       {% endif %}
       <h1 class="page-title title-cell">
         {{ title | safe }}

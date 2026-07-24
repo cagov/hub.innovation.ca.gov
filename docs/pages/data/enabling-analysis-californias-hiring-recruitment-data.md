@@ -1,7 +1,5 @@
 ---
 title: Enabling analysis of California’s hiring and recruitment data 
-parentid: Data
-parentidlink: /data/
 description: How CalHR worked with ODI to increase analysis capabilities for ECOS.
 headerlabel: Papers
 headericon: paper
@@ -16,7 +14,7 @@ Ian Rose, Aeri Shan, John Harding, Brian Pardo, Preeni Varghese, Brittany Allen,
 <!-- 
 <div class="interaction-block">
 <div class="interaction"><a href=""><img class="icon" src="/img/paper-share-icon.svg" />Share</a></div>
-<div class="interaction"><a href=""><img class="icon" src="/img/paoer-cite-icon.svg" />Cite</a></div>
+<div class="interaction"><a href=""><img class="icon" src="/img/paper-cite-icon.svg" />Cite</a></div>
 </div>
 -->
 

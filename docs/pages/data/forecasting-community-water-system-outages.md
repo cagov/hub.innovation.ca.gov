@@ -1,7 +1,5 @@
 ---
 title: Forecasting community water system outages
-parentid: Data
-parentidlink: /data/
 description: ODI used data to forecast the impact of drought on community water systems.
 headerlabel: Papers
 headericon: paper
@@ -19,7 +17,7 @@ Monica G. Bobra <a href="https://orcid.org/0000-0002-5662-9604"><img class="orci
 <div class="interaction-block">
 <!-- 
 <div class="interaction"><a href=""><img class="icon" src="/img/paper-share-icon.svg" /> Share</a></div>
-<div class="interaction"><a href=""><img class="icon" src="/img/paoer-cite-icon.svg" /> Cite</a></div>
+<div class="interaction"><a href=""><img class="icon" src="/img/paper-cite-icon.svg" /> Cite</a></div>
 -->
 <div class="interaction"><a href="/papers/bobra-et-al-forecasting-community-water-outages.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" /> Download PDF</a></div>
 <div class="interaction"><a href="https://doi.org/10.5281/zenodo.10632952"><img class="icon" src="/img/paper-link-icon.svg" />https://doi.org/10.5281/zenodo.10632952</a></div>

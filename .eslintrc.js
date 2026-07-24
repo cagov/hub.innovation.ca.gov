@@ -5,6 +5,9 @@ module.exports = {
     indent: 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-console': 'off',
+    // Allow mutating properties of parameters, e.g. DOM manipulation like
+    // el.hidden = true on a passed-in element.
+    'no-param-reassign': ['error', { props: false }],
     'operator-linebreak': 'off',
     'arrow-parens': 'off',
     'implicit-arrow-linebreak': 'off',

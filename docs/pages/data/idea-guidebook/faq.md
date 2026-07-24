@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Frequently asked questions
-parentid: Data
-parentidlink: /data/
-subparentid: IDEA guidebook
-subparentidlink: /data/idea-guidebook/
+parentid: IDEA guidebook
+parentidlink: /data/idea-guidebook/
 description: Common questions about the IDEA
 headerlabel: Guides and playbooks
 headericon: book

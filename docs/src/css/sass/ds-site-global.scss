@@ -145,22 +145,37 @@ a.tile-link {
     border-radius:8px;
     border: 1px solid #D4D4D7;
 
-    div.content-tile-header {
+    div.content-tile-labels {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    span.title-card-topic-label {
       vertical-align: top;
       font-size: 14px;
-      border: 1px solid ;
       font-weight: 400;
       height: 26px;
-      padding-right:12px;
-      border-radius:8px;
-      display: inline-block;
-      position: relative;
-      background-image: url(/img/tile-icon-star.png);
-      background-repeat: no-repeat;
-      background-size: 24px;
-      background-position: left 4px center;
-      padding-left: 32px;
-      span.title-card-header-label {
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: #EDEDEF;
+      border: 0.5px solid #D4D4D7;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 12px;
+    }
+
+    div.content-tile-header {
+      font-size: 14px;
+      font-weight: 400;
+      height: 26px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 12px;
+      span.title-card-format-label {
         vertical-align: middle;
       }
     }
@@ -193,9 +208,11 @@ a.tile-link {
       text-decoration: underline;
     }
   }
-  &:focus {
+  &:focus,
+  &:focus-visible {
+    outline: none !important;
     div.content-tile {
-      box-shadow: 0px 0px 4px 2px #3F73A4!important;    
+      box-shadow: 0px 0px 4px 2px #3F73A4!important;
     }
     div.content-tile-title {
       text-decoration: none;
@@ -204,29 +221,59 @@ a.tile-link {
   }
 }
 
-div.content-page-header {
+div.content-page-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+a.content-page-topic-label {
   font-size: 14px;
-  border: 1px solid ;
   font-weight: 400;
   height: 28px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right:12px;
-  border-radius:8px;
-  display: inline-block;
-  position: relative;
-  background-image: url(/img/tile-icon-star.png);
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: left 4px center;
-  padding-left: 32px;
-  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #EDEDEF;
+  border: 0.5px solid #D4D4D7;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+a.content-page-header {
+  font-size: 14px;
+  font-weight: 400;
+  height: 28px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
 }
 
 span.content-page-header-label {
   vertical-align: middle;
-  position: relative;
-  top: -0.07rem;
+}
+
+/* Content-page topic/format labels are links back to the filtered homepage */
+a.content-page-topic-label,
+a.content-page-header {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease;
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none !important;
+    box-shadow: 0px 0px 4px 2px #3F73A4;
+  }
 }
 /* ODI BLOCK */
 div.odiblock-grid-wrapper {
@@ -406,27 +453,24 @@ div.header-icon {
   border-radius:8px;
   margin-right: 16px;
 }
-  div.header-ribbon {     background-color: #EFECF8!important;  
-                          border: 0.5px solid #D7D1ED!important; 
-                          background-image: url(/img/tile-icon-ribbon.png)!important; 
-  }
-  div.header-star {       background-color: #FAECDA!important;  
-                          background-image: url(/img/tile-icon-star.png)!important; 
+  .header-ribbon {        background-color: #EFECF8!important;
                           border: 0.5px solid #D7D1ED!important;
+  }
+  .header-star {          background-color: #FAECDA!important;
+                          border: 0.5px solid #F4CEA1!important;
                     }
-  div.header-book {       background-color: #FDEAE5!important;  
-                          border: 0.5px solid #F7CBBE!important; 
-                          background-image: url(/img/tile-icon-book.png)!important; }
-  div.header-bookmark {   background-color: #E1F1EE!important;  
-                          border: 0.5px solid #8BC7BD!important; 
-                          background-image: url(/img/tile-icon-bookmark.png)!important; }
-  div.header-templates {  background-color: #EDEDEF!important;  
-                          border: 0.5px solid #D4D4D7!important;
-                          background-image: url(/img/tile-icon-template.png)!important; 
+  .header-book {          background-color: #FDEAE5!important;
+                          border: 0.5px solid #F7CBBE!important;
+  }
+  .header-bookmark {      background-color: #E1F1EE!important;
+                          border: 0.5px solid #8BC7BD!important;
+  }
+  .header-templates {     background-color: #E7EEF9!important;
+                          border: 0.5px solid #CDDCF2!important;
                         }
-  div.header-paper {     background-color: #FFECC4!important;  
-                          border: 0.5px solid #FFCD64!important; 
-                            background-image: url(/img/tile-icon-paper.png)!important; }
+  .header-paper {         background-color: #FFECC4!important;
+                          border: 0.5px solid #FFCD64!important;
+  }
 
 span.orcid-cite {
   // padding-right: 32px;
@@ -537,7 +581,7 @@ div.official-header {
   color:white;
 }
 div.site-header {
-  background-color: var(--odi-brand, #f5f8fb);
+  // background-color: var(--odi-brand, #f5f8fb);
 }
 
 .breadcrumb {
@@ -572,20 +616,19 @@ h2 {
   margin-bottom: 2rem;
 }
 
+/* matches the site-navigation styling on innovation.ca.gov */
+cagov-site-navigation, .site-header {
+  background: transparent;
+  border-bottom: solid 1px var(--primary-color, #0D4F8C);
+}
+/* innovation.ca.gov sets body line-height 1.75, which its nav inherits; scope
+   the same value to the nav so its height matches across the two sites */
 cagov-site-navigation {
-  background-color: inherit;
-  border-bottom: 1px solid #C7D6E4;
-  border-top: 1px solid #C7D6E4;
-  .container {
-    padding-top: var(--s-1, 0.5rem);
-    padding-bottom: var(--s-1, 0.5rem);
-  }
-  .expanded-menu-section-header-link {
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2rem;
-  }
+  line-height: 1.75;
+}
+/* bug in site header: the dropdown chevron needs an explicit fill (same patch as innovation.ca.gov) */
+cagov-site-navigation .expanded-menu-section-header-arrow-svg {
+  fill: var(--primary-color, #064e66);
 }
 
 div.par-scores-container {
@@ -701,6 +744,26 @@ div.twocolumn-table {
       }
   }
 }
+
+div.shadedheader-table {
+  table {
+      thead {
+          background-color: #FAFAFA;
+          th {
+              border: 1px solid #C7D6E4;
+              font-size: 18px;
+          }
+      }
+      tbody {
+          background-color: white;
+          td {
+              font-size: 14px;
+              border: 1px solid #C7D6E4;
+          }
+      }
+  }
+}
+
 
 div.runofshow-table {
   margin-top: 2rem;

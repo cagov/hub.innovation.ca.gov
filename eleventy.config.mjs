@@ -92,8 +92,17 @@ export default function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addWatchTarget('docs/src/css/');
-  eleventyConfig.addWatchTarget('docs/src/js/');
+  // Don't process docs/src/js files as templates (there are stray .md files in
+  // there). This must live here rather than .eleventyignore: .eleventyignore
+  // entries also hide files from the --watch file watcher, while these config
+  // ignores only exclude them from the template build.
+  eleventyConfig.ignores.add('docs/src/js/**');
+
+  // The built CSS/JS bundles are inlined into every page by layouts/index.njk,
+  // so an incremental build can't know pages depend on them. resetConfig forces
+  // a full re-render when these sources change.
+  eleventyConfig.addWatchTarget('docs/src/css/', { resetConfig: true });
+  eleventyConfig.addWatchTarget('docs/src/js/', { resetConfig: true });
 
   eleventyConfig.addFilter('calculateReadabilityGrade', (value) => {
     // This readability score grading scale was created with these thresholds intentionally by the ODI content team. These score display values represent the desired values corresponding to the ARI analysis. Using these round numbers is preferable to an equation that returns any integer because it matches hemingwayapp's scoring where grade levels are only returned as whole numbers.
@@ -133,9 +142,9 @@ export default function (eleventyConfig) {
     'docs/src/assets/illustrations': 'illustrations',
   });
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/img': 'img' });
+  eleventyConfig.addPassthroughCopy({ 'docs/src/assets/docs': 'docs' });
  //  eleventyConfig.addPassthroughCopy({ 'docs/src/assets/article-content': 'content/img' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/papers': 'papers' });
-  eleventyConfig.addPassthroughCopy({ 'docs/src/assets/docs': 'docs' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/css/fonts': 'fonts' });
   eleventyConfig.addPassthroughCopy({ '_site_dist/*': '/' });
   eleventyConfig.addPassthroughCopy({ 'docs/src/assets/papers/bobra-water-1': 'papers/bobra-water-1' });

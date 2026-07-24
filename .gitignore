@@ -7,3 +7,5 @@ docs/site/components/*/
 components_UNUSED/*
 .history
 .idea
+docs/site/unused_candidates.txt
+image_status.csv
