@@ -22,6 +22,11 @@ function renderTiles(grid, tiles) {
       const titleLc = t.title.toLowerCase();
       const descLc = t.description.toLowerCase();
       const keywordsLc = (t.keywords || []).join(' ').toLowerCase();
+      // Featured cards get a corner ribbon (drawn in CSS) plus a label for
+      // screen readers, which can't see it.
+      const featuredClass = t.featured === true ? ' featured' : '';
+      const featuredLabel =
+        t.featured === true ? '<span class="sr-only">Featured</span>' : '';
       return (
         `<a class="tile-link" href="${escapeHtml(t.url)}" ` +
         `data-index="${i}" ` +
@@ -32,7 +37,7 @@ function renderTiles(grid, tiles) {
         `data-keywords="${escapeHtml(keywordsLc)}" ` +
         `data-topic-label="${escapeHtml(t.topicLabel)}" ` +
         `data-type-label="${escapeHtml(t.typeLabel)}">` +
-        `<div class="content-tile">` +
+        `<div class="content-tile${featuredClass}">${featuredLabel}` +
         `<div class="content-tile-title">${escapeHtml(t.title)}</div>` +
         `<p>${escapeHtml(t.description)}</p>` +
         `<div class="content-tile-labels">` +
