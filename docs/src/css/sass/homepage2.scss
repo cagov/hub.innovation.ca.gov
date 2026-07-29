@@ -23,10 +23,11 @@ div.homepage2-grid {
 }
 
 aside.filter-tools {
-  background-color: white;
-  border: 1px solid #d4d4d7;
-  border-radius: 8px;
-  padding: 20px 16px;
+  // Figma: fill DS Site/Primary/primary-100, stroke DS Site/Primary/primary-300
+  background-color: #e7eef9;
+  border: 1px solid #a3bee8;
+  border-radius: 10px;
+  padding: 25px;
 
   h2.filter-tools-heading {
     font-family: 'Public Sans', sans-serif;
@@ -49,10 +50,12 @@ aside.filter-tools {
     input[type='search'] {
       width: 100%;
       box-sizing: border-box;
-      padding: 8px 10px;
+      padding: 8px 34px 8px 10px;
       border: 1px solid #00315F;
       border-radius: 4px;
       font-size: 14px;
+      background: #fff url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z' stroke='%233B3A48' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.0005 14L11.1338 11.1333' stroke='%233B3A48' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+      background-size: 16px 16px;
     }
 
     summary {
@@ -85,7 +88,7 @@ aside.filter-tools {
     }
 
     @media screen and (max-width: 900px) {
-      border: 1px solid #d4d4d7;
+      border: 1px solid #a3bee8;
       border-radius: 4px;
       padding: 4px 12px;
 
