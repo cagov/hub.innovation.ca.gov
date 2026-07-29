@@ -11,7 +11,7 @@ headericon: book
 Version 2.0 | Last Updated May 1, 2026.
 
 <div class="callout-info">
-  <p>The Interagency Data Exchange Agreement is managed by the Statewide Chief Data Officer who sits within the <a href="https://innovation.ca.gov/">Office of Data and Innovation.</p>
+  <p>The Interagency Data Exchange Agreement is managed by the Statewide Chief Data Officer who sits within the <a href="https://innovation.ca.gov/">Office of Data and Innovation.</a></p>
 </div>
 
 ## Introduction
