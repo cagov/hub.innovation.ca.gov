@@ -32,7 +32,7 @@
       <div>
       {% if headerlabel or topiclabel %}
       <div class="content-page-labels">
-        {% if topiclabel %}<a class="content-page-topic-label" href="/?topic={{ topicslug }}">{{ topiclabel }}</a>{% endif %}
+        {% if topiclabel %}<a class="content-page-topic-label topic-{{ topicslug }}" href="/?topic={{ topicslug }}">{{ topiclabel }}</a>{% endif %}
         {% if headerlabel %}<a class="content-page-header header-{{headericon}}" href="/?type={{ formatslug }}"><span class="content-page-header-label">{{ headerlabel }}</span></a>{% endif %}
       </div>
       {% endif %}

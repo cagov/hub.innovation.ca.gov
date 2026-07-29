@@ -134,6 +134,34 @@ div.content-grid-wrapper {
 }
 
 
+/* TOPIC AND FORMAT TAGS
+ *
+ * Topic tags are color-coded per topic; format tags share one neutral gray.
+ * Colors come from the tag styles in the homepage redesign Figma. Used by both
+ * the card labels (a.tile-link) and the content-page labels further down.
+ *
+ * Each topic entry is (fill, border).
+ */
+$format-tag-fill: #FAFAFA;
+$format-tag-border: #DFDFE1;
+
+$topic-tag-colors: (
+  'customer-experience':   (#E8EEF8, #B8C9E8),
+  'data':                  (#E4F1EE, #A6CDC6),
+  'human-centered-design': (#EEECF7, #DAD7ED),
+  'product-management':    (#F9EAE8, #E8BBB8),
+  'writing':               (#F8ECDC, #F0D6B3),
+);
+
+/* Set as custom properties so a topic class colors the tag wherever it appears,
+ * without competing on selector specificity with the base tag styles. */
+@each $slug, $colors in $topic-tag-colors {
+  .topic-#{$slug} {
+    --topic-tag-fill: #{nth($colors, 1)};
+    --topic-tag-border: #{nth($colors, 2)};
+  }
+}
+
 a.tile-link {
   text-decoration: none;
   color: inherit;
@@ -145,11 +173,13 @@ a.tile-link {
     border-radius:8px;
     border: 1px solid #D4D4D7;
 
+    /* Labels sit at the bottom of the card, below the description. */
     div.content-tile-labels {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 8px;
+      margin-top: 16px;
     }
 
     span.title-card-topic-label {
@@ -159,8 +189,8 @@ a.tile-link {
       height: 26px;
       box-sizing: border-box;
       border-radius: 8px;
-      background-color: #EDEDEF;
-      border: 0.5px solid #D4D4D7;
+      background-color: var(--topic-tag-fill, #EDEDEF);
+      border: 0.5px solid var(--topic-tag-border, #D4D4D7);
       display: inline-flex;
       align-items: center;
       padding: 0 12px;
@@ -172,6 +202,8 @@ a.tile-link {
       height: 26px;
       box-sizing: border-box;
       border-radius: 8px;
+      background-color: $format-tag-fill;
+      border: 0.5px solid $format-tag-border;
       display: inline-flex;
       align-items: center;
       padding: 0 12px;
@@ -187,8 +219,12 @@ a.tile-link {
       color: #0D4F8C;
       padding-top:1rem;
       padding-bottom: 10px;
-      line-height: 37px;
-    
+      line-height: 32px;
+
+      /* The title leads the card now that labels moved to the bottom. */
+      &:first-child {
+        padding-top: 0;
+      }
     }
     p {
       font-size: 14px;
@@ -235,8 +271,8 @@ a.content-page-topic-label {
   height: 28px;
   box-sizing: border-box;
   border-radius: 8px;
-  background-color: #EDEDEF;
-  border: 0.5px solid #D4D4D7;
+  background-color: var(--topic-tag-fill, #EDEDEF);
+  border: 0.5px solid var(--topic-tag-border, #D4D4D7);
   display: inline-flex;
   align-items: center;
   padding: 0 12px;
@@ -248,6 +284,8 @@ a.content-page-header {
   height: 28px;
   box-sizing: border-box;
   border-radius: 8px;
+  background-color: $format-tag-fill;
+  border: 0.5px solid $format-tag-border;
   display: inline-flex;
   align-items: center;
   padding: 0 12px;
@@ -453,24 +491,8 @@ div.header-icon {
   border-radius:8px;
   margin-right: 16px;
 }
-  .header-ribbon {        background-color: #EFECF8!important;
-                          border: 0.5px solid #D7D1ED!important;
-  }
-  .header-star {          background-color: #FAECDA!important;
-                          border: 0.5px solid #F4CEA1!important;
-                    }
-  .header-book {          background-color: #FDEAE5!important;
-                          border: 0.5px solid #F7CBBE!important;
-  }
-  .header-bookmark {      background-color: #E1F1EE!important;
-                          border: 0.5px solid #8BC7BD!important;
-  }
-  .header-templates {     background-color: #E7EEF9!important;
-                          border: 0.5px solid #CDDCF2!important;
-                        }
-  .header-paper {         background-color: #FFECC4!important;
-                          border: 0.5px solid #FFCD64!important;
-  }
+/* The .header-{icon} classes no longer carry per-format colors: format tags are
+ * uniformly gray in the redesign. The class is left on the markup as a hook. */
 
 span.orcid-cite {
   // padding-right: 32px;
