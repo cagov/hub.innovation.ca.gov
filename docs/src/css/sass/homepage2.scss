@@ -241,21 +241,6 @@ section.tile-results {
     color: #333;
   }
 
-  .tile-results-sort {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-
-    select {
-      padding: 6px 8px;
-      border: 1px solid #c7d6e4;
-      border-radius: 4px;
-      font-size: 14px;
-      background-color: white;
-    }
-  }
-
   .hp2-tile-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));

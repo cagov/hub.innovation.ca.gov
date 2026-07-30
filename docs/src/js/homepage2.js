@@ -34,9 +34,7 @@ function renderTiles(grid, tiles) {
         `data-type="${escapeHtml(t.type)}" ` +
         `data-title="${escapeHtml(titleLc)}" ` +
         `data-description="${escapeHtml(descLc)}" ` +
-        `data-keywords="${escapeHtml(keywordsLc)}" ` +
-        `data-topic-label="${escapeHtml(t.topicLabel)}" ` +
-        `data-type-label="${escapeHtml(t.typeLabel)}">` +
+        `data-keywords="${escapeHtml(keywordsLc)}">` +
         `<div class="content-tile${featuredClass}">${featuredLabel}` +
         `<div class="content-tile-title">${escapeHtml(t.title)}</div>` +
         `<p>${escapeHtml(t.description)}</p>` +
@@ -66,7 +64,6 @@ function readStateFromURL() {
     topics,
     types,
     search: params.get('search') || '',
-    sort: params.get('sort') || 'recommended',
   };
 }
 
@@ -75,7 +72,6 @@ function writeStateToURL(state) {
   if (state.topics.size > 0) params.set('topic', [...state.topics].join(','));
   if (state.types.size > 0) params.set('type', [...state.types].join(','));
   if (state.search) params.set('search', state.search);
-  if (state.sort && state.sort !== 'recommended') params.set('sort', state.sort);
   const qs = params.toString();
   const url = window.location.pathname + (qs ? `?${qs}` : '');
   window.history.replaceState(null, '', url);
@@ -89,7 +85,6 @@ function syncFormFromState(refs, state) {
     el.checked = state.types.has(el.value);
   });
   refs.searchEl.value = state.search;
-  refs.sortEl.value = state.sort;
 }
 
 function readStateFromForm(refs) {
@@ -97,26 +92,7 @@ function readStateFromForm(refs) {
     topics: new Set(refs.topicInputs.filter((el) => el.checked).map((el) => el.value)),
     types: new Set(refs.typeInputs.filter((el) => el.checked).map((el) => el.value)),
     search: refs.searchEl.value.trim(),
-    sort: refs.sortEl.value,
   };
-}
-
-function sortTiles(els, sortKey) {
-  if (sortKey === 'title') {
-    els.sort((a, b) => a.dataset.title.localeCompare(b.dataset.title));
-  } else if (sortKey === 'topic') {
-    els.sort((a, b) => {
-      const t = a.dataset.topicLabel.localeCompare(b.dataset.topicLabel);
-      return t !== 0 ? t : a.dataset.title.localeCompare(b.dataset.title);
-    });
-  } else if (sortKey === 'type') {
-    els.sort((a, b) => {
-      const t = a.dataset.typeLabel.localeCompare(b.dataset.typeLabel);
-      return t !== 0 ? t : a.dataset.title.localeCompare(b.dataset.title);
-    });
-  } else {
-    els.sort((a, b) => Number(a.dataset.index) - Number(b.dataset.index));
-  }
 }
 
 function applyFiltersAndSort(refs, state) {
@@ -142,10 +118,12 @@ function applyFiltersAndSort(refs, state) {
     if (show) visible.push(el);
   });
 
-  sortTiles(visible, state.sort);
+  // Restore the order the tiles were authored in, since a previous search may
+  // have reshuffled them.
+  visible.sort((a, b) => Number(a.dataset.index) - Number(b.dataset.index));
   if (searchTokens.length > 0) {
     // Stable sort: title/description matches rank above keyword-only matches,
-    // preserving the selected sort order within each tier.
+    // keeping the authored order within each tier.
     visible.sort((a, b) => Number(a.dataset.searchTier) - Number(b.dataset.searchTier));
   }
   visible.forEach((el) => refs.grid.appendChild(el));
@@ -181,7 +159,6 @@ function init() {
     count: document.getElementById('hp2-count'),
     noResults: document.getElementById('hp2-no-results'),
     searchEl: document.getElementById('hp2-search'),
-    sortEl: document.getElementById('hp2-sort'),
     clearBtn: document.getElementById('hp2-clear-all'),
     topicInputs: [...document.querySelectorAll('input[name="hp2-topic"]')],
     typeInputs: [...document.querySelectorAll('input[name="hp2-type"]')],
@@ -199,10 +176,9 @@ function init() {
   refs.topicInputs.forEach((el) => el.addEventListener('change', onChange));
   refs.typeInputs.forEach((el) => el.addEventListener('change', onChange));
   refs.searchEl.addEventListener('input', debounce(onChange, SEARCH_DEBOUNCE_MS));
-  refs.sortEl.addEventListener('change', onChange);
 
   refs.clearBtn.addEventListener('click', () => {
-    state = { topics: new Set(), types: new Set(), search: '', sort: 'recommended' };
+    state = { topics: new Set(), types: new Set(), search: '' };
     syncFormFromState(refs, state);
     applyFiltersAndSort(refs, state);
     writeStateToURL(state);
