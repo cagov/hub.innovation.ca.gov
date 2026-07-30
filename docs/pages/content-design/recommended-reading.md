@@ -1,11 +1,13 @@
 ---
-title: "Recommended reading: content design"
-description: Articles, guides, and tools to learn more about content design
+title: "Recommended reading about writing"
+parentid: Content design
+parentidlink: /content-design/
+description: Articles, guides, and tools to help you write better
 headerlabel: Recommended reading
 headericon: bookmark
 ---
 
-<p class="text-lead">These resources can show you how to improve your content. They are easy to understand and use, even if you’re new to content design. We review these resources often and occasionally add new ones.</p>
+<p class="text-lead">These resources can show you how to improve your writing. We review these resources often and occasionally add new ones.</p>
 
 ## Principles
 
@@ -14,13 +16,9 @@ headericon: bookmark
 * [Government Code 6219](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6219.&lawCode=GOV) is California’s plain language law. Share it with stakeholders so they know the importance of writing in plain language.
 * [US Web Design System principles](https://designsystem.digital.gov/design-principles/) are service design standards from the federal government. They can be a good supplement to the California Design System principles.
 
-## Online courses
-
-* Cake Consultancy’s [Content design pathway course](https://cakeconsultancy.com/product/content-design-pathway-course/) is a 3-5 hour paid self-paced course. It’s a great overview of content design from a UK-based design firm.
-
 ## Style guides
 
-These are the style guides we look at when we have a new content question. We’ve organized them in order of preference.
+These are the style guides we look at when we want to see how others do things. We’ve organized them in order of preference.
 
 * [Associated Press (AP) Style](https://store.stylebooks.com/) is ODI’s default for style questions not covered by [our style guide](/content-design/odi-style-guide/).
 * [How to write for SF.gov](https://sfdigitalservices.gitbook.io/style-guide/city-standards) (City of San Francisco)
@@ -37,6 +35,8 @@ These are the style guides we look at when we have a new content question. We’
 * [Alt Text: What to Write](https://www.nngroup.com/articles/write-alt-text/) is good general guidance for writing alt text.
 
 ### Content design
+
+Content design puts the reader’s needs first and meets those needs as simply as possible. It goes beyond words to think about the best format to deliver the information people need.
 
 * [Why FAQs aren’t the answer you’re looking for](https://digitalblog.coop.co.uk/2018/09/13/why-faqs-arent-the-answer-youve-been-looking-for/) has good points about why FAQs don’t help readers. We borrow from them when we talk with stakeholders.
 * [A guide to content design](https://design.shelter.org.uk/digital-framework/a-guide-to-content-design) is a great handbook on writing by Shelter, a UK housing nonprofit. In particular, we like these sections:
@@ -76,7 +76,7 @@ Swapping complex words for simple ones is a big part of plain language. These wo
 * [Writing for the web](https://www.nngroup.com/topic/writing-web/) (general advice on writing)
   * [F-shaped pattern of reading on the web](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/). It’s a common scanning pattern people use when reading. The article describes when people use the f-shaped pattern.
   * [The layer-cake pattern of scanning content on the web](https://www.nngroup.com/articles/layer-cake-pattern-scanning/). People use this scanning pattern when content is organized well. The article explains how to design content so people can use the layer-cake pattern.
-* [Web usability](https://www.nngroup.com/topic/web-usability/) (user experience research, helpful for putting content design in context)
+* [Web usability](https://www.nngroup.com/topic/web-usability/) (user experience research, which helps you understand what your audience needs)
   * [Why you only need to test with 5 users](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/) shows why you don’t need to do big usability tests with your content. Use this to persuade stakeholders you can quickly gather feedback before publishing content.
    
 ## Tools
@@ -85,7 +85,12 @@ Swapping complex words for simple ones is a big part of plain language. These wo
 * [ODI’s plain language checklist](/content-design/plain-language-checklist/) has detailed guidance on how to improve your writing.
 * [ProWritingAid](https://prowritingaid.com/)’s Simplify function can be helpful in lowering the reading level of content. It’s a good place to start if you need help simplifying text.
 
+
+## Online courses
+
+* Cake Consultancy’s [Content design pathway course](https://cakeconsultancy.com/product/content-design-pathway-course/) is a 3-5 hour paid self-paced course. It’s a great overview of content design from a UK-based design firm.
+
 ## Books
 
-* [Content Design](https://contentdesign.london/shop/content-design-by-sarah-winters-paperback) by Sarah Winters is our pick if you want only one book on content design. It covers everything from starting out to building organizational support for content design.
+* [Content Design](https://contentdesign.london/shop/content-design-by-sarah-winters-paperback) by Sarah Winters is our pick if you want only one book on content design and writing. It covers everything from starting out to building organizational support for better writing.
 * [Writing for dollars, writing to please: The case for plain language in business, government, and law](https://a.co/d/3bHM6Md) by Joseph Kimble. This is our go-to reference when we run into legal or technical objections to plain language. The author is an attorney and longtime plain language advocate. He refutes many common arguments against using plain language.
