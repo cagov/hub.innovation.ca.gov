@@ -173,22 +173,25 @@ a.tile-link {
     border-radius:8px;
     border: 1px solid #D4D4D7;
 
-    /* Featured cards get a star ribbon in the top-right corner: a 56px
-     * right triangle with its right angle at the corner. overflow hidden
-     * trims the triangle to the card's rounded corner. */
+    /* Featured cards get a star ribbon in the top-right corner: a 56px right
+     * triangle, its corner rounded to the card's radius and offset by the
+     * border so it sits flush with the outer edge and covers the border. */
     &.featured {
       position: relative;
-      overflow: hidden;
 
       &::after {
         content: '';
         position: absolute;
-        top: 0;
-        right: 0;
+        top: -1px;
+        right: -1px;
         width: 56px;
         height: 56px;
         pointer-events: none;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M0 0H56V56L0 0Z' fill='%230D4F8C'/%3E%3Cpath transform='translate(28 5)' d='M3.825 19L5.45 11.975L0 7.25L7.2 6.625L10 0L12.8 6.625L20 7.25L14.55 11.975L16.175 19L10 15.275L3.825 19Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+        /* The base normalize sets background-color: inherit on pseudo
+         * elements, which would paint the card's white over any text
+         * sitting beside the ribbon. */
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M0 0H48A8 8 0 0 1 56 8V56Z' fill='%230D4F8C'/%3E%3Cpath transform='translate(28 5)' d='M3.825 19L5.45 11.975L0 7.25L7.2 6.625L10 0L12.8 6.625L20 7.25L14.55 11.975L16.175 19L10 15.275L3.825 19Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
       }
     }
 
@@ -236,14 +239,17 @@ a.tile-link {
       font-size: 23px;
       font-weight: 700;
       color: #0D4F8C;
-      padding-top:1rem;
+      /* The title leads the card, now that the labels sit at the bottom.
+       * Not keyed off :first-child, because featured cards put a visually
+       * hidden "Featured" span ahead of it.
+       *
+       * The 8px drops the first line's ink below the point where the
+       * featured ribbon still reaches into the text column, so a long first
+       * line can't be clipped by the corner. Applied to every card so
+       * featured and plain titles stay on the same baseline. */
+      padding-top: 8px;
       padding-bottom: 10px;
       line-height: 32px;
-
-      /* The title leads the card now that labels moved to the bottom. */
-      &:first-child {
-        padding-top: 0;
-      }
     }
     p {
       font-size: 14px;
