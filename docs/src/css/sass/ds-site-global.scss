@@ -169,7 +169,7 @@ a.tile-link {
 
   div.content-tile {
     background-color:white;
-    padding: 1.5rem 1rem;
+    padding: 24px 16px;
     border-radius:8px;
     border: 1px solid #D4D4D7;
 
@@ -247,7 +247,7 @@ a.tile-link {
        * featured ribbon still reaches into the text column, so a long first
        * line can't be clipped by the corner. Applied to every card so
        * featured and plain titles stay on the same baseline. */
-      padding-top: 8px;
+      padding-top: 0px;
       padding-bottom: 10px;
       line-height: 32px;
     }

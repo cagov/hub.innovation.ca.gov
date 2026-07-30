@@ -48,7 +48,8 @@ div.homepage2-top-block {
 
 div.homepage2-grid {
   display: grid;
-  grid-template-columns: 298px 1fr;
+  /* 275px filter column, per the Figma. */
+  grid-template-columns: 275px 1fr;
   gap: 32px;
   align-items: start;
 
@@ -153,7 +154,7 @@ aside.filter-tools {
       gap: 14px;
 
       label {
-        font-size: 18px;
+        font-size: 14px;
         display: flex;
         align-items: center;
         gap: 14px;
@@ -164,8 +165,8 @@ aside.filter-tools {
           -webkit-appearance: none;
           flex-shrink: 0;
           margin: 0;
-          width: 28px;
-          height: 28px;
+          width: 25px;
+          height: 25px;
           border: 1px solid #00315F;
           border-radius: 4px;
           background: #fff;
