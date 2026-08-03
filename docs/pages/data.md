@@ -28,6 +28,13 @@ page_class: content-directory
     <p>Help for implementing an agreement that makes it easier to share data between state entities
     </p>
     </div></a>
+    <a class="tile-link" href="/data/introduction-power-bi-desktop-government/">
+    <div class="content-tile">
+    <div class="content-tile-header header-ribbon"><span class="title-card-header-label">Training</span></div>
+    <div class="content-tile-title">Introduction to Power BI Desktop for government</div>
+    <p>Learn how to automate data preparation and make interactive reports
+    </p>
+    </div></a>
     <a class="tile-link" href="/data/making-local-population-estimates-more-efficient-support-resource-allocation/">
     <div class="content-tile">
     <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
