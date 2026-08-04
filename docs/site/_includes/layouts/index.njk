@@ -47,8 +47,16 @@
     "url": "{{ root }}/"
   }
   </script>
-  <link title="fav icon" rel="icon" href="/img/favicon.png">
-  <link rel="shortcut icon" href="/img/favicon.png" />
+  {# Favicons. The .ico (16/32/48 in one file) is the fallback for older
+     clients and for the /favicon.ico request browsers make on their own;
+     modern browsers pick the matching PNG below instead. #}
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-180x180.png">
   {# <!-- Google Analytics performance -->
   <link rel="preconnect" href="https://www.google-analytics.com/" /> #}
 
