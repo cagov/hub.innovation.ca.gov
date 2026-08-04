@@ -9,7 +9,7 @@ headerlabel: Training
 headericon: ribbon
 ---
 
-<p class="text-lead">This online, self-paced course gives you an introduction to plain language.</p>
+<p class="text-lead">This online, self-paced course gives you an introduction to Power BI Desktop.</p>
 
 You’ll learn how to:
 
