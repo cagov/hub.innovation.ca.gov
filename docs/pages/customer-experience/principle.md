@@ -100,7 +100,7 @@ Services that are easy to understand are easy to use. Content design helps peopl
 <div class="blockquote-container">
   <div class="blockquote-body">
     <div class="blockquote-content">
-      Use the <a href="/content-design/plain-language-equity-standard">California Plain Language Equity Standard</a> to find out if you’re writing in plain language.
+      Use the <a href="/content-design/plain-language-equity-standard/">California Plain Language Equity Standard</a> to find out if you’re writing in plain language.
     </div>
   </div>
 </div>

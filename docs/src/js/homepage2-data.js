@@ -432,7 +432,7 @@ const HOMEPAGE2_TILES = [
     title: 'Making local population estimates more efficient to support resource allocation',
     description:
       'ODI helped the Department of Finance make small-area population estimates faster and more reliable ',
-    url: 'data/making-local-population-estimates-more-efficient-support-resource-allocation/',
+    url: '/data/making-local-population-estimates-more-efficient-support-resource-allocation/',
     topic: 'data',
     topicLabel: 'Data',
     type: 'papers',
