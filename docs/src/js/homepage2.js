@@ -137,12 +137,17 @@ function applyFiltersAndSort(refs, state) {
   }
 }
 
+// The markup ships the sections collapsed so a mobile load doesn't flash them
+// open before this runs; desktop expands them all.
 function setupResponsiveAccordions(detailsEls) {
   const isMobile = window.matchMedia(MOBILE_BREAKPOINT).matches;
   detailsEls.forEach((el) => {
     if (isMobile) {
       if (!el.dataset.userToggled) el.removeAttribute('open');
     } else {
+      // Desktop shows every section expanded, so a collapse made there must not
+      // follow the user into the mobile layout.
+      delete el.dataset.userToggled;
       el.setAttribute('open', '');
     }
   });
@@ -186,9 +191,15 @@ function init() {
 
   const detailsEls = [...document.querySelectorAll('details.filter-section')];
   detailsEls.forEach((el) => {
-    el.addEventListener('toggle', () => {
-      el.dataset.userToggled = '1';
-    });
+    // Keyed off the summary click rather than the toggle event: toggling `open`
+    // from script fires toggle too, which would mark our own collapse as the
+    // user's and stop the section collapsing on later mobile loads.
+    const summary = el.querySelector('summary');
+    if (summary) {
+      summary.addEventListener('click', () => {
+        el.dataset.userToggled = '1';
+      });
+    }
   });
   setupResponsiveAccordions(detailsEls);
   window.addEventListener(
