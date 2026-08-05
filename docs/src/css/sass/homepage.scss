@@ -74,6 +74,56 @@ aside.filter-tools {
     margin: 0 0 16px;
   }
 
+  /* The whole panel collapses on mobile, where it would otherwise push the
+     cards off the screen. Always open on desktop, where there's room. */
+  details.filter-tools-panel > summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 901px) {
+    details.filter-tools-panel > summary {
+      cursor: default;
+
+      &::after {
+        content: '';
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    details.filter-tools-panel > summary {
+      cursor: pointer;
+
+      /* The heading's bottom margin would show as a gap under the collapsed
+         panel, so carry that spacing on the body instead. */
+      h2.filter-tools-heading {
+        margin-bottom: 0;
+      }
+
+      &::after {
+        content: '\25BE';
+        font-size: 14px;
+        color: #0d4f8c;
+        transition: transform 0.2s;
+      }
+    }
+
+    details.filter-tools-panel[open] > summary::after {
+      transform: rotate(180deg);
+    }
+
+    div.filter-tools-body {
+      margin-top: 16px;
+    }
+  }
+
   .filter-section {
     margin-bottom: 20px;
 

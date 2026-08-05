@@ -137,19 +137,40 @@ function applyFiltersAndSort(refs, state) {
   }
 }
 
-// The markup ships the sections collapsed so a mobile load doesn't flash them
-// open before this runs; desktop expands them all.
-function setupResponsiveAccordions(detailsEls) {
-  const isMobile = window.matchMedia(MOBILE_BREAKPOINT).matches;
-  detailsEls.forEach((el) => {
-    if (isMobile) {
-      if (!el.dataset.userToggled) el.removeAttribute('open');
-    } else {
-      // Desktop shows every section expanded, so a collapse made there must not
-      // follow the user into the mobile layout.
+const isMobileView = () => window.matchMedia(MOBILE_BREAKPOINT).matches;
+
+// The markup ships everything collapsed so a mobile load doesn't flash it open
+// before this runs. On mobile the panel starts closed and Topic is the section
+// waiting inside it; desktop expands the lot.
+function setupResponsiveAccordions(refs) {
+  const isMobile = isMobileView();
+  if (isMobile) {
+    if (!refs.panelEl.dataset.userToggled) refs.panelEl.removeAttribute('open');
+    refs.sectionEls.forEach((el) => {
+      if (el.dataset.userToggled) return;
+      if (el === refs.topicEl) el.setAttribute('open', '');
+      else el.removeAttribute('open');
+    });
+  } else {
+    // Desktop shows everything expanded, so a collapse made there must not
+    // follow the user into the mobile layout.
+    [refs.panelEl, ...refs.sectionEls].forEach((el) => {
       delete el.dataset.userToggled;
       el.setAttribute('open', '');
-    }
+    });
+  }
+}
+
+// On mobile there's only room for one open section, so opening one closes the
+// other. Desktop shows both, hence the guard.
+function setupExclusiveSections(sectionEls) {
+  sectionEls.forEach((el) => {
+    el.addEventListener('toggle', () => {
+      if (!el.open || !isMobileView()) return;
+      sectionEls.forEach((other) => {
+        if (other !== el) other.removeAttribute('open');
+      });
+    });
   });
 }
 
@@ -189,22 +210,28 @@ function init() {
     writeStateToURL(state);
   });
 
-  const detailsEls = [...document.querySelectorAll('details.filter-section')];
-  detailsEls.forEach((el) => {
+  const sectionEls = [...document.querySelectorAll('details.filter-section')];
+  const disclosure = {
+    panelEl: document.querySelector('details.filter-tools-panel'),
+    sectionEls,
+    topicEl: document.querySelector('details.filter-topic'),
+  };
+  [disclosure.panelEl, ...sectionEls].filter(Boolean).forEach((el) => {
     // Keyed off the summary click rather than the toggle event: toggling `open`
     // from script fires toggle too, which would mark our own collapse as the
-    // user's and stop the section collapsing on later mobile loads.
-    const summary = el.querySelector('summary');
+    // user's and stop it collapsing on later mobile loads.
+    const summary = el.querySelector(':scope > summary');
     if (summary) {
       summary.addEventListener('click', () => {
         el.dataset.userToggled = '1';
       });
     }
   });
-  setupResponsiveAccordions(detailsEls);
+  setupExclusiveSections(sectionEls);
+  setupResponsiveAccordions(disclosure);
   window.addEventListener(
     'resize',
-    debounce(() => setupResponsiveAccordions(detailsEls), 200),
+    debounce(() => setupResponsiveAccordions(disclosure), 200),
   );
 
   applyFiltersAndSort(refs, state);
