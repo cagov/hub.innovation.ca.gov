@@ -1,5 +1,5 @@
 /* eslint import/no-unresolved: 'off' */
-import HOMEPAGE2_TILES from './homepage2-data.js';
+import HOMEPAGE2_TILES from './homepage-data.js';
 
 const MOBILE_BREAKPOINT = '(max-width: 900px)';
 const SEARCH_MIN_LENGTH = 2;
@@ -155,7 +155,7 @@ function setupResponsiveAccordions(detailsEls) {
 
 function init() {
   const grid = document.getElementById('hp2-tile-grid');
-  if (!grid) return; // not on the homepage2 page
+  if (!grid) return; // not on the homepage
 
   renderTiles(grid, HOMEPAGE2_TILES);
 

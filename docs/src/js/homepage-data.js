@@ -1,6 +1,6 @@
 /* eslint import/no-unresolved: 'off' */
 /*
- * Tile data for the /homepage2/ filtered navigation page.
+ * Tile data for the homepage's filtered navigation.
  *
  * Each record renders a tile matching the .tile-link / .content-tile markup
  * used on the existing topic sub-menu pages. typeIcon corresponds to the
