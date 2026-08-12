@@ -207,7 +207,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Research Data Specialist III</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p>Roles: Conceptualization, methodology, investigation, validation, project administration, supervision, writing – review & editing</p>
+            <p>Roles: Software, data curation, validation</p>
         </div>
     </div>
     <div class="author">
@@ -215,7 +215,7 @@ Office of Data and Innovation. “Data and Innovation Fund.” innovation.ca.gov
         <p class="author-title">Research Data Supervisor I</p>
         <p class="author-org">California Department of Social Services – Research, Data, and Automation Division</p>
         <div class="author-role">
-            <p>Roles: Software, data curation, validation</p>
+            <p>Roles: Conceptualization, methodology, investigation, validation, project administration, supervision, writing – review & editing</p>
         </div>
         <p class="author-id">
             <a href="https://orcid.org/0000-0002-5774-1956"><img class="orcid-cite" src="/img/orcid-icon.svg" alt="ORCiD icon" />https://orcid.org/0000-0002-5774-1956</a>
