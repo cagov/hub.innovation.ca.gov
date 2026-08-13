@@ -1,9 +1,7 @@
 ---
 title: Write in plain language
-parentid: Content design
-parentidlink: /content-design/
-subparentid: Content design principles
-subparentidlink: /content-design/principles/
+parentid: Content design principles
+parentidlink: /content-design/principles/
 description: Do the hard work to make content simple for people to understand.
 headerlabel: Standards and principles
 headericon: star
@@ -58,14 +56,10 @@ Check reading levels with the [Hemingway Editor](http://hemingwayapp.com/). Elim
   * Do not use [hidden verbs](https://digital.gov/guides/plain-language/writing#avoid-hidden-verbs).
 * Do not use gerunds with **is** or **are**. A gerund is a verb that ends in -ing. 
 
-<div class="twocolumn-table">
-
 | **Write** | **Don't write** |
 | ----- | ----- | 
 | He helps with the backlog. | He is helping with the backlog. |
 | The program lets people file their taxes easily. | The program is letting people file their taxes easily. |
-
-</div>
 
 * Write in present tense.
 * When using **it**, **this**, **those**, and **these**, double check to make sure it’s clear what the pronoun refers to.

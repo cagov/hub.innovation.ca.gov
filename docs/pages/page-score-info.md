@@ -94,10 +94,8 @@ Our tool can’t measure some aspects of readability. They include font, font si
 
 We turn Automated Readability Index grade levels into 0-100 scores.
 
-<div class="twocolumn-table">
-
 | **Reading level** | **Score** |
-| ------------------ | --------- |
+| --- | --- |
 | 0-6 | 100 |
 | 7 | 95 |
 | 8 | 90 |
@@ -109,8 +107,6 @@ We turn Automated Readability Index grade levels into 0-100 scores.
 | 14 | 20 |
 | 15 | 10 |
 | 16+ | 0 |
-
-</div>
 
 ### How to improve your website
 

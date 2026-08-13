@@ -1,6 +1,5 @@
 ---
 title: A data-driven approach to detecting cash benefit theft
-parentid: Data
 description: ODI built a predictive model to detect illegal debit card transactions.
 headerlabel: Papers
 headericon: paper

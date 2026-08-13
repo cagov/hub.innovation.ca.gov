@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+  {% block analytics_head %}
+    {% include "analytics-head.njk" %}
+  {% endblock %}
   <title>{{ metadata.page_title }}</title> 
   <link rel="preload" href="/fonts/publicsans-bold-webfont.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/publicsans-regular-webfont.woff2" as="font" type="font/woff2" crossorigin />
@@ -35,10 +38,27 @@
   <meta name="twitter:image:width" content="{{ metadata.social_image_width }}" />
   <meta name="twitter:image:height" content="{{ metadata.social_image_height }}" />
   <meta property="twitter:image:alt" content="{{ metadata.social_image_alt_text }}" />
-  <link title="fav icon" rel="icon" href="/img/favicon.ico">
-  <link rel="shortcut icon" href="/img/favicon.ico" />
-  <!-- Google Analytics performance -->
-  <link rel="preconnect" href="https://www.google-analytics.com/" />
+  <!-- Declares the site name Google shows in search results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ metadata.site_name }}",
+    "url": "{{ root }}/"
+  }
+  </script>
+  {# Favicons. The .ico (16/32/48 in one file) is the fallback for older
+     clients and for the /favicon.ico request browsers make on their own;
+     modern browsers pick the matching PNG below instead. #}
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-180x180.png">
+  {# <!-- Google Analytics performance -->
+  <link rel="preconnect" href="https://www.google-analytics.com/" /> #}
 
   {% include "statewide-alert.njk" %}
 
@@ -70,6 +90,9 @@
 </head>
 
 <body class="{{ metadata.page_class }}">
+  {% block analytics_body %}
+    {% include "analytics-body.njk" %}
+  {% endblock %}
   <div id="skip-to-content"><a href="#body-content">Skip to content</a></div>
 
   <header class="header-container">
@@ -82,7 +105,9 @@
     {% endblock %}
 
     {% block siteNavigation %}
-      {% include "site-navigation.njk" %}
+      {% if not hide_site_navigation %}
+        {% include "site-navigation.njk" %}
+      {% endif %}
     {% endblock %}
   </header>
 

@@ -1,9 +1,7 @@
 ---
 title: Focus on user needs and services
-parentid: Content design
-parentidlink: /content-design/
-subparentid: Content design principles
-subparentidlink: /content-design/principles/
+parentid: Content design principles
+parentidlink: /content-design/principles/
 description: Give people what they need and direct them to services.
 headerlabel: Standards and principles
 headericon: star

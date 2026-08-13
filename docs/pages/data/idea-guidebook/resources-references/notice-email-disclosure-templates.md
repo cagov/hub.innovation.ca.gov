@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Notice, email, and disclosure templates
-parentid: IDEA guidebook
-parentidlink: /data/idea-guidebook/
-subparentid: Resources and references
-subparentidlink: /data/idea-guidebook/resources-references/
+parentid: Resources and references
+parentidlink: /data/idea-guidebook/resources-references/
 description: Templates to use as part of the IDEA agreement.
 headerlabel: Guides and playbooks
 headericon: book

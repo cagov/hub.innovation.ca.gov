@@ -1,7 +1,5 @@
 ---
 title: ODI’s style guide
-parentid: Content design
-parentidlink: /content-design/
 description: How ODI keeps our writing consistent, including the reasons for our choices
 headerlabel: Guides and playbooks
 headericon: book
@@ -264,7 +262,7 @@ Make the title the same as the H1 of the page, followed by a pipe and the site n
   <div class="blockquote-body">
     <div class="blockquote-header"><strong>Example:</strong></div>
     <div class="blockquote-content">
-ODI's style guide | Innovation Hub
+Meet the team | Office of Data and Innovation
     </div>
   </div>
 </div>
