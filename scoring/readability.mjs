@@ -14,7 +14,9 @@ import fs from 'fs';
 import readabilityScores from 'readability-scores';
 import { convert } from 'html-to-text';
 
-import showdown from 'showdown';
+import MarkdownIt from 'markdown-it';
+
+const md = new MarkdownIt({ html: true });
 
 // Get the list of pages to test.
 let pageList = JSON.parse(fs.readFileSync('./_site_dist/allFiles.json')).filter(p => !p?.url.includes('UNUSED'));
@@ -29,8 +31,10 @@ pageList.forEach(page => {
 
   // if inputpath ends in .md, convert to html
   if(page.inputPath.endsWith('.md')) {
-    let converter = new showdown.Converter();
-    fileBody = converter.makeHtml(fileBody);
+    // Strip YAML front matter first — otherwise the title/description/layout
+    // keys get rendered as body text and counted toward the readability score
+    fileBody = fileBody.replace(/^﻿?---\r?\n[\s\S]*?\r?\n---[ \t]*(\r?\n|$)/, '');
+    fileBody = md.render(fileBody);
   }
 
   // if(page.inputPath.includes('principles')) {
