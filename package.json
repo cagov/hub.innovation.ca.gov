@@ -58,8 +58,7 @@
     "html-to-text": "^9.0.5",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
-    "readability-scores": "^1.0.8",
-    "showdown": "^2.1.0"
+    "readability-scores": "^1.0.8"
   },
   "volta": {
     "node": "18.15.0"
