@@ -91,7 +91,7 @@ It helps answer questions like:
 * Do you have policies or guidelines on how you can use the data?
 * Do you still need it or can you delete it?
 
-Mapping your data helps you identify risks and protect the information you collect. The California Department of Technology (CDT)'s [Privacy Threshold Assessment & Impact Assessment](https://cdt.ca.gov/services/wp-content/uploads/sites/2/2023/10/07-Privacy-Threshold-and-Impact-Analysis-SIMM-5310-C-2.docx) guide is the best starting point. CDT developed this guide to help departments comply with privacy requirements.
+Mapping your data helps you identify risks and protect the information you collect. The California Department of Technology (CDT)'s [Privacy Threshold Assessment & Impact Assessment](https://www.cdt.ca.gov/wp-content/uploads/2026/02/SIMM-5310-C-Privacy-Threshold-Assessments.docx) guide is the best starting point. CDT developed this guide to help departments comply with privacy requirements.
 
 To start mapping your data, follow these steps: 
 
