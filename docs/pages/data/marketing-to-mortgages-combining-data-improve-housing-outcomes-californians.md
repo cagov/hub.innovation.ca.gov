@@ -1,5 +1,5 @@
 ---
-title: Marketing to mortgages: Combining data to improve housing outcomes for Californians
+title: Marketing to mortgages - Combining data to improve housing outcomes for Californians
 parentid: Data
 description: ODI helped CalHFA use marketing data to see how campaigns affected loan applications.
 headerlabel: Papers
