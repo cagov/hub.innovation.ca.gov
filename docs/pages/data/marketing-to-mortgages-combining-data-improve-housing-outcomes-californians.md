@@ -131,7 +131,7 @@ CalHFA is now convening an enterprise-wide data governance effort in part becaus
         </p>
         <p class="author-org">California Housing Finance Agency, 500 Capitol Mall, Sacramento, CA 95814</p>
         <div class="author-role">
-            <p>Roles: Conceptualization, resources, supervision, project administration</p>
+            <p>Roles: Conceptualization, resources, supervision, project administration, writing – review & editing</p>
         </div>
     </div>
     <div class="author">
