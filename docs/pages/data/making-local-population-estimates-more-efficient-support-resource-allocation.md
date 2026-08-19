@@ -13,7 +13,7 @@ Brittany Allen <a href="https://orcid.org/0009-0003-4005-8848"><img class="orcid
 <p class="text-lead">We helped the Department of Finance (Finance), Demographic Research Unit (DRU) make the process of creating small-area population estimates faster and more reliable to support critical state and local decision-making.</p>
 
 <div class="interaction-block">
-<div class="interaction"><a href="/papers/allen-et-al-making-local-population-estimates-more-efficient-support-resource-allocation.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" /> Download PDF</a></div>
+<div class="interaction"><a href="/papers/allen-et-al-making-local-population-estimates-more-efficient-support-resource-allocation.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" />Download PDF</a></div>
 <div class="interaction"><a href="https://doi.org/10.5281/zenodo.20738899"><img class="icon" src="/img/paper-link-icon.svg" />https://doi.org/10.5281/zenodo.20738899</a></div>
 </div>
 
