@@ -35,6 +35,13 @@ page_class: content-directory
     <p>Learn how to automate data preparation and make interactive reports
     </p>
     </div></a>
+    <a class="tile-link" href="/data/marketing-to-mortgages-combining-data-improve-housing-outcomes-californians/">
+    <div class="content-tile">
+    <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
+    <div class="content-tile-title">Making local population estimates more efficient to support resource allocation</div>
+    <p>ODI helped CalHFA use marketing data to see how campaigns affected loan applications
+    </p>
+    </div></a>
     <a class="tile-link" href="/data/making-local-population-estimates-more-efficient-support-resource-allocation/">
     <div class="content-tile">
     <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
