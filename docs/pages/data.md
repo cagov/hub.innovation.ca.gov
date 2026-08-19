@@ -38,7 +38,7 @@ page_class: content-directory
     <a class="tile-link" href="/data/marketing-to-mortgages-combining-data-improve-housing-outcomes-californians/">
     <div class="content-tile">
     <div class="content-tile-header header-paper"><span class="title-card-header-label">Papers</span></div>
-    <div class="content-tile-title">Making local population estimates more efficient to support resource allocation</div>
+    <div class="content-tile-title">Marketing to mortgages: Combining data to improve housing outcomes for Californians</div>
     <p>ODI helped CalHFA use marketing data to see how campaigns affected loan applications
     </p>
     </div></a>
