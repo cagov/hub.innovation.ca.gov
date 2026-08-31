@@ -102,9 +102,9 @@ If a Data Recipient receives a request under the California Public Records Act (
 
 ## Legal
 
-### Does IDEA, including data sharing with contractors, comply with § 6254.5 in the Public Records Act? 
+### Does IDEA, including data sharing with contractors, comply with § 7921.505 in the Public Records Act? 
 
-Yes. Data that is shared consistent with the Information Practices Act, other laws covering the data, or to a governmental agency that agrees to keep the data confidential means that the data keeps its confidential status (see Government Code § 6254.5). The IDEA itself is an agreement to keep confidential data that is shared as confidential. Sharing of confidential data with other governmental agencies, contractors or business associates is permitted, and confidential information shared via IDEA will generally remain confidential and exempt from PRA. See §5.18 of IDEA and FAQ 8 for details on managing PRA requests.
+Yes. Data that is shared consistent with the Information Practices Act, other laws covering the data, or to a governmental agency that agrees to keep the data confidential means that the data keeps its confidential status (see Government Code § 7921.505). The IDEA itself is an agreement to keep confidential data that is shared as confidential. Sharing of confidential data with other governmental agencies, contractors or business associates is permitted, and confidential information shared via IDEA will generally remain confidential and exempt from PRA. See §5.18 of IDEA and FAQ 8 for details on managing PRA requests.
 
 ### Does IDEA impact attorney-client or other existing privileges? 
 
