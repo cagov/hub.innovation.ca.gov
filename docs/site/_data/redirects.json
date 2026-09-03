@@ -1,0 +1,27 @@
+[
+  {
+    "from": "/data/",
+    "to": "/?topic=data",
+    "label": "Data tools and resources"
+  },
+  {
+    "from": "/content-design/",
+    "to": "/?topic=writing",
+    "label": "Writing tools and resources"
+  },
+  {
+    "from": "/customer-experience/",
+    "to": "/?topic=customer-experience",
+    "label": "Customer experience tools and resources"
+  },
+  {
+    "from": "/human-centered-design/",
+    "to": "/?topic=human-centered-design",
+    "label": "Human-centered design tools and resources"
+  },
+  {
+    "from": "/product-management/",
+    "to": "/?topic=product-management",
+    "label": "Product management tools and resources"
+  }
+]

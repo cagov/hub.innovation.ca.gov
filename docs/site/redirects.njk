@@ -1,0 +1,31 @@
+---
+# Client-side redirect stubs for the topic landing pages that the information
+# architecture redesign removed. Each stub is written to the old page's exact
+# output path (e.g. /data/index.html), so it only ever answers that one URL —
+# the pages beneath it (/data/standard/, /data/idea-guidebook/, ...) are
+# separate files and are untouched.
+#
+# Add a mapping in docs/site/_data/redirects.json to add a redirect.
+layout: null
+eleventyExcludeFromCollections: true
+pagination:
+  data: redirects
+  size: 1
+  alias: redirect
+permalink: "{{ redirect.from }}index.html"
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting to {{ redirect.label }}</title>
+    <link rel="canonical" href="{{ root }}{{ redirect.to }}" />
+    <meta http-equiv="refresh" content="0; url={{ redirect.to }}" />
+  </head>
+  <body>
+    <p>
+      This page has moved.
+      <a href="{{ redirect.to }}">Continue to {{ redirect.label }}</a>.
+    </p>
+  </body>
+</html>
