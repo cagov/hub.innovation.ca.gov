@@ -19,7 +19,10 @@ import MarkdownIt from 'markdown-it';
 const md = new MarkdownIt({ html: true });
 
 // Get the list of pages to test.
-let pageList = JSON.parse(fs.readFileSync('./_site_dist/allFiles.json')).filter(p => !p?.url.includes('UNUSED'));
+let pageList = JSON.parse(fs.readFileSync('./_site_dist/allFiles.json'))
+  .filter(p => !p?.url.includes('UNUSED'))
+  // Redirect stubs have no prose to score, and all share one input template.
+  .filter(p => !p?.inputPath.endsWith('docs/site/redirects.njk'));
 
 
 
