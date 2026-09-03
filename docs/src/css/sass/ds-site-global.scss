@@ -134,33 +134,102 @@ div.content-grid-wrapper {
 }
 
 
+/* TOPIC AND FORMAT TAGS
+ *
+ * Topic tags are color-coded per topic; format tags share one neutral gray.
+ * Colors come from the tag styles in the homepage redesign Figma. Used by both
+ * the card labels (a.tile-link) and the content-page labels further down.
+ *
+ * Each topic entry is (fill, border).
+ */
+$format-tag-fill: #FAFAFA;
+$format-tag-border: #DFDFE1;
+
+$topic-tag-colors: (
+  'customer-experience':   (#E8EEF8, #B8C9E8),
+  'data':                  (#E4F1EE, #A6CDC6),
+  'human-centered-design': (#EEECF7, #DAD7ED),
+  'product-management':    (#F9EAE8, #E8BBB8),
+  'writing':               (#F8ECDC, #F0D6B3),
+);
+
+/* Set as custom properties so a topic class colors the tag wherever it appears,
+ * without competing on selector specificity with the base tag styles. */
+@each $slug, $colors in $topic-tag-colors {
+  .topic-#{$slug} {
+    --topic-tag-fill: #{nth($colors, 1)};
+    --topic-tag-border: #{nth($colors, 2)};
+  }
+}
+
 a.tile-link {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 
   div.content-tile {
-    background-color:white;
-    padding: 1.5rem 1rem;
+    // background-color:white;
+    padding: 24px 16px;
     border-radius:8px;
     border: 1px solid #D4D4D7;
 
-    div.content-tile-header {
+    /* Featured cards get a star ribbon in the top-right corner: a 56px right
+     * triangle, its corner rounded to the card's radius and offset by the
+     * border so it sits flush with the outer edge and covers the border. */
+    &.featured {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 56px;
+        height: 56px;
+        pointer-events: none;
+        /* The base normalize sets background-color: inherit on pseudo
+         * elements, which would paint the card's white over any text
+         * sitting beside the ribbon. */
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M0 0H48A8 8 0 0 1 56 8V56Z' fill='%230D4F8C'/%3E%3Cpath transform='translate(28 5)' d='M3.825 19L5.45 11.975L0 7.25L7.2 6.625L10 0L12.8 6.625L20 7.25L14.55 11.975L16.175 19L10 15.275L3.825 19Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+      }
+    }
+
+    /* Labels sit at the bottom of the card, below the description. */
+    div.content-tile-labels {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    span.title-card-topic-label {
       vertical-align: top;
       font-size: 14px;
-      border: 1px solid ;
       font-weight: 400;
       height: 26px;
-      padding-right:12px;
-      border-radius:8px;
-      display: inline-block;
-      position: relative;
-      background-image: url(/img/tile-icon-star.png);
-      background-repeat: no-repeat;
-      background-size: 24px;
-      background-position: left 4px center;
-      padding-left: 32px;
-      span.title-card-header-label {
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: var(--topic-tag-fill, #EDEDEF);
+      border: 0.5px solid var(--topic-tag-border, #D4D4D7);
+      display: inline-flex;
+      align-items: center;
+      padding: 0 12px;
+    }
+
+    div.content-tile-header {
+      font-size: 14px;
+      font-weight: 400;
+      height: 26px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: $format-tag-fill;
+      border: 0.5px solid $format-tag-border;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 12px;
+      span.title-card-format-label {
         vertical-align: middle;
       }
     }
@@ -170,10 +239,17 @@ a.tile-link {
       font-size: 23px;
       font-weight: 700;
       color: #0D4F8C;
-      padding-top:1rem;
+      /* The title leads the card, now that the labels sit at the bottom.
+       * Not keyed off :first-child, because featured cards put a visually
+       * hidden "Featured" span ahead of it.
+       *
+       * The 8px drops the first line's ink below the point where the
+       * featured ribbon still reaches into the text column, so a long first
+       * line can't be clipped by the corner. Applied to every card so
+       * featured and plain titles stay on the same baseline. */
+      padding-top: 0px;
       padding-bottom: 10px;
-      line-height: 37px;
-    
+      line-height: 32px;
     }
     p {
       font-size: 14px;
@@ -193,9 +269,11 @@ a.tile-link {
       text-decoration: underline;
     }
   }
-  &:focus {
+  &:focus,
+  &:focus-visible {
+    outline: none !important;
     div.content-tile {
-      box-shadow: 0px 0px 4px 2px #3F73A4!important;    
+      box-shadow: 0px 0px 4px 2px #3F73A4!important;
     }
     div.content-tile-title {
       text-decoration: none;
@@ -204,29 +282,61 @@ a.tile-link {
   }
 }
 
-div.content-page-header {
+div.content-page-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+a.content-page-topic-label {
   font-size: 14px;
-  border: 1px solid ;
   font-weight: 400;
   height: 28px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right:12px;
-  border-radius:8px;
-  display: inline-block;
-  position: relative;
-  background-image: url(/img/tile-icon-star.png);
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: left 4px center;
-  padding-left: 32px;
-  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: var(--topic-tag-fill, #EDEDEF);
+  border: 0.5px solid var(--topic-tag-border, #D4D4D7);
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+a.content-page-header {
+  font-size: 14px;
+  font-weight: 400;
+  height: 28px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: $format-tag-fill;
+  border: 0.5px solid $format-tag-border;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
 }
 
 span.content-page-header-label {
   vertical-align: middle;
-  position: relative;
-  top: -0.07rem;
+}
+
+/* Content-page topic/format labels are links back to the filtered homepage */
+a.content-page-topic-label,
+a.content-page-header {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease;
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none !important;
+    box-shadow: 0px 0px 4px 2px #3F73A4;
+  }
 }
 /* ODI BLOCK */
 div.odiblock-grid-wrapper {
@@ -406,27 +516,8 @@ div.header-icon {
   border-radius:8px;
   margin-right: 16px;
 }
-  div.header-ribbon {     background-color: #EFECF8!important;  
-                          border: 0.5px solid #D7D1ED!important; 
-                          background-image: url(/img/tile-icon-ribbon.png)!important; 
-  }
-  div.header-star {       background-color: #FAECDA!important;  
-                          background-image: url(/img/tile-icon-star.png)!important; 
-                          border: 0.5px solid #D7D1ED!important;
-                    }
-  div.header-book {       background-color: #FDEAE5!important;  
-                          border: 0.5px solid #F7CBBE!important; 
-                          background-image: url(/img/tile-icon-book.png)!important; }
-  div.header-bookmark {   background-color: #E1F1EE!important;  
-                          border: 0.5px solid #8BC7BD!important; 
-                          background-image: url(/img/tile-icon-bookmark.png)!important; }
-  div.header-templates {  background-color: #EDEDEF!important;  
-                          border: 0.5px solid #D4D4D7!important;
-                          background-image: url(/img/tile-icon-template.png)!important; 
-                        }
-  div.header-paper {     background-color: #FFECC4!important;  
-                          border: 0.5px solid #FFCD64!important; 
-                            background-image: url(/img/tile-icon-paper.png)!important; }
+/* The .header-{icon} classes no longer carry per-format colors: format tags are
+ * uniformly gray in the redesign. The class is left on the markup as a hook. */
 
 span.orcid-cite {
   // padding-right: 32px;
@@ -537,7 +628,7 @@ div.official-header {
   color:white;
 }
 div.site-header {
-  background-color: var(--odi-brand, #f5f8fb);
+  // background-color: var(--odi-brand, #f5f8fb);
 }
 
 .breadcrumb {
@@ -572,20 +663,19 @@ h2 {
   margin-bottom: 2rem;
 }
 
+/* matches the site-navigation styling on innovation.ca.gov */
+cagov-site-navigation, .site-header {
+  background: transparent;
+  border-bottom: solid 1px var(--primary-color, #0D4F8C);
+}
+/* innovation.ca.gov sets body line-height 1.75, which its nav inherits; scope
+   the same value to the nav so its height matches across the two sites */
 cagov-site-navigation {
-  background-color: inherit;
-  border-bottom: 1px solid #C7D6E4;
-  border-top: 1px solid #C7D6E4;
-  .container {
-    padding-top: var(--s-1, 0.5rem);
-    padding-bottom: var(--s-1, 0.5rem);
-  }
-  .expanded-menu-section-header-link {
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2rem;
-  }
+  line-height: 1.75;
+}
+/* bug in site header: the dropdown chevron needs an explicit fill (same patch as innovation.ca.gov) */
+cagov-site-navigation .expanded-menu-section-header-arrow-svg {
+  fill: var(--primary-color, #064e66);
 }
 
 div.par-scores-container {
@@ -701,6 +791,26 @@ div.twocolumn-table {
       }
   }
 }
+
+div.shadedheader-table {
+  table {
+      thead {
+          background-color: #FAFAFA;
+          th {
+              border: 1px solid #C7D6E4;
+              font-size: 18px;
+          }
+      }
+      tbody {
+          background-color: white;
+          td {
+              font-size: 14px;
+              border: 1px solid #C7D6E4;
+          }
+      }
+  }
+}
+
 
 div.runofshow-table {
   margin-top: 2rem;

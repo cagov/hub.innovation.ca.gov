@@ -1,9 +1,7 @@
 ---
 title: Write with a conversational and official voice
-parentid: Content design
-parentidlink: /content-design/
-subparentid: Content design principles
-subparentidlink: /content-design/principles/
+parentid: Content design principles
+parentidlink: /content-design/principles/
 description: Give reliable information with confidence.
 headerlabel: Standards and principles
 headericon: star
@@ -35,15 +33,11 @@ A conversational tone and an official one can seem like they’re opposites of e
 * Refer to people as **you**, and the government or department as **we**, as long as it’s clear who **we** refers to. This lowers the feeling of a divide between people and the state.
   * Do not use **I**, **me**, or **my**. It’s unclear if it refers to the reader or the writer.
 
-<div class="twocolumn-table">
-
 | **Write** | **Don't write** |
 | ----- | ----- | 
 | If you need benefits, apply by May 23, 2021. | The benefits application deadline is May 23, 2021. |
 | We will review your request in 5 business days or less. | Every request the department receives will be reviewed within no more than 5 business days. |
 | The application must have all of your data. | The application must have all of my data. |
-
-</div>
 
 * Use transition words where it makes sense. Start sentences with **And** or **But** to show the relationship between pieces of information.
 

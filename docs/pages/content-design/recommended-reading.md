@@ -51,7 +51,7 @@ Inclusive language uses words that respect all people. ODI doesn’t maintain ou
 * The University of Washington’s [IT inclusive language guide](https://itconnect.uw.edu/guides-by-topic/identity-diversity-inclusion/inclusive-language-guide/). It has terms often found in IT, with alternatives.
 * Atlassian’s [inclusive language guide](https://atlassian.design/content/inclusive-writing) gives alternatives to many terms and phrases.
 * Vox Media’s [Language, Please](https://languageplease.org/) defines many terms and gives history about them. In some cases it offers guidance on choosing terms.
-* Service Design Network’s [Supporting inclusive forms design with design systems](https://www.service-design-network.org/community-knowledge/supporting-inclusive-form-design-with-design-systems). It talks about how to make inclusive language the default when making forms.
+* Service Design Network’s [Supporting inclusive forms design with design systems](https://service-design-network.org/community_article/supporting-inclusive-form-design-with-design-systems). It talks about how to make inclusive language the default when making forms.
 
 ### Plain language
 

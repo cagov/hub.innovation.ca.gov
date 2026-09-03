@@ -1,6 +1,5 @@
 ---
 title: Developing trustworthy monitoring data
-parentid: Data
 description: ODI built an outlier detection tool to interactively assess environmental monitoring data quality.
 headerlabel: Papers
 headericon: paper

@@ -1,10 +1,8 @@
 ---
 layout: single-column
 title: IDEA agreement
-parentid: IDEA guidebook
-parentidlink: /data/idea-guidebook/
-subparentid: Resources and references
-subparentidlink: /data/idea-guidebook/resources-references/
+parentid: Resources and references
+parentidlink: /data/idea-guidebook/resources-references/
 description: The final agreement between agency secretaries.
 headerlabel: Guides and playbooks
 headericon: book

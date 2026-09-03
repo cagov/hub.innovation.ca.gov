@@ -1,7 +1,5 @@
 ---
 title: Top plain language tips
-parentid: Content design
-parentidlink: /content-design/
 description: Nine tips you can start using now
 layout: single-column
 headerlabel: Guides and playbooks

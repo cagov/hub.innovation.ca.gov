@@ -1,8 +1,6 @@
 ---
 title: Data minimization and privacy toolkit
 layout: single-column
-parentid: Data
-parentidlink: /data/
 description: How to collect, store, and share information safely and responsibly
 headerlabel: Guides and playbooks
 headericon: book
@@ -137,4 +135,4 @@ span.angle-bracket {
     </div>
 </div>
 
-Go deeper with [best practices and relevant laws and regulations](/data/minimization-toolkit/best-practices-laws-regulations) from across the state and beyond.
+Go deeper with [best practices and relevant laws and regulations](/data/minimization-toolkit/best-practices-laws-regulations/) from across the state and beyond.

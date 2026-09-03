@@ -1,10 +1,8 @@
 ---
 layout: single-column
 title: Resources and references
-parentid: Data
-parentidlink: /data/
-subparentid: IDEA guidebook
-subparentidlink: /data/idea-guidebook/
+parentid: IDEA guidebook
+parentidlink: /data/idea-guidebook/
 description: Use these steps to develop a BUCP under the IDEA.
 headerlabel: Guides and playbooks
 headericon: book

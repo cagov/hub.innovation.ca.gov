@@ -1,9 +1,7 @@
 ---
 title: Organize content strategically
-parentid: Content design
-parentidlink: /content-design/
-subparentid: Content design principles
-subparentidlink: /content-design/principles/
+parentid: Content design principles
+parentidlink: /content-design/principles/
 description: Well-organized content helps readers find what they’re looking for.
 headerlabel: Standards and principles
 headericon: star

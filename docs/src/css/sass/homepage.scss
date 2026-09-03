@@ -1,0 +1,340 @@
+/* Homepage — filtered resource browser */
+
+div.homepage2-page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+div.homepage2-top-block {
+  margin: 24px 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  div.homepage2-top-copy {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  img.homepage2-top-illustration {
+    flex: 0 1 auto;
+    width: 609px;
+    max-width: 50%;
+    height: auto;
+  }
+
+  /* Once there's no room for the illustration beside the text, drop it rather
+     than stacking it — it's decorative, and it only pushed the cards further
+     down the page. */
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+
+    img.homepage2-top-illustration {
+      display: none;
+    }
+  }
+}
+
+/* The 47px page title needs to come down a step to fit a portrait phone. */
+@media screen and (max-width: 480px) {
+  div.homepage2-top-block h1.page-title {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+}
+
+div.homepage2-grid {
+  display: grid;
+  /* 275px filter column, per the Figma. */
+  grid-template-columns: 275px 1fr;
+  gap: 32px;
+  align-items: start;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+aside.filter-tools {
+  // Figma: fill DS Site/Primary/primary-100, stroke DS Site/Primary/primary-300
+  background-color: #e7eef9;
+  border: 1px solid #a3bee8;
+  border-radius: 10px;
+  padding: 25px;
+
+  h2.filter-tools-heading {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d4f8c;
+    margin: 0 0 16px;
+  }
+
+  /* The whole panel collapses on mobile, where it would otherwise push the
+     cards off the screen. Always open on desktop, where there's room. */
+  details.filter-tools-panel > summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 901px) {
+    details.filter-tools-panel > summary {
+      cursor: default;
+
+      &::after {
+        content: '';
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    details.filter-tools-panel > summary {
+      cursor: pointer;
+
+      /* The heading's bottom margin would show as a gap under the collapsed
+         panel, so carry that spacing on the body instead. */
+      h2.filter-tools-heading {
+        margin-bottom: 0;
+      }
+
+      &::after {
+        content: '\25BE';
+        font-size: 14px;
+        color: #0d4f8c;
+        transition: transform 0.2s;
+      }
+    }
+
+    details.filter-tools-panel[open] > summary::after {
+      transform: rotate(180deg);
+    }
+
+    div.filter-tools-body {
+      margin-top: 16px;
+    }
+  }
+
+  .filter-section {
+    margin-bottom: 20px;
+
+    &.filter-search label {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    input[type='search'] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 34px 8px 10px;
+      border: 1px solid #00315F;
+      border-radius: 4px;
+      font-size: 14px;
+      background: #fff url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z' stroke='%233B3A48' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.0005 14L11.1338 11.1333' stroke='%233B3A48' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+      background-size: 16px 16px;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 16px;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      .filter-section-title {
+        flex: 1;
+      }
+    }
+
+    @media screen and (min-width: 901px) {
+      &[open] > summary,
+      & > summary {
+        cursor: default;
+      }
+      & > summary::after {
+        content: '';
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      /* Boxes the collapsible Topic and Format sections. The search field has
+         its own border, so a second one around it just reads as clutter. */
+      &:not(.filter-search) {
+        border: 1px solid #a3bee8;
+        border-radius: 4px;
+        padding: 4px 12px;
+      }
+
+      & > summary {
+        padding: 10px 0;
+
+        &::after {
+          content: '\25BE';
+          font-size: 14px;
+          color: #0d4f8c;
+          transition: transform 0.2s;
+        }
+      }
+
+      &[open] > summary::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    fieldset.filter-options {
+      border: 0;
+      margin: 0;
+      padding: 0 0 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      label {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        input[type='checkbox'] {
+          appearance: none;
+          -webkit-appearance: none;
+          flex-shrink: 0;
+          margin: 0;
+          width: 25px;
+          height: 25px;
+          border: 1px solid #00315F;
+          border-radius: 4px;
+          background: #fff;
+          cursor: pointer;
+          position: relative;
+
+          &:checked {
+            background: #0b3d68;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 4px;
+              left: 9px;
+              width: 6px;
+              height: 12px;
+              border: solid #fff;
+              border-width: 0 2px 2px 0;
+              transform: rotate(45deg);
+            }
+          }
+
+          &:focus-visible {
+            outline: 2px solid #3f73a4;
+            outline-offset: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  button.clear-all-btn {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: #0d4f8c;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+    &:focus {
+      outline: 2px solid #3f73a4;
+      outline-offset: 2px;
+    }
+  }
+}
+
+section.tile-results {
+  min-width: 0;
+
+  /* Spans the results column, aligned with the top of the filter panel
+     beside it (the grid rows both start at the top). */
+  hr.tile-results-divider {
+    border: 0;
+    border-top: 1px solid #D4D4D7;
+    margin: 0 0 20px;
+
+    /* It only earns its keep alongside the filter panel. Once the columns
+       stack it just draws a line between the panel and the cards. */
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .tile-results-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .tile-results-count {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .hp2-tile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    @media screen and (max-width: 1100px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
+    a.tile-link[hidden] {
+      display: none;
+    }
+  }
+
+  p.hp2-no-results {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #555;
+  }
+}
+
+/* Screen-reader-only utility for legend hiding */
+body.home-page-2 .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

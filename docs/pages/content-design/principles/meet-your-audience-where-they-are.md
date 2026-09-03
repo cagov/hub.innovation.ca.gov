@@ -1,9 +1,7 @@
 ---
 title: Meet your audience where they are
-parentid: Content design
-parentidlink: /content-design/
-subparentid: Content design principles
-subparentidlink: /content-design/principles/
+parentid: Content design principles
+parentidlink: /content-design/principles/
 description: Knowing who they are and what they need helps you design for them.
 headerlabel: Standards and principles
 headericon: star
