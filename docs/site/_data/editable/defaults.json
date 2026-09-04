@@ -6,9 +6,9 @@
   },
   "page": {
     "description": "Innovation Hub",
-    "social_image_path": "/img/thumbnail.png",
-    "social_image_width": 500,
-    "social_image_height": 500,
-    "social_image_alt_text": "Innovation Hub"
+    "social_image_path": "/img/ODI-socialmedia-share_1200x630_v2.png",
+    "social_image_width": 1200,
+    "social_image_height": 630,
+    "social_image_alt_text": "We’re improving services for all Californians"
   }
 }
