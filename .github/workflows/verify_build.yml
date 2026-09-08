@@ -1,0 +1,54 @@
+name: Verify Build (Innovation Hub)
+
+# Builds the site on every pull request and asserts it still produces pages.
+#
+# This exists because Deploy PR Preview skips Dependabot branches (it needs AWS
+# credentials, which Dependabot pull requests do not receive), which meant
+# dependency bumps reached main with no verification at all. This job uses no
+# secrets, so it runs for Dependabot pull requests too.
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - ready_for_review
+      - reopened
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 22.17.0
+      # Mirrors the production build in deploy_prod.yml: the first build writes
+      # the page list that readability scores, and the second rebuilds the site
+      # with those scores in place.
+      - name: Build 11ty
+        run: |
+          mkdir _site
+          mkdir _site_dist
+          # using npm ci instead of npm install to reduce threat of installing newer packages than intended
+          npm ci
+          npm run build
+          npm run readability
+          npm run build
+      # A dependency bump can leave the build "succeeding" while quietly
+      # producing nothing, so check the output is actually there.
+      - name: Check the build produced pages
+        run: |
+          count=$(find _site -name 'index.html' | wc -l | tr -d ' ')
+          echo "built ${count} pages"
+          if [ "${count}" -lt 40 ]; then
+            echo "::error::expected at least 40 built pages, found ${count}"
+            exit 1
+          fi
