@@ -42,7 +42,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@cagov/ds-base-css": "^2.0.0-beta.1",
-    "@cagov/ds-feature-card": "^1.0.6",
+    "@cagov/ds-feature-card": "^2.0.1",
     "@cagov/ds-link-grid": "^2.1.0",
     "@cagov/ds-page-feedback": "^1.1.0",
     "@cagov/ds-page-navigation": "^2.1.0",
