@@ -23,7 +23,7 @@ jobs:
       #     token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@master
       - name: Use Node.js 22
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v7.0.0
         with:
           node-version: 22.17.0
       - name: Get branch name (merge)
