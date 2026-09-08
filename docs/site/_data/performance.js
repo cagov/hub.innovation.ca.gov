@@ -30,32 +30,27 @@ function getPacificDateInfo(dateInput) {
   };
 }
 
-module.exports = function () {
-  return new Promise(async (resolve, reject) => {
-    // console.log("FETCHING performance data");
-    // console.trace();
-    // see details about this API in readme
-    const perfAudits = await fetch("https://18ap0iejha.execute-api.us-west-1.amazonaws.com/?site=hub.innovation.ca.gov");
-    const perfData = await perfAudits.json();
-    let pagePerformanceData = {};
-    perfData.forEach(item => {
-      if(item.performance) {
-        pagePerformanceData[item.pageURL.replace('https://hub.innovation.ca.gov/','/')] = {
-          lighthouse: {
-            performance: item.performance,
-            accessibility: 1,
-            lastmod: getPacificDateInfo(item.lastmod),
-            lastreviewed: getPacificDateInfo(item.lastreviewed),
-          }
+module.exports = async function getPerformanceData() {
+  // see details about this API in readme
+  const perfAudits = await fetch("https://18ap0iejha.execute-api.us-west-1.amazonaws.com/?site=hub.innovation.ca.gov");
+  const perfData = await perfAudits.json();
+  const pagePerformanceData = {};
+  perfData.forEach(item => {
+    if(item.performance) {
+      pagePerformanceData[item.pageURL.replace('https://hub.innovation.ca.gov/','/')] = {
+        lighthouse: {
+          performance: item.performance,
+          accessibility: 1,
+          lastmod: getPacificDateInfo(item.lastmod),
+          lastreviewed: getPacificDateInfo(item.lastreviewed),
         }
       }
-      if(item.accessibility) {
-        pagePerformanceData[item.pageURL.replace('https://hub.innovation.ca.gov/','/')].lighthouse.accessibility = item.accessibility;
-      }
-    })
-  
-    // console.log(pagePerformanceData);
-    resolve(pagePerformanceData);
-  });
+    }
+    if(item.accessibility) {
+      pagePerformanceData[item.pageURL.replace('https://hub.innovation.ca.gov/','/')].lighthouse.accessibility = item.accessibility;
+    }
+  })
+
+  return pagePerformanceData;
 };
 
