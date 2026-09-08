@@ -14,6 +14,17 @@ updates:
     open-pull-requests-limit: 5
     labels:
       - dependencies
+    ignore:
+      # @cagov/ds-page-navigation 2.2.3 moved build and test tooling
+      # (@cagov/11ty-build-system, @web/dev-server, @web/test-runner) into its
+      # production dependencies, which drags in a vulnerable axios chain. Its
+      # only change over 2.2.2 is CSS for <aside> containers, and this site
+      # wraps cagov-page-navigation in <sidebar> everywhere, so there is
+      # nothing to gain. cagov/design-system is archived, so 2.2.3 is the final
+      # release and this will not be fixed upstream.
+      - dependency-name: '@cagov/ds-page-navigation'
+        versions:
+          - '2.2.3'
     groups:
       # Build and lint tooling: one pull request for all minor/patch upgrades.
       dev-tooling:
