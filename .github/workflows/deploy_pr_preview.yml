@@ -21,9 +21,9 @@ jobs:
       # - uses: n1hility/cancel-previous-runs@v2
       #   with: 
       #     token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/checkout@master
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Use Node.js 22
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: 22.17.0
       - name: Get branch name (merge)
@@ -55,7 +55,7 @@ jobs:
           echo 'Disallow: /' >> _site/robots.txt
           echo 'Sitemap: https://hub.innovation.ca.gov/sitemap.xml' >> _site/robots.txt
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@master
+        uses: aws-actions/configure-aws-credentials@7474bc4690e29a8392af63c5b98e7449536d5c3a # v4.3.1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -65,7 +65,7 @@ jobs:
       - name: invalidate Cloudfront
         run: aws cloudfront create-invalidation --distribution-id E2FU9OXT3L3CRY --paths "/*"
       - name: Post URL to PR
-        uses: mshick/add-pr-comment@v2.8.2
+        uses: mshick/add-pr-comment@b8f338c590a895d50bcbfa6c5859251edc8952fc # v2.8.2
         with:
           message: |
             Preview site available at [${{ env.URLSAFE_BRANCH_NAME }}.pr.hub.innovation.ca.gov](https://${{ env.URLSAFE_BRANCH_NAME }}.pr.hub.innovation.ca.gov/).
