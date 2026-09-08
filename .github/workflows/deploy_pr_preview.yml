@@ -65,7 +65,7 @@ jobs:
       - name: invalidate Cloudfront
         run: aws cloudfront create-invalidation --distribution-id E2FU9OXT3L3CRY --paths "/*"
       - name: Post URL to PR
-        uses: mshick/add-pr-comment@v2.8.2
+        uses: mshick/add-pr-comment@v3.12.0
         with:
           message: |
             Preview site available at [${{ env.URLSAFE_BRANCH_NAME }}.pr.hub.innovation.ca.gov](https://${{ env.URLSAFE_BRANCH_NAME }}.pr.hub.innovation.ca.gov/).
