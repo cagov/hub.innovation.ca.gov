@@ -17,6 +17,7 @@ module.exports = {
     '**/dist/*',
     '**/stories/*',
     '_build_dist/*',
+    '_site/**/*',
     '_site_dist/**/*',
   ],
   parserOptions: {

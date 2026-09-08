@@ -4,13 +4,13 @@ import {
   checkA11y
 } from "axe-playwright";
 
-let testLocation = "http://localhost:8080";
+const testLocation = "http://localhost:8080";
 
-let pageUrls = ["/"];
+const pageUrls = ["/"];
 
 pageUrls.forEach(pageUrl => {
 
-  test("a11y page tests "+pageUrl, async ({ page }) => {
+  test(`a11y page tests ${pageUrl}`, async ({ page }) => {
 
     await page.goto(testLocation+pageUrl);
   
