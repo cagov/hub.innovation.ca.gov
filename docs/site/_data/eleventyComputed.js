@@ -23,7 +23,7 @@ module.exports = {
       ) {
         return `${article.title} | ${defaults.site.name}`;
       }
-      return defaults.site.name;
+      return defaults.site.default_title;
     },
     page_class: (article) => {
       if (

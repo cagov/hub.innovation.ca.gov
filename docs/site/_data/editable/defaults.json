@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Innovation Hub",
+    "default_title": "Tools for improving service delivery",
     "keywords": "California, government, design system",
     "page_class": "default-page"
   },
