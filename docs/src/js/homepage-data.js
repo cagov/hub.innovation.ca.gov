@@ -374,6 +374,33 @@ const HOMEPAGE2_TILES = [
     ],
   },
   {
+    title: 'Introduction to data minimization',
+    description:
+      'Learn how to collect and share information responsibly',
+    url: '/data/introduction-data-minimization/',
+    topic: 'data',
+    topicLabel: 'Data',
+    type: 'training',
+    typeLabel: 'Training',
+    typeIcon: 'ribbon',
+    keywords: [
+      'data minimization',
+      'training',
+      'class',
+      'free',
+      'e-learning',
+      'self-paced',
+      'beginner',
+      'dashboards',
+      'data cleaning',
+      'transform',
+      'profiling',
+      'analytics',
+      'caldata',
+      'registration',
+    ],
+  },
+  {
     title: 'Introduction to plain language for the public sector',
     description:
       'An online, self-paced course introducing plain language for State of California staff',
