@@ -388,7 +388,7 @@ const HOMEPAGE2_TILES = [
       'data minimization',
       'minimization',
       'training',
-      'privacy],
+      'privacy',
       'data privacy',
       'data governance',
       'risk assessment',
