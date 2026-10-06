@@ -5,6 +5,7 @@ import '@cagov/ds-page-navigation';
 // import '@cagov/ds-accordion';
 
 import './component-sidebar.js';
+import './group-navigation.js';
 import './airtable-form/src/index.js';
 import './cagov-code-preview.js';
 import './homepage.js';

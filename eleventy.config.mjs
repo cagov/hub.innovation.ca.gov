@@ -136,6 +136,26 @@ export default function (eleventyConfig) {
     return 'speedlify-score-bad'
   })
 
+  // True if this sidebar item, or any item nested under it, is the page at url.
+  const inPageBranch = (item, url) =>
+    item.url === url || (item.children || []).some((child) => inPageBranch(child, url));
+
+  eleventyConfig.addFilter('inPageBranch', inPageBranch);
+
+  // The group from _data/pageGroups.js that contains the page at url, if any.
+  eleventyConfig.addFilter('pageGroup', (groups, url) =>
+    groups.find((group) => group.pages.some((item) => inPageBranch(item, url))),
+  );
+
+  // The h2 headings in a page's rendered content, as { id, text }. Every
+  // Markdown h2 gets an id from markdown-it-anchor; headings without one are
+  // skipped since there's nothing to link to.
+  eleventyConfig.addFilter('pageHeadings', (content) =>
+    [...String(content).matchAll(/<h2\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/g)].map(
+      ([, id, html]) => ({ id, text: html.replace(/<[^>]*>/g, '').trim() }),
+    ),
+  );
+
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPassthroughCopy({
