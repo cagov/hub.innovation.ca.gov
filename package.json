@@ -10,7 +10,8 @@
     "site:watch:dev": "cross-env NODE_ENV=development eleventy --serve --incremental",
     "site:watch": "eleventy --serve",
     "test:serve": "npm run build && npx http-server _site/",
-    "test:setup": "npx playwright install-deps chromium && npx playwright install"
+    "test:setup": "npx playwright install-deps chromium && npx playwright install",
+    "lint": "eslint . --ext .js,.mjs"
   },
   "repository": {
     "type": "git",

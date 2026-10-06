@@ -19,16 +19,16 @@ import MarkdownIt from 'markdown-it';
 const md = new MarkdownIt({ html: true });
 
 // Get the list of pages to test.
-let pageList = JSON.parse(fs.readFileSync('./_site_dist/allFiles.json'))
+const pageList = JSON.parse(fs.readFileSync('./_site_dist/allFiles.json'))
   .filter(p => !p?.url.includes('UNUSED'))
   // Redirect stubs have no prose to score, and all share one input template.
   .filter(p => !p?.inputPath.endsWith('docs/site/redirects.njk'));
 
 
 
-let parScores = {};
-let evaluationTime = new Date().getTime();
-console.log("evaluating "+pageList.length+" pages for readability at "+evaluationTime);
+const parScores = {};
+const evaluationTime = new Date().getTime();
+console.log(`evaluating ${pageList.length} pages for readability at ${evaluationTime}`);
 pageList.forEach(page => {
   let fileBody = fs.readFileSync(page.inputPath,'utf8');
 
@@ -36,7 +36,7 @@ pageList.forEach(page => {
   if(page.inputPath.endsWith('.md')) {
     // Strip YAML front matter first — otherwise the title/description/layout
     // keys get rendered as body text and counted toward the readability score
-    fileBody = fileBody.replace(/^﻿?---\r?\n[\s\S]*?\r?\n---[ \t]*(\r?\n|$)/, '');
+    fileBody = fileBody.replace(/^\uFEFF?---\r?\n[\s\S]*?\r?\n---[ \t]*(\r?\n|$)/, '');
     fileBody = md.render(fileBody);
   }
 
@@ -45,13 +45,13 @@ pageList.forEach(page => {
   //   console.log(fileBody);
   // }
 
-  let pageBodyOnly = convert(fileBody, { 
+  const pageBodyOnly = convert(fileBody, { 
     wordWrap: false, 
     formatters: {
-      'fooBlockFormatter': function (elem, walk, builder, formatOptions) {
+      fooBlockFormatter(elem, walk, builder, formatOptions) {
         builder.openBlock({ leadingLineBreaks: formatOptions.leadingLineBreaks || 1 });
         walk(elem.children, builder);
-        //builder.addInline('!'); // we need to help ARI reviewer identify separately presented fragments without punctuation as sentences but this can be done with 2 trailing line breaks, don't need to add punctuation
+        // builder.addInline('!'); // we need to help ARI reviewer identify separately presented fragments without punctuation as sentences but this can be done with 2 trailing line breaks, don't need to add punctuation
         builder.closeBlock({ trailingLineBreaks: formatOptions.trailingLineBreaks || 1 });
       }
     },
@@ -99,7 +99,7 @@ pageList.forEach(page => {
 
   // Eleventy 3 prefixes outputPath with "./" (e.g. "./_site/data/standard/index.html");
   // strip it so keys match page.url ("/data/standard/") in the templates
-  let outputUrl = page.outputPath.replace(/^\.\//,'').replace('_site/','/').replace('/index.html','/');
+  const outputUrl = page.outputPath.replace(/^\.\//,'').replace('_site/','/').replace('/index.html','/');
 
   if(!parScores[outputUrl]) {
     parScores[outputUrl] = {};
