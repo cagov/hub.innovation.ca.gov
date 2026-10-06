@@ -150,18 +150,22 @@ export default function (eleventyConfig) {
   // The h2 headings in a page's rendered content, as { id, text }. Every
   // Markdown h2 gets an id from markdown-it-anchor; headings without one are
   // skipped since there's nothing to link to. The text is output unescaped (it
-  // already holds entities like &amp;), so after dropping tags, any < or > left
-  // over (e.g. from nested "<scr<b>ipt>") is escaped so no markup survives.
+  // already holds entities like &amp;), so tags are stripped until none are
+  // left (one pass would turn "<scr<b>ipt>" into "<script>"), then any stray
+  // < or > is escaped so no markup survives.
+  const stripTags = (html) => {
+    let text = html;
+    let previous;
+    do {
+      previous = text;
+      text = text.replace(/<[^>]*>/g, '');
+    } while (text !== previous);
+    return text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  };
+
   eleventyConfig.addFilter('pageHeadings', (content) =>
     [...String(content).matchAll(/<h2\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/g)].map(
-      ([, id, html]) => ({
-        id,
-        text: html
-          .replace(/<[^>]*>/g, '')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .trim(),
-      }),
+      ([, id, html]) => ({ id, text: stripTags(html).trim() }),
     ),
   );
 
