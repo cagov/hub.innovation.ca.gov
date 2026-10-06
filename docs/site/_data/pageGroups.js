@@ -86,11 +86,11 @@ module.exports = [
             url: '/data/idea-guidebook/resources-references/bucp-template/',
             label: 'BUCP templates',
           },
+          {
+            url: '/data/idea-guidebook/resources-references/notice-email-disclosure-templates/',
+            label: 'Notice, email, and disclosure templates',
+          },
         ],
-      },
-      {
-        url: '/data/idea-guidebook/resources-references/notice-email-disclosure-templates/',
-        label: 'Notice, email, and disclosure templates',
       },
       { url: '/data/idea-guidebook/faq/', label: 'Frequently asked questions' },
     ],
