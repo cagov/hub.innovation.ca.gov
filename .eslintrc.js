@@ -1,3 +1,5 @@
+const { builtinModules } = require('module');
+
 module.exports = {
   root: true,
   extends: ['@open-wc/eslint-config', 'prettier'],
@@ -28,4 +30,9 @@ module.exports = {
     es6: true,
   },
   plugins: ['html'],
+  settings: {
+    // eslint-plugin-import doesn't know the node: prefix, so it tries to read
+    // "node:fs" as a file and crashes. List the prefixed built-ins as core.
+    'import/core-modules': builtinModules.map((name) => `node:${name}`),
+  },
 };

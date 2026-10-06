@@ -70,7 +70,7 @@ const buildJS = async () => {
 
 let firstBuild = true;
 
-export default function (eleventyConfig) {
+export default function eleventySetup(eleventyConfig) {
   eleventyConfig.setLibrary('md', markdown);
 
   eleventyConfig.on('eleventy.before', async ({ runMode }) => {
@@ -122,12 +122,10 @@ export default function (eleventyConfig) {
     return readabilityScore;
   })
 
-  eleventyConfig.addFilter('roundNumber', (value) => {
-    return Math.round(parseFloat(value));
-  })
+  eleventyConfig.addFilter('roundNumber', (value) => Math.round(parseFloat(value)))
 
   eleventyConfig.addFilter('getScoreColor', (value) => {
-    if(parseInt(value) > 89) {
+    if(parseInt(value, 10) > 89) {
       return 'speedlify-score-good';
     }
     if(value > 49) {
