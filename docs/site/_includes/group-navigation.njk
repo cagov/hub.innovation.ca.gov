@@ -1,0 +1,29 @@
+{#
+  Sidebar for a group of related pages (see _data/pageGroups.js). Lists every
+  top-level page in the group, expands the branch holding the current page,
+  and lists the current page's h2 headings under it.
+#}
+{% macro groupNavItems(items, url, headings, depth) %}
+<ul class="group-nav-list group-nav-depth-{{ depth }}">
+  {% for item in items %}
+    {% set open = item | inPageBranch(url) %}
+    <li class="group-nav-item">
+      <a class="group-nav-link{% if open and depth == 1 %} group-nav-link-active{% endif %}" href="{{ item.url }}"{% if item.url == url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {% if item.url == url and headings.length %}
+        <ul class="group-nav-list group-nav-headings">
+          {% for heading in headings %}
+            <li class="group-nav-item"><a class="group-nav-link" href="#{{ heading.id }}">{{ heading.text | safe }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if open and item.children %}
+        {{ groupNavItems(item.children, url, headings, depth + 1) }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+<nav class="group-navigation" aria-labelledby="group-navigation-label">
+  <div id="group-navigation-label" class="group-nav-label">{{ group.heading }}</div>
+  {{ groupNavItems(group.pages, page.url, content | pageHeadings, 1) }}
+</nav>

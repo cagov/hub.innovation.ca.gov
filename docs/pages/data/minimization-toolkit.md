@@ -1,6 +1,6 @@
 ---
 title: Data minimization and privacy toolkit
-layout: single-column
+layout: page
 description: How to collect, store, and share information safely and responsibly
 headerlabel: Guides and playbooks
 headericon: book
