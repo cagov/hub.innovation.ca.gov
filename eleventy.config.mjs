@@ -140,9 +140,13 @@ export default function eleventySetup(eleventyConfig) {
 
   eleventyConfig.addFilter('inPageBranch', inPageBranch);
 
-  // The group from _data/pageGroups.js that contains the page at url, if any.
+  // The group from _data/pageGroups.js that contains the page at url, either as
+  // its landing page or as one of its pages, if any.
   eleventyConfig.addFilter('pageGroup', (groups, url) =>
-    groups.find((group) => group.pages.some((item) => inPageBranch(item, url))),
+    groups.find(
+      (group) =>
+        group.landing === url || group.pages.some((item) => inPageBranch(item, url)),
+    ),
   );
 
   // The h2 headings in a page's rendered content, as { id, text }. Every

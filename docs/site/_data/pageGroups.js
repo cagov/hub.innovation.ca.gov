@@ -2,9 +2,12 @@
 // group's sidebar in place of the in-page "On this page" navigation. Pages may
 // nest via `children`; a page's children show only while you're on that page
 // or one of its descendants. The current page also lists its h2 headings.
+// `landing` is the group's overview page: it gets the sidebar too, with no
+// page selected.
 module.exports = [
   {
     heading: 'In this toolkit',
+    landing: '/data/minimization-toolkit/',
     pages: [
       { url: '/data/minimization-toolkit/101/', label: 'Data minimization 101' },
       {
@@ -31,6 +34,7 @@ module.exports = [
   },
   {
     heading: 'Content design principles',
+    landing: '/content-design/principles/',
     pages: [
       {
         url: '/content-design/principles/focus-on-user-needs-services/',
@@ -61,6 +65,7 @@ module.exports = [
   },
   {
     heading: 'In this guidebook',
+    landing: '/data/idea-guidebook/',
     pages: [
       {
         url: '/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/',

@@ -37,10 +37,12 @@
     }
   }
 
+  /* Vertical padding and leading match the "On this page" sidebar
+     (cagov-page-navigation) used here and on innovation.ca.gov. */
   .group-nav-link {
     display: block;
-    padding: 0.5rem 1rem;
-    line-height: 1.5;
+    padding: 14px 1rem 18px;
+    line-height: 28.2px;
     text-decoration: none;
 
     &:hover,
