@@ -34,7 +34,7 @@ The goal of the dispute resolution process is to resolve issues at the lowest le
 
 See the flowchart below as well.
 
-![Last updated: June 24, 2021. Are all entities under the authority of the Governor? If no, both the Data Provider and Data Recipient must develop written comments and recommendations that represent their perspective. Submit materials to Chief Data Officer via the Dispute Mediation Request Form. Conduct mediation meeting(s). If the dispute is resolved, finalize and file the BUCP. If not, the BUCP is not approved. If both entities are under the authority of the Governor, escalate to the respective Agency Chief Data Officers, ifa pplicable, else the Agency Information Officer for mediation. If the dispute is resolved, finalize and file BUCP. If not, both the Data Provider and Data Recipient must develop written comments and recommendations that represent their perspective. Submit materials to the Chief Data Officer via the Dispute Mediation Request Form. If the dispute is resolved, finalize and file the BUCP. If not, Chief Data Officer submits recommendation to Governor's Office for final decision.](/img/idea-dispute-resolution-process.png)
+{% include "diagrams/idea-dispute-resolution-process.svg" %}
 
 <div class="leftright-nav-container">
     <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/">How to develop and manage a data sharing agreement</a></div>
