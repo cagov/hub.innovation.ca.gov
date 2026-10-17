@@ -50,6 +50,22 @@ body {
 .sidebar-cell { grid-area: sidebar; }
 .content-cell { grid-area: content; }
 
+/* On desktop the sidebar stays in view while the content scrolls, and a
+   sidebar taller than the viewport scrolls on its own. */
+@media only screen and (min-width: 768px) {
+  .cagov-article.with-sidebar .sidebar-cell {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    max-height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    /* Room for link focus outlines, which the scroll box would clip. */
+    padding: 4px;
+    margin: -4px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .cagov-article.with-sidebar {
     grid-template-columns: minmax(0, 1fr);
