@@ -134,6 +134,43 @@ export default function eleventySetup(eleventyConfig) {
     return 'speedlify-score-bad'
   })
 
+  // True if this sidebar item, or any item nested under it, is the page at url.
+  const inPageBranch = (item, url) =>
+    item.url === url || (item.children || []).some((child) => inPageBranch(child, url));
+
+  eleventyConfig.addFilter('inPageBranch', inPageBranch);
+
+  // The group from _data/pageGroups.js that contains the page at url, either as
+  // its landing page or as one of its pages, if any.
+  eleventyConfig.addFilter('pageGroup', (groups, url) =>
+    groups.find(
+      (group) =>
+        group.landing === url || group.pages.some((item) => inPageBranch(item, url)),
+    ),
+  );
+
+  // The h2 headings in a page's rendered content, as { id, text }. Every
+  // Markdown h2 gets an id from markdown-it-anchor; headings without one are
+  // skipped since there's nothing to link to. The text is output unescaped (it
+  // already holds entities like &amp;), so tags are stripped until none are
+  // left (one pass would turn "<scr<b>ipt>" into "<script>"), then any stray
+  // < or > is escaped so no markup survives.
+  const stripTags = (html) => {
+    let text = html;
+    let previous;
+    do {
+      previous = text;
+      text = text.replace(/<[^>]*>/g, '');
+    } while (text !== previous);
+    return text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  };
+
+  eleventyConfig.addFilter('pageHeadings', (content) =>
+    [...String(content).matchAll(/<h2\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/g)].map(
+      ([, id, html]) => ({ id, text: stripTags(html).trim() }),
+    ),
+  );
+
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPassthroughCopy({
