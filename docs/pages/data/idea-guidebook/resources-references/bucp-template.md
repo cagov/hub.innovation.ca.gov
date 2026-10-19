@@ -1,8 +1,10 @@
 ---
 layout: page
 title: BUCP templates
-parentid: Resources and references
-parentidlink: /data/idea-guidebook/resources-references/
+parentid: IDEA guidebook
+parentidlink: /data/idea-guidebook/
+subparentid: Resources and references
+subparentidlink: /data/idea-guidebook/resources-references/
 description: Templates for the BUCP and defining data elements used or adapted when making a BUCP.
 headerlabel: Guides and playbooks
 headericon: book
