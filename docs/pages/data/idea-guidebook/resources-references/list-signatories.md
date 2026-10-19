@@ -1,8 +1,10 @@
 ---
 layout: single-column
 title: List of signatories
-parentid: Resources and references
-parentidlink: /data/idea-guidebook/resources-references/
+parentid: IDEA guidebook
+parentidlink: /data/idea-guidebook/
+subparentid: Resources and references
+subparentidlink: /data/idea-guidebook/resources-references/
 description: All state agencies that have signed IDEA.
 headerlabel: Guides and playbooks
 headericon: book
