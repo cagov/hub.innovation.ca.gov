@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single-column
 title: Notice to end data sharing under IDEA (provision 5.14 - Data Recipient’s acts or provision 7.4 - violation of terms)
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
