@@ -26,3 +26,8 @@ We are reviewing the access to identify fixes and stop future unauthorized acces
 Let us know if you need more information or want to meet.
 
 [Your signature]
+
+<div class="leftright-nav-container">
+    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/review-request/">Request for legal, privacy, or security review of BUCP</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/end-rule-change/">Notice to end data sharing under IDEA (provision 5.14 - rule change)</a></div>
+</div>
