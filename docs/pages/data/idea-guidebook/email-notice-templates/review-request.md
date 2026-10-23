@@ -18,7 +18,7 @@ Dear [name],
 
 Our team needs a [legal/privacy/security] review of the proposed data sharing project, [insert BUCP name]. This project’s goal is to [brief project purpose. Example: improve service delivery by integrating data from partner agencies].
 
-Our department signed the State of California’s Interagency Data Exchange Agreement (IDEA). It’s the state’s umbrella memorandum of understanding to help state entities share data.
+Our department signed the State of California’s [Interagency Data Exchange Agreement (IDEA)](/data/idea-guidebook/). It’s the state’s umbrella memorandum of understanding to help state entities share data.
 
 Our project will follow the IDEA’s principles and share data securely, ethically, and efficiently. We will:
 
