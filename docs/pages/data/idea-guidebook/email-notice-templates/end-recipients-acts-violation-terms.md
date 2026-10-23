@@ -5,7 +5,7 @@ parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
 subparentid: Email and notice templates
 subparentidlink: /data/idea-guidebook/email-notice-templates/
-description: Use this template to start the conversation about data sharing
+description: Use this template to end data sharing due to the Data Recipient's acts or a violation of terms.
 headerlabel: Guides and playbooks
 headericon: book
 ---
