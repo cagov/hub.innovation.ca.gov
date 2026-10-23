@@ -29,5 +29,6 @@ We would like to meet and discuss the next steps.
 [Your signature]
 
 <div class="leftright-nav-container">
-    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/end-rule-change/">Notice to end data sharing under IDEA (provision 5.14 - rule change)</a></div>
+    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/end-rule-change/">Notice to end data sharing under IDEA (provision 5.14 - rule change)</a></div>
+    <div class="unused"></div>
 </div>
