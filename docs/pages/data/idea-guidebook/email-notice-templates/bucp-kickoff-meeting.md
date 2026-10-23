@@ -37,3 +37,8 @@ Agenda:
 4. Identify next steps. At least, cover how to:
   * Finalize list of data elements in scope
   * Get input from legal and security
+
+<div class="leftright-nav-container">
+    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/start-data-sharing/">Start data sharing under IDEA</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/review-request/">Request for legal, privacy, or security review of BUCP</a></div>
+</div>
