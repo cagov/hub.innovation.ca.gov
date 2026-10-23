@@ -26,7 +26,7 @@ This guidebook is designed to help you use the Interagency Data Exchange Agreeme
 * [IDEA 101](/data/idea-guidebook/101)
 * [How to develop and manage a data sharing agreement](/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/)<span class="angle-bracket"> </span>
 * [Dispute resolution process](/data/idea-guidebook/dispute-resolution-process/)<span class="angle-bracket"> </span>
-* [List of signatories](/data/idea-guidebook/list-signers/)<span class="angle-bracket"> </span>
+* [List of IDEA signers](/data/idea-guidebook/list-signers/)<span class="angle-bracket"> </span>
 * [Email and notice templates](/data/idea-guidebook/email-notice-templates/)<span class="angle-bracket"> </span>
 
 </div>
