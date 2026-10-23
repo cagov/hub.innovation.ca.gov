@@ -45,7 +45,7 @@ Our project will follow the IDEA’s principles and share data securely, ethical
 [For security review:
 
 * Technological and organizational safeguards in place to protect the data
-*How data will be shared and stored securely]
+* How data will be shared and stored securely]
 
 I attached the business use case proposal. Once you’ve finished your review, sign and date the BUCP in the [legal/security/privacy] box.
 
