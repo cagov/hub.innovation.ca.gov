@@ -8,7 +8,7 @@ headerlabel: Guides and playbooks
 headericon: book
 ---
 
-<p class="text-lead">These templates can help you communicate with partners throughout a data sharing agreement.</p>
+<p class="text-lead">These templates cover common communication scenarios in managing a data sharing agreement.</p>
 
 <div class="arrow-list">
 
