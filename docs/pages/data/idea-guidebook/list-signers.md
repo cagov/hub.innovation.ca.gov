@@ -101,27 +101,26 @@ headericon: book
 * Sacramento-San Joaquin Delta Conservancy
 * San Diego River Conservancy
 * San Francisco Bay Conservation and Development Commission
-* San Gabriel and Lower Los Angeles River and Mountains Conservancy | Natural Resources Agency|
-| San Joaquin River Conservancy | Natural Resources Agency|
-| Santa Monica Mountains Conservancy | Natural Resources Agency|
-| Sierra Nevada Conservancy | Natural Resources Agency|
-| State Coastal Conservancy | Natural Resources Agency|
-| State Lands Commission | Natural Resources Agency|
-| Tahoe Conservancy, California | Natural Resources Agency|
-| Water Resources, Department of | Natural Resources Agency|
-| Wildlife Conservation Board | Natural Resources Agency|
-| California Highway Patrol, Department of theCalifornia Highway Patrol, Department of the | Transportation Agency |
-| High-Speed Rail Authority | Transportation Agency |
-| Motor Vehicles, Department of | Transportation Agency |
-| New Motor Vehicle Board | Transportation Agency |
-| Office of Traffic Safety | Transportation Agency |
-| Pilot Commissioners for the Bays of San Francisco, San Pablo, and Suisun, Board of | Transportation Agency |
-| Transportation Agency, Secretary for | Transportation Agency |
-| Transportation Commission, California | Transportation Agency |
-| Transportation, Department of |  Transportation Agency |
-
+* San Gabriel and Lower Los Angeles River and Mountains Conservancy
+* San Joaquin River Conservancy
+* Santa Monica Mountains Conservancy
+* Sierra Nevada Conservancy
+* State Coastal Conservancy
+* State Lands Commission
+* Tahoe Conservancy, California
+* Water Resources, Department of
+* Wildlife Conservation Board
+* California Highway Patrol, Department of the
+* High-Speed Rail Authority
+* Motor Vehicles, Department of
+* New Motor Vehicle Board
+* Office of Traffic Safety
+* Pilot Commissioners for the Bays of San Francisco, San Pablo, and Suisun, Board of
+* Transportation Agency, Secretary for
+* Transportation Commission, California
+* Transportation, Department of
 
 <div class="leftright-nav-container">
-    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/resources-references/agreement/">IDEA agreement</a></div>
-    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/resources-references/bucp-template/">BUCP template</a></div>
+    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/dispute-resolution-process/">Dispute resolution process</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/">Email and notice templates</a></div>
 </div>
