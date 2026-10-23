@@ -52,3 +52,8 @@ I attached the business use case proposal. Once you’ve finished your review, s
 Let me know if you’d like to meet to review this together. If we should talk to someone else about this, let me know who that is.
 
 [Your signature]
+
+<div class="leftright-nav-container">
+    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/review-request/">Request for legal, privacy, or security review of BUCP</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/unauthorized-access-security-incident/">Notice of unauthorized access (provision 8.5) or security incident (provision 8.6)</a></div>
+</div>
