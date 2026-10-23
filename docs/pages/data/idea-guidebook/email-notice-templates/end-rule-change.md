@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single-column
 title: Notice to end data sharing under IDEA (provision 5.14 - rule change)
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
