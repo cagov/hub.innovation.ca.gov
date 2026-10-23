@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single-column
 title: Email and notice templates
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
