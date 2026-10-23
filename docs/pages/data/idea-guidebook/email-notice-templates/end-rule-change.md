@@ -27,3 +27,8 @@ We are ending this agreement due to a [statutory/regulatory/contractual] change 
 We would like to meet and discuss next steps.
 
 [Your signature]
+
+<div class="leftright-nav-container">
+    <div class="left-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/unauthorized-access-security-incident/">Notice of unauthorized access (provision 8.5) or security incident (provision 8.6)</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/email-notice-templates/end-recipients-acts-violation-terms/">Notice to end data sharing under IDEA (provision 5.14 - Data Recipient’s acts or provision 7.4 - violation of terms)</a></div>
+</div>
