@@ -10,8 +10,6 @@ headericon: book
 
 <p class="text-lead">The Data Recipient and Data Provider work together to develop a business use case proposal (BUCP).</p>
 
-<strong>Flowchart:</strong> We’ve created a <a href="/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/#flowchart-for-managing-data-sharing-agreements">flowchart</a> that supports the steps below.
-
 ## 1. Determine if you need to use the IDEA
 
 Use the IDEA for data that needs protection and can’t be freely shared across state entities. This is usually due to federal or state law for privacy or security reasons.
@@ -61,7 +59,7 @@ One of the best ways to improve data use is to have well-documented data. You do
 * Send it for the required legal, privacy, and security reviews at their organization
 * Share feedback from those reviewers with you.
 
-Use the [email template](data/idea-guidebook/email-notice-templates/start-data-sharing/) to start a request to begin the conversation.
+Use the [email template](/data/idea-guidebook/email-notice-templates/start-data-sharing/) to start a request to begin the conversation.
 
 ## 5. Complete the BUCP
 
