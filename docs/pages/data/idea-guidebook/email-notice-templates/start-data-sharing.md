@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single-column
 title: Start data sharing under IDEA
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
