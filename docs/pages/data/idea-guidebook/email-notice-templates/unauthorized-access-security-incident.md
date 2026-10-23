@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single-column
 title: Notice of unauthorized access (provision 8.5) or security incident (provision 8.6)
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
