@@ -12,7 +12,7 @@ headericon: book
 
 <div class="arrow-list">
 
-* [Start data sharing under IDEA](/data/idea-guidebook/email-notice-templates/start-data-sharing/)
+* [Start data sharing under IDEA](/data/idea-guidebook/email-notice-templates/start-data-sharing/)<span class="angle-bracket"> </span>
 * [BUCP kickoff meeting](/data/idea-guidebook/email-notice-templates/bucp-kickoff-meeting/)<span class="angle-bracket"> </span>
 * [Request for legal, privacy, or security review of BUCP](/data/idea-guidebook/email-notice-templates/review-request/)<span class="angle-bracket"> </span>
 * [Notice of unauthorized access (provision 8.5) or security incident (provision 8.6)](/data/idea-guidebook/email-notice-templates/unauthorized-access-security-incident/)<span class="angle-bracket"> </span>
