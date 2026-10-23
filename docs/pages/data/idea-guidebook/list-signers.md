@@ -1,6 +1,6 @@
 ---
 layout: single-column
-title: List of signatories
+title: List of IDEA signers
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
 subparentid: Resources and references
