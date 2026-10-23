@@ -3,8 +3,6 @@ layout: page
 title: Email and notice templates
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
-subparentid: Resources and references
-subparentidlink: /data/idea-guidebook/resources-references/
 description: Use these templates to make and manage a data sharing agreement.
 headerlabel: Guides and playbooks
 headericon: book
