@@ -21,12 +21,12 @@ This guidebook is designed to help you use the Interagency Data Exchange Agreeme
 
 <div class="arrow-list">
 
-* [IDEA 101](/data/idea-guidebook/101)
+* [IDEA 101](/data/idea-guidebook/101)<span class="angle-bracket"> </span>
 * [How to develop and manage a data sharing agreement](/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/)<span class="angle-bracket"> </span>
 * [Dispute resolution process](/data/idea-guidebook/dispute-resolution-process/)<span class="angle-bracket"> </span>
 * [List of IDEA signers](/data/idea-guidebook/list-signers/)<span class="angle-bracket"> </span>
 * [Email and notice templates](/data/idea-guidebook/email-notice-templates/)<span class="angle-bracket"> </span>
-  * [Start data sharing under IDEA](/data/idea-guidebook/email-notice-templates/start-data-sharing/)
+  * [Start data sharing under IDEA](/data/idea-guidebook/email-notice-templates/start-data-sharing/) </span>
   * [BUCP kickoff meeting](/data/idea-guidebook/email-notice-templates/bucp-kickoff-meeting/)<span class="angle-bracket"> </span>
   * [Request for legal, privacy, or security review of BUCP](/data/idea-guidebook/email-notice-templates/review-request/)<span class="angle-bracket"> </span>
   * [Notice of unauthorized access (provision 8.5) or security incident (provision 8.6)](/data/idea-guidebook/email-notice-templates/unauthorized-access-security-incident/)<span class="angle-bracket"> </span>
@@ -43,5 +43,5 @@ The IDEA has 2 parts:
 
 <div class="leftright-nav-container">
     <div class="unused"></div>
-    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/101/">IDEA</a></div>
+    <div class="right-nav"><a class="internal-link" href="/data/idea-guidebook/101/">IDEA 101</a></div>
 </div>
