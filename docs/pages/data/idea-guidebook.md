@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single-column
 title: Interagency Data Exchange (IDEA) Guidebook
 description: A guidebook to help you use the IDEA, an umbrella Memorandum of Understanding that facilitates data exchange between state entities in California.
 headerlabel: Guides and playbooks
@@ -16,8 +16,6 @@ Last updated October 30, 2026
 * Departments
 * Boards
 * Commissions
-
-## Introduction
 
 This guidebook is designed to help you use the Interagency Data Exchange Agreement (IDEA).
 
