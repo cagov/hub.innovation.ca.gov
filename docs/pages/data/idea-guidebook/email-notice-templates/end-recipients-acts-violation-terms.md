@@ -10,6 +10,8 @@ headerlabel: Guides and playbooks
 headericon: book
 ---
 
+<p class="text-lead">Use this template when you need to tell a Data Recipient you're ending a data sharing agreement due to their acts or a violation of terms.</p>
+
 Subject: Notice to end data sharing under IDEA
 
 CC: Agency Chief Data Officer or Agency Information Officer and the Statewide Chief Data Officer
