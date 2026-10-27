@@ -5,10 +5,12 @@ parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
 subparentid: Email and notice templates
 subparentidlink: /data/idea-guidebook/email-notice-templates/
-description: Use this template to notify a partner of unauthorized access or a security incident.
+description: Use this template to tell a partner of unauthorized access or a security incident.
 headerlabel: Guides and playbooks
 headericon: book
 ---
+
+<p class="text-lead">Use this email template to tell a partner about unauthorized access to data or a security incident.</p>
 
 Subject: Notice of [unauthorized access to/security incident involving] data shared under IDEA
 
