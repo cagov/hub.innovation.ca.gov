@@ -10,6 +10,8 @@ headerlabel: Guides and playbooks
 headericon: book
 ---
 
+<p class="text-lead">Use this template when you meet to start talking about a BUCP.</p>
+
 Thank you all for meeting to talk about data sharing between our departments.
 
 Who needs to attend:
