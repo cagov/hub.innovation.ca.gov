@@ -10,7 +10,7 @@ headerlabel: Guides and playbooks
 headericon: book
 ---
 
-Before sending the email, customize it based on which reviewer you’re sending it to.
+<p class="text-lead">Use this email template to ask for a legal, privacy, or security review. Before sending the email, customize it based on which reviewer you’re sending it to.</p>
 
 Subject: Request for review: [BUCP name]
 
