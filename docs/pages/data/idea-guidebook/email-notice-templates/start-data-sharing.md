@@ -10,6 +10,8 @@ headerlabel: Guides and playbooks
 headericon: book
 ---
 
+<p class="text-lead">Use this email template to start a conversation about making a data sharing agreement.</p>
+
 Subject: Request to share data under IDEA
 
 Dear [Data Provider contact name],
