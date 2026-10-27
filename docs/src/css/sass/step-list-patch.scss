@@ -1,6 +1,24 @@
 /* step list */
-/* step list */
-.cagov-step-list {
+// Numbered steps joined by a vertical line. Two ways to mark it up:
+//
+// 1. Literal HTML, matching innovation.ca.gov:
+//    <ul class="cagov-step-list">
+//      <li>
+//        <h3>Step title</h3>
+//        <span class="cagov-step-list-content"><p>Step details</p></span>
+//      </li>
+//    </ul>
+//
+// 2. Markdown: wrap a numbered list in a div. Blank lines are required
+//    around the list so markdown-it parses it.
+//    <div class="cagov-step-list">
+//
+//    1. ### Step title
+//
+//       Step details
+//
+//    </div>
+@mixin step-list {
   padding-left: 0 !important;
   margin-left: 30px !important;
   counter-reset: step-list-count;
@@ -55,5 +73,24 @@
   }
   > li:last-child:before {
     margin-left: 6px;
+  }
+}
+
+ul.cagov-step-list,
+ol.cagov-step-list {
+  @include step-list;
+}
+
+// Markdown variant: everything after the step heading is step content, so it
+// gets the same treatment as .cagov-step-list-content.
+div.cagov-step-list > ol {
+  @include step-list;
+
+  > li {
+    padding-bottom: 1.75rem;
+  }
+  > li > :not(:first-child) {
+    font-size: 1.125rem;
+    font-weight: 500;
   }
 }
