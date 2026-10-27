@@ -10,6 +10,8 @@ headerlabel: Guides and playbooks
 headericon: book
 ---
 
+<p class="text-lead">Use this email template to tell a Data Recipient you're ending an agreement due to a rule change.</p>
+
 Subject: Notice to end data sharing under IDEA
 
 CC: Agency Chief Data Officer or Agency Information Officer
