@@ -8,12 +8,17 @@ headericon: book
 
 Last updated October 30, 2026
 
-<p class="text-lead">he Interagency Data Exchange Agreement (IDEA) makes it easier to share data across California state government. This can be between entities like:</a></p>
+<p class="text-lead">The Interagency Data Exchange Agreement (IDEA) makes it easier to share data across California state government. This can be between entities like:</a></p>
 
 * Agencies
 * Departments
 * Boards
 * Commissions
+
+The IDEA has 2 parts:
+
+* A main agreement that sets the rules for data sharing. Every state organization that signs it agrees to these same rules.
+* Business Use Case Proposals (BUCPs), which are short documents for each data-sharing request. A BUCP explains what data will be shared, who will use it, and why.
 
 This guidebook is designed to help you use the Interagency Data Exchange Agreement (IDEA).
 
@@ -26,11 +31,6 @@ This guidebook is designed to help you use the Interagency Data Exchange Agreeme
 * [Email and notice templates](/data/idea-guidebook/email-notice-templates/)<span class="angle-bracket"> </span>
 
 </div>
-
-The IDEA has 2 parts:
-
-* A main agreement that sets the rules for data sharing. Every state organization that signs it agrees to these same rules.
-* Business Use Case Proposals (BUCPs), which are short documents for each data-sharing request. A BUCP explains what data will be shared, who will use it, and why.
 
 <div class="leftright-nav-container">
     <div class="unused"></div>
