@@ -8,9 +8,7 @@ headericon: book
 
 Last updated October 30, 2026
 
-<div class="callout-info">
-  <p>The Interagency Data Exchange Agreement (IDEA) makes it easier to share data across California state government. This can be between entities like:</a></p>
-</div>
+<p class="text-lead">he Interagency Data Exchange Agreement (IDEA) makes it easier to share data across California state government. This can be between entities like:</a></p>
 
 * Agencies
 * Departments
@@ -26,13 +24,6 @@ This guidebook is designed to help you use the Interagency Data Exchange Agreeme
 * [Dispute resolution process](/data/idea-guidebook/dispute-resolution-process/)<span class="angle-bracket"> </span>
 * [List of IDEA signers](/data/idea-guidebook/list-signers/)<span class="angle-bracket"> </span>
 * [Email and notice templates](/data/idea-guidebook/email-notice-templates/)<span class="angle-bracket"> </span>
-  * [Start data sharing under IDEA](/data/idea-guidebook/email-notice-templates/start-data-sharing/) </span>
-  * [BUCP kickoff meeting](/data/idea-guidebook/email-notice-templates/bucp-kickoff-meeting/)<span class="angle-bracket"> </span>
-  * [Request for legal, privacy, or security review of BUCP](/data/idea-guidebook/email-notice-templates/review-request/)<span class="angle-bracket"> </span>
-  * [Notice of unauthorized access (provision 8.5) or security incident (provision 8.6)](/data/idea-guidebook/email-notice-templates/unauthorized-access-security-incident/)<span class="angle-bracket"> </span>
-  * [Notice to end data sharing under IDEA (provision 5.14 - rule change)](/data/idea-guidebook/email-notice-templates/end-rule-change/)<span class="angle-bracket"> </span>
-  * [Notice to end data sharing under IDEA (provision 5.14 - Data Recipient’s acts or provision 7.4 - violation of terms)](/data/idea-guidebook/email-notice-templates/end-recipients-acts-violation-terms/)<span class="angle-bracket"> </span>
-
 
 </div>
 
