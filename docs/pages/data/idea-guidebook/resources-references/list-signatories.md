@@ -1,5 +1,5 @@
 ---
-layout: single-column
+layout: page
 title: List of signatories
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/
