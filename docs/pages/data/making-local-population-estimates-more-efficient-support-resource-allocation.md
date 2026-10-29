@@ -46,7 +46,7 @@ ODI developed a data pipeline that automates:
 
 ![Diagram of 2 Python workflows. Data comes in from the US Census and Apache Airflow, gets transformed in Snowflake and dbt, and goes out to a new dataset.](/papers/allen-finance-1/mlp-fig-1.png)
 
-ODI also developed 2 Python workflows with Finance, one for joining footprints with parcel data (or other geospatial datasets) and the other for removing incorrectly identified footprints. This is important because the algorithms that produce the building footprints from imagery can misidentify objects on the ground as buildings. Once an analyst identifies one, it will keep it out of the dataset even if the source data maintains that footprint, also saving repeat data cleaning over multiple analyses.
+ODI also developed two Python workflows with Finance, one for joining footprints with parcel data (or other geospatial datasets) and the other for removing incorrectly identified footprints. This is important because the algorithms that produce the building footprints from imagery can misidentify objects on the ground as buildings. Once an analyst identifies one, it will keep it out of the dataset even if the source data maintains that footprint, also saving repeat data cleaning over multiple analyses.
 
 ### Distribution
 
