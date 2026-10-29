@@ -32,7 +32,7 @@ ODI worked with CalHFA using our training framework, the Modern Data Stack Accel
 
 We built an automated, scalable, and cloud-based data pipeline that: 
 
-* Integrated data from 7 disparate sources using Fivetran and dlt
+* Integrated data from seven disparate sources using Fivetran and dlt
 * Applied dbt as a SQL data modeling framework to cleanse, transform, and join data
 * Deployed carefully tested and collaboratively approved code to production with Azure Pipelines
 * Yielded 13 data tables consumable by end-users and reporting tools like PowerBI
@@ -43,13 +43,13 @@ Siteimprove is a content intelligence platform that the CalHFA team was already 
 
 Most data sources were ingested with Fivetran. Fivetran does not have a connector for Siteimprove, so we turned to [dlt](https://dlthub.com/). It is a free open-source Python library for building data pipelines. As a team focused on innovation, this was an opportunity to evaluate dlt for potential future projects.
 
-dlt handled 2 technical challenges well. First, the Siteimprove API paginates its responses, and dlt has built-in support for pagination. We reliably retrieved per-page data without having to write custom pagination logic. Second, dlt supports incremental loading out-of-the-box. This means that after the first full extract, future pipeline runs only grab new or updated data. This keeps the pipeline efficient and reduces extra load on the API and data warehouse.
+dlt handled two technical challenges well. First, the Siteimprove API paginates its responses, and dlt has built-in support for pagination. We reliably retrieved per-page data without having to write custom pagination logic. Second, dlt supports incremental loading out-of-the-box. This means that after the first full extract, future pipeline runs only grab new or updated data. This keeps the pipeline efficient and reduces extra load on the API and data warehouse.
 
 Once loaded, Siteimprove data went through the same dbt modeling layer as other sources. There it was cleaned, transformed, and connected to campaign and loan data. This gave CalHFA a new view: they could trace the path from marketing impressions, to website visits, to loan applications.
 
 ## Impact
 
-The pipeline produced 3 proof-of-concept dashboards in PowerBI that showed the value of a unified data system. The first recreated CalHFA's Lender Scorecard. This was a manual Excel file updated twice a year, now it is an automated dashboard that’s refreshed daily. This rebuild process also uncovered errors in the original spreadsheet that were hard to find in a complex web of formulas. All of those errors are now fixed in the new PowerBI version. The second dashboard combined loan and training data by county and region. For the first time, staff can compare training and loan metrics with per capita views to account for population differences between counties and regions. The third dashboard gave the marketing team a tool to measure social media performance. It showed what channels and content were driving conversions.
+The pipeline produced three proof-of-concept dashboards in PowerBI that showed the value of a unified data system. The first recreated CalHFA's Lender Scorecard. This was a manual Excel file updated twice a year, now it is an automated dashboard that’s refreshed daily. This rebuild process also uncovered errors in the original spreadsheet that were hard to find in a complex web of formulas. All of those errors are now fixed in the new PowerBI version. The second dashboard combined loan and training data by county and region. For the first time, staff can compare training and loan metrics with per capita views to account for population differences between counties and regions. The third dashboard gave the marketing team a tool to measure social media performance. It showed what channels and content were driving conversions.
 
 This engagement wasn’t just about technology, it was also about people and process. ODI helped with both by delivering a clear technical solution and building staff confidence with it. The clear value of the solution led CalHFA to rethink and reorganize its data practices. The dashboards were proof of what's possible with a modern data stack in place. The training and system upgrades will help CalHFA keep building on this foundation. This will unlock the full potential of CalHFA data and help them better serve Californians.
 
