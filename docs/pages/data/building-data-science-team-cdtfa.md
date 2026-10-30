@@ -13,7 +13,7 @@ Monica G. Bobra<sup>1</sup>, Reid Johnsen<sup>2</sup>, Jared Choy<sup>2</sup>, S
 </div>
 
 <div class="interaction-block">
-<div class="interaction"><a href="/papers/bobra-et-al-building-data-science-team-cdtfa.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" /> Download PDF</a></div>
+<div class="interaction"><a href="/papers/bobra-et-al-building-data-science-team-cdtfa.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" />Download PDF</a></div>
 </div>
 
 ## Introduction
