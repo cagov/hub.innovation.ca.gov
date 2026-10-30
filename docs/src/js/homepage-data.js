@@ -143,7 +143,7 @@ const HOMEPAGE2_TILES = [
     ],
   },
   {
-    title: 'Building a data science team at the California Department of Tax and Fee Administration: A modern approach to solving data-rich analysis problems',
+    title: 'Building a data science team at CDTFA',
     description:
       'How ODI and CDTFA collaborated on a successful model for building a flexible data science team',
     url: '/data/building-data-science-team-cdtfa/',
