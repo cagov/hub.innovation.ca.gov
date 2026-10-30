@@ -143,6 +143,28 @@ const HOMEPAGE2_TILES = [
     ],
   },
   {
+    title: 'Building a data science team at the California Department of Tax and Fee Administration: A modern approach to solving data-rich analysis problems',
+    description:
+      'An online, self-paced course that covers intermediate plain language skills and methods',
+    url: '/data/building-data-science-team-cdtfa/',
+    topic: 'data',
+    topicLabel: 'Data',
+    type: 'training',
+    typeLabel: 'Papers',
+    typeIcon: 'paper',
+    keywords: [
+      'data',
+      'paper',
+      'cdtfa',
+      'science',
+      'team',
+      'building',
+      'machine',
+      'learning',
+      'innovation',
+    ],
+  },
+  {
     title: 'Building better services with plain language',
     description:
       'An online, self-paced course that covers intermediate plain language skills and methods',
