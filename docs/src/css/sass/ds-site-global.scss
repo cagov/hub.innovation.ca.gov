@@ -653,6 +653,12 @@ h1.page-title {
   color: var(--page-title-color,  #0D4F8C);
   margin: 0 0 0 0;
   padding: 0 0 var(--s-3) 0;
+
+  /* The 47px page title needs to come down a step to fit a portrait phone. */
+  @media screen and (max-width: 480px) {
+    font-size: 36px;
+    line-height: 1.15;
+  }
 }
 
 h2 {
