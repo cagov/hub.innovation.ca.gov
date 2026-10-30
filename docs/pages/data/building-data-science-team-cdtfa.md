@@ -6,7 +6,7 @@ headericon: paper
 ---
 
 <div class="author-header-block">
-Monica G. Bobra<sup>1</sup>, Reid Johnsen<sup>2</sup>, Jared Choy<sup>2</sup, Sarah Letson<sup>1</sup>, Rijin Baby<sup>2</sup>, Kimberly Hicks<sup>1</sup>, Genti Droboniku<sup>2</sup></br>
+Monica G. Bobra<sup>1</sup>, Reid Johnsen<sup>2</sup>, Jared Choy<sup>2</sup>, Sarah Letson<sup>1</sup>, Rijin Baby<sup>2</sup>, Kimberly Hicks<sup>1</sup>, Genti Droboniku<sup>2</sup></br>
 
 <sup>1</sup> California Office of Data and Innovation, 401 I Street, Ste 200, Sacramento CA 95814
 <sup>2</sup> California Department of Tax and Fee Administration, May Lee State Office Complex, 651 Bannon Street, Suite 100, Sacramento, CA 95811-0299
