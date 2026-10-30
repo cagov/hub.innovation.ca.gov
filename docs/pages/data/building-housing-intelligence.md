@@ -44,9 +44,9 @@ Building a tool to process this data and guide HCD’s analysis requires an arra
 
 ### Anomaly detection
 
-One of the primary goals of ODI’s work was to help HCD detect outliers and idiosyncratic values easily. This saves time while maintaining flexibility for HCD staff to conduct deeper investigations. We workshopped 3 approaches to anomaly detection:
+One of the primary goals of ODI’s work was to help HCD detect outliers and idiosyncratic values easily. This saves time while maintaining flexibility for HCD staff to conduct deeper investigations. We workshopped three approaches to anomaly detection:
 
-1. **Z-scoring:** A technique that standardizes data by subtracting the mean and dividing by the standard deviation (ensuring all values share a common scale), then flagging Z-scores greater than a given threshold (typically 3). 
+1. **Z-scoring:** A technique that standardizes data by subtracting the mean and dividing by the standard deviation (ensuring all values share a common scale), then flagging Z-scores greater than a given threshold (typically three). 
 2. **Isolation forest:** Isolates outliers by creating binary partitions in data, identifying anomalies as data points requiring fewer partitions to separate them from the majority.
 3. **Local outlier factor:** Calculates a local anomaly score for data points based on the density of “neighbors” nearby on a graph, revealing anomalies within their local context.
 
@@ -74,12 +74,19 @@ ODI and HCD worked together to convert logic from the Excel file to code. Using 
 
 ## Impact
 
-Manual processes have costs beyond the actual hours spent on the review itself. Every hour of manual review takes away an hour from a deeper analysis and other tasks. *Homestead* helps reclaim time; the program runs overnight (~6 hour run-time), **potentially saving HCD nearly 2,000 manual review hours every year**.
+Manual processes have costs beyond the actual hours spent on the review itself. Every hour of manual review takes away an hour from a deeper analysis and other tasks. *Homestead* helps reclaim time; the program runs overnight (~six hour run-time), **potentially saving HCD nearly 2,000 manual review hours every year**.
 
-“A manual data review process would require a full-time HCD staff member to work every hour for an entire year. That’s about 2,000 hours.” - HCD Sr. Housing Data Specialist
+<div class="blockquote-container">
+  <div class="blockquote-body">
+     <div class="blockquote-content">
+     “A manual data review process would require a full-time HCD staff member to work every hour for an entire year. That’s about 2,000 hours.”
+     &mdash; HCD Sr. Housing Data Specialist
+    </div>
+  </div>
+</div>
 
 In the initial trial run, *Homestead* has demonstrated the following results: 
-* Tagged **400,000** projects over the last 5 years as eligible or ineligible for SB 423 streamlining (all future applications should be automatically flagged).
+* Tagged **400,000** projects over the last five years as eligible or ineligible for SB 423 streamlining (all future applications should be automatically flagged).
   * **1,800** reported as SB 423 projects were identified as likely ineligible for streamlining or incorrectly reported.
   * Provided new visibility into housing costs by county, income level, and unit size over the last decade. This covers **all 58 counties across the state**.
 * Stitched together a timeline of each project’s milestones and produces a report for every jurisdiction’s time-to-build, allowing HCD to identify the areas with the most acute need for streamlining going forward.   
