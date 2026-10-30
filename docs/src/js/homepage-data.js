@@ -145,7 +145,7 @@ const HOMEPAGE2_TILES = [
   {
     title: 'Building a data science team at the California Department of Tax and Fee Administration: A modern approach to solving data-rich analysis problems',
     description:
-      'An online, self-paced course that covers intermediate plain language skills and methods',
+      'How ODI and CDTFA collaborated on a successful model for building a flexible data science team',
     url: '/data/building-data-science-team-cdtfa/',
     topic: 'data',
     topicLabel: 'Data',
