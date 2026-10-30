@@ -1,6 +1,6 @@
 ---
 title: Building a data science team at the California Department of Tax and Fee Administration - A modern approach to solving data-rich analysis problems
-description: ODI built an outlier detection tool to interactively assess environmental monitoring data quality.
+description: How ODI and CDTFA collaborated on a successful model for building a flexible data science team.
 headerlabel: Papers
 headericon: paper
 ---
