@@ -12,7 +12,7 @@ Monica G. Bobra <a href="https://orcid.org/0000-0002-5662-9604"><img class="orci
 <p class="text-lead">We built a predictive model to detect illegal debit card transactions.</p>
 
 <div class="interaction-block">
-<div class="interaction"><a href="/papers/bobra-et-al-detecting-cash-benefit-theft.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" /> Download PDF</a></div>
+<div class="interaction"><a href="/papers/bobra-et-al-detecting-cash-benefit-theft.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" />Download PDF</a></div>
 <div class="interaction"><a href="https://doi.org/10.5281/zenodo.15644619"><img class="icon" src="/img/paper-link-icon.svg" />https://doi.org/10.5281/zenodo.15644619</a></div>
 </div>
 

@@ -36,7 +36,7 @@ headericon: book
    * [BUCP template for one Data Provider and one Data Recipient](/docs/bucp-template-v3-single-dept.docx) 
    * [BUCP template for more than one Data Provider or Data Recipient](/docs/bucp-template-v2-multiple-dept.docx)
 
-   ### Data field definitions
+   **Data field definitions**
 
    One of the best ways to improve data use is to have well-documented data. You don’t need to do this when you make your BUCP, but it can help you later. Use these data field definitions to build a common understanding of the data you will share.
 
@@ -81,7 +81,7 @@ headericon: book
 
    Follow the terms of the agreement to exchange and manage the data.
 
-   ### What to do if you get an external request for data
+   **What to do if you get an external request for data**
 
    If you get an external request for data you get through a BUCP, tell the Data Provider. Meet as soon as possible to decide how to respond. These requests could come through:
 
@@ -90,9 +90,9 @@ headericon: book
    * A court order
    * A litigation-related request
 
-   ### What to do if there’s a data breach
+   **What to do if there’s a data breach**
 
-   If there’s a data breach affects data shared through a BUCP, the Data Recipient must tell the Data Provider. If possible, identify who is responsible. Use the unauthorized access template to alert the Data Provider.
+   If there’s a data breach affects data shared through a BUCP, the Data Recipient must tell the Data Provider. If possible, identify who is responsible. Use the [unauthorized access template](/data/idea-guidebook/unauthorized-access-security-incident/) to alert the Data Provider.
 
    If the breach involves HIPAA-protected data, follow the breach provisions in Addendum A of the IDEA.
 
