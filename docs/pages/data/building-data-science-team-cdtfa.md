@@ -12,6 +12,10 @@ Monica G. Bobra<sup>1</sup>, Reid Johnsen<sup>2</sup>, Jared Choy<sup>2</sup>, S
 <sup>2</sup> California Department of Tax and Fee Administration, May Lee State Office Complex, 651 Bannon Street, Suite 100, Sacramento, CA 95811-0299
 </div>
 
+<div class="interaction-block">
+<div class="interaction"><a href="/papers/bobra-et-al-building-data-science-team-cdtfa.pdf"><img class="icon" src="/img/paper-pdf-icon.svg" /> Download PDF</a></div>
+</div>
+
 ## Introduction
 
 Departments across the State of California rely on extracting insights from increasingly large datasets to address their business needs. This is particularly true at the California Department of Tax and Fee Administration (CDTFA). Researchers at CDTFA build statistical models to efficiently and effectively collect revenue, assess the economic environment, and forecast the impact of policy changes on various populations and communities throughout the state. In late 2025, CDTFA made a once-in-a-generation investment in a data science team to help with these efforts. This paper describes how the Office of Data and Innovation (ODI) worked with CDTFA to build the strategic case for this team.
