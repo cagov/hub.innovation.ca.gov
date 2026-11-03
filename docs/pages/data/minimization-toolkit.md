@@ -6,7 +6,7 @@ headerlabel: Guides and playbooks
 headericon: book
 ---
 
-Data minimization helps departments collect, store, and share information safely and responsibly. It builds trust in government and reduces risk.
+<p class="text-lead">Data minimization helps departments collect, store, and share information safely and responsibly. It builds trust in government and reduces risk.</p>
 
 Use this to start improving data privacy and minimization in your program.
 

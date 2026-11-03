@@ -38,14 +38,6 @@ div.homepage2-top-block {
   }
 }
 
-/* The 47px page title needs to come down a step to fit a portrait phone. */
-@media screen and (max-width: 480px) {
-  div.homepage2-top-block h1.page-title {
-    font-size: 36px;
-    line-height: 1.15;
-  }
-}
-
 div.homepage2-grid {
   display: grid;
   /* 275px filter column, per the Figma. */

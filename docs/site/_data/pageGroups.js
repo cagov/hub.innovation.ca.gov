@@ -67,6 +67,7 @@ module.exports = [
     heading: 'In this guidebook',
     landing: '/data/idea-guidebook/',
     pages: [
+      { url: '/data/idea-guidebook/101/', label: 'IDEA 101' },
       {
         url: '/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/',
         label: 'How to develop and manage a data sharing agreement',
@@ -75,29 +76,37 @@ module.exports = [
         url: '/data/idea-guidebook/dispute-resolution-process/',
         label: 'Dispute resolution process',
       },
+      { url: '/data/idea-guidebook/list-signers/', label: 'List of IDEA signers' },
       {
-        url: '/data/idea-guidebook/resources-references/',
-        label: 'Resources and references',
+        url: '/data/idea-guidebook/email-notice-templates/',
+        label: 'Email and notice templates',
         children: [
           {
-            url: '/data/idea-guidebook/resources-references/agreement/',
-            label: 'IDEA agreement',
+            url: '/data/idea-guidebook/email-notice-templates/start-data-sharing/',
+            label: 'Start data sharing under IDEA',
           },
           {
-            url: '/data/idea-guidebook/resources-references/list-signatories/',
-            label: 'List of signatories',
+            url: '/data/idea-guidebook/email-notice-templates/bucp-kickoff-meeting/',
+            label: 'BUCP kickoff meeting',
           },
           {
-            url: '/data/idea-guidebook/resources-references/bucp-template/',
-            label: 'BUCP templates',
+            url: '/data/idea-guidebook/email-notice-templates/review-request/',
+            label: 'Request for legal, privacy, or security review of BUCP',
           },
           {
-            url: '/data/idea-guidebook/resources-references/notice-email-disclosure-templates/',
-            label: 'Notice, email, and disclosure templates',
+            url: '/data/idea-guidebook/email-notice-templates/unauthorized-access-security-incident/',
+            label: 'Notice of unauthorized access (provision 8.5) or security incident (provision 8.6)',
+          },
+          {
+            url: '/data/idea-guidebook/email-notice-templates/end-rule-change/',
+            label: 'Notice to end data sharing under IDEA (provision 5.14 - rule change)',
+          },
+          {
+            url: '/data/idea-guidebook/email-notice-templates/end-recipients-acts-violation-terms/',
+            label: 'Notice to end data sharing under IDEA (provision 5.14 - Data Recipient’s acts or provision 7.4 - violation of terms)',
           },
         ],
       },
-      { url: '/data/idea-guidebook/faq/', label: 'Frequently asked questions' },
     ],
   },
 ];

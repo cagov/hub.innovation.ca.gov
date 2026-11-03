@@ -143,6 +143,26 @@ const HOMEPAGE2_TILES = [
     ],
   },
   {
+    title: 'Building a data science team at CDTFA',
+    description:
+      'How ODI and CDTFA collaborated on a successful model for building a flexible data science team',
+    url: '/data/building-data-science-team-cdtfa/',
+    topic: 'data',
+    topicLabel: 'Data',
+    type: 'training',
+    typeLabel: 'Papers',
+    typeIcon: 'paper',
+    keywords: [
+      'data',
+      'paper',
+      'cdtfa',
+      'data science',
+      'team building',
+      'machine learning',
+      'innovation',
+    ],
+  },
+  {
     title: 'Building better services with plain language',
     description:
       'An online, self-paced course that covers intermediate plain language skills and methods',

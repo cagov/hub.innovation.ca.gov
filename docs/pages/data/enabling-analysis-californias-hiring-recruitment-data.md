@@ -11,13 +11,6 @@ Ian Rose, Aeri Shan, John Harding, Brian Pardo, Preeni Varghese, Brittany Allen,
 
 <p class="text-lead">How the California Department of Human Resources (CalHR) worked with the Office of Data and Innovation (ODI) to increase analysis capabilities for the Examination & Certification Online System (ECOS).</p>
 
-<!-- 
-<div class="interaction-block">
-<div class="interaction"><a href=""><img class="icon" src="/img/paper-share-icon.svg" />Share</a></div>
-<div class="interaction"><a href=""><img class="icon" src="/img/paper-cite-icon.svg" />Cite</a></div>
-</div>
--->
-
 ## The opportunity
 
 The State of California has a quarter of a million employees, and each year hundreds of thousands of applicants go through the hiring and recruitment process, submitting millions of applications. They also take exams qualifying them for roles and go through interviews, resulting in hundreds of millions of events.

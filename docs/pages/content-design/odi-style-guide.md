@@ -462,6 +462,8 @@ Twelve cities in Los Angeles County allow cultivation of cannabis.
   </div>
 </div>
 
+Some scientific content uses American Psychological Association (APA) style. For this content, follow their rules for when to use numerals.
+
 ### Telephone numbers
 
 Use hyphens to separate the area code, first 3 digits, and last 4 digits. Do not use parentheses. When it serves the user (like on a webpage), make the telephone number a link.

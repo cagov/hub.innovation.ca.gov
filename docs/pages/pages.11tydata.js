@@ -23,8 +23,12 @@ const slugify = (s) =>
 module.exports = {
   layout: 'page',
   eleventyComputed: {
+    // An index.md serves at its directory's URL (testing-page/index.md ->
+    // /testing-page/).
     permalink: (article) =>
-      `${article.page.filePathStem.replace('/docs/pages', '')}/index.html`,
+      `${article.page.filePathStem
+        .replace('/docs/pages', '')
+        .replace(/\/index$/, '')}/index.html`,
     // Topic for a content page, from its top-level directory (e.g. "data").
     // Matches the homepage topic-filter checkbox values, so it can drive a
     // ?topic= link.
