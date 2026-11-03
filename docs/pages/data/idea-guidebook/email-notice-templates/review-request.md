@@ -1,5 +1,5 @@
 ---
-layout: single-column
+layout: page
 title: Request for legal, privacy, or security review of BUCP
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/

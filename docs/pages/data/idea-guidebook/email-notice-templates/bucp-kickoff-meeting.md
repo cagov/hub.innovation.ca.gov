@@ -1,5 +1,5 @@
 ---
-layout: single-column
+layout: page
 title: BUCP kickoff meeting
 parentid: IDEA guidebook
 parentidlink: /data/idea-guidebook/

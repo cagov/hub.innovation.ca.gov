@@ -43,7 +43,12 @@
       <div class="sidebar-container everylayout sidebar-cell" style="z-index: 1;">
         <sidebar space="0" side="left">
           {% block contentNavigation %}
-            {% include "page-navigation.njk" %}
+            {% set group = pageGroups | pageGroup(page.url) %}
+            {% if group %}
+              {% include "group-navigation.njk" %}
+            {% else %}
+              {% include "page-navigation.njk" %}
+            {% endif %}
           {% endblock %}
         </sidebar>
       </div>

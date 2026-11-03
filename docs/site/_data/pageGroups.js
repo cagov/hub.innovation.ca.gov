@@ -1,0 +1,112 @@
+// Groups of related pages that share a sidebar. A page in a group gets the
+// group's sidebar in place of the in-page "On this page" navigation. Pages may
+// nest via `children`; a page's children show only while you're on that page
+// or one of its descendants. The current page also lists its h2 headings.
+// `landing` is the group's overview page: it gets the sidebar too, with no
+// page selected.
+module.exports = [
+  {
+    heading: 'In this toolkit',
+    landing: '/data/minimization-toolkit/',
+    pages: [
+      { url: '/data/minimization-toolkit/101/', label: 'Data minimization 101' },
+      {
+        url: '/data/minimization-toolkit/best-practices/',
+        label: 'Best practices for data minimization',
+      },
+      {
+        url: '/data/minimization-toolkit/conducting-risk-necessity-assessments/',
+        label: 'Conducting risk and necessity assessments',
+      },
+      {
+        url: '/data/minimization-toolkit/external-sharing/',
+        label: 'External data sharing',
+      },
+      {
+        url: '/data/minimization-toolkit/reviewing-vendor-contracts/',
+        label: 'Reviewing vendor contracts',
+      },
+      {
+        url: '/data/minimization-toolkit/best-practices-laws-regulations/',
+        label: 'Best practices and relevant laws and regulations',
+      },
+    ],
+  },
+  {
+    heading: 'Content design principles',
+    landing: '/content-design/principles/',
+    pages: [
+      {
+        url: '/content-design/principles/focus-on-user-needs-services/',
+        label: 'Focus on user needs and services',
+      },
+      {
+        url: '/content-design/principles/meet-your-audience-where-they-are/',
+        label: 'Meet your audience where they are',
+      },
+      {
+        url: '/content-design/principles/build-accessibility-from-start/',
+        label: 'Build in accessibility from the start',
+      },
+      { url: '/content-design/principles/be-concise/', label: 'Be concise' },
+      {
+        url: '/content-design/principles/write-in-plain-language/',
+        label: 'Write in plain language',
+      },
+      {
+        url: '/content-design/principles/write-with-conversational-official-voice/',
+        label: 'Write with a conversational and official voice',
+      },
+      {
+        url: '/content-design/principles/organize-content-strategically/',
+        label: 'Organize content strategically',
+      },
+    ],
+  },
+  {
+    heading: 'In this guidebook',
+    landing: '/data/idea-guidebook/',
+    pages: [
+      { url: '/data/idea-guidebook/101/', label: 'IDEA 101' },
+      {
+        url: '/data/idea-guidebook/how-to-develop-manage-data-sharing-agreement/',
+        label: 'How to develop and manage a data sharing agreement',
+      },
+      {
+        url: '/data/idea-guidebook/dispute-resolution-process/',
+        label: 'Dispute resolution process',
+      },
+      { url: '/data/idea-guidebook/list-signers/', label: 'List of IDEA signers' },
+      {
+        url: '/data/idea-guidebook/email-notice-templates/',
+        label: 'Email and notice templates',
+        children: [
+          {
+            url: '/data/idea-guidebook/email-notice-templates/start-data-sharing/',
+            label: 'Start data sharing under IDEA',
+          },
+          {
+            url: '/data/idea-guidebook/email-notice-templates/bucp-kickoff-meeting/',
+            label: 'BUCP kickoff meeting',
+          },
+          {
+            url: '/data/idea-guidebook/email-notice-templates/review-request/',
+            label: 'Request for legal, privacy, or security review of BUCP',
+          },
+          {
+            url: '/data/idea-guidebook/email-notice-templates/unauthorized-access-security-incident/',
+            label: 'Notice of unauthorized access (provision 8.5) or security incident (provision 8.6)',
+          },
+          {
+            url: '/data/idea-guidebook/email-notice-templates/end-rule-change/',
+            label: 'Notice to end data sharing under IDEA (provision 5.14 - rule change)',
+          },
+          {
+            url: '/data/idea-guidebook/email-notice-templates/end-recipients-acts-violation-terms/',
+            label: 'Notice to end data sharing under IDEA (provision 5.14 - Data Recipient’s acts or provision 7.4 - violation of terms)',
+          },
+        ],
+      },
+    ],
+  },
+];
