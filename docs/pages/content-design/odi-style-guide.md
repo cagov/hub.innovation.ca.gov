@@ -269,15 +269,15 @@ Meet the team | Office of Data and Innovation
 
 ### Webpage URLs
 
-Use the H1 of the page to create your URL. This helps search engines find the page.
+Use the title of the page to create your URL. This helps search engines find the page.
 
 Replace spaces in the title with hyphens so search engines can read them. Delete the conjunctions, prepositions, and articles as long as the URL still keeps the same meaning.
 
 * A page titled **Request a birth certificate** would become **/request-birth-certificate**.
 * Do not make **Prepare for a wildfire** into **/prepare-wildfire**. This has a different meaning.
-* If your URL feels too long, consider shortening the page’s H1. Make sure both give enough detail so people know what the page is about.
+* If your URL feels too long, consider shortening the title. Make sure both give enough detail so people know what the page is about.
 
-Use the site map to build the URL. If a page called *How to apply* lives under a page called *Applicants*, the URL would be: **cannabis.ca.gov/applicants/how-to-apply/**.
+Use the site map to build the URL. If a page called *How to apply* lives under a page called *Applicants*, the URL would be: **cannabis.ca.gov/applicants/how-to-apply/**.  If part of the title shows up earlier in the URL, don’t repeat it. For example, ODI’s data minimization and privacy toolkit has the URL **https://hub.innovation.ca.gov/data/minimization-toolkit/**.
 
 ## Grammar
 
