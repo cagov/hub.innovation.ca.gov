@@ -3,9 +3,7 @@ title: Introduction
 layout: single-column
 ---
 
-## INTRODUCTION
-
-### POLICY
+## POLICY
 
 This chapter explains the policies, legal requirements, and procedures for including certified Small Businesses (SB), Microbusinesses (Micro), Disabled Veteran Business Enterprises (DVBE), and Nonprofit Veteran Service Agencies (NVSA) in state contracting.
 
@@ -26,7 +24,7 @@ This policy applies to all purchases, including:
 * IT goods and services
 * Telecommunications
 
-### PROCEDURE
+## PROCEDURE
 
 Each department must meet annual statewide participation goals in state procurement and contracting:
 
@@ -44,11 +42,11 @@ If a department fails to meet its SB or DVBE goals in three out of five years, D
 
 The consolidated annual report will include any enforcement actions taken.
 
-### LEGAL REFERENCE
+## LEGAL REFERENCE
 
 Enter the legal reference identified in the policy of the merge document.
 
-### RELATED POLICY, PROCEDURES & RESOURCES
+## RELATED POLICY, PROCEDURES & RESOURCES
 
 [Bill Text - AB-1574 Public contracts: small business liaisons and advocates and disabled veteran business enterprises: preferences.](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220AB1574)
 [Bill Text - AB-2019 Small business enterprises.](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB2019)
