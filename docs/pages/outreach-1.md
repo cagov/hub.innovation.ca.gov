@@ -6,7 +6,8 @@ layout: single-column
 Register to provide state departments goods and services during an emergency!
 
 The **SB/DVBE Emergency Registry** was developed to simplify the identification of certified Small Businesses (SB) and Disabled Veteran Business Enterprises (DVBE) during an emergency. The State faced challenges in recent years with identifying and buying from SBs and DVBEs during emergency events. By increasing contracting opportunities to certified businesses, departments are better able to meet their SB and DVBE contracting goals and our economy is strengthened for recovery.
-What is the SB/DVBE Emergency Registry?
+
+## What is the SB/DVBE Emergency Registry?
 
 The SB/DVBE Emergency Registry is a dedicated searchable listing of certified businesses that are ready and able to deploy goods or services to state departments during the event of an emergency. Unlike Cal eProcure, this portal will only include businesses that provide goods and services contained in emergency categories (listed below).  This list of predefined emergency categories has been developed based on the past needs of the state during emergencies. State department buyers will be able to access and search this pool of suppliers during state emergencies.
 
