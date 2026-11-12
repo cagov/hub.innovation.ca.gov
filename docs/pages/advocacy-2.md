@@ -23,9 +23,9 @@ When this chapter refers to a certified SB, it includes certified MBs. The Gover
 
 ## Legal Requirements - What departments must do
 
-**Small Business Procurement and Contract Act (Government Code Sections 14835–14843)**
+### Small Business Procurement and Contract Act (Government Code Sections 14835–14843)
 
-**Military and Veterans Code (Section 999 et seq.)**
+### Military and Veterans Code (Section 999 et seq.)
 
 Whenever possible, state departments must provide contracting opportunities to California Certified SBs, MBs, and DVBEs.
 
