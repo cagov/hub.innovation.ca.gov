@@ -19,8 +19,8 @@ Regarding **JL Incorporated**, OSDS’ certification denial decision is final. W
 
 The **Small Business** certification denial is based on:
 
-•	**JL Incorporated**’s unable to meet all eligibility requirements. 
-•	**Your appeal is based on grounds other than those specified in section 1896.22, subdivision (c).**
+*	**JL Incorporated**’s unable to meet all eligibility requirements. 
+*	**Your appeal is based on grounds other than those specified in section 1896.22, subdivision (c).**
 
 **The business did not provide sufficient documentation to verify that it meets the ownership requirements for Small Business certification.** This decision is based on the information in your application and materials you provided at OSDS’ request. The supporting documents include the following: 
  
