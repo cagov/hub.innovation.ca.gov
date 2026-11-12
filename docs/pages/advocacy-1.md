@@ -41,16 +41,3 @@ If a department fails to meet its SB or DVBE goals in three out of five years, D
 * Imposing additional restrictions on contracting activities
 
 The consolidated annual report will include any enforcement actions taken.
-
-## LEGAL REFERENCE
-
-Enter the legal reference identified in the policy of the merge document.
-
-## RELATED POLICY, PROCEDURES & RESOURCES
-
-[Bill Text - AB-1574 Public contracts: small business liaisons and advocates and disabled veteran business enterprises: preferences.](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220AB1574)
-[Bill Text - AB-2019 Small business enterprises.](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB2019)
-
-### ATTACHMENTS
-
-None.
