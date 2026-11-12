@@ -36,4 +36,4 @@ Compliance Manager
 Office of Small Business and DVBE Services 
 
 PROCUREMENT DIVISION - Small Business & DVBE Services| State of California | Government Operations Agency
-3707 6th Street | West Sacramento, CA 95605 | t 916.555.4940 f 916.555.4950  
+3707 6th Street | West Sacramento, CA 95605 | t 916.555.4940 f 916.555.4950
