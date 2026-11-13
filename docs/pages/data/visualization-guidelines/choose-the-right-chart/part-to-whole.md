@@ -2,7 +2,7 @@
 title: Part-to-whole — what share of the total is this?
 parentid: Choose the right chart
 parentidlink: /data/visualization-guidelines/choose-the-right-chart/
-description: Charts for comparing items
+description: Charts for showing the share of a total
 headerlabel: Guides and playbooks
 headericon: book
 ---
