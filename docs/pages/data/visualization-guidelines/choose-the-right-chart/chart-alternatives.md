@@ -13,7 +13,7 @@ Sometimes a data table or simple statistic might communicate better than a chart
 
 A KPI displays a single key number prominently. It’s best for giving high-level understanding when one number conveys the insight.
 
-![A large number, 1248, labeled "Applications submitted", 12% increase from last month](/img/dataviz/choose-the-right-chart-kpi.png)
+![A large number, 1248, labeled "Applications submitted", 12% increase from last month](/img/dataviz/choose-the-right-chart/kpi.png)
 
 ### Best practices
 * Include a label that explains what the number measures. 
@@ -24,7 +24,7 @@ A KPI displays a single key number prominently. It’s best for giving high-leve
 
 A statistic with an icon pairs a single number with an icon that explains what it measures. It’s best for sharing a single value with visual context for what the number measures.
 
-![A large number, 3.2m, labeled "residents reached", next to three user icons](/img/dataviz/choose-the-right-chart-stat-with-icon.png)
+![A large number, 3.2m, labeled "residents reached", next to three user icons](/img/dataviz/choose-the-right-chart/stat-with-icon.png)
 
 ### Best practices
 
@@ -36,7 +36,7 @@ A statistic with an icon pairs a single number with an icon that explains what i
 
 A progress bar shows how far a value has advanced toward a target. It’s best for showing the status of something, especially if it goes from 0 to 100% completion.
 
-![A progress bar filled and labeled 62%](/img/dataviz/choose-the-right-chart-progress-bar.png)
+![A progress bar filled and labeled 62%](/img/dataviz/choose-the-right-chart/progress-bar.png)
 
 ### Best practices
 * Label both the current value and the target.
@@ -48,7 +48,7 @@ A progress bar shows how far a value has advanced toward a target. It’s best f
 
 A table presents values directly in rows and columns. It’s best for showing raw data values.
 
-![An illustratoin of a spreadsheet data table](/img/dataviz/choose-the-right-chart-data-table.png)
+![An illustratoin of a spreadsheet data table](/img/dataviz/choose-the-right-chart/data-table.png)
 
 ### Best practices
 
