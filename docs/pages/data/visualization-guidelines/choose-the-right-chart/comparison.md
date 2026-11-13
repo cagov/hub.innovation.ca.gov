@@ -41,4 +41,4 @@ A grouped (clustered) bar chart places bars side by side in each category. This 
 * Group together the bars you most want people to compare most. This makes it easy for people to compare them.
 * Use small gaps between bars within a group and larger gaps between groups.
 * Avoid gruoped (clustered) bars for time series.
-* These recommendations are specific to bar charts. For guidance on accessibility, color, and other topics, visit [Data visualization best practices](/data/visualization-guidelines/best-practices).
+* These recommendations are specific to grouped bar charts. For guidance on accessibility, color, and other topics, visit [Data visualization best practices](/data/visualization-guidelines/best-practices).
