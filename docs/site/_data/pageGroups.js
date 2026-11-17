@@ -148,6 +148,44 @@ module.exports = [
           },
         ],
       },
+      {
+        url: '/data/visualization-guidelines/follow-data-visualization-best-practices/',
+        label: 'Follow data visualization best practices',
+        children: [
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/writing-effective-text/',
+            label: 'Writing effective text',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/color-and-contrast/',
+            label: 'Color and contrast',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/equity/',
+            label: 'Equity',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/transparency/',
+            label: 'Transparency',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/usability/',
+            label: 'Usability',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/accessibility/',
+            label: 'Accessibility',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/density-and-simplicity/',
+            label: 'Density and simplicity',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/chart-integrity/',
+            label: 'Chart integrity',
+          },
+        ],
+      },
     ],
   },
 ];
