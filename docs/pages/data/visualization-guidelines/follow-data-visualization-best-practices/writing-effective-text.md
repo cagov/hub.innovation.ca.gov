@@ -26,8 +26,8 @@ headericon: book
 * Use a declarative subtitle to describe what the visualization shows. For example: Three programs account for most applications, Application by program.
 
 <picture>
-  <source media="(min-width: 768px)" srcset="/img/dataviz/best-practices/titles_do_dont_desktop.png" width="1040" height="496">
-  <img src="/img/dataviz/best-practices/titles_do_dont_mobile.png" width="480" height="994" style="max-width: 100%; height: auto;" alt="Two bar charts of the same data: Californians enrolled by safety net program, in millions. Medi-Cal 14.9, CalFresh 5.0, SSI/SSP 1.1, CalWORKs 0.9, and General Assistance 0.2. Don't: a chart titled with the general topic, Program enrollment. Do: a chart titled with the takeaway, Medi-Cal and CalFresh account for most enrollment, with the subtitle Californians enrolled by safety net program.">
+  <source media="(min-width: 768px)" srcset="/img/dataviz/best-practices/titles-do-dont-desktop.png" width="1040" height="496">
+  <img src="/img/dataviz/best-practices/titles-do-dont-mobile.png" width="480" height="994" style="max-width: 100%; height: auto;" alt="Two bar charts of the same data: Californians enrolled by safety net program, in millions. Medi-Cal 14.9, CalFresh 5.0, SSI/SSP 1.1, CalWORKs 0.9, and General Assistance 0.2. Don't: a chart titled with the general topic, Program enrollment. Do: a chart titled with the takeaway, Medi-Cal and CalFresh account for most enrollment, with the subtitle Californians enrolled by safety net program.">
 </picture>
 
 ## Labels and annotations
