@@ -3,10 +3,11 @@ import {
   injectAxe,
   checkA11y
 } from "axe-playwright";
+import { STYLEGUIDE_URLS } from "./styleguide-urls.mjs";
 
 const testLocation = "http://localhost:8080";
 
-const pageUrls = ["/"];
+const pageUrls = ["/", ...STYLEGUIDE_URLS];
 
 pageUrls.forEach(pageUrl => {
 

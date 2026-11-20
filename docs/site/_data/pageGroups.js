@@ -186,6 +186,32 @@ module.exports = [
           },
         ],
       },
+      {
+        url: '/data/visualization-guidelines/odi-data-visualization-styleguide/',
+        label: "ODI's data visualization styleguide",
+        children: [
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/chart-anatomy/',
+            label: 'Chart anatomy',
+          },
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/typography/',
+            label: 'Typography',
+          },
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/color/',
+            label: 'Color',
+          },
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/spacing/',
+            label: 'Spacing',
+          },
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/labels-and-callouts/',
+            label: 'Labels and callouts',
+          },
+        ],
+      },
     ],
   },
 ];

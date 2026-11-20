@@ -1,0 +1,47 @@
+/* ODI data visualization styleguide pages
+   (/data/visualization-guidelines/odi-data-visualization-styleguide/).
+   Noto faces are declared site-wide but browsers download them only when
+   something uses them; only `.styleguide` content does. */
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/noto-sans-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/noto-sans-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/noto-sans-mono-400.woff2') format('woff2');
+}
+
+.styleguide {
+  // Font names, weights, sizes and hex values, as in the Figma styleguide.
+  code {
+    font-family: 'Noto Sans Mono', ui-monospace, monospace;
+    font-size: 0.9em;
+  }
+}
+
+// Small color square after an inline hex value. Decorative: the hex carries
+// the meaning. The inset edge keeps very light colors visible on white.
+.sg-chip {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px #d4d4d8;
+  vertical-align: -0.05em;
+}
