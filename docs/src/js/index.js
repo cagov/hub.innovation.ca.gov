@@ -7,4 +7,5 @@ import '@cagov/ds-page-navigation';
 import './component-sidebar.js';
 import './airtable-form/src/index.js';
 import './cagov-code-preview.js';
+import './copy-value.js';
 import './homepage.js';

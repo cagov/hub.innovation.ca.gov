@@ -145,6 +145,21 @@ export default function eleventySetup(eleventyConfig) {
   // Styleguide pages: an inline hex value followed by a small chip of that
   // color, e.g. {% hex "#1e1e1e" %}. The chip is decorative; the hex text
   // carries the meaning.
+  // Styleguide swatches: "light" when white text contrasts with the color at
+  // least as well as the site's dark gray (#1e1e1e), otherwise "dark".
+  eleventyConfig.addFilter('swatchText', (hex) => {
+    const lum = (h) => {
+      const [r, g, b] = [1, 3, 5].map((i) => {
+        const c = parseInt(h.slice(i, i + 2), 16) / 255;
+        return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+      });
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    };
+    const contrast = (a, b) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+    const l = lum(hex);
+    return contrast(1, l) >= contrast(lum('#1e1e1e'), l) ? 'light' : 'dark';
+  });
+
   eleventyConfig.addShortcode('hex', (hex) => {
     if (!/^#[0-9a-fA-F]{6}$/.test(String(hex))) {
       throw new Error(`hex shortcode: expected #rrggbb, got ${JSON.stringify(hex)}`);

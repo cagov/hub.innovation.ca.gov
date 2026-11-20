@@ -1,0 +1,162 @@
+{
+  "categorical": [
+    { "title": "Default set (1–6)", "swatches": [
+      { "name": "1 Blue", "hex": "#0d4f8c", "rgb": "rgb(13, 79, 140)", "note": null },
+      { "name": "2 Orange", "hex": "#e3881b", "rgb": "rgb(227, 136, 27)", "note": null },
+      { "name": "3 Teal", "hex": "#3baa91", "rgb": "rgb(59, 170, 145)", "note": null },
+      { "name": "4 Coral", "hex": "#e45d48", "rgb": "rgb(228, 93, 72)", "note": null },
+      { "name": "5 Purple", "hex": "#634eaf", "rgb": "rgb(99, 78, 175)", "note": null },
+      { "name": "6 Sky", "hex": "#5cb1d8", "rgb": "rgb(92, 177, 216)", "note": null }
+    ] },
+    { "title": "Extended set (7–9)", "swatches": [
+      { "name": "7 Steel", "hex": "#3d6a7f", "rgb": "rgb(61, 106, 127)", "note": null },
+      { "name": "8 Green", "hex": "#058a32", "rgb": "rgb(5, 138, 50)", "note": null },
+      { "name": "9 Lavender", "hex": "#825a99", "rgb": "rgb(130, 90, 153)", "note": null }
+    ] }
+  ],
+  "versions": [
+    { "title": "1 Blue", "swatches": [
+      { "name": "Main fill", "hex": "#0d4f8c", "rgb": "rgb(13, 79, 140)", "note": null },
+      { "name": "Paired", "hex": "#a3bbd3", "rgb": "rgb(163, 187, 211)", "note": null },
+      { "name": "Line", "hex": "#0d4f8c", "rgb": "rgb(13, 79, 140)", "note": null },
+      { "name": "Background", "hex": "#f1f6fb", "rgb": "rgb(241, 246, 251)", "note": null }
+    ] },
+    { "title": "2 Orange", "swatches": [
+      { "name": "Main fill", "hex": "#e3881b", "rgb": "rgb(227, 136, 27)", "note": null },
+      { "name": "Paired", "hex": "#f4cea1", "rgb": "rgb(244, 206, 161)", "note": null },
+      { "name": "Line", "hex": "#a35f0e", "rgb": "rgb(163, 95, 14)", "note": null },
+      { "name": "Background", "hex": "#faecda", "rgb": "rgb(250, 236, 218)", "note": null }
+    ] },
+    { "title": "3 Teal", "swatches": [
+      { "name": "Main fill", "hex": "#3baa91", "rgb": "rgb(59, 170, 145)", "note": null },
+      { "name": "Paired", "hex": "#98decd", "rgb": "rgb(152, 222, 205)", "note": null },
+      { "name": "Line", "hex": "#006c58", "rgb": "rgb(0, 108, 88)", "note": null },
+      { "name": "Background", "hex": "#eefaf7", "rgb": "rgb(238, 250, 247)", "note": null }
+    ] },
+    { "title": "4 Coral", "swatches": [
+      { "name": "Main fill", "hex": "#e45d48", "rgb": "rgb(228, 93, 72)", "note": null },
+      { "name": "Paired", "hex": "#eca995", "rgb": "rgb(236, 169, 149)", "note": null },
+      { "name": "Line", "hex": "#a63f44", "rgb": "rgb(166, 63, 68)", "note": null },
+      { "name": "Background", "hex": "#fcefed", "rgb": "rgb(252, 239, 237)", "note": null }
+    ] },
+    { "title": "5 Purple", "swatches": [
+      { "name": "Main fill", "hex": "#634eaf", "rgb": "rgb(99, 78, 175)", "note": null },
+      { "name": "Paired", "hex": "#bdb3e1", "rgb": "rgb(189, 179, 225)", "note": null },
+      { "name": "Line", "hex": "#634eaf", "rgb": "rgb(99, 78, 175)", "note": null },
+      { "name": "Background", "hex": "#efecf8", "rgb": "rgb(239, 236, 248)", "note": null }
+    ] },
+    { "title": "6 Sky", "swatches": [
+      { "name": "Main fill", "hex": "#5cb1d8", "rgb": "rgb(92, 177, 216)", "note": null },
+      { "name": "Paired", "hex": "#9edfff", "rgb": "rgb(158, 223, 255)", "note": null },
+      { "name": "Line", "hex": "#0d7caf", "rgb": "rgb(13, 124, 175)", "note": null },
+      { "name": "Background", "hex": "#ebf7ff", "rgb": "rgb(235, 247, 255)", "note": null }
+    ] },
+    { "title": "7 Steel", "swatches": [
+      { "name": "Main fill", "hex": "#3d6a7f", "rgb": "rgb(61, 106, 127)", "note": null },
+      { "name": "Paired", "hex": "#abccde", "rgb": "rgb(171, 204, 222)", "note": null },
+      { "name": "Line", "hex": "#14546b", "rgb": "rgb(20, 84, 107)", "note": null },
+      { "name": "Background", "hex": "#f0f7fc", "rgb": "rgb(240, 247, 252)", "note": null }
+    ] },
+    { "title": "8 Green", "swatches": [
+      { "name": "Main fill", "hex": "#058a32", "rgb": "rgb(5, 138, 50)", "note": null },
+      { "name": "Paired", "hex": "#a7d59a", "rgb": "rgb(167, 213, 154)", "note": null },
+      { "name": "Line", "hex": "#007c2d", "rgb": "rgb(0, 124, 45)", "note": null },
+      { "name": "Background", "hex": "#f1f8ef", "rgb": "rgb(241, 248, 239)", "note": null }
+    ] },
+    { "title": "9 Lavender", "swatches": [
+      { "name": "Main fill", "hex": "#825a99", "rgb": "rgb(130, 90, 153)", "note": null },
+      { "name": "Paired", "hex": "#d9c0e9", "rgb": "rgb(217, 192, 233)", "note": null },
+      { "name": "Line", "hex": "#6d4884", "rgb": "rgb(109, 72, 132)", "note": null },
+      { "name": "Background", "hex": "#f9f4fb", "rgb": "rgb(249, 244, 251)", "note": null }
+    ] }
+  ],
+  "sequential": [
+    { "title": "Blue", "swatches": [
+      { "name": "1", "hex": "#f1f6fb", "rgb": "rgb(241, 246, 251)", "note": "Lightest" },
+      { "name": "2", "hex": "#c7d6e4", "rgb": "rgb(199, 214, 228)", "note": null },
+      { "name": "3", "hex": "#7fa1c2", "rgb": "rgb(127, 161, 194)", "note": null },
+      { "name": "4", "hex": "#3f73a4", "rgb": "rgb(63, 115, 164)", "note": null },
+      { "name": "5", "hex": "#00315f", "rgb": "rgb(0, 49, 95)", "note": "Darkest of 1–5" }
+    ] },
+    { "title": "Only if you need 6 ranges", "swatches": [
+      { "name": "6", "hex": "#001936", "rgb": "rgb(0, 25, 54)", "note": null }
+    ] },
+    { "title": "Teal", "swatches": [
+      { "name": "1", "hex": "#eefaf7", "rgb": "rgb(238, 250, 247)", "note": "Lightest" },
+      { "name": "2", "hex": "#98decd", "rgb": "rgb(152, 222, 205)", "note": null },
+      { "name": "3", "hex": "#3baa91", "rgb": "rgb(59, 170, 145)", "note": null },
+      { "name": "4", "hex": "#006c58", "rgb": "rgb(0, 108, 88)", "note": null },
+      { "name": "5", "hex": "#024a3b", "rgb": "rgb(2, 74, 59)", "note": "Darkest of 1–5" }
+    ] },
+    { "title": "Only if you need 6 ranges", "swatches": [
+      { "name": "6", "hex": "#011f17", "rgb": "rgb(1, 31, 23)", "note": null }
+    ] },
+    { "title": "Orange", "swatches": [
+      { "name": "1", "hex": "#fff4eb", "rgb": "rgb(255, 244, 235)", "note": "Lightest" },
+      { "name": "2", "hex": "#f4cea1", "rgb": "rgb(244, 206, 161)", "note": null },
+      { "name": "3", "hex": "#e3881b", "rgb": "rgb(227, 136, 27)", "note": null },
+      { "name": "4", "hex": "#a35f0e", "rgb": "rgb(163, 95, 14)", "note": null },
+      { "name": "5", "hex": "#72420a", "rgb": "rgb(114, 66, 10)", "note": "Darkest of 1–5" }
+    ] },
+    { "title": "Only if you need 6 ranges", "swatches": [
+      { "name": "6", "hex": "#472a06", "rgb": "rgb(71, 42, 6)", "note": null }
+    ] },
+    { "title": "Purple", "swatches": [
+      { "name": "1", "hex": "#efecf8", "rgb": "rgb(239, 236, 248)", "note": "Lightest" },
+      { "name": "2", "hex": "#bdb3e1", "rgb": "rgb(189, 179, 225)", "note": null },
+      { "name": "3", "hex": "#8c7bcb", "rgb": "rgb(140, 123, 203)", "note": null },
+      { "name": "4", "hex": "#634eaf", "rgb": "rgb(99, 78, 175)", "note": null },
+      { "name": "5", "hex": "#42317f", "rgb": "rgb(66, 49, 127)", "note": "Darkest of 1–5" }
+    ] },
+    { "title": "Only if you need 6 ranges", "swatches": [
+      { "name": "6", "hex": "#332662", "rgb": "rgb(51, 38, 98)", "note": null }
+    ] }
+  ],
+  "diverging": [
+    { "title": "Blue to orange", "swatches": [
+      { "name": "2", "hex": "#0d4f8c", "rgb": "rgb(13, 79, 140)", "note": null },
+      { "name": "3", "hex": "#a3bbd3", "rgb": "rgb(163, 187, 211)", "note": null },
+      { "name": "4", "hex": "#ededef", "rgb": "rgb(237, 237, 239)", "note": "Middle" },
+      { "name": "5", "hex": "#ecac67", "rgb": "rgb(236, 172, 103)", "note": null },
+      { "name": "6", "hex": "#a35f0e", "rgb": "rgb(163, 95, 14)", "note": null }
+    ] },
+    { "title": "Only if you need 7 ranges: add both 1 and 7", "swatches": [
+      { "name": "1", "hex": "#00315f", "rgb": "rgb(0, 49, 95)", "note": null },
+      { "name": "7", "hex": "#72420a", "rgb": "rgb(114, 66, 10)", "note": null }
+    ] },
+    { "title": "Teal to coral", "swatches": [
+      { "name": "2", "hex": "#006c58", "rgb": "rgb(0, 108, 88)", "note": null },
+      { "name": "3", "hex": "#53cab0", "rgb": "rgb(83, 202, 176)", "note": null },
+      { "name": "4", "hex": "#ededef", "rgb": "rgb(237, 237, 239)", "note": "Middle" },
+      { "name": "5", "hex": "#eca995", "rgb": "rgb(236, 169, 149)", "note": null },
+      { "name": "6", "hex": "#a63f44", "rgb": "rgb(166, 63, 68)", "note": null }
+    ] },
+    { "title": "Only if you need 7 ranges: add both 1 and 7", "swatches": [
+      { "name": "1", "hex": "#024a3b", "rgb": "rgb(2, 74, 59)", "note": null },
+      { "name": "7", "hex": "#68242d", "rgb": "rgb(104, 36, 45)", "note": null }
+    ] }
+  ],
+  "neutrals": [
+    { "title": null, "swatches": [
+      { "name": null, "hex": "#a4a3aa", "rgb": "rgb(164, 163, 170)", "note": "Other, unknown, no data" },
+      { "name": null, "hex": "#bcbbc1", "rgb": "rgb(188, 187, 193)", "note": "Grayed-out context, leader lines" },
+      { "name": null, "hex": "#d4d4d8", "rgb": "rgb(212, 212, 216)", "note": "Gridlines, tooltip borders" },
+      { "name": null, "hex": "#0d4f8c", "rgb": "rgb(13, 79, 140)", "note": "Titles" },
+      { "name": null, "hex": "#1e1e1e", "rgb": "rgb(30, 30, 30)", "note": "Subtitles, labels, values, axis titles, legends, annotations, source" },
+      { "name": null, "hex": "#72717c", "rgb": "rgb(114, 113, 124)", "note": "Axis labels, tick marks, axis lines, annotation lines" }
+    ] }
+  ],
+  "direction": [
+    { "title": null, "swatches": [
+      { "name": null, "hex": "#228a74", "rgb": "rgb(34, 138, 116)", "note": "Increase (teal)" },
+      { "name": null, "hex": "#a35f0e", "rgb": "rgb(163, 95, 14)", "note": "Decrease (orange)" }
+    ] }
+  ],
+  "status": [
+    { "title": null, "swatches": [
+      { "name": null, "hex": "#067647", "rgb": "rgb(6, 118, 71)", "note": "On track (green)" },
+      { "name": null, "hex": "#c37315", "rgb": "rgb(195, 115, 21)", "note": "At risk (orange)" },
+      { "name": null, "hex": "#b42318", "rgb": "rgb(180, 35, 24)", "note": "Off track (red)" }
+    ] }
+  ]
+}

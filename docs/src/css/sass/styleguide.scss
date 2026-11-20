@@ -45,3 +45,125 @@
   box-shadow: inset 0 0 0 1px #d4d4d8;
   vertical-align: -0.05em;
 }
+
+// ---- Color swatches (Color page) ----
+.sg-swatch-set {
+  margin: 1.5rem 0;
+}
+
+.sg-swatch-set__title {
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.sg-swatches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+}
+
+.sg-swatch {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.sg-swatch__color {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 6.5rem;
+  padding: 0.75rem 0.75rem 0.75rem 1rem;
+  border-radius: 6px;
+  // Keeps very light colors visible on the white page.
+  box-shadow: inset 0 0 0 1px #d4d4d8;
+}
+
+.sg-swatch--light .sg-swatch__color {
+  color: #fff;
+}
+
+.sg-swatch--dark .sg-swatch__color {
+  color: #1e1e1e;
+}
+
+.sg-swatch__label {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1875rem; // 19px
+  line-height: 1.3;
+}
+
+.sg-swatch__name {
+  display: block;
+  white-space: pre;
+}
+
+.sg-swatch__field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 6px;
+  background: #fff;
+  color: #1e1e1e;
+}
+
+.sg-swatch__note {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+.sg-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  &:focus-visible {
+    outline: 3px solid #2ea3f2;
+    outline-offset: 1px;
+  }
+}
+
+.sg-swatch__field .sg-copy {
+  color: #0d4f8c;
+}
+
+// Copy result: announced by screen readers (role="status") and shown briefly.
+.sg-copy-status {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  z-index: 10;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #fff;
+
+  &:empty {
+    padding: 0;
+  }
+}
