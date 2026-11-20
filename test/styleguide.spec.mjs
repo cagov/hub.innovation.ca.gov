@@ -133,3 +133,26 @@ for (const url of [TYPE_URL, COLOR_URL]) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);
   });
 }
+
+// ---- Chart anatomy and Spacing (Task 5) ----
+const ANATOMY_URL = testLocation + '/data/visualization-guidelines/odi-data-visualization-styleguide/chart-anatomy/';
+const SPACING_URL = testLocation + '/data/visualization-guidelines/odi-data-visualization-styleguide/spacing/';
+
+test('chart anatomy has two diagrams and their parts lists', async ({ page }) => {
+  await page.goto(ANATOMY_URL);
+  expect(await expectImagesHaveAlt(page)).toBe(2);
+  const lists = page.locator('main .styleguide ol');
+  await expect(lists).toHaveCount(2);
+  await expect(lists.nth(0).locator(':scope > li')).toHaveCount(10);
+  await expect(lists.nth(1).locator(':scope > li')).toHaveCount(9);
+  expect((await lists.nth(0).locator('li').first().innerText()).startsWith('Title.')).toBe(true);
+  expect((await lists.nth(1).locator('li').first().innerText()).startsWith('Legend.')).toBe(true);
+  await expectLinksResolve(page);
+});
+
+test('spacing has both redlines and the values list', async ({ page }) => {
+  await page.goto(SPACING_URL);
+  expect(await expectImagesHaveAlt(page)).toBe(2);
+  await expect(page.locator('main .styleguide')).toContainText('Legend to chart: 16px');
+  await expectLinksResolve(page);
+});
