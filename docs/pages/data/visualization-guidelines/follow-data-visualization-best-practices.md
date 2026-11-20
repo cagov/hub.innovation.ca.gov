@@ -11,6 +11,8 @@ Learn how to create visualizations that are clear, accurate, accessible, and eas
 
 **Best practices for specific chart types:** Visit [Choose the right chart](data/visualization-guidelines/choose-the-right-chart) for best practices for individual chart types, such as bar charts, line charts, and scatter plots.
 
+**Fonts, colors, and spacing:** Visit [ODI's data visualization styleguide](/data/visualization-guidelines/odi-data-visualization-styleguide/) for the exact values that make a chart look like ODI's.
+
 ## Explore best practices:
 
 ### [Writing effective text](/data/visualization-guidelines/follow-data-visualization-best-practices/writing-effective-text)

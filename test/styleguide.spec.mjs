@@ -175,3 +175,9 @@ test('labels and callouts sections and current rules', async ({ page }) => {
   await expect(body).not.toContainText('Exception:');
   await expectLinksResolve(page);
 });
+
+// ---- Links in (Task 7) ----
+test('best practices landing links to the styleguide', async ({ page }) => {
+  await page.goto(testLocation + '/data/visualization-guidelines/follow-data-visualization-best-practices/');
+  await expect(page.locator('main article p a[href="/data/visualization-guidelines/odi-data-visualization-styleguide/"]')).toHaveCount(1);
+});
