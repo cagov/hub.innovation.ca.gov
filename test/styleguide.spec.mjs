@@ -156,3 +156,22 @@ test('spacing has both redlines and the values list', async ({ page }) => {
   await expect(page.locator('main .styleguide')).toContainText('Legend to chart: 16px');
   await expectLinksResolve(page);
 });
+
+// ---- Labels and callouts (Task 6) ----
+const LABELS_URL = testLocation + '/data/visualization-guidelines/odi-data-visualization-styleguide/labels-and-callouts/';
+
+test('labels and callouts sections and current rules', async ({ page }) => {
+  await page.goto(LABELS_URL);
+  expect((await page.locator('main .styleguide h2').allInnerTexts()).map((t) => t.trim())).toEqual([
+    'Data labels',
+    'Direct labels and legends',
+    'Annotations',
+    'Tooltips',
+    'Labels on small charts',
+  ]);
+  expect(await expectImagesHaveAlt(page)).toBe(3);
+  const body = page.locator('main .styleguide');
+  await expect(body).toContainText('In stacked bars, center each value in its part');
+  await expect(body).not.toContainText('Exception:');
+  await expectLinksResolve(page);
+});
