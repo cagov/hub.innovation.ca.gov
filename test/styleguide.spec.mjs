@@ -108,3 +108,28 @@ test('color page sections in Figma order', async ({ page }) => {
   expect(await expectImagesHaveAlt(page)).toBeGreaterThanOrEqual(1);
   expect(await expectLinksResolve(page)).toBeGreaterThanOrEqual(1);
 });
+
+// ---- Typography (Task 4) ----
+const TYPE_URL = testLocation + '/data/visualization-guidelines/odi-data-visualization-styleguide/typography/';
+
+test('type table has 9 rows from Figma', async ({ page }) => {
+  await page.goto(TYPE_URL);
+  const rows = page.locator('.sg-type-table tbody tr');
+  await expect(rows).toHaveCount(9);
+  const cells = (await rows.first().locator('td').allInnerTexts()).map((t) => t.replace(/\s+/g, ' ').trim());
+  expect(cells.slice(1)).toEqual(['Noto Serif or Merriweather', 'Bold', '24px', '20px', '#0d4f8c']);
+});
+
+test('title sample renders in Noto Serif', async ({ page }) => {
+  await page.goto(TYPE_URL);
+  const family = await page.locator('.sg-type-table .sg-type-sample').first().evaluate((el) => getComputedStyle(el).fontFamily);
+  expect(family.startsWith('"Noto Serif"')).toBe(true);
+});
+
+for (const url of [TYPE_URL, COLOR_URL]) {
+  test(`no horizontal page scroll at 320px ${url}`, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.goto(url);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);
+  });
+}
