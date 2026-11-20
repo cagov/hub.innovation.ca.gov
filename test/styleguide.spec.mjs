@@ -63,3 +63,48 @@ test.describe('color swatches', () => {
     await expect(page.getByRole('button', { name: 'Copy RGB' })).toHaveCount(flat.filter((s) => s.rgb).length);
   });
 });
+
+// ---- Shared page checks (Tasks 3–6) ----
+async function headingTexts(page) {
+  return page.locator('main .styleguide').locator('h2, h3').allInnerTexts();
+}
+
+async function expectImagesHaveAlt(page) {
+  const imgs = page.locator('main .styleguide img');
+  const n = await imgs.count();
+  for (let i = 0; i < n; i++) {
+    expect((await imgs.nth(i).getAttribute('alt')) || '').not.toBe('');
+  }
+  return n;
+}
+
+async function expectLinksResolve(page) {
+  const hrefs = await page.locator('main .styleguide a[href]').evaluateAll((as) => as.map((a) => a.href));
+  for (const href of hrefs) {
+    if (!href.startsWith(testLocation)) continue;
+    const res = await page.request.get(href);
+    expect(res.status(), href).toBeLessThan(400);
+  }
+  return hrefs.length;
+}
+
+test('color page sections in Figma order', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  expect((await headingTexts(page)).map((t) => t.trim())).toEqual([
+    'Categorical colors',
+    'Four versions of each color',
+    'Label lighter colors',
+    'Sequential colors',
+    'Diverging colors',
+    'Neutrals and text',
+    'Show increase and decrease',
+    'Show status',
+    'Choosing colors for groups of people',
+  ]);
+  const code = page.locator('main pre code');
+  await expect(code.filter({ hasText: 'odi_default' })).toHaveCount(1);
+  await expect(code.filter({ hasText: 'odi_main' })).toHaveCount(1);
+  await expect(code.filter({ hasText: 'seq_blue_5' })).toHaveCount(1);
+  expect(await expectImagesHaveAlt(page)).toBeGreaterThanOrEqual(1);
+  expect(await expectLinksResolve(page)).toBeGreaterThanOrEqual(1);
+});
