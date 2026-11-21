@@ -142,11 +142,9 @@ export default function eleventySetup(eleventyConfig) {
 
   eleventyConfig.addFilter('inPageBranch', inPageBranch);
 
-  // Styleguide pages: an inline hex value followed by a small chip of that
-  // color, e.g. {% hex "#1e1e1e" %}. The chip is decorative; the hex text
-  // carries the meaning.
-  // Styleguide swatches: "light" when white text contrasts with the color at
-  // least as well as the site's dark gray (#1e1e1e), otherwise "dark".
+  // Styleguide swatches: the label color with the most contrast that clears
+  // 4.5:1. "light" = white, "dark" = the site's dark gray (#1e1e1e); when
+  // neither clears 4.5:1 (mid-tone colors like #228a74), "black" = #000.
   eleventyConfig.addFilter('swatchText', (hex) => {
     const lum = (h) => {
       const [r, g, b] = [1, 3, 5].map((i) => {
@@ -157,9 +155,15 @@ export default function eleventySetup(eleventyConfig) {
     };
     const contrast = (a, b) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
     const l = lum(hex);
-    return contrast(1, l) >= contrast(lum('#1e1e1e'), l) ? 'light' : 'dark';
+    const white = contrast(1, l);
+    const dark = contrast(lum('#1e1e1e'), l);
+    if (Math.max(white, dark) < 4.5) return white >= contrast(0, l) ? 'light' : 'black';
+    return white >= dark ? 'light' : 'dark';
   });
 
+  // Styleguide pages: an inline hex value followed by a small chip of that
+  // color, e.g. {% hex "#1e1e1e" %}. The chip is decorative; the hex text
+  // carries the meaning.
   eleventyConfig.addShortcode('hex', (hex) => {
     if (!/^#[0-9a-fA-F]{6}$/.test(String(hex))) {
       throw new Error(`hex shortcode: expected #rrggbb, got ${JSON.stringify(hex)}`);

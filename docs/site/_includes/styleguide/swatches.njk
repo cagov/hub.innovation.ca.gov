@@ -15,12 +15,12 @@
     <li class="sg-swatch sg-swatch--{{ s.hex | swatchText }}" data-hex="{{ s.hex }}">
       <div class="sg-swatch__color" style="background-color: {{ s.hex }}">
         <p class="sg-swatch__label">{% if s.name %}<span class="sg-swatch__name">{{ s.name }}</span>{% endif %}<span class="sg-swatch__hex">{{ s.hex }}</span></p>
-        <button type="button" class="sg-copy" data-copy="{{ s.hex }}" aria-label="Copy hex">{{ copyIcon() | safe }}</button>
+        <button type="button" class="sg-copy" data-copy="{{ s.hex }}" aria-label="Copy hex {{ s.hex }}">{{ copyIcon() | safe }}</button>
       </div>
       {%- if s.rgb %}
       <div class="sg-swatch__field">
         <code class="sg-swatch__rgb">{{ s.rgb }}</code>
-        <button type="button" class="sg-copy" data-copy="{{ s.rgb }}" aria-label="Copy RGB">{{ copyIcon() | safe }}</button>
+        <button type="button" class="sg-copy" data-copy="{{ s.rgb }}" aria-label="Copy RGB {{ s.rgb }}">{{ copyIcon() | safe }}</button>
       </div>
       {%- endif %}
       {%- if s.note %}<p class="sg-swatch__note">{{ s.note }}</p>{% endif %}

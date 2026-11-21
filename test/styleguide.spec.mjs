@@ -181,3 +181,39 @@ test('best practices landing links to the styleguide', async ({ page }) => {
   await page.goto(testLocation + '/data/visualization-guidelines/follow-data-visualization-best-practices/');
   await expect(page.locator('main article p a[href="/data/visualization-guidelines/odi-data-visualization-styleguide/"]')).toHaveCount(1);
 });
+
+// ---- Final review fixes ----
+test('copy buttons name their color', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  await expect(page.getByRole('button', { name: 'Copy hex #0d4f8c', exact: true })).toHaveCount(5);
+  await expect(page.getByRole('button', { name: 'Copy RGB rgb(13, 79, 140)', exact: true })).toHaveCount(5);
+});
+
+test('copy hex focus ring is a dark ring with a white halo', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  await page.getByRole('button', { name: 'Copy hex' }).first().focus();
+  const s = await page.getByRole('button', { name: 'Copy hex' }).first().evaluate((el) => {
+    const cs = getComputedStyle(el);
+    return { outline: cs.outlineColor, style: cs.outlineStyle, shadow: cs.boxShadow };
+  });
+  expect(s.style).toBe('solid');
+  expect(s.outline).toBe('rgb(30, 30, 30)');
+  expect(s.shadow).toContain('rgb(255, 255, 255)');
+});
+
+test('every swatch label meets 4.5:1', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  const worst = await page.locator('.sg-swatch__color').evaluateAll((els) => {
+    const parse = (c) => c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number);
+    const lum = ([r, g, b]) => {
+      const f = (v) => { v /= 255; return v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; };
+      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+    };
+    return Math.min(...els.map((el) => {
+      const cs = getComputedStyle(el);
+      const a = lum(parse(cs.color)), b = lum(parse(cs.backgroundColor));
+      return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+    }));
+  });
+  expect(worst).toBeGreaterThanOrEqual(4.5);
+});

@@ -104,6 +104,10 @@
   color: #1e1e1e;
 }
 
+.sg-swatch--black .sg-swatch__color {
+  color: #000;
+}
+
 .sg-swatch__label {
   margin: 0;
   font-weight: 700;
@@ -179,9 +183,13 @@
     background: rgba(0, 0, 0, 0.08);
   }
 
+  // Dark ring with a white halo, visible on every swatch color. !important
+  // beats the base CSS's `button:focus { outline: … !important }`.
+  &:focus,
   &:focus-visible {
-    outline: 3px solid #2ea3f2;
-    outline-offset: 1px;
+    outline: 2px solid #1e1e1e !important;
+    outline-offset: 0;
+    box-shadow: 0 0 0 4px #fff;
   }
 }
 
