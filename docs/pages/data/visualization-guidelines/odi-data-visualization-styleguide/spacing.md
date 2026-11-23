@@ -24,7 +24,7 @@ Leave the same room around and inside every ODI chart, so charts line up on a pa
 - **Legend to chart:** `16px`
 - **Category label to bar:** `8px`
 - **Bar to its value:** `8px`
-- Bars: any thickness that fits the chart, with the gap between bars narrower than one bar
+- **Bars:** any thickness that fits the chart, with the gap between bars narrower than one bar
 - **Tick marks:** `6px`, hanging down from the bottom of the chart
 - **Tick to axis number:** `8px`
 - **Axis numbers to source:** `16px`
