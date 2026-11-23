@@ -18,7 +18,7 @@
     { "title": "1 Blue", "swatches": [
       { "name": "Main fill", "hex": "#0d4f8c", "rgb": "rgb(13, 79, 140)", "note": null },
       { "name": "Paired", "hex": "#a3bbd3", "rgb": "rgb(163, 187, 211)", "note": null },
-      { "name": "Line", "hex": "#0d4f8c", "rgb": "rgb(13, 79, 140)", "note": null },
+      { "name": "Line", "hex": "#00315f", "rgb": "rgb(0, 49, 95)", "note": null },
       { "name": "Background", "hex": "#f1f6fb", "rgb": "rgb(241, 246, 251)", "note": null }
     ] },
     { "title": "2 Orange", "swatches": [
@@ -42,7 +42,7 @@
     { "title": "5 Purple", "swatches": [
       { "name": "Main fill", "hex": "#634eaf", "rgb": "rgb(99, 78, 175)", "note": null },
       { "name": "Paired", "hex": "#bdb3e1", "rgb": "rgb(189, 179, 225)", "note": null },
-      { "name": "Line", "hex": "#634eaf", "rgb": "rgb(99, 78, 175)", "note": null },
+      { "name": "Line", "hex": "#523d9d", "rgb": "rgb(82, 61, 157)", "note": null },
       { "name": "Background", "hex": "#efecf8", "rgb": "rgb(239, 236, 248)", "note": null }
     ] },
     { "title": "6 Sky", "swatches": [

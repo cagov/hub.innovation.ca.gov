@@ -185,8 +185,8 @@ test('best practices landing links to the styleguide', async ({ page }) => {
 // ---- Final review fixes ----
 test('copy buttons name their color', async ({ page }) => {
   await page.goto(COLOR_URL);
-  await expect(page.getByRole('button', { name: 'Copy hex #0d4f8c', exact: true })).toHaveCount(5);
-  await expect(page.getByRole('button', { name: 'Copy RGB rgb(13, 79, 140)', exact: true })).toHaveCount(5);
+  await expect(page.getByRole('button', { name: 'Copy hex #0d4f8c', exact: true })).toHaveCount(4);
+  await expect(page.getByRole('button', { name: 'Copy RGB rgb(13, 79, 140)', exact: true })).toHaveCount(4);
 });
 
 test('copy hex focus ring is a dark ring with a white halo', async ({ page }) => {
@@ -374,4 +374,14 @@ test('four versions use the Figma layout', async ({ page }) => {
   expect(r.hexSize).toBe('19px');
   expect(r.hexWeight).toBe('700');
   expect(r.sameRow).toBe(1);
+});
+
+test('blue and purple Line are one step darker than their Main', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  const lines = await page.locator('.sg-version').evaluateAll((els) =>
+    els.map((el) => [...el.querySelectorAll('.sg-version-cell')].find((c) => c.querySelector('.sg-version-cell__label').textContent.trim() === 'Line').dataset.hex));
+  expect(lines[0]).toBe('#00315f');
+  expect(lines[4]).toBe('#523d9d');
+  await expect(page.locator('main pre code').filter({ hasText: 'odi_line = ["#00315f", "#a35f0e", "#006c58", "#a63f44", "#523d9d"' })).toHaveCount(1);
+  await expect(page.locator('main .styleguide')).not.toContainText('the Main fill and Line are the same');
 });

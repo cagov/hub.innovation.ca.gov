@@ -34,8 +34,6 @@ Each color comes in 4 versions for different jobs.
 - **Line:** For thin marks, like lines and outlines. Don’t use it for text.
 - **Background:** A pale wash behind part of a chart, like a highlighted time period. Never use it for data.
 
-For some colors the Main fill and Line are the same, because the Main fill is already dark enough for thin marks.
-
 <img src="/img/dataviz/styleguide/color-paired-bars.png" width="876" height="398" style="max-width: 100%; height: auto;" alt="Example bar chart titled Applications rose in all three programs, with the subtitle Applications by program, 2024 and 2025 (illustrative data). A legend above the chart shows 2025 in dark blue and 2024 in pale blue. Each program has a pair of bars with its value just past the end: CalFresh 710 in 2025 and 620 in 2024, Medi-Cal 590 and 540, Unemployment 360 and 300. A note below says darker bars are 2025 (Main fill) and paler bars are 2024 (Paired), and that because values are labeled, the paler shade doesn’t need 3:1 contrast.">
 
 {{ versions(styleguideColors.versions) }}
@@ -44,7 +42,7 @@ For some colors the Main fill and Line are the same, because the Main fill is al
 # Same order as the categorical colors
 odi_main = ["#0d4f8c", "#e3881b", "#3baa91", "#e45d48", "#634eaf", "#5cb1d8", "#3d6a7f", "#058a32", "#825a99"]
 odi_paired = ["#a3bbd3", "#f4cea1", "#98decd", "#eca995", "#bdb3e1", "#9edfff", "#abccde", "#a7d59a", "#d9c0e9"]
-odi_line = ["#0d4f8c", "#a35f0e", "#006c58", "#a63f44", "#634eaf", "#0d7caf", "#14546b", "#007c2d", "#6d4884"]
+odi_line = ["#00315f", "#a35f0e", "#006c58", "#a63f44", "#523d9d", "#0d7caf", "#14546b", "#007c2d", "#6d4884"]
 odi_background = ["#f1f6fb", "#faecda", "#eefaf7", "#fcefed", "#efecf8", "#ebf7ff", "#f0f7fc", "#f1f8ef", "#f9f4fb"]
 ```
 
