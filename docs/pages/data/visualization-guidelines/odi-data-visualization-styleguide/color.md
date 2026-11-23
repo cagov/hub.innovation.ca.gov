@@ -98,7 +98,7 @@ div_teal_coral_7 = ["#024a3b", "#006c58", "#53cab0", "#ededef", "#eca995", "#a63
 
 Use gray for “Other,” “Unknown,” and “No data.” Gray is never a category of its own. To highlight one bar or line, use one color and gray out the rest.
 
-{{ swatches(styleguideColors.neutrals) }}
+{{ ramps(styleguideColors.neutrals, true) }}
 
 ## Show increase and decrease
 
@@ -110,7 +110,7 @@ Use teal for an increase and orange for a decrease. Don’t use green and red fo
 
 <img src="/img/dataviz/styleguide/color-increase-decrease.png" width="616" height="133" style="max-width: 100%; height: auto;" alt="Two summary cards. Applications this month: 12,480, with a teal up arrow and +4% vs last month. Average wait time: 18 days, with an orange down arrow and −2 days vs last month. The numbers and text are dark gray; only the arrows are colored.">
 
-{{ swatches(styleguideColors.direction) }}
+{{ ramps(styleguideColors.direction, true) }}
 
 ## Show status
 
@@ -121,7 +121,7 @@ Use green, orange, and red to show whether something is on track. Green and red 
 
 <img src="/img/dataviz/styleguide/color-status.png" width="406" height="46" style="max-width: 100%; height: auto;" alt="Three status labels, each with an icon and a word: a green check mark with On track, an orange warning triangle with At risk, and a red exclamation mark in a circle with Off track.">
 
-{{ swatches(styleguideColors.status) }}
+{{ ramps(styleguideColors.status, true) }}
 
 ## Choosing colors for groups of people
 

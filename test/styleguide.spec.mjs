@@ -287,7 +287,7 @@ test('code block has no extra space above the code and a blue copy icon', async 
 // ---- Sequential and diverging ramps match Figma ----
 test('ramps use the Figma row layout', async ({ page }) => {
   await page.goto(COLOR_URL);
-  await expect(page.locator('.sg-ramp')).toHaveCount(6);
+  await expect(page.locator('.sg-ramp')).toHaveCount(9);
   const r = await page.locator('.sg-ramp').first().evaluate((el) => {
     const box = (e) => { const b = e.getBoundingClientRect(); return [Math.round(b.width), Math.round(b.height)]; };
     const row = el.querySelector('.sg-ramp-row');
@@ -321,3 +321,26 @@ test('ramp markup has no stray paragraphs and the extra box hugs its rows', asyn
   const h = await page.locator('.sg-ramp-extra').first().evaluate((el) => Math.round(el.getBoundingClientRect().height));
   expect(h).toBeLessThanOrEqual(12 + 20 + 8 + 48 + 12 + 2);
 });
+
+for (const [section, firstNote] of [
+  ['Neutrals and text', 'Other, unknown, no data'],
+  ['Show increase and decrease', 'Increase (teal)'],
+  ['Show status', 'On track (green)'],
+]) {
+  test(`${section} uses the Figma rows with dark semibold notes`, async ({ page }) => {
+    await page.goto(COLOR_URL);
+    const r = await page.locator('h2', { hasText: section }).evaluate((h) => {
+      let el = h.nextElementSibling;
+      while (el && !el.classList.contains('sg-ramp')) el = el.nextElementSibling;
+      const row = el.querySelector('.sg-ramp-row');
+      const note = row.querySelector('.sg-ramp-row__note');
+      const b = row.querySelector('.sg-ramp-row__color').getBoundingClientRect();
+      const cs = getComputedStyle(note);
+      return { w: Math.round(b.width), h: Math.round(b.height), note: note.textContent.trim(), color: cs.color, weight: cs.fontWeight };
+    });
+    expect([r.w, r.h]).toEqual([260, 48]);
+    expect(r.note).toBe(firstNote);
+    expect(r.color).toBe('rgb(30, 30, 30)');
+    expect(r.weight).toBe('600');
+  });
+}
