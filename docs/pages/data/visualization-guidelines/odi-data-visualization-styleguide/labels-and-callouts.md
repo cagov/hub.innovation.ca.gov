@@ -28,7 +28,7 @@ Data labels show the value of each bar, point, or slice.
 
 - Label lines at their right end, `8px` past the last point, instead of using a legend.
 - Use a legend when labels would crowd the chart, like a scatterplot with many dots, or when bars come in pairs, like this year and last year. Put it above the chart. See [Chart anatomy](/data/visualization-guidelines/odi-data-visualization-styleguide/chart-anatomy/).
-- Never rotate labels. If category labels are long, use horizontal bars or let the label wrap to two lines.
+- Never rotate category labels or data labels. Only the y-axis title may be rotated (see [Chart anatomy](/data/visualization-guidelines/odi-data-visualization-styleguide/chart-anatomy/)). If category labels are long, use horizontal bars or let the label wrap to two lines.
 - Keep labels dark gray. Don’t color them to match their line or bar.
 
 ## Annotations
