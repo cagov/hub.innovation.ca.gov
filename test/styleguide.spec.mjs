@@ -203,7 +203,7 @@ test('copy hex focus ring is a dark ring with a white halo', async ({ page }) =>
 
 test('every swatch label meets 4.5:1', async ({ page }) => {
   await page.goto(COLOR_URL);
-  const worst = await page.locator('.sg-swatch__color').evaluateAll((els) => {
+  const worst = await page.locator('.sg-swatch__color, .sg-ramp-row__color').evaluateAll((els) => {
     const parse = (c) => c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number);
     const lum = ([r, g, b]) => {
       const f = (v) => { v /= 255; return v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; };
@@ -282,4 +282,42 @@ test('code block has no extra space above the code and a blue copy icon', async 
   });
   expect(r.gap).toBe(16);
   expect(r.color).toBe('rgb(13, 79, 140)');
+});
+
+// ---- Sequential and diverging ramps match Figma ----
+test('ramps use the Figma row layout', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  await expect(page.locator('.sg-ramp')).toHaveCount(6);
+  const r = await page.locator('.sg-ramp').first().evaluate((el) => {
+    const box = (e) => { const b = e.getBoundingClientRect(); return [Math.round(b.width), Math.round(b.height)]; };
+    const row = el.querySelector('.sg-ramp-row');
+    const extra = el.querySelector('.sg-ramp-extra');
+    return {
+      title: el.querySelector('.sg-ramp__title').textContent.trim(),
+      color: box(row.querySelector('.sg-ramp-row__color')),
+      field: box(row.querySelector('.sg-swatch__field')),
+      label: row.querySelector('.sg-ramp-row__color').innerText.replace(/\s+/g, ' ').trim(),
+      note: row.querySelector('.sg-ramp-row__note').textContent.trim(),
+      noteColor: getComputedStyle(row.querySelector('.sg-ramp-row__note')).color,
+      extraBg: getComputedStyle(extra).backgroundColor,
+      extraTitle: extra.querySelector('.sg-ramp-extra__title').textContent.trim(),
+      extraRows: extra.querySelectorAll('.sg-ramp-row').length,
+    };
+  });
+  expect(r.title).toBe('Blue');
+  expect(r.color).toEqual([260, 48]);
+  expect(r.field).toEqual([210, 48]);
+  expect(r.label).toBe('1 #f1f6fb');
+  expect(r.note).toBe('Lightest');
+  expect(r.noteColor).toBe('rgb(114, 113, 124)');
+  expect(r.extraBg).toBe('rgb(241, 246, 251)');
+  expect(r.extraTitle).toBe('Only if you need 6 ranges');
+  expect(r.extraRows).toBe(1);
+});
+
+test('ramp markup has no stray paragraphs and the extra box hugs its rows', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  await expect(page.locator('.sg-ramp p:not([class])')).toHaveCount(0);
+  const h = await page.locator('.sg-ramp-extra').first().evaluate((el) => Math.round(el.getBoundingClientRect().height));
+  expect(h).toBeLessThanOrEqual(12 + 20 + 8 + 48 + 12 + 2);
 });

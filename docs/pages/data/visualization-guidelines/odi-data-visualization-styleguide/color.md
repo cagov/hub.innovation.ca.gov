@@ -6,7 +6,7 @@ description: ODI's chart colors, with hex and RGB values you can copy into your 
 headerlabel: Guides and playbooks
 headericon: book
 ---
-{% from "styleguide/swatches.njk" import swatches %}
+{% from "styleguide/swatches.njk" import swatches, ramps %}
 <div class="styleguide">
 <p class="sg-copy-status" role="status" aria-live="polite"></p>
 
@@ -58,7 +58,7 @@ Gridlines and grayed-out context are meant to sit in the background, so they don
 
 Use a sequential palette when values run in one direction, like age bands or income ranges. Light means low and dark means high.
 
-{{ swatches(styleguideColors.sequential) }}
+{{ ramps(styleguideColors.sequential) }}
 
 - Use steps 1 to 5 by default.
 - For 3 ranges, use 1, 3, and 5. For 4 ranges, use 2 to 5.
@@ -69,7 +69,7 @@ Use a sequential palette when values run in one direction, like age bands or inc
 
 Use a diverging palette when the data has a meaningful middle, like change above and below zero. The middle color is neutral.
 
-{{ swatches(styleguideColors.diverging) }}
+{{ ramps(styleguideColors.diverging) }}
 
 - Use steps 2 to 6 by default, with 4 in the middle.
 - For 3 ranges, use 3, 4, and 5.

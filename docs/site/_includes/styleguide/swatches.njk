@@ -30,3 +30,49 @@
 </div>
 {%- endfor %}
 {% endmacro %}
+
+{#- Sequential and diverging ramps, laid out like the Figma Color frame: one row
+    per step (color bar with step number and hex, RGB field, optional note).
+    A set titled "Only if you need …" is the previous ramp's extra steps and
+    renders in a tinted box inside that ramp. -#}
+{% macro rampRow(s) -%}
+<li class="sg-swatch sg-ramp-row sg-swatch--{{ s.hex | swatchText }}" data-hex="{{ s.hex }}">
+  <div class="sg-ramp-row__color" style="background-color: {{ s.hex }}">
+    <p class="sg-ramp-row__label">{% if s.name %}<span class="sg-ramp-row__step">{{ s.name }}</span>{% endif %}<span class="sg-swatch__hex">{{ s.hex }}</span></p>
+    <button type="button" class="sg-copy" data-copy="{{ s.hex }}" aria-label="Copy hex {{ s.hex }}">{{ copyIcon() | safe }}</button>
+  </div>
+  {%- if s.rgb %}
+  <div class="sg-swatch__field">
+    <code class="sg-swatch__rgb">{{ s.rgb }}</code>
+    <button type="button" class="sg-copy" data-copy="{{ s.rgb }}" aria-label="Copy RGB {{ s.rgb }}">{{ copyIcon() | safe }}</button>
+  </div>
+  {%- endif %}
+  {%- if s.note %}<p class="sg-ramp-row__note">{{ s.note }}</p>{% endif %}
+</li>
+{%- endmacro %}
+
+{% macro ramps(sets) %}
+{%- for set in sets %}
+{%- set isExtra = set.title and set.title.startsWith('Only if you need') %}
+{%- set next = sets[loop.index] %}
+{%- if not isExtra %}
+<div class="sg-ramp">
+  <p class="sg-ramp__title">{{ set.title }}</p>
+  <ul class="sg-ramp-rows" role="list">
+    {%- for s in set.swatches %}
+    {{ rampRow(s) }}{% endfor %}
+  </ul>
+{%- else %}
+  <div class="sg-ramp-extra">
+    <p class="sg-ramp-extra__title">{{ set.title }}</p>
+    <ul class="sg-ramp-rows" role="list">
+      {%- for s in set.swatches %}
+    {{ rampRow(s) }}{% endfor %}
+    </ul>
+  </div>
+{%- endif %}
+{%- if isExtra or loop.last or not (next.title and next.title.startsWith('Only if you need')) %}
+</div>
+{%- endif %}
+{%- endfor %}
+{% endmacro %}

@@ -280,3 +280,135 @@
     height: 1rem;
   }
 }
+
+// ---- Sequential and diverging ramps (Color page), as in the Figma frame ----
+.sg-ramp {
+  margin: 1.5rem 0;
+}
+
+.sg-ramp__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem; // 18px
+  font-weight: 700;
+}
+
+.sg-ramp-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sg-ramp-row {
+  display: grid;
+  grid-template-columns: 16.25rem 13.125rem auto; // 260px 210px note
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+
+  .sg-swatch__field {
+    height: 3rem;
+    margin: 0;
+    padding: 2px 2px 2px 10px;
+  }
+
+  .sg-swatch__rgb {
+    font-size: 0.8125rem; // 13px
+  }
+
+  .sg-copy {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+}
+
+.sg-ramp-row__color {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 0 6px 0 1rem;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #d4d4d8;
+}
+
+.sg-swatch--light .sg-ramp-row__color {
+  color: #fff;
+}
+
+.sg-swatch--dark .sg-ramp-row__color {
+  color: #1e1e1e;
+}
+
+.sg-swatch--black .sg-ramp-row__color {
+  color: #000;
+}
+
+.sg-ramp-row__label {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0;
+  font-size: 1.1875rem; // 19px
+  font-weight: 700;
+}
+
+.sg-ramp-row__note {
+  margin: 0;
+  font-size: 1rem;
+  color: #72717c;
+}
+
+.sg-ramp-extra {
+  display: inline-grid;
+
+  @media (max-width: 575px) {
+    display: grid;
+  }
+
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #f1f6fb;
+
+  .sg-ramp-row {
+    grid-template-columns: 16.25rem 13.125rem;
+
+    @media (max-width: 575px) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+}
+
+.sg-ramp-extra__title {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.875rem; // 14px
+  font-weight: 600;
+  // Figma uses #72717c, which is 4.42:1 on #f1f6fb (under 4.5:1); this is the
+  // closest gray that passes (4.76:1).
+  color: #6d6c77;
+}
+
+// The site sets a 32px line height on paragraphs; ramp labels use Figma's.
+.styleguide {
+  .sg-ramp__title {
+    line-height: 1.2;
+  }
+
+  .sg-ramp-extra__title {
+    line-height: 1.25;
+  }
+
+  .sg-ramp-row__note {
+    line-height: 1.25;
+  }
+}
