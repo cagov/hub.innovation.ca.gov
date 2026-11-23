@@ -203,7 +203,7 @@ test('copy hex focus ring is a dark ring with a white halo', async ({ page }) =>
 
 test('every swatch label meets 4.5:1', async ({ page }) => {
   await page.goto(COLOR_URL);
-  const worst = await page.locator('.sg-swatch__color, .sg-ramp-row__color').evaluateAll((els) => {
+  const worst = await page.locator('.sg-swatch__color, .sg-ramp-row__color, .sg-version-cell__color').evaluateAll((els) => {
     const parse = (c) => c.match(/\d+(\.\d+)?/g).slice(0, 3).map(Number);
     const lum = ([r, g, b]) => {
       const f = (v) => { v /= 255; return v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; };
@@ -344,3 +344,34 @@ for (const [section, firstNote] of [
     expect(r.weight).toBe('600');
   });
 }
+
+test('four versions use the Figma layout', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  await expect(page.locator('.sg-version')).toHaveCount(9);
+  const r = await page.locator('.sg-version').first().evaluate((el) => {
+    const cells = el.querySelectorAll('.sg-version-cell');
+    const c = cells[0];
+    const h = (e) => Math.round(e.getBoundingClientRect().height);
+    const label = c.querySelector('.sg-version-cell__label');
+    const hex = c.querySelector('.sg-swatch__hex');
+    return {
+      title: el.querySelector('.sg-version__title').textContent.replace(/\s+/g, ' ').trim(),
+      cells: cells.length,
+      labels: [...cells].map((x) => x.querySelector('.sg-version-cell__label').textContent.trim()),
+      labelColor: getComputedStyle(label).color, labelSize: getComputedStyle(label).fontSize,
+      colorH: h(c.querySelector('.sg-version-cell__color')), fieldH: h(c.querySelector('.sg-swatch__field')),
+      hexSize: getComputedStyle(hex).fontSize, hexWeight: getComputedStyle(hex).fontWeight,
+      sameRow: new Set([...cells].map((x) => Math.round(x.getBoundingClientRect().top))).size,
+    };
+  });
+  expect(r.title).toBe('1 Blue');
+  expect(r.cells).toBe(4);
+  expect(r.labels).toEqual(['Main fill', 'Paired', 'Line', 'Background']);
+  expect(r.labelColor).toBe('rgb(114, 113, 124)');
+  expect(r.labelSize).toBe('14px');
+  expect(r.colorH).toBe(56);
+  expect(r.fieldH).toBe(38);
+  expect(r.hexSize).toBe('19px');
+  expect(r.hexWeight).toBe('700');
+  expect(r.sameRow).toBe(1);
+});

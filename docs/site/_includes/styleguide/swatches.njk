@@ -78,3 +78,30 @@
 {%- endif %}
 {%- endfor %}
 {% endmacro %}
+
+{#- Four versions of each color, laid out like the Figma versions table: per
+    color, a title and four cells (label, color bar with hex, RGB field). -#}
+{% macro versions(sets) %}
+<div class="sg-versions">
+{%- for set in sets %}
+  <div class="sg-version">
+    <p class="sg-version__title">{{ set.title }}</p>
+    <ul class="sg-version__cells" role="list">
+      {%- for s in set.swatches %}
+      <li class="sg-swatch sg-version-cell sg-swatch--{{ s.hex | swatchText }}" data-hex="{{ s.hex }}">
+        <p class="sg-version-cell__label">{{ s.name }}</p>
+        <div class="sg-version-cell__color" style="background-color: {{ s.hex }}">
+          <span class="sg-swatch__hex">{{ s.hex }}</span>
+          <button type="button" class="sg-copy" data-copy="{{ s.hex }}" aria-label="Copy hex {{ s.hex }}">{{ copyIcon() | safe }}</button>
+        </div>
+        <div class="sg-swatch__field">
+          <code class="sg-swatch__rgb">{{ s.rgb }}</code>
+          <button type="button" class="sg-copy" data-copy="{{ s.rgb }}" aria-label="Copy RGB {{ s.rgb }}">{{ copyIcon() | safe }}</button>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+{%- endfor %}
+</div>
+{% endmacro %}

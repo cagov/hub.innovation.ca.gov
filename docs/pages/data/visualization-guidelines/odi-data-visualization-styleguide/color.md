@@ -6,7 +6,7 @@ description: ODI's chart colors, with hex and RGB values you can copy into your 
 headerlabel: Guides and playbooks
 headericon: book
 ---
-{% from "styleguide/swatches.njk" import swatches, ramps %}
+{% from "styleguide/swatches.njk" import swatches, ramps, versions %}
 <div class="styleguide">
 <p class="sg-copy-status" role="status" aria-live="polite"></p>
 
@@ -38,7 +38,7 @@ For some colors the Main fill and Line are the same, because the Main fill is al
 
 <img src="/img/dataviz/styleguide/color-paired-bars.png" width="876" height="398" style="max-width: 100%; height: auto;" alt="Example bar chart titled Applications rose in all three programs, with the subtitle Applications by program, 2024 and 2025 (illustrative data). A legend above the chart shows 2025 in dark blue and 2024 in pale blue. Each program has a pair of bars with its value just past the end: CalFresh 710 in 2025 and 620 in 2024, Medi-Cal 590 and 540, Unemployment 360 and 300. A note below says darker bars are 2025 (Main fill) and paler bars are 2024 (Paired), and that because values are labeled, the paler shade doesn’t need 3:1 contrast.">
 
-{{ swatches(styleguideColors.versions, 4) }}
+{{ versions(styleguideColors.versions) }}
 
 ```python
 # Same order as the categorical colors
