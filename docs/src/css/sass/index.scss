@@ -19,7 +19,8 @@
 @import "../../../../node_modules/@cagov/ds-statewide-footer/src/index.scss";
 @import "../../../../node_modules/@cagov/ds-site-navigation/src/index.scss";
 
-@import '../../../../node_modules/highlight.js/styles/a11y-dark';
+// Code blocks: ODI styleguide code style (replaces the highlight.js a11y-dark theme).
+@import 'code-blocks';
 
 /* sitewide styles */
 @import './ds-site-global';

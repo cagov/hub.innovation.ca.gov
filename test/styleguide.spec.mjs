@@ -225,3 +225,61 @@ test('copy button hover shows one fill, not a second one behind the icon', async
   const iconBg = await btn.locator('svg').evaluate((el) => getComputedStyle(el).backgroundColor);
   expect(iconBg).toBe('rgba(0, 0, 0, 0)');
 });
+
+// ---- Code blocks match the Figma code style, site-wide ----
+async function codeBlockStyle(page) {
+  return page.locator('.code-block').first().evaluate((el) => {
+    const pre = getComputedStyle(el.querySelector('pre'));
+    const code = getComputedStyle(el.querySelector('pre code'));
+    const span = el.querySelector('pre code span');
+    return {
+      bg: pre.backgroundColor, radius: pre.borderTopLeftRadius,
+      font: code.fontFamily, size: code.fontSize, lh: code.lineHeight, color: code.color,
+      wrap: code.whiteSpace, spanColor: span ? getComputedStyle(span).color : code.color,
+    };
+  });
+}
+
+for (const url of [COLOR_URL, testLocation + '/markdown/']) {
+  test(`code blocks use the Figma style ${url}`, async ({ page }) => {
+    await page.goto(url);
+    const s = await codeBlockStyle(page);
+    expect(s.bg).toBe('rgb(241, 246, 251)');
+    expect(s.radius).toBe('8px');
+    expect(s.font.startsWith('"Noto Sans Mono"')).toBe(true);
+    expect(s.size).toBe('13px');
+    expect(s.lh).toBe('22px');
+    expect(s.color).toBe('rgb(30, 30, 30)');
+    expect(s.spanColor).toBe('rgb(30, 30, 30)');
+    expect(s.wrap).toBe('pre-wrap');
+    await expect(page.locator('.code-block-language')).toHaveCount(0);
+  });
+}
+
+test.describe('copy code', () => {
+  test.use({ permissions: ['clipboard-read', 'clipboard-write'] });
+
+  test('copies the whole block on the Color page', async ({ page }) => {
+    await page.goto(COLOR_URL);
+    await page.getByRole('button', { name: 'Copy code' }).first().click();
+    const text = await page.evaluate(() => navigator.clipboard.readText());
+    expect(text.startsWith('# ODI categorical colors, in order')).toBe(true);
+    expect(text).toContain('odi_all = odi_default + odi_extended');
+  });
+
+  test('works on a page without a status message of its own', async ({ page }) => {
+    await page.goto(testLocation + '/markdown/');
+    await page.getByRole('button', { name: 'Copy code' }).first().click();
+    await expect(page.locator('.sg-copy-status')).toContainText('Copied');
+  });
+});
+
+test('code block has no extra space above the code and a blue copy icon', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  const r = await page.locator('.code-block').first().evaluate((el) => {
+    const pre = el.querySelector('pre').getBoundingClientRect(), code = el.querySelector('pre code').getBoundingClientRect();
+    return { gap: Math.round(code.top - pre.top), color: getComputedStyle(el.querySelector('.code-block-copy')).color };
+  });
+  expect(r.gap).toBe(16);
+  expect(r.color).toBe('rgb(13, 79, 140)');
+});
