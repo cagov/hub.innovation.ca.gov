@@ -217,3 +217,11 @@ test('every swatch label meets 4.5:1', async ({ page }) => {
   });
   expect(worst).toBeGreaterThanOrEqual(4.5);
 });
+
+test('copy button hover shows one fill, not a second one behind the icon', async ({ page }) => {
+  await page.goto(COLOR_URL);
+  const btn = page.locator('.sg-swatch__field .sg-copy').first();
+  await btn.hover();
+  const iconBg = await btn.locator('svg').evaluate((el) => getComputedStyle(el).backgroundColor);
+  expect(iconBg).toBe('rgba(0, 0, 0, 0)');
+});

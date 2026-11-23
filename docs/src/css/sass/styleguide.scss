@@ -183,6 +183,12 @@
     background: rgba(0, 0, 0, 0.08);
   }
 
+  // The base CSS gives every element `background-color: inherit`, so the icon
+  // would repaint the translucent hover fill and show a second, darker square.
+  * {
+    background-color: transparent;
+  }
+
   // Dark ring with a white halo, visible on every swatch color. !important
   // beats the base CSS's `button:focus { outline: … !important }`.
   &:focus,
