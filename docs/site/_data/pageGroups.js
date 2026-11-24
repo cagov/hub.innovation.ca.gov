@@ -109,4 +109,109 @@ module.exports = [
       },
     ],
   },
+  {
+    heading: 'In this toolkit',
+    landing: '/data/visualization-guidelines/',
+    pages: [
+      { url: '/data/visualization-guidelines/principles/', label: "ODI's data visualization principles" },
+      {
+        url: '/data/visualization-guidelines/choose-the-right-chart/',
+        label: 'Choose the right chart',
+        children: [
+          {
+            url: '/data/visualization-guidelines/choose-the-right-chart/chart-alternatives/',
+            label: 'Chart alternatives: Should I use a chart at all?',
+          },
+          {
+            url: '/data/visualization-guidelines/choose-the-right-chart/comparison/',
+            label: 'Comparison: How do these items compare?',
+          },
+          {
+            url: '/data/visualization-guidelines/choose-the-right-chart/part-to-whole/',
+            label: 'Part-to-whole: What share of the total is this?',
+          },
+          {
+            url: '/data/visualization-guidelines/choose-the-right-chart/change-over-time/',
+            label: 'Change over time: How has this changed?',
+          },
+          {
+            url: '/data/visualization-guidelines/choose-the-right-chart/geographic/',
+            label: 'Geographic: Where is this happening?',
+          },
+          {
+            url: '/data/visualization-guidelines/choose-the-right-chart/relationships/',
+            label: 'Relationships: Are these items connected and how?',
+          },
+          {
+            url: '/data/visualization-guidelines/choose-the-right-chart/distribution/',
+            label: "Distribution: What’s the spread?",
+          },
+        ],
+      },
+      {
+        url: '/data/visualization-guidelines/follow-data-visualization-best-practices/',
+        label: 'Follow data visualization best practices',
+        children: [
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/writing-effective-text/',
+            label: 'Writing effective text',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/color-and-contrast/',
+            label: 'Color and contrast',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/equity/',
+            label: 'Equity',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/transparency/',
+            label: 'Transparency',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/usability/',
+            label: 'Usability',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/accessibility/',
+            label: 'Accessibility',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/density-and-simplicity/',
+            label: 'Density and simplicity',
+          },
+          {
+            url: '/data/visualization-guidelines/follow-data-visualization-best-practices/chart-integrity/',
+            label: 'Chart integrity',
+          },
+        ],
+      },
+      {
+        url: '/data/visualization-guidelines/odi-data-visualization-styleguide/',
+        label: "ODI's data visualization styleguide",
+        children: [
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/chart-anatomy/',
+            label: 'Chart anatomy',
+          },
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/typography/',
+            label: 'Typography',
+          },
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/color/',
+            label: 'Color',
+          },
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/spacing/',
+            label: 'Spacing',
+          },
+          {
+            url: '/data/visualization-guidelines/odi-data-visualization-styleguide/labels-and-callouts/',
+            label: 'Labels and callouts',
+          },
+        ],
+      },
+    ],
+  },
 ];

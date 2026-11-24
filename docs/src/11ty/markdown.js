@@ -8,29 +8,32 @@ const md = markdownIt({
   linkify: true,
 }).use(markdownItAnchor, { level: 2 });
 
-/**
- * Encloses syntax-highlighted code blocks in <pre> and <code> tags.
- * @param {String} hljsHtml
- * An HTML string that's formatted by highlight.js.
- * @returns {String} HTML
- */
-const preWrap = (hljsHtml) =>
-  `<pre><code tabindex="0" class="hljs">${hljsHtml}</code></pre>`;
+// Copy icon (Material Symbols "content_copy"), shared with the styleguide
+// swatches' copy buttons. docs/src/js/copy-value.js handles the click.
+const COPY_ICON =
+  '<svg class="sg-copy__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 18q-.825 0-1.412-.587T7 16V4q0-.825.588-1.412T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.587 1.413T18 18zm0-2h9V4H9zm-4 6q-.825 0-1.412-.587T3 20V7q0-.425.288-.712T4 6t.713.288T5 7v13h10q.425 0 .713.288T16 21t-.288.713T15 22z"/></svg>';
 
 /**
- * Displays the code block's language alongside the code.
- * @param {String} hljsHtml
- * An HTML string that's formatted by highlight.js.
- * @param {String} language
- * The code block's language.
+ * Encloses code in <pre> and <code> tags.
+ * @param {String} codeHtml
+ * Escaped or highlight.js-formatted code.
  * @returns {String} HTML
  */
-const codeWrap = (hljsHtml, language) => `
-  <div class="code-block">
-    <p class="code-block-language">
-      ${language}
-    </p>
-    ${preWrap(hljsHtml)}
+const preWrap = (codeHtml) => `<pre><code class="hljs">${codeHtml}</code></pre>`;
+
+/**
+ * A code block in the ODI styleguide's code style (light blue, Noto Sans Mono,
+ * wrapping lines) with a button that copies the whole block. The language is
+ * kept as a data attribute, not shown.
+ * @param {String} codeHtml
+ * @param {String} language
+ * The code block's language, if any.
+ * @returns {String} HTML
+ */
+const codeWrap = (codeHtml, language = '') => `
+  <div class="code-block"${language ? ` data-language="${language}"` : ''}>
+    ${preWrap(codeHtml)}
+    <button type="button" class="sg-copy code-block-copy" aria-label="Copy code">${COPY_ICON}</button>
   </div>
 `;
 
@@ -76,7 +79,7 @@ const previewWrap = (rawHtml, hljsHtml, instructions) => `
  */
 const defaultWrap = (code) => {
   const escapedCode = md.utils.escapeHtml(code);
-  return preWrap(escapedCode);
+  return codeWrap(escapedCode);
 };
 
 // Here we override the default "fence" rule of markdown-it.

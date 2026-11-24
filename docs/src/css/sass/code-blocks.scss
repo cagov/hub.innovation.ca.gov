@@ -1,0 +1,41 @@
+/* Code blocks, everywhere on the site. Matches the ODI data visualization
+   styleguide's code style in Figma: light blue box, 8px corners, Noto Sans
+   Mono 13/22px in dark gray (no syntax colors), wrapping lines, and a copy
+   button in the top-right corner (docs/src/js/copy-value.js). Markup comes
+   from docs/src/11ty/markdown.js. */
+
+.code-block {
+  position: relative;
+  margin: 1.5rem 0;
+
+  pre {
+    margin: 0;
+    padding: 1rem 3.5rem 1rem 1.25rem; // 16 56 16 20
+    border-radius: 8px;
+    background: #f1f6fb;
+  }
+
+  pre code,
+  pre code * {
+    color: #1e1e1e;
+    background: none;
+  }
+
+  pre code {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Mono', ui-monospace, monospace;
+    font-size: 0.8125rem; // 13px
+    line-height: 1.375rem; // 22px
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+}
+
+.code-block .code-block-copy {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #0d4f8c;
+}

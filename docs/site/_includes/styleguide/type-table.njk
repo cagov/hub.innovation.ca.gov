@@ -1,0 +1,24 @@
+{#- Styleguide type table, from docs/site/_data/styleguideType.json (the Figma
+    slot/type-table). Each sample is set in its real font, weight, size and color. -#}
+<div class="sg-table-scroll" tabindex="0" role="region" aria-label="Fonts and sizes for chart text">
+<table class="sg-type-table">
+  <thead>
+    <tr><th scope="col">Text</th><th scope="col">Font</th><th scope="col">Weight</th><th scope="col">Desktop</th><th scope="col">Mobile</th><th scope="col">Color</th></tr>
+  </thead>
+  <tbody>
+    {%- for row in styleguideType %}
+    <tr>
+      <td>
+        <span class="sg-type-role">{{ row.role }}</span>
+        <span class="sg-type-sample" style="font-family: '{{ row.sampleCss.family }}'; font-weight: {{ row.sampleCss.weight }}; font-size: {{ row.sampleCss.size }}; color: {{ row.color }}">{{ row.sample }}</span>
+      </td>
+      <td><code>{{ row.font }}</code></td>
+      <td><code>{{ row.weight }}</code></td>
+      <td><code>{{ row.desktop }}</code></td>
+      <td><code>{{ row.mobile }}</code></td>
+      <td class="sg-type-color">{% hex row.color %}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>

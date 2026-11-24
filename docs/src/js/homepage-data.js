@@ -118,6 +118,24 @@ const HOMEPAGE2_TILES = [
     ],
   },
   {
+    title: 'Data visualization guidelines',
+    description: 'Make charts and graphs that are clear, accurate, and accessible',
+    url: '/data/visualization-guidelines/',
+    topic: 'data',
+    topicLabel: 'Data',
+    type: 'guides-and-playbooks',
+    typeLabel: 'Guides and playbooks',
+    typeIcon: 'book',
+    keywords: [
+      'data visualization',
+      'dataviz',
+      'charts',
+      'graphs',
+      'choose the right chart',
+      'styleguide'
+    ],
+  },
+  {
     title: 'A data-driven approach to detecting cash benefit theft',
     description:
       'ODI built a predictive model to detect illegal debit card transactions',

@@ -1,0 +1,107 @@
+{#- Styleguide color swatches. `sets` is one group from styleguideColors.json:
+    [{ title, swatches: [{ name, hex, rgb, note }] }]. `cols` sets the
+    desktop column count (the Color frame uses 3, and 4 for the versions rows). Copy buttons are wired up
+    by docs/src/js/copy-value.js, which writes to the page's .sg-copy-status. -#}
+{% macro copyIcon() -%}
+<svg class="sg-copy__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 18q-.825 0-1.412-.587T7 16V4q0-.825.588-1.412T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.587 1.413T18 18zm0-2h9V4H9zm-4 6q-.825 0-1.412-.587T3 20V7q0-.425.288-.712T4 6t.713.288T5 7v13h10q.425 0 .713.288T16 21t-.288.713T15 22z"/></svg>
+{%- endmacro %}
+
+{% macro swatches(sets, cols=3) %}
+{%- for set in sets %}
+<div class="sg-swatch-set">
+  {%- if set.title %}<p class="sg-swatch-set__title">{{ set.title }}</p>{% endif %}
+  <ul class="sg-swatches{% if cols > 3 %} sg-swatches--compact{% endif %}" role="list" style="--sg-cols: {{ cols }}">
+    {%- for s in set.swatches %}
+    <li class="sg-swatch sg-swatch--{{ s.hex | swatchText }}" data-hex="{{ s.hex }}">
+      <div class="sg-swatch__color" style="background-color: {{ s.hex }}">
+        <p class="sg-swatch__label">{% if s.name %}<span class="sg-swatch__name">{{ s.name }}</span>{% endif %}<span class="sg-swatch__hex">{{ s.hex }}</span></p>
+        <button type="button" class="sg-copy" data-copy="{{ s.hex }}" aria-label="Copy hex {{ s.hex }}">{{ copyIcon() | safe }}</button>
+      </div>
+      {%- if s.rgb %}
+      <div class="sg-swatch__field">
+        <code class="sg-swatch__rgb">{{ s.rgb }}</code>
+        <button type="button" class="sg-copy" data-copy="{{ s.rgb }}" aria-label="Copy RGB {{ s.rgb }}">{{ copyIcon() | safe }}</button>
+      </div>
+      {%- endif %}
+      {%- if s.note %}<p class="sg-swatch__note">{{ s.note }}</p>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</div>
+{%- endfor %}
+{% endmacro %}
+
+{#- Sequential and diverging ramps, laid out like the Figma Color frame: one row
+    per step (color bar with step number and hex, RGB field, optional note).
+    A set titled "Only if you need …" is the previous ramp's extra steps and
+    renders in a tinted box inside that ramp. `strong` sets notes in dark gray
+    semibold (Neutrals, increase/decrease and status) instead of gray. -#}
+{% macro rampRow(s, strong=false) -%}
+<li class="sg-swatch sg-ramp-row sg-swatch--{{ s.hex | swatchText }}" data-hex="{{ s.hex }}">
+  <div class="sg-ramp-row__color" style="background-color: {{ s.hex }}">
+    <p class="sg-ramp-row__label">{% if s.name %}<span class="sg-ramp-row__step">{{ s.name }}</span>{% endif %}<span class="sg-swatch__hex">{{ s.hex }}</span></p>
+    <button type="button" class="sg-copy" data-copy="{{ s.hex }}" aria-label="Copy hex {{ s.hex }}">{{ copyIcon() | safe }}</button>
+  </div>
+  {%- if s.rgb %}
+  <div class="sg-swatch__field">
+    <code class="sg-swatch__rgb">{{ s.rgb }}</code>
+    <button type="button" class="sg-copy" data-copy="{{ s.rgb }}" aria-label="Copy RGB {{ s.rgb }}">{{ copyIcon() | safe }}</button>
+  </div>
+  {%- endif %}
+  {%- if s.note %}<p class="sg-ramp-row__note{% if strong %} sg-ramp-row__note--strong{% endif %}">{{ s.note }}</p>{% endif %}
+</li>
+{%- endmacro %}
+
+{% macro ramps(sets, strong=false) %}
+{%- for set in sets %}
+{%- set isExtra = set.title and set.title.startsWith('Only if you need') %}
+{%- set next = sets[loop.index] %}
+{%- if not isExtra %}
+<div class="sg-ramp">
+  {%- if set.title %}
+  <p class="sg-ramp__title">{{ set.title }}</p>{% endif %}
+  <ul class="sg-ramp-rows" role="list">
+    {%- for s in set.swatches %}
+    {{ rampRow(s, strong) }}{% endfor %}
+  </ul>
+{%- else %}
+  <div class="sg-ramp-extra">
+    <p class="sg-ramp-extra__title">{{ set.title }}</p>
+    <ul class="sg-ramp-rows" role="list">
+      {%- for s in set.swatches %}
+    {{ rampRow(s, strong) }}{% endfor %}
+    </ul>
+  </div>
+{%- endif %}
+{%- if isExtra or loop.last or not (next.title and next.title.startsWith('Only if you need')) %}
+</div>
+{%- endif %}
+{%- endfor %}
+{% endmacro %}
+
+{#- Four versions of each color, laid out like the Figma versions table: per
+    color, a title and four cells (label, color bar with hex, RGB field). -#}
+{% macro versions(sets) %}
+<div class="sg-versions">
+{%- for set in sets %}
+  <div class="sg-version">
+    <p class="sg-version__title">{{ set.title }}</p>
+    <ul class="sg-version__cells" role="list">
+      {%- for s in set.swatches %}
+      <li class="sg-swatch sg-version-cell sg-swatch--{{ s.hex | swatchText }}" data-hex="{{ s.hex }}">
+        <p class="sg-version-cell__label">{{ s.name }}</p>
+        <div class="sg-version-cell__color" style="background-color: {{ s.hex }}">
+          <span class="sg-swatch__hex">{{ s.hex }}</span>
+          <button type="button" class="sg-copy" data-copy="{{ s.hex }}" aria-label="Copy hex {{ s.hex }}">{{ copyIcon() | safe }}</button>
+        </div>
+        <div class="sg-swatch__field">
+          <code class="sg-swatch__rgb">{{ s.rgb }}</code>
+          <button type="button" class="sg-copy" data-copy="{{ s.rgb }}" aria-label="Copy RGB {{ s.rgb }}">{{ copyIcon() | safe }}</button>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+{%- endfor %}
+</div>
+{% endmacro %}

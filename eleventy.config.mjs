@@ -97,6 +97,8 @@ export default function eleventySetup(eleventyConfig) {
   // entries also hide files from the --watch file watcher, while these config
   // ignores only exclude them from the template build.
   eleventyConfig.ignores.add('docs/src/js/**');
+  // Local agent scratch space (plans, ledgers); never site content.
+  eleventyConfig.ignores.add('.superpowers/**');
 
   // The built CSS/JS bundles are inlined into every page by layouts/index.njk,
   // so an incremental build can't know pages depend on them. resetConfig forces
@@ -139,6 +141,35 @@ export default function eleventySetup(eleventyConfig) {
     item.url === url || (item.children || []).some((child) => inPageBranch(child, url));
 
   eleventyConfig.addFilter('inPageBranch', inPageBranch);
+
+  // Styleguide swatches: the label color with the most contrast that clears
+  // 4.5:1. "light" = white, "dark" = the site's dark gray (#1e1e1e); when
+  // neither clears 4.5:1 (mid-tone colors like #228a74), "black" = #000.
+  eleventyConfig.addFilter('swatchText', (hex) => {
+    const lum = (h) => {
+      const [r, g, b] = [1, 3, 5].map((i) => {
+        const c = parseInt(h.slice(i, i + 2), 16) / 255;
+        return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+      });
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    };
+    const contrast = (a, b) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+    const l = lum(hex);
+    const white = contrast(1, l);
+    const dark = contrast(lum('#1e1e1e'), l);
+    if (Math.max(white, dark) < 4.5) return white >= contrast(0, l) ? 'light' : 'black';
+    return white >= dark ? 'light' : 'dark';
+  });
+
+  // Styleguide pages: an inline hex value followed by a small chip of that
+  // color, e.g. {% hex "#1e1e1e" %}. The chip is decorative; the hex text
+  // carries the meaning.
+  eleventyConfig.addShortcode('hex', (hex) => {
+    if (!/^#[0-9a-fA-F]{6}$/.test(String(hex))) {
+      throw new Error(`hex shortcode: expected #rrggbb, got ${JSON.stringify(hex)}`);
+    }
+    return `<code class="sg-hex">${hex}</code>&nbsp;<span class="sg-chip" style="background-color:${hex}" aria-hidden="true"></span>`;
+  });
 
   // The group from _data/pageGroups.js that contains the page at url, either as
   // its landing page or as one of its pages, if any.

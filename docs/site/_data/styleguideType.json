@@ -1,0 +1,11 @@
+[
+  { "role": "Title", "sample": "Three of four programs grew", "font": "Noto Serif or Merriweather", "weight": "Bold", "desktop": "24px", "mobile": "20px", "color": "#0d4f8c", "sampleCss": { "family": "Noto Serif", "weight": 700, "size": "24px" } },
+  { "role": "Subtitle", "sample": "People served by program, in thousands", "font": "Noto Sans", "weight": "Regular", "desktop": "16px", "mobile": "16px", "color": "#1e1e1e", "sampleCss": { "family": "Noto Sans", "weight": 400, "size": "16px" } },
+  { "role": "Axis title", "sample": "People served (thousands)", "font": "Noto Sans", "weight": "SemiBold", "desktop": "14px", "mobile": "14px", "color": "#1e1e1e", "sampleCss": { "family": "Noto Sans", "weight": 600, "size": "14px" } },
+  { "role": "Category label", "sample": "Medi-Cal enrollment", "font": "Noto Sans", "weight": "SemiBold", "desktop": "14px", "mobile": "13px", "color": "#1e1e1e", "sampleCss": { "family": "Noto Sans", "weight": 600, "size": "14px" } },
+  { "role": "Data label (values)", "sample": "82    76    64", "font": "Noto Sans Mono", "weight": "Regular", "desktop": "14px", "mobile": "13px", "color": "#1e1e1e", "sampleCss": { "family": "Noto Sans Mono", "weight": 400, "size": "14px" } },
+  { "role": "Axis tick label", "sample": "0    25    50    75", "font": "Noto Sans Mono", "weight": "Regular", "desktop": "14px", "mobile": "13px", "color": "#72717c", "sampleCss": { "family": "Noto Sans Mono", "weight": 400, "size": "14px" } },
+  { "role": "Legend", "sample": "2025    2024", "font": "Noto Sans", "weight": "Regular", "desktop": "14px", "mobile": "14px", "color": "#1e1e1e", "sampleCss": { "family": "Noto Sans", "weight": 400, "size": "14px" } },
+  { "role": "Annotation", "sample": "Enrollment opened in March", "font": "Noto Sans", "weight": "Regular", "desktop": "14px", "mobile": "14px", "color": "#1e1e1e", "sampleCss": { "family": "Noto Sans", "weight": 400, "size": "14px" } },
+  { "role": "Source and notes", "sample": "Source: Illustrative data, for guideline purposes only.", "font": "Noto Sans", "weight": "Regular", "desktop": "12px", "mobile": "12px", "color": "#1e1e1e", "sampleCss": { "family": "Noto Sans", "weight": 400, "size": "12px" } }
+]

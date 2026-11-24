@@ -1,0 +1,512 @@
+/* ODI data visualization styleguide pages
+   (/data/visualization-guidelines/odi-data-visualization-styleguide/).
+   Noto faces are declared site-wide but browsers download them only when
+   something uses them; only `.styleguide` content does. */
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/noto-sans-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/noto-sans-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/noto-sans-mono-400.woff2') format('woff2');
+}
+
+.styleguide {
+  // Font names, weights, sizes and hex values, as in the Figma styleguide.
+  // Inline specs only; fenced code blocks keep the site's code style.
+  :not(pre) > code {
+    font-family: 'Noto Sans Mono', ui-monospace, monospace;
+    font-size: 0.9em;
+    padding: 0;
+    background: none;
+    color: inherit;
+  }
+}
+
+// Small color square after an inline hex value. Decorative: the hex carries
+// the meaning. The inset edge keeps very light colors visible on white.
+.sg-chip {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px #d4d4d8;
+  vertical-align: -0.05em;
+}
+
+// ---- Color swatches (Color page) ----
+.sg-swatch-set {
+  margin: 1.5rem 0;
+}
+
+.sg-swatch-set__title {
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.sg-swatches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--sg-cols, 3), minmax(0, 1fr));
+  gap: 0.75rem;
+
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.sg-swatch {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.sg-swatch__color {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 6.5rem;
+  padding: 0.75rem 0.75rem 0.75rem 1rem;
+  border-radius: 6px;
+  // Keeps very light colors visible on the white page.
+  box-shadow: inset 0 0 0 1px #d4d4d8;
+}
+
+.sg-swatch--light .sg-swatch__color {
+  color: #fff;
+}
+
+.sg-swatch--dark .sg-swatch__color {
+  color: #1e1e1e;
+}
+
+.sg-swatch--black .sg-swatch__color {
+  color: #000;
+}
+
+.sg-swatch__label {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1875rem; // 19px
+  line-height: 1.3;
+}
+
+.sg-swatch__name {
+  display: block;
+  white-space: pre;
+}
+
+.sg-swatch__field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 6px;
+  background: #fff;
+  color: #1e1e1e;
+}
+
+.sg-swatch__rgb {
+  padding: 0;
+  background: none;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.sg-swatches--compact {
+  @media (max-width: 1199px) and (min-width: 576px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sg-swatch__field {
+    gap: 0.125rem;
+    padding: 0.125rem 0.125rem 0.125rem 0.5rem;
+  }
+
+  .sg-swatch__rgb {
+    font-size: 0.75rem;
+  }
+
+  .sg-swatch__field .sg-copy {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.sg-swatch__note {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+.sg-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  // The base CSS gives every element `background-color: inherit`, so the icon
+  // would repaint the translucent hover fill and show a second, darker square.
+  * {
+    background-color: transparent;
+  }
+
+  // Dark ring with a white halo, visible on every swatch color. !important
+  // beats the base CSS's `button:focus { outline: … !important }`.
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid #1e1e1e !important;
+    outline-offset: 0;
+    box-shadow: 0 0 0 4px #fff;
+  }
+}
+
+.sg-swatch__field .sg-copy {
+  color: #0d4f8c;
+}
+
+// Copy result: announced by screen readers (role="status") and shown briefly.
+.sg-copy-status {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  z-index: 10;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #fff;
+
+  &:empty {
+    padding: 0;
+  }
+}
+
+// ---- Type table (Typography page) ----
+.sg-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.sg-type-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.875rem 0.75rem 0.875rem 0;
+    border-bottom: 1px solid #d4d4d8;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  th {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  td:nth-child(n + 3) {
+    white-space: nowrap;
+  }
+
+  td:nth-child(2) {
+    min-width: 8rem;
+  }
+
+  code {
+    font-size: 0.9375rem;
+  }
+}
+
+.sg-type-role {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.sg-type-sample {
+  display: block;
+  white-space: pre;
+  line-height: 1.35;
+}
+
+.sg-type-sample[style*='Noto Serif'] {
+  white-space: normal;
+}
+
+.sg-type-color {
+  .sg-chip {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+// ---- Sequential and diverging ramps (Color page), as in the Figma frame ----
+.sg-ramp {
+  margin: 1.5rem 0;
+}
+
+.sg-ramp__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem; // 18px
+  font-weight: 700;
+}
+
+.sg-ramp-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sg-ramp-row {
+  display: grid;
+  grid-template-columns: 16.25rem 13.125rem auto; // 260px 210px note
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+
+  .sg-swatch__field {
+    height: 3rem;
+    margin: 0;
+    padding: 2px 2px 2px 10px;
+  }
+
+  .sg-swatch__rgb {
+    font-size: 0.8125rem; // 13px
+  }
+
+  .sg-copy {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+}
+
+.sg-ramp-row__color {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 0 6px 0 1rem;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #d4d4d8;
+}
+
+.sg-swatch--light .sg-ramp-row__color {
+  color: #fff;
+}
+
+.sg-swatch--dark .sg-ramp-row__color {
+  color: #1e1e1e;
+}
+
+.sg-swatch--black .sg-ramp-row__color {
+  color: #000;
+}
+
+.sg-ramp-row__label {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0;
+  font-size: 1.1875rem; // 19px
+  font-weight: 700;
+}
+
+.sg-ramp-row__note {
+  margin: 0;
+  font-size: 1rem;
+  color: #72717c;
+}
+
+.sg-ramp-extra {
+  display: inline-grid;
+
+  @media (max-width: 575px) {
+    display: grid;
+  }
+
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #f1f6fb;
+
+  .sg-ramp-row {
+    grid-template-columns: 16.25rem 13.125rem;
+
+    @media (max-width: 575px) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+}
+
+.sg-ramp-extra__title {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.875rem; // 14px
+  font-weight: 600;
+  // Figma uses #72717c, which is 4.42:1 on #f1f6fb (under 4.5:1); this is the
+  // closest gray that passes (4.76:1).
+  color: #6d6c77;
+}
+
+// The site sets a 32px line height on paragraphs; ramp labels use Figma's.
+.styleguide {
+  .sg-ramp__title {
+    line-height: 1.2;
+  }
+
+  .sg-ramp-extra__title {
+    line-height: 1.25;
+  }
+
+  .sg-ramp-row__note {
+    line-height: 1.25;
+  }
+}
+
+// Neutrals, increase/decrease and status: notes name what the color is for.
+.styleguide .sg-ramp-row__note--strong {
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+// ---- Four versions of each color (Color page), as in the Figma table ----
+.sg-versions {
+  display: grid;
+  gap: 1.25rem; // 20px between colors
+  margin: 1.5rem 0;
+}
+
+.sg-version__cells {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.sg-version-cell {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+
+  .sg-swatch__field {
+    height: 2.375rem; // 38px
+    margin: 0;
+    padding: 2px 2px 2px 10px;
+    border-radius: 4px;
+  }
+
+  .sg-swatch__rgb {
+    font-size: 0.8125rem; // 13px
+  }
+
+  .sg-copy {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.sg-version-cell__color {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem; // 56px
+  padding: 0 6px 0 0.75rem;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #d4d4d8;
+
+  .sg-swatch__hex {
+    font-size: 1.1875rem; // 19px
+    font-weight: 700;
+  }
+}
+
+.sg-swatch--light .sg-version-cell__color {
+  color: #fff;
+}
+
+.sg-swatch--dark .sg-version-cell__color {
+  color: #1e1e1e;
+}
+
+.sg-swatch--black .sg-version-cell__color {
+  color: #000;
+}
+
+.styleguide {
+  .sg-version__title {
+    margin: 0 0 0.5rem;
+    font-size: 1.125rem; // 18px
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: pre; // "1  Blue", two spaces as in Figma
+  }
+
+  .sg-version-cell__label {
+    margin: 0;
+    font-size: 0.875rem; // 14px
+    line-height: 1.15;
+    color: #72717c;
+  }
+}
