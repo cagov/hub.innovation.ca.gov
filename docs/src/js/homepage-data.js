@@ -118,10 +118,9 @@ const HOMEPAGE2_TILES = [
     ],
   },
   {
-    // TODO: point to /data/visualization-guidelines/ once the landing page exists
     title: 'Data visualization guidelines',
     description: 'Make charts and graphs that are clear, accurate, and accessible',
-    url: '/data/visualization-guidelines/principles/',
+    url: '/data/visualization-guidelines/',
     topic: 'data',
     topicLabel: 'Data',
     type: 'guides-and-playbooks',
